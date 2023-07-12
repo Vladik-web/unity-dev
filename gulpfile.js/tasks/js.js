@@ -7,10 +7,10 @@ const webpack = require('webpack-stream')
 // Обработка JavaScript
 const js = () => {
   return $.gulp
-    .src($.path.js.src, { sourcemaps: $.app.isDev })
+    .src($.path.js.src)
     .pipe(
       plumber({
-        errorHandler: notify.onError((error) => ({
+        errorHandler: notify.onError(error => ({
           title: 'JS',
           message: error.message
         }))
@@ -18,7 +18,7 @@ const js = () => {
     )
     .pipe(babel())
     .pipe(webpack($.app.webpack))
-    .pipe($.gulp.dest($.path.js.dest, { sourcemaps: $.app.isDev }))
+    .pipe($.gulp.dest($.path.js.dest))
     .pipe($.browserSync.stream())
 }
 

@@ -13,7 +13,7 @@ const sass = require('gulp-sass')(require('sass'))
 const scss = () => {
   return (
     $.gulp
-      .src($.path.scss.src, { sourcemaps: $.app.isDev })
+      .src($.path.scss.src)
       .pipe(
         plumber({
           errorHandler: notify.onError(error => ({
@@ -34,11 +34,11 @@ const scss = () => {
       // .pipe(shorthand())
       .pipe(queries())
       .pipe(size({ title: 'SASS before' }))
-      .pipe($.gulp.dest($.path.scss.dest, { sourcemaps: $.app.isDev }))
+      .pipe($.gulp.dest($.path.scss.dest))
       .pipe(rename({ suffix: '.min' }))
       .pipe(csso())
       .pipe(size({ title: 'SASS after' }))
-      .pipe($.gulp.dest($.path.scss.dest, { sourcemaps: $.app.isDev }))
+      .pipe($.gulp.dest($.path.scss.dest))
       .pipe($.browserSync.stream())
   )
 }
