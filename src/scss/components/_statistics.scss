@@ -1,0 +1,27 @@
+.statistics {
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(30);
+  }
+}
+
+@include mq('xl') {
+  .statistics {
+    &__inner {
+      gap: rem(15);
+    }
+  }
+}
+
+@include mq('lg') {
+  .statistics {
+    &__block {
+      display: none;
+    }
+
+    &__inner {
+      display: block;
+    }
+  }
+}

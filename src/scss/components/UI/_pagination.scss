@@ -1,0 +1,27 @@
+.pagination {
+  &__list {
+    @include flex-v-center;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    @include flex-all-center;
+
+    border-radius: rem(8);
+    width: rem(40);
+    height: rem(40);
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 1.2;
+    color: var(--grey-4);
+    background-color: transparent;
+
+    &--active {
+      color: var(--black);
+      background-color: var(--blue-50);
+    }
+  }
+}

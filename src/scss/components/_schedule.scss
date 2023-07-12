@@ -1,0 +1,79 @@
+.schedule {
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr rem(420);
+    grid-template-rows: auto 1fr;
+    transition: 0.2s ease;
+    gap: rem(32) rem(30);
+  }
+
+  &__block {
+    &[data-tab-content='Курси'] {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    &[data-tab-content='Задачі'] {
+      grid-row: 1/3;
+    }
+
+    &[data-tab-content='Розклад уроків'] {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(32);
+    font-weight: 500;
+    font-style: normal;
+    font-size: rem(20);
+    line-height: 1.2;
+  }
+
+  &__link {
+    &--todo {
+      margin-right: 0;
+      margin-bottom: rem(38);
+      margin-left: auto;
+      width: fit-content;
+    }
+  }
+}
+
+.main.main--active {
+  .schedule {
+    &__inner {
+      grid-template-columns: 1fr rem(322);
+    }
+  }
+}
+
+@include mq('xl') {
+  .schedule {
+    &__inner {
+      grid-template-columns: 1fr rem(322);
+      gap: rem(30) rem(15);
+    }
+  }
+}
+
+@include mq('lg') {
+  .schedule {
+    &__title {
+      display: none;
+    }
+
+    &__block {
+      display: none;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__inner {
+      display: block;
+    }
+  }
+}
