@@ -143,7 +143,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     text-transform: uppercase;
-    transition: 0.1s ease;
+    transition: color 0.1s ease;
 
     @include hover {
       color: var(--blue-400);
@@ -164,7 +164,7 @@
     a {
       font-weight: 500;
       color: var(--grey-3);
-      transition: 0.1s ease;
+      transition: color 0.1s ease;
 
       @include hover {
         color: var(--blue-400);

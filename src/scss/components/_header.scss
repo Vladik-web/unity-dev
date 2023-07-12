@@ -373,7 +373,7 @@
       padding: rem(28) rem(15);
       width: rem(360);
       transform: translateX(100%);
-      transition: 0.5s var(--ease-in-out);
+      transition: transform 0.5s var(--ease-in-out);
     }
 
     &__avatar {
