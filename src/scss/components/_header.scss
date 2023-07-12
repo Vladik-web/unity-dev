@@ -357,11 +357,13 @@
       display: flex;
       justify-content: flex-end;
       height: var(--app-height);
+      visibility: hidden;
       transition: 0.2s ease;
       inset: 0;
 
       &--active {
         background-color: rgba(#000, 0.5);
+        visibility: visible;
       }
     }
 
