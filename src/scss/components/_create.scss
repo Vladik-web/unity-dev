@@ -43,6 +43,25 @@
         font-style: normal;
         font-size: rem(18);
         line-height: 1;
+
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(13),
+        &:nth-child(14),
+        &:nth-child(20),
+        &:nth-child(21),
+        &:nth-child(27),
+        &:nth-child(28),
+        &:nth-child(34),
+        &:nth-child(35),
+        &:nth-child(41),
+        &:nth-child(42) {
+          border-radius: rem(5);
+          color: var(--grey-3);
+          background-color: var(--blue-50);
+          opacity: 1;
+          pointer-events: none;
+        }
       }
 
       .calendar__days,

@@ -13,8 +13,10 @@ const todo = () => {
   const todoCalendar = todoEl?.querySelector('.todo__create')
   const cancelBtn = todoEl?.querySelector('#task-cancel')
   const saveBtn = todoEl?.querySelector('#task-save')
+  const todayBtn = todoEl?.querySelector('.create__icon-num')
 
   if (!todoEl) return null
+  todayBtn.textContent = new Date().getDate()
 
   const initCalendar = () => {
     const calendar = new Calendar({

@@ -38,6 +38,7 @@
   &__top {
     @include flex-all-sb;
 
+    flex-wrap: wrap;
     margin-bottom: rem(20);
     gap: rem(20);
   }

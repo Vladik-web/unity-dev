@@ -131,14 +131,58 @@
     gap: rem(10);
   }
 
-  &--active {
+  &--small {
+    padding: 0;
+    width: fit-content;
+
+    &:not(.select--active) {
+      .select__top {
+        @include hover {
+          background-color: transparent;
+        }
+      }
+    }
+
     .select {
-      &__top-svg {
-        transform: scale(1, -1);
+      &__top {
+        padding: 0;
+        background-color: transparent;
+        gap: rem(5);
+
+        &-svg {
+          width: rem(16);
+          height: rem(16);
+          transform: scale(1, -1);
+        }
       }
 
+      &__value {
+        font-weight: 500;
+        font-style: normal;
+        font-size: rem(16);
+        line-height: 1.2;
+        color: var(--blue-400);
+      }
+    }
+
+    &.select--active {
+      .select__top {
+        border-color: transparent;
+      }
+      .select__top-svg {
+        transform: scale(1, 1);
+      }
+    }
+  }
+
+  &--active {
+    .select {
       &__top {
         border-color: var(--blue-400);
+
+        &-svg {
+          transform: scale(1, -1);
+        }
       }
 
       &__bottom {

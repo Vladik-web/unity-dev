@@ -1,12 +1,15 @@
 import { debounce } from '../utils/debounce.js'
 import breakpoints from '../utils/breakpoints.js'
 import { enablePageScroll, disablePageScroll } from 'scroll-lock'
+
 const table = () => {
   const tableEl = document.querySelectorAll('.marks-table__table')
   const modal = document.querySelector('.marks-table__lesson')
   const overlay = document.querySelector('.marks-table__overlay')
 
   const marks = document.querySelectorAll('.table__marks')
+
+  if (!tableEl.length || !modal || !overlay || !marks.length) return
 
   const init = () => {
     if (window.matchMedia(breakpoints.lg).matches) {
