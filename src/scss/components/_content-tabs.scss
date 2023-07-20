@@ -70,7 +70,8 @@
     }
   }
 
-  &--big {
+  &--big,
+  &--static {
     position: relative;
     display: flex;
     align-items: center;
@@ -109,6 +110,32 @@
       }
     }
   }
+
+  &--small {
+    display: flex;
+    margin: 0;
+
+    .content-tabs {
+      &__list {
+        gap: rem(9);
+      }
+
+      &__btn {
+        color: var(--grey-4);
+
+        &--active {
+          color: var(--blue-400);
+        }
+      }
+
+      &__list,
+      &__item {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+      }
+    }
+  }
 }
 
 @include mq('xl') {
@@ -129,6 +156,13 @@
 
     &__print {
       display: none;
+    }
+
+    &--static {
+      .content-tabs__btn {
+        font-weight: 500;
+        font-size: rem(14);
+      }
     }
 
     &--big {

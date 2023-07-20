@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr rem(420);
     grid-template-rows: auto 1fr;
-    transition: 0.2s ease;
+    transition: grid-template-columns 0.2s ease;
     gap: rem(32) rem(30);
   }
 

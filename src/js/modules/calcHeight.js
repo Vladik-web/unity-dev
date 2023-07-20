@@ -1,3 +1,5 @@
+import { debounce } from '../utils/debounce.js'
+
 const calcHeight = () => {
   const calculateHeight = () => {
     document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
@@ -5,7 +7,7 @@ const calcHeight = () => {
 
   calculateHeight()
 
-  window.addEventListener('resize', calculateHeight)
+  window.addEventListener('resize', debounce(calculateHeight))
 }
 
 export default calcHeight

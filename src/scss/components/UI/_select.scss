@@ -14,6 +14,37 @@
     transition: 0.2s ease;
   }
 
+  &__wrapper {
+    border: rem(1) solid var(--grey-6);
+    border-radius: var(--br);
+    padding: rem(12) 0;
+    background-color: var(--white);
+  }
+
+  &__list {
+    padding: 0 rem(4);
+    max-height: rem(183);
+  }
+
+  &__item {
+    padding: rem(4) rem(12);
+    font-weight: 400;
+    font-style: normal;
+    font-size: rem(14);
+    line-height: 1.2;
+    color: var(--grey-3);
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+
+    &--chosen {
+      color: var(--blue-400);
+    }
+
+    @include hover {
+      background-color: var(--blue-50);
+    }
+  }
+
   &__times {
     text-align: center;
   }

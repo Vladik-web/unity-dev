@@ -16,3 +16,15 @@
     @include mb(rem(12));
   }
 }
+
+@include mq('lg') {
+  .subjects {
+    &__inner {
+      display: block;
+    }
+
+    &__left {
+      margin-bottom: rem(40);
+    }
+  }
+}

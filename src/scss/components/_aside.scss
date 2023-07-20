@@ -67,13 +67,12 @@
 
   &--static {
     flex-shrink: 0;
-    width: rem(80);
+    width: rem(60);
     transition: none;
 
     .aside {
       &__top {
-        border-bottom: 0.0625rem solid #e0e0e0;
-        padding-bottom: 1.25rem;
+        margin-bottom: rem(0);
       }
 
       &__logo {
@@ -154,6 +153,7 @@
   .aside {
     position: unset;
     width: 100%;
+    transition: none;
 
     &__btn {
       display: none;
@@ -220,6 +220,17 @@
         &__top-path--hide {
           opacity: 0;
         }
+      }
+
+      .nav__item {
+        width: rem(65);
+        height: rem(65);
+      }
+
+      .nav__link {
+        padding: 0;
+        width: rem(45);
+        height: rem(45);
       }
     }
   }

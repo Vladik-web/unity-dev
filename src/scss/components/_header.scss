@@ -302,6 +302,10 @@
   .header {
     margin: 0;
 
+    &__content-tabs.content-tabs {
+      display: none;
+    }
+
     &__manual {
       display: none;
     }
@@ -370,7 +374,6 @@
       border-radius: 0;
       padding: rem(28) rem(15);
       width: rem(360);
-      visibility: unset;
       transform: translateX(100%);
       transition: 0.5s var(--ease-in-out);
     }

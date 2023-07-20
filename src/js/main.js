@@ -13,6 +13,8 @@ import todo from './modules/todo'
 import btnUp from './modules/btn-up'
 import editor from './modules/editor'
 import maintenance from './modules/maintenance'
+import graph from './modules/graph'
+import table from './modules/table'
 
 window.addEventListener('DOMContentLoaded', () => {
   try {
@@ -34,4 +36,6 @@ window.addEventListener('DOMContentLoaded', () => {
   btnUp()
   editor()
   maintenance()
+  graph()
+  table()
 })

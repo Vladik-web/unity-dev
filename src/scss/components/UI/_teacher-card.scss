@@ -1,7 +1,7 @@
 .teacher-card {
   border: rem(1) solid var(--grey-5);
   border-radius: rem(10);
-  padding: rem(15) rem(11);
+  padding: rem(16) rem(12);
   min-height: 0;
   background-color: var(--white);
 
@@ -53,6 +53,15 @@
   &__name {
     margin-bottom: rem(8);
   }
+
+  &--big {
+    .teacher-card {
+      &__top {
+        flex-direction: row;
+        margin-bottom: rem(12);
+      }
+    }
+  }
 }
 
 @include mq('lg') {
@@ -66,6 +75,10 @@
     &__status {
       margin: 0;
       font-size: rem(13);
+    }
+
+    &--big {
+      padding: rem(16);
     }
   }
 }

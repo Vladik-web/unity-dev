@@ -19,7 +19,7 @@ const accordion = () => {
       }
 
       btnEl.addEventListener('click', () => {
-        contentElement.classList.toggle(activeClass)
+        // contentElement.classList.toggle(activeClass)
 
         if (contentElement.style.maxHeight) {
           contentElement.style.maxHeight = null
@@ -52,5 +52,6 @@ const accordion = () => {
     'lesson-section__inner--active',
     'інформацію про предмет'
   )
+  bindAccordion('.subject__plan.plan', '.plan__top', '.plan__bottom', 'plan--active', 'розділ')
 }
 export default accordion

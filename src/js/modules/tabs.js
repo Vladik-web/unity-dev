@@ -1,6 +1,7 @@
 import breakpoints from '../utils/breakpoints'
+
 const tabs = () => {
-  const bindTabs = (buttons, content, activeClass) => {
+  const bindTabs = (buttons, content, activeClass, attrContent = 'data-tab-content') => {
     const tabsElements = document.querySelectorAll(buttons)
     const contentElements = document.querySelectorAll(content)
 
@@ -14,7 +15,7 @@ const tabs = () => {
 
     const setActiveContent = value => {
       contentElements.forEach(item => {
-        if (item.dataset.tabContent === value) {
+        if (item.getAttribute(attrContent) === value) {
           item.style.display = 'block'
         }
       })
@@ -29,12 +30,12 @@ const tabs = () => {
     tabsElements.forEach(tab => {
       if (tab.classList.contains(activeClass)) {
         clearContent()
-        setActiveContent(tab.dataset.tab)
+        setActiveContent(tab.getAttribute(`data-tab`))
         setActiveTab(tab)
       }
       tab.addEventListener('click', () => {
         clearContent()
-        setActiveContent(tab.dataset.tab)
+        setActiveContent(tab.getAttribute(`data-tab`))
         setActiveTab(tab)
       })
     })
@@ -44,12 +45,17 @@ const tabs = () => {
     const itemEls = document.querySelectorAll(items)
     if (!itemEls.length) return null
 
-    itemEls.forEach(item => (item.style.display = 'unset'))
+    itemEls.forEach(item => (item.style.display = 'block'))
   }
 
   const lg = () => {
     if (window.matchMedia(breakpoints.lg).matches) {
       bindTabs('#main-tab .content-tabs__btn', '#main-content [data-tab-content]', 'content-tabs__btn--active')
+      bindTabs(
+        '.subject__mobile-tabs .content-tabs__btn',
+        '.subject__inner [data-tab-content]',
+        'content-tabs__btn--active'
+      )
     } else {
       resetContent('#main-content [data-tab-content]')
     }
@@ -62,6 +68,20 @@ const tabs = () => {
     '.lesson-section__content-tabs .content-tabs__btn',
     '.lesson-section__blocks [data-tab-content]',
     'content-tabs__btn--active'
+  )
+
+  bindTabs(
+    '.subject__content-tabs .content-tabs__btn',
+    '.subject__wrapper [data-tab-content-list]',
+    'content-tabs__btn--active',
+    'data-tab-content-list'
+  )
+
+  bindTabs(
+    '.marks-table__content-tabs .content-tabs__btn',
+    '.marks-table__bottom [data-tab-table]',
+    'content-tabs__btn--active',
+    'data-tab-table'
   )
 }
 

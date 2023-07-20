@@ -1,4 +1,5 @@
 .statistics-block {
+  flex: 1 1;
   border-radius: rem(10);
   padding: rem(20);
   background-color: var(--blue-50);
@@ -38,6 +39,12 @@
     @include flex-all-sb;
 
     margin-bottom: rem(20);
+    gap: rem(20);
+  }
+
+  &__left {
+    @include flex-v-center;
+
     gap: rem(20);
   }
 

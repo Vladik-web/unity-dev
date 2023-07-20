@@ -1,0 +1,92 @@
+.marks-table {
+  &__inner {
+  }
+
+  &__top {
+    margin-bottom: rem(30);
+  }
+
+  &__left {
+    @include flex-v-center;
+
+    gap: rem(20);
+  }
+
+  &__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: rem(24);
+    line-height: normal;
+  }
+
+  &__bottom {
+    position: relative;
+    margin-bottom: rem(150);
+  }
+
+  &__lesson {
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s ease;
+
+    &--hide {
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.9);
+    }
+
+    &--show {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+}
+
+@include mq('lg') {
+  .marks-table {
+    &__overlay {
+      position: fixed;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      height: var(--app-height);
+      background-color: transparent;
+      opacity: 0;
+      transition: background-color 0.2s ease, opacity 0.2s ease;
+      pointer-events: none;
+      inset: 0;
+
+      &--active {
+        background-color: rgba(var(--black--rgb), 0.5);
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    &__lesson {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(100%);
+
+      &--show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+@include mq('lg') {
+  .marks-table {
+    &__bottom {
+      margin-bottom: rem(0);
+    }
+  }
+}

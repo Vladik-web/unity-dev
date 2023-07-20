@@ -40,6 +40,10 @@
 @import 'components/ui/pagination';
 @import 'components/ui/editor';
 @import 'components/ui/subject-card';
+@import 'components/ui/plan';
+@import 'components/ui/types';
+@import 'components/ui/material-card';
+@import 'components/ui/table';
 
 // 6. All Components
 @import 'components/header';
@@ -61,4 +65,7 @@
 @import 'components/lesson-section';
 @import 'components/maintenance';
 @import 'components/subjects';
+@import 'components/subject';
+@import 'components/graph';
+@import 'components/marks-table';
 @import 'components/footer';
