@@ -5829,6 +5829,53 @@ body .simplebar-scrollbar::before {
   background-color: var(--grey-4);
 }
 
+.stepper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.stepper__value {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+
+.stepper__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: 1.625rem;
+  height: 1.625rem;
+  -webkit-box-shadow: 0 0.125rem 0.5rem 0 rgba(101, 122, 239, 0.1);
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(101, 122, 239, 0.1);
+  background: var(--blue-100);
+}
+
+.stepper__button-svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: #4f4f4f;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.125rem;
+}
+
 .header__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5883,6 +5930,10 @@ body .simplebar-scrollbar::before {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.header__schedule-tabs {
+  margin-right: 1.25rem;
 }
 
 .header__inner {
@@ -8818,6 +8869,35 @@ body .simplebar-scrollbar::before {
   transform: scale(1);
 }
 
+.schedule-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.schedule-tabs__button {
+  border: 0.0625rem solid var(--grey-4);
+  border-radius: var(--br);
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--grey-4);
+  -webkit-transition: border-color 0.2s ease, color 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.schedule-tabs__button--active {
+  border-color: var(--blue-400);
+  color: var(--blue-400);
+  pointer-events: none;
+}
+
 .footer {
   background-color: var(--blue-100);
 }
@@ -10818,5 +10898,10 @@ body .simplebar-scrollbar::before {
 
   .lesson-section__back:hover .lesson-section__back-svg {
     fill: var(--blue-500);
+  }
+
+  .schedule-tabs__button:not(.schedule-tabs__button--active):hover {
+    border-color: var(--blue-300);
+    color: var(--blue-300);
   }
 }

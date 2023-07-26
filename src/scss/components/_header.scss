@@ -37,6 +37,10 @@
     @include flex-v-center;
   }
 
+  &__schedule-tabs {
+    margin-right: rem(20);
+  }
+
   &__inner {
     @include flex-all-sb;
 
