@@ -4,12 +4,10 @@ import { enablePageScroll, disablePageScroll } from 'scroll-lock'
 
 const table = () => {
   const tableEl = document.querySelectorAll('.marks-table__table')
-  const modal = document.querySelector('.marks-table__lesson')
-  const overlay = document.querySelector('.marks-table__overlay')
-
+  const modal = document.querySelector('.lesson-modal')
   const marks = document.querySelectorAll('.table__marks')
 
-  if (!tableEl.length || !modal || !overlay || !marks.length) return
+  if (!tableEl.length || !modal || !marks.length) return
 
   const init = () => {
     if (window.matchMedia(breakpoints.lg).matches) {
@@ -20,23 +18,20 @@ const table = () => {
 
         marksLi.forEach(li => {
           li.addEventListener('click', () => {
-            if (item.classList.contains('marks-table__lesson--show')) {
-              modal.classList.remove('marks-table__lesson--show')
-              overlay.classList.remove('marks-table__overlay--active')
+            if (item.classList.contains('lesson-modal--active')) {
+              modal.classList.remove('lesson-modal--active')
               enablePageScroll()
             } else {
-              modal.classList.add('marks-table__lesson--show')
-              overlay.classList.add('marks-table__overlay--active')
+              modal.classList.add('lesson-modal--active')
               disablePageScroll()
             }
           })
         })
       })
 
-      overlay.addEventListener('click', e => {
-        if (!e.target.closest('.marks-table__lesson')) {
-          modal.classList.remove('marks-table__lesson--show')
-          overlay.classList.remove('marks-table__overlay--active')
+      modal.addEventListener('click', e => {
+        if (!e.target.closest('.lesson-modal__content')) {
+          modal.classList.remove('lesson-modal--active')
           enablePageScroll()
         }
       })

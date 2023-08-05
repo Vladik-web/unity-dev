@@ -182,7 +182,7 @@
       }
 
       &__counter {
-        border-radius: var(--br);
+        border-radius: rem(5);
         padding: rem(8) rem(6);
         max-height: rem(141);
       }

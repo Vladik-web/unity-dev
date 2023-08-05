@@ -46,6 +46,10 @@
 @import 'components/ui/table';
 @import 'components/ui/date';
 @import 'components/ui/stepper';
+@import 'components/ui/lesson-card';
+@import 'components/ui/lesson-label';
+@import 'components/ui/lessons-schedule';
+@import 'components/ui/lesson-modal';
 
 // 6. All Components
 @import 'components/header';
@@ -71,4 +75,5 @@
 @import 'components/graph';
 @import 'components/marks-table';
 @import 'components/schedule-tabs';
+@import 'components/schedule-table';
 @import 'components/footer';

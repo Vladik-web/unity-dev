@@ -46,6 +46,8 @@ const innerBarText = {
 
 const graph = () => {
   const ctx = document.getElementById('graph')
+
+  if (!ctx) return
   new Chart(ctx, {
     type: 'bar',
     plugins: [ChartDataLabels, innerBarText],

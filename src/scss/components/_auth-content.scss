@@ -47,7 +47,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: rem(60);
-    border-radius: var(--br);
+    border-radius: rem(5);
     padding: rem(20);
     background-color: var(--orange-50);
     gap: rem(30);
@@ -172,7 +172,7 @@
 
     margin-bottom: rem(20);
     border: rem(2) dashed var(--blue-50);
-    border-radius: var(--br);
+    border-radius: rem(5);
     padding: rem(28) rem(38);
     gap: rem(10);
 

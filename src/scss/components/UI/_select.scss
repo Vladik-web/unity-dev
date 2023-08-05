@@ -16,7 +16,7 @@
 
   &__wrapper {
     border: rem(1) solid var(--grey-6);
-    border-radius: var(--br);
+    border-radius: rem(5);
     padding: rem(12) 0;
     background-color: var(--white);
   }
@@ -77,7 +77,7 @@
     @include flex-all-sb;
 
     border: rem(1) solid transparent;
-    border-radius: var(--br);
+    border-radius: rem(5);
     padding: rem(7) rem(15);
     background-color: var(--blue-50);
     transition: 0.1s var(--ease-out);
@@ -131,6 +131,27 @@
     gap: rem(10);
   }
 
+  &--border {
+    .select {
+      &__top {
+        border: rem(1) solid var(--blue-400);
+        font-weight: 500;
+        font-size: rem(16);
+        background-color: transparent;
+        gap: rem(9);
+      }
+
+      &__value {
+        color: var(--blue-400);
+      }
+
+      &__wrapper {
+        border: none;
+        box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 13%);
+      }
+    }
+  }
+
   &--small {
     padding: 0;
     width: fit-content;
@@ -169,6 +190,7 @@
       .select__top {
         border-color: transparent;
       }
+
       .select__top-svg {
         transform: scale(1, 1);
       }

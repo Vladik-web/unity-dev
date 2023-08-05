@@ -1,0 +1,104 @@
+.lessons-schedule {
+  @include flex-v-center;
+
+  position: relative;
+  flex-direction: column;
+  padding: rem(8) rem(10);
+  height: rem(165);
+  min-width: 0;
+  cursor: pointer;
+  gap: rem(5);
+
+  &__date {
+    @include flex-all-center;
+
+    flex-shrink: 0;
+    width: rem(28);
+    height: rem(28);
+    font-weight: 500;
+    font-style: normal;
+    font-size: rem(14);
+    line-height: 1.2;
+    color: var(--black);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: rem(2);
+  }
+
+  &__more {
+    @include flex-all-center;
+
+    margin-top: auto;
+    margin-bottom: 0;
+    border: rem(1) solid #eef4ff;
+    border-radius: rem(2);
+    padding: rem(2);
+    width: 100%;
+    font-weight: 500;
+    font-size: rem(13);
+  }
+
+  &__label {
+    width: 100%;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__modal {
+    position: absolute;
+    left: 90%;
+    top: rem(68);
+    z-index: var(--ui-index-5);
+    border: rem(1) solid #eef4ff;
+    border-radius: rem(5);
+    padding: rem(8);
+    width: rem(176);
+    box-shadow: 0 2px 8px 0 rgba(101, 122, 239, 10%);
+    background-color: var(--white);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.9);
+    transition: 0.2s ease;
+  }
+
+  &__time {
+    display: block;
+    margin-bottom: rem(8);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: rem(14);
+    line-height: normal;
+    text-align: center;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: rem(5);
+      border-bottom: rem(1) solid var(--grey-4);
+      padding-bottom: rem(5);
+    }
+
+    &:last-child {
+      margin-bottom: rem(8);
+    }
+  }
+
+  @include hover {
+    .lessons-schedule__modal {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+}

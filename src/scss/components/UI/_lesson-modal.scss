@@ -1,0 +1,179 @@
+.lesson-modal {
+  &__content {
+    border-radius: rem(10);
+    padding: rem(20);
+    width: rem(400);
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 13%);
+    background-color: var(--white);
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(12);
+    border-radius: rem(5);
+    padding: rem(8) rem(12);
+    background-color: var(--bg);
+    gap: rem(10);
+  }
+
+  &__text {
+    a {
+      font-weight: 500;
+      color: var(--grey-3);
+      transition: color 0.1s ease;
+
+      @include hover {
+        color: var(--blue-400);
+      }
+    }
+  }
+
+  &__head {
+    @include flex-all-sb;
+  }
+
+  &__num {
+    @include flex-v-center;
+
+    font-weight: 500;
+    font-style: normal;
+    font-size: rem(13);
+    color: var(--grey-3);
+    gap: rem(8);
+
+    span {
+      font-size: rem(14);
+      color: var(--orange-500);
+    }
+  }
+
+  &__date {
+    font-weight: 500;
+    font-style: normal;
+    font-size: rem(13);
+    line-height: 1.2;
+    color: var(--grey-3);
+  }
+
+  &__name {
+    overflow: hidden;
+    max-width: rem(233);
+    font-weight: 500;
+    font-style: normal;
+    font-size: rem(14);
+    line-height: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    transition: color 0.1s ease;
+  }
+
+  &__bottom {
+    display: flex;
+    margin-bottom: rem(12);
+    gap: rem(12);
+  }
+
+  &__mark {
+    position: absolute;
+    left: 0;
+    bottom: rem(4);
+    z-index: var(--ui-index-1);
+    border-radius: 0 rem(2) rem(2) 0;
+    padding: rem(2) rem(8);
+    width: fit-content;
+    font-weight: 500;
+    font-size: rem(14);
+    color: var(--white);
+    background-color: var(--orange-400);
+  }
+
+  &__image {
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: rem(5);
+    width: rem(60);
+    height: rem(60);
+
+    img {
+      @include fill-image(cover);
+    }
+  }
+}
+
+@include mq('lg') {
+  .lesson-modal {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden auto;
+    height: var(--app-height);
+    background-color: transparent;
+    opacity: 0;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+    pointer-events: none;
+    inset: 0;
+
+    &__content {
+      position: relative;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      padding: rem(62) rem(15) rem(40);
+      width: 100%;
+      transform: translateY(100%);
+      transition: 0.3s ease;
+    }
+
+    &__top {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: rem(10);
+    }
+
+    &__subject {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    &__num {
+      position: absolute;
+      left: 50%;
+      top: rem(20);
+      font-weight: 700;
+      font-style: normal;
+      font-size: rem(16);
+      line-height: 1.3;
+      transform: translateX(-50%);
+
+      span {
+        font-weight: 700;
+        font-style: normal;
+        font-size: rem(18);
+        line-height: 1.2;
+      }
+    }
+
+    &__link {
+      width: 100%;
+
+      &.btn {
+        width: 100%;
+      }
+    }
+
+    &--active {
+      background-color: rgba(var(--black--rgb), 0.5);
+      opacity: 1;
+      pointer-events: all;
+
+      .lesson-modal__content {
+        transform: translate(0);
+      }
+    }
+  }
+}

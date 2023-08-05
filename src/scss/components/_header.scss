@@ -21,7 +21,7 @@
   &__manual {
     @include flex-all-center;
 
-    border-radius: var(--br);
+    border-radius: rem(5);
     width: rem(32);
     height: rem(32);
     background-color: var(--bg);
@@ -172,6 +172,10 @@
     padding-top: rem(16);
   }
 
+  &__select {
+    display: none;
+  }
+
   &__lang {
     @include flex-all-center;
 
@@ -188,13 +192,13 @@
     background-color: var(--white);
 
     &:first-child {
-      border-top-left-radius: var(--br);
-      border-bottom-left-radius: var(--br);
+      border-top-left-radius: rem(5);
+      border-bottom-left-radius: rem(5);
     }
 
     &:last-child {
-      border-top-right-radius: var(--br);
-      border-bottom-right-radius: var(--br);
+      border-top-right-radius: rem(5);
+      border-bottom-right-radius: rem(5);
     }
 
     &--active {
@@ -208,6 +212,7 @@
     @include flex-v-center;
 
     padding: rem(4) rem(12);
+    width: 100%;
     line-height: 1;
     transition: background-color 0.1s ease;
     gap: rem(10);
@@ -313,6 +318,10 @@
 @include mq('lg') {
   .header {
     margin: 0;
+
+    &__select {
+      display: flex;
+    }
 
     &__content-tabs.content-tabs {
       display: none;
@@ -441,6 +450,30 @@
 
         &__right {
           display: none;
+        }
+      }
+    }
+
+    &--schedule {
+      .header__schedule-tabs {
+        display: none;
+        margin: 0;
+      }
+
+      .header {
+        &__inner {
+          align-items: flex-start;
+        }
+
+        &__right {
+          flex-direction: column-reverse;
+          align-items: flex-end;
+          gap: rem(18);
+        }
+
+        &__left {
+          flex-direction: column;
+          align-items: flex-start;
         }
       }
     }

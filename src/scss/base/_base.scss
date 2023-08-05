@@ -16,6 +16,8 @@ body {
   height: 100%;
   min-width: 375px;
   scroll-behavior: smooth;
+
+  // scrollbar-gutter: stable;
 }
 
 svg {
@@ -62,9 +64,16 @@ body {
 
   .simplebar-scrollbar::before {
     right: 0;
+    top: 0;
+    bottom: 0;
     width: rem(3);
     background-color: var(--blue-300);
     opacity: 1 !important;
+  }
+
+  .simplebar-height-auto-observer,
+  .simplebar-track {
+    pointer-events: unset;
   }
 }
 

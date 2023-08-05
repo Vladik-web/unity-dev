@@ -15,6 +15,7 @@ import editor from './modules/editor'
 import maintenance from './modules/maintenance'
 import graph from './modules/graph'
 import table from './modules/table'
+import calendar from './modules/calendar'
 
 window.addEventListener('DOMContentLoaded', () => {
   try {
@@ -38,4 +39,5 @@ window.addEventListener('DOMContentLoaded', () => {
   maintenance()
   graph()
   table()
+  calendar()
 })

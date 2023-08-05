@@ -17,7 +17,7 @@ const html = () => {
             title: 'HTML',
             message: error.message
           }))
-        })
+			})
       )
       .pipe(fileInclude())
       // .pipe(webpHTML())

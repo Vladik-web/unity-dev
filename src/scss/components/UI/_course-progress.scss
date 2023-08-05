@@ -3,7 +3,7 @@
 
   align-items: stretch;
   border: rem(1) solid var(--blue-200);
-  border-radius: var(--br);
+  border-radius: rem(5);
   padding: rem(15);
   width: 100%;
   min-width: 0;
@@ -14,7 +14,7 @@
   &__image {
     flex-shrink: 0;
     overflow: hidden;
-    border-radius: var(--br);
+    border-radius: rem(5);
     width: rem(44);
     height: rem(44);
 
