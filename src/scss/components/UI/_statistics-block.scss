@@ -2,6 +2,7 @@
   flex: 1 1;
   border-radius: rem(10);
   padding: rem(20);
+  min-width: 0;
   background-color: var(--blue-50);
 
   &__empty {

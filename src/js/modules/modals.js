@@ -46,6 +46,11 @@ const modals = () => {
   bindModal('.btn-3', '.check-email')
   bindModal('.btn-4', '.create-new-password')
   bindModal('.btn-5', '.upload')
+  bindModal('.btn-6', '.deposit')
+  bindModal('.btn-7', '.thanks')
+  bindModal('.btn-8', '.error')
+  bindModal('.btn-9', '.change-photo')
+  bindModal('.btn-10', '.rotate')
 
   // main
   bindModal('#upload-homework', '.upload')

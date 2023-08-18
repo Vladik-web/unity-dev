@@ -131,6 +131,44 @@
     gap: rem(10);
   }
 
+  &--children {
+    .select {
+      &__top {
+        gap: rem(8);
+      }
+
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: rem(8);
+
+        .select__value {
+          flex: 1 1 auto;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+
+      &__value {
+        font-weight: 500;
+        font-style: normal;
+        font-size: rem(16);
+        line-height: 1.2;
+        color: var(--black);
+      }
+
+      &__image {
+        @include fill-image(cover);
+
+        flex-shrink: 0;
+        border-radius: 50%;
+        width: rem(24);
+        height: rem(24);
+      }
+    }
+  }
+
   &--border {
     .select {
       &__top {

@@ -5,6 +5,10 @@
     gap: rem(20);
   }
 
+  &__children {
+    margin-right: rem(20);
+  }
+
   &__back {
     display: none;
     width: rem(24);
@@ -115,13 +119,18 @@
   }
 
   &__avatar {
-    overflow: hidden;
-    border-radius: 50%;
-    width: rem(34);
-    height: rem(34);
+    position: relative;
 
-    img {
+    &-image {
       @include fill-image(cover);
+
+      border-radius: 50%;
+      width: rem(34);
+      height: rem(34);
+    }
+
+    &-child {
+      display: none;
     }
   }
 
@@ -136,7 +145,8 @@
     &--active {
       visibility: unset;
 
-      .header__info {
+      .header__info,
+      .header__ntf {
         opacity: 1;
         visibility: unset;
         transform: translate(0);
@@ -287,6 +297,10 @@
     gap: rem(8);
   }
 
+  &__children-list {
+    display: none;
+  }
+
   &--lesson {
     .header {
       &__inner {
@@ -318,6 +332,70 @@
 @include mq('lg') {
   .header {
     margin: 0;
+
+    &__avatar {
+      &-image {
+        margin-right: 0;
+        margin-left: auto;
+        width: rem(30);
+        height: rem(30);
+      }
+
+      &-child {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        border-radius: 50%;
+        width: rem(22);
+        height: rem(22);
+      }
+    }
+
+    &__children {
+      display: none;
+    }
+
+    &__children-list {
+      display: block;
+      margin-bottom: rem(28);
+      border-bottom: rem(1) solid var(--grey-6);
+      padding-bottom: rem(28);
+    }
+
+    &__child {
+      @include flex-v-center;
+      @include mb(rem(28));
+
+      cursor: pointer;
+      gap: rem(10);
+
+      img {
+        @include fill-image(cover);
+
+        flex-shrink: 0;
+        border-radius: 50%;
+        width: rem(30);
+        height: rem(30);
+      }
+
+      span {
+        overflow: hidden;
+        font-weight: 500;
+        font-style: normal;
+        font-size: rem(18);
+        line-height: 1.2;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: var(--grey-3);
+      }
+
+      &--active {
+        span {
+          color: var(--blue-400);
+        }
+      }
+    }
 
     &__select {
       display: flex;
@@ -405,11 +483,6 @@
       transition: 0.5s var(--ease-in-out);
     }
 
-    &__avatar {
-      width: rem(30);
-      height: rem(30);
-    }
-
     &__buttons {
       display: none;
     }
@@ -424,6 +497,12 @@
 
     &__back {
       display: flex;
+    }
+
+    &--parent {
+      .header__avatar {
+        width: rem(44);
+      }
     }
 
     &--lesson {

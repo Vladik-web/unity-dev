@@ -7,6 +7,26 @@
     gap: rem(32) rem(30);
   }
 
+  &__left {
+    flex: 1 1 auto;
+
+    .schedule__block {
+      @include mb(rem(32));
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex: 0 0 rem(322);
+    flex-direction: column;
+    min-width: 0;
+    gap: rem(20);
+
+    .schedule__todo {
+      padding-top: rem(50);
+    }
+  }
+
   &__block {
     &[data-tab-content='Курси'] {
       grid-column: 1/2;
@@ -204,6 +224,13 @@
     }
   }
 
+  &--parent {
+    .schedule__inner {
+      display: flex;
+      gap: rem(32) rem(30);
+    }
+  }
+
   &--new {
     .schedule__block[data-tab-content='Задачі'] {
       grid-row: 2/3;
@@ -249,6 +276,10 @@
       font-size: rem(16);
     }
 
+    .schedule__right .schedule__todo {
+      padding: 0;
+    }
+
     &__block {
       display: none;
     }
@@ -259,6 +290,12 @@
 
     &__inner {
       display: block;
+    }
+
+    &--parent {
+      .schedule__inner {
+        display: block;
+      }
     }
   }
 }

@@ -15,7 +15,7 @@ const todo = () => {
   const saveBtn = todoEl?.querySelector('#task-save')
   const todayBtn = todoEl?.querySelector('.create__icon-num')
 
-  if (!todoEl) return null
+  if (!todoEl || !todayBtn) return null
   todayBtn.textContent = new Date().getDate()
 
   const initCalendar = () => {

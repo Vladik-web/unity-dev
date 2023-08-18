@@ -57,14 +57,13 @@
   }
 
   &__lesson {
-    position: absolute;
-    z-index: 10;
     transition: all 0.2s ease;
   }
 
   &__top {
     position: sticky;
     top: 0;
+    z-index: 2;
     padding-bottom: rem(10);
     min-width: rem(1330);
     background-color: var(--white);
@@ -265,12 +264,13 @@
     }
 
     &--week {
-      .schedule-table__block {
-        position: relative;
-
-        // margin-right: rem(-15);
-        // margin-left: rem(-15);
-        padding: 0 rem(15);
+      .schedule-table {
+        &__block {
+          position: relative;
+          margin-right: rem(-15);
+          margin-left: rem(-15);
+          padding: 0 rem(15);
+        }
       }
     }
 
@@ -306,6 +306,14 @@
           border: rem(1) solid #eef4ff;
           border-radius: rem(5);
           gap: rem(5);
+        }
+      }
+    }
+
+    &--month {
+      .schedule-table {
+        &__block {
+          overflow: unset;
         }
       }
     }

@@ -50,3 +50,15 @@ $colors: (
     }
   }
 }
+
+@include mq('lg') {
+  .lesson-label {
+    &__time {
+      display: none;
+    }
+
+    span {
+      text-overflow: unset;
+    }
+  }
+}

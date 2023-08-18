@@ -11,14 +11,14 @@
 <link rel="stylesheet" href="css/main.min.css">
 
 <script src="js/main.js" defer="defer"></script>
-<title>Мої предмети</title>
+<title>Мої дані</title>
 
     <meta property="og:title" content="Title">
     <meta property="og:url" content="url">
     <meta property="og:image" content="img/favicon/favicon.svg">
   </head>
   <body class="body-mob-fixed">
-    <div class="base-layout">
+    <div class="lesson-layout">
       <aside class="aside aside--main aside--hide">
   <div class="aside__wrapper">
     <button class="aside__btn" id="aside-btn">
@@ -208,11 +208,11 @@
 </aside>
 
       <main class="main">
-        <header class="header">
+        <header class="header header--parent">
           <div class="header__container container">
             <div class="header__inner">
               <div class="header__left">
-                <h2 class="header__title">Мої предмети</h2>
+                <h2 class="header__title">Мої дані</h2>
               </div>
               <div class="header__right">
                 <div class="header__time">
@@ -292,148 +292,271 @@
 
         <div class="content">
           <div class="content__container container">
-            <section class="subjects">
-              <div class="subjects__inner">
-                <div class="subjects__left">
-                  <ul class="subjects__list">
-                    <li class="subjects__item">
-                      <a href="#" class="subjects__subject-card subject-card subject-card--purple">
-                        <div class="subject-card__left">
-                          <h2 class="subject-card__title">Математика</h2>
-                          <div class="subject-card__info">
-                            <div class="subject-card__teacher teacher">
-                              <div class="teacher__img">
-                                <img src="https://picsum.photos/200/300" alt="">
-                              </div>
-                              Бондар Олег Михайлович
-                            </div>
-                            <div class="subject-card__marks">
-                              <div class="subject-card__mark">Прогнозована оцінка: <span>8</span></div>
-                              <div class="subject-card__mark">Відвідуваність: <span>80% (8/10)</span></div>
-                            </div>
-                          </div>
-                          <p class="subject-card__description">
-                            Під час вивчення онлайн-курсу з алгебри для 8-го класу учні ознайомляться з квадратними
-                            коренями та ірраціональними числами. Цей курс покаже приклади застосування властивостей
-                            квадратних коренів при розв’язуванні різних типів задач.
-                          </p>
-                        </div>
-                        <svg class="subject-card__icon">
-                          <use xlink:href="img/sprite.svg#math"></use>
-                        </svg>
-                      </a>
+            <section class="personal-cabinet">
+              <div class="personal-cabinet__inner">
+                <div class="personal-cabinet__avatar load-avatar">
+                  <label for="avatar" class="load-avatar__label">
+                    <div class="load-avatar__image">
+                      <svg class="load-avatar__image-svg">
+                        <use xlink:href="img/sprite.svg#avatar-image"></use>
+                      </svg>
+                    </div>
+                    <span class="load-avatar__add">Додати фото</span>
+                    <input type="file" id="avatar" hidden="" accept="image/png, image/jpeg">
+                  </label>
+                </div>
+                <div class="personal-cabinet__block">
+                  <ul class="personal-cabinet__list">
+                    <li class="personal-cabinet__item">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">Ім’я</span>
+                        <div class="personal-cabinet__line"></div>
+                        <span class="personal-cabinet__value">Олександра</span>
+                      </div>
                     </li>
-                    <li class="subjects__item">
-                      <a href="#" class="subjects__subject-card subject-card subject-card--blue">
-                        <div class="subject-card__left">
-                          <h2 class="subject-card__title">УКРАЇНСЬКА МОВА</h2>
-                          <div class="subject-card__info">
-                            <div class="subject-card__teacher teacher">
-                              <div class="teacher__img">
-                                <img src="https://picsum.photos/200/300" alt="">
-                              </div>
-                              Бондар Олег Михайлович
-                            </div>
-                            <div class="subject-card__marks">
-                              <div class="subject-card__mark">Прогнозована оцінка: <span>8</span></div>
-                              <div class="subject-card__mark">Відвідуваність: <span>80% (8/10)</span></div>
-                            </div>
-                          </div>
-                          <p class="subject-card__description">
-                            Під час вивчення онлайн-курсу з алгебри для 8-го класу учні ознайомляться з квадратними
-                            коренями та ірраціональними числами. Цей курс покаже приклади застосування властивостей
-                            квадратних коренів при розв’язуванні різних типів задач.
-                          </p>
-                        </div>
-                        <svg class="subject-card__icon">
-                          <use xlink:href="img/sprite.svg#guelder-rose"></use>
-                        </svg>
-                      </a>
+                    <li class="personal-cabinet__item">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">Призвіще</span>
+                        <div class="personal-cabinet__line"></div>
+                        <span class="personal-cabinet__value">Овчаренко</span>
+                      </div>
                     </li>
-                    <li class="subjects__item">
-                      <a href="#" class="subjects__subject-card subject-card subject-card--red">
-                        <div class="subject-card__left">
-                          <h2 class="subject-card__title">Фізкільтура</h2>
-                          <div class="subject-card__info">
-                            <div class="subject-card__teacher teacher">
-                              <div class="teacher__img">
-                                <img src="https://picsum.photos/200/300" alt="">
-                              </div>
-                              Бондар Олег Михайлович
-                            </div>
-                            <div class="subject-card__marks">
-                              <div class="subject-card__mark">Прогнозована оцінка: <span>8</span></div>
-                              <div class="subject-card__mark">Відвідуваність: <span>80% (8/10)</span></div>
-                            </div>
-                          </div>
-                          <p class="subject-card__description">
-                            Під час вивчення онлайн-курсу з алгебри для 8-го класу учні ознайомляться з квадратними
-                            коренями та ірраціональними числами. Цей курс покаже приклади застосування властивостей
-                            квадратних коренів при розв’язуванні різних типів задач.
-                          </p>
-                        </div>
-                        <svg class="subject-card__icon">
-                          <use xlink:href="img/sprite.svg#leg"></use>
-                        </svg>
-                      </a>
+                    <li class="personal-cabinet__item">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">По-батькові</span>
+                        <div class="personal-cabinet__line"></div>
+                        <span class="personal-cabinet__value">Ігоревна</span>
+                      </div>
                     </li>
-                    <li class="subjects__item">
-                      <a href="#" class="subjects__subject-card subject-card subject-card--green">
-                        <div class="subject-card__left">
-                          <h2 class="subject-card__title">Фізика</h2>
-                          <div class="subject-card__info">
-                            <div class="subject-card__teacher teacher">
-                              <div class="teacher__img">
-                                <img src="https://picsum.photos/200/300" alt="">
-                              </div>
-                              Бондар Олег Михайлович
-                            </div>
-                            <div class="subject-card__marks">
-                              <div class="subject-card__mark">Прогнозована оцінка: <span>8</span></div>
-                              <div class="subject-card__mark">Відвідуваність: <span>80% (8/10)</span></div>
-                            </div>
-                          </div>
-                          <p class="subject-card__description">
-                            Під час вивчення онлайн-курсу з алгебри для 8-го класу учні ознайомляться з квадратними
-                            коренями та ірраціональними числами. Цей курс покаже приклади застосування властивостей
-                            квадратних коренів при розв’язуванні різних типів задач.
-                          </p>
-                        </div>
-                        <svg class="subject-card__icon">
-                          <use xlink:href="img/sprite.svg#atom"></use>
-                        </svg>
-                      </a>
+                    <li class="personal-cabinet__item">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">Дата народження</span>
+                        <div class="personal-cabinet__line"></div>
+                        <time class="personal-cabinet__value">03.05.1990</time>
+                      </div>
                     </li>
-                    <li class="subjects__item">
-                      <a href="#" class="subjects__subject-card subject-card subject-card--orange">
-                        <div class="subject-card__left">
-                          <h2 class="subject-card__title">Біологія</h2>
-                          <div class="subject-card__info">
-                            <div class="subject-card__teacher teacher">
-                              <div class="teacher__img">
-                                <img src="https://picsum.photos/200/300" alt="">
-                              </div>
-                              Бондар Олег Михайлович
-                            </div>
-                            <div class="subject-card__marks">
-                              <div class="subject-card__mark">Прогнозована оцінка: <span>8</span></div>
-                              <div class="subject-card__mark">Відвідуваність: <span>80% (8/10)</span></div>
-                            </div>
-                          </div>
-                          <p class="subject-card__description">
-                            Під час вивчення онлайн-курсу з алгебри для 8-го класу учні ознайомляться з квадратними
-                            коренями та ірраціональними числами. Цей курс покаже приклади застосування властивостей
-                            квадратних коренів при розв’язуванні різних типів задач.
-                          </p>
-                        </div>
-                        <svg class="subject-card__icon">
-                          <use xlink:href="img/sprite.svg#dna"></use>
+                    <li class="personal-cabinet__item">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">Стать</span>
+                        <div class="personal-cabinet__line"></div>
+                        <span class="personal-cabinet__value">Жінка</span>
+                      </div>
+                    </li>
+                    <li class="personal-cabinet__item">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">Ступінь споріднення відносно учня</span>
+                        <div class="personal-cabinet__line"></div>
+                        <span class="personal-cabinet__value">Мати</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="personal-cabinet__list">
+                    <li class="personal-cabinet__item">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">Телефон</span>
+                        <div class="personal-cabinet__line"></div>
+                        <span class="personal-cabinet__value">+38 (096) 12 12 321</span>
+                      </div>
+                    </li>
+                    <li class="personal-cabinet__item">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">Пошта </span>
+                        <div class="personal-cabinet__line"></div>
+                        <span class="personal-cabinet__value">Ovcharenko_Union@gmail.com</span>
+                      </div>
+                    </li>
+                    <li class="personal-cabinet__item personal-cabinet__item--edit">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">Місто</span>
+                        <div class="personal-cabinet__line"></div>
+                        <span class="personal-cabinet__value">Ігоревна</span>
+                      </div>
+                      <button class="personal-cabinet__edit">
+                        <svg class="personal-cabinet__edit-svg">
+                          <use xlink:href="img/sprite.svg#edit"></use>
                         </svg>
-                      </a>
+                      </button>
+                    </li>
+                    <li class="personal-cabinet__item personal-cabinet__item--edit">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">Адреса</span>
+                        <div class="personal-cabinet__line"></div>
+                        <time class="personal-cabinet__value">Київ</time>
+                      </div>
+                      <button class="personal-cabinet__edit">
+                        <svg class="personal-cabinet__edit-svg">
+                          <use xlink:href="img/sprite.svg#edit"></use>
+                        </svg>
+                      </button>
+                    </li>
+
+                    <li class="personal-cabinet__item personal-cabinet__item--edit">
+                      <div class="personal-cabinet__wrapper">
+                        <span class="personal-cabinet__label">Пароль</span>
+                        <div class="personal-cabinet__line"></div>
+                        <span class="personal-cabinet__value">*** *** ****</span>
+                      </div>
+                      <button class="personal-cabinet__edit">
+                        <svg class="personal-cabinet__edit-svg">
+                          <use xlink:href="img/sprite.svg#edit"></use>
+                        </svg>
+                      </button>
                     </li>
                   </ul>
                 </div>
-                <div class="subjects__right">Реклама</div>
+
+                <div class="personal-cabinet__docs">
+                  <h2 class="personal-cabinet__title">Скани документів</h2>
+                  <ul class="personal-cabinet__units">
+                    <li class="personal-cabinet__unit document-block">
+                      <div class="document-block__top">
+                        <h3 class="document-block__title">Свідоцтво про народження</h3>
+                      </div>
+
+                      <ul class="document-block__list">
+                        <li class="document-block__item document">
+                          <div class="document__wrapper">
+                            <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                              <svg class="document__remove-svg">
+                                <use xlink:href="img/sprite.svg#remove"></use>
+                              </svg>
+                            </button>
+                            <svg class="document__image">
+                              <use xlink:href="img/sprite.svg#avatar-image"></use>
+                            </svg>
+                            <span class="document__title">Фото_27.04.2023</span>
+                            <small class="document__weight">12 mb</small>
+                          </div>
+                        </li>
+                        <li class="document-block__item document document--error">
+                          <div class="document__wrapper">
+                            <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                              <svg class="document__remove-svg">
+                                <use xlink:href="img/sprite.svg#remove"></use>
+                              </svg>
+                            </button>
+                            <svg class="document__image">
+                              <use xlink:href="img/sprite.svg#avatar-image"></use>
+                            </svg>
+                            <span class="document__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, earum?</span>
+                            <small class="document__weight">12 mb</small>
+                          </div>
+                          <div class="document__error">
+                            <svg class="document__error-icon">
+                              <use xlink:href="img/sprite.svg#warn"></use>
+                            </svg>
+                            Завантажте ще раз
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="personal-cabinet__unit document-block">
+                      <div class="document-block__top">
+                        <h3 class="document-block__title">Ідентифікаційний код</h3>
+                      </div>
+
+                      <ul class="document-block__list">
+                        <li class="document-block__item document">
+                          <div class="document__wrapper">
+                            <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                              <svg class="document__remove-svg">
+                                <use xlink:href="img/sprite.svg#remove"></use>
+                              </svg>
+                            </button>
+                            <svg class="document__image">
+                              <use xlink:href="img/sprite.svg#avatar-image"></use>
+                            </svg>
+                            <span class="document__title">Фото_27.04.2023</span>
+                            <small class="document__weight">12 mb</small>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="personal-cabinet__unit document-block">
+                      <div class="document-block__top">
+                        <h3 class="document-block__title">Документ, що підтверджує спорідненість з дитиною</h3>
+                      </div>
+
+                      <ul class="document-block__list">
+                        <li class="document-block__item document document--error">
+                          <div class="document__wrapper">
+                            <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                              <svg class="document__remove-svg">
+                                <use xlink:href="img/sprite.svg#remove"></use>
+                              </svg>
+                            </button>
+                            <svg class="document__image">
+                              <use xlink:href="img/sprite.svg#avatar-image"></use>
+                            </svg>
+                            <span class="document__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, earum?</span>
+                            <small class="document__weight">12 mb</small>
+                          </div>
+                          <div class="document__error">
+                            <svg class="document__error-icon">
+                              <use xlink:href="img/sprite.svg#warn"></use>
+                            </svg>
+                            Завантажте ще раз
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="personal-cabinet__unit document-block">
+                      <div class="document-block__top">
+                        <h3 class="document-block__title">Заява про зарахування до школи</h3>
+                      </div>
+
+                      <ul class="document-block__list">
+                        <li class="document-block__item document">
+                          <div class="document__wrapper">
+                            <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                              <svg class="document__remove-svg">
+                                <use xlink:href="img/sprite.svg#remove"></use>
+                              </svg>
+                            </button>
+                            <svg class="document__image">
+                              <use xlink:href="img/sprite.svg#avatar-image"></use>
+                            </svg>
+                            <span class="document__title">Фото_27.04.2023</span>
+                            <small class="document__weight">12 mb</small>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="personal-cabinet__unit document-block">
+                      <div class="document-block__top">
+                        <h3 class="document-block__title">Інші документи</h3>
+                      </div>
+
+                      <ul class="document-block__list">
+                        <li class="document-block__item document">
+                          <div class="document__wrapper">
+                            <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                              <svg class="document__remove-svg">
+                                <use xlink:href="img/sprite.svg#remove"></use>
+                              </svg>
+                            </button>
+                            <svg class="document__image">
+                              <use xlink:href="img/sprite.svg#avatar-image"></use>
+                            </svg>
+                            <span class="document__title">Фото_27.04.2023</span>
+                            <small class="document__weight">12 mb</small>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="personal-cabinet__unit document-block">
+                      <div class="document-block__top">
+                        <h3 class="document-block__title">
+                          Додаткова інформація про стан здоров’я дитини (за потреби)
+                        </h3>
+                      </div>
+                      <div class="document-block__text">
+                        <p>Софія проявляє інтерес до розвитку творчих навичок та участі в групових активностях.</p>
+                        <p>Немає жодних хронічних захворювань або травм.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </section>
           </div>

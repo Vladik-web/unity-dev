@@ -11,7 +11,7 @@ const table = () => {
 
   const init = () => {
     if (window.matchMedia(breakpoints.lg).matches) {
-      modal.classList.remove('marks-table__lesson--hide')
+      modal.classList.remove('lesson-modal--hide')
 
       marks.forEach(item => {
         const marksLi = item.querySelectorAll('.table__mark')
@@ -50,23 +50,23 @@ const table = () => {
             modal.style.top = `${y}px`
             modal.style.left = `${x}px`
 
-            modal.classList.remove('marks-table__lesson--hide')
-            modal.classList.add('marks-table__lesson--show')
+            modal.classList.remove('lesson-modal--hide')
+            modal.classList.add('lesson-modal--show')
           })
         })
       })
 
       tableEl.forEach(item => {
         item.addEventListener('mousemove', e => {
-          if (e.target.closest('.marks-table__lesson') || e.target.closest('.table__mark')) {
+          if (e.target.closest('.lesson-modal__content') || e.target.closest('.table__mark')) {
             // Если мы навели на modal
 
-            modal.classList.add('marks-table__lesson--show')
+            modal.classList.add('lesson-modal--show')
           } else {
             // Если мы навели не в наши триггеры
 
-            modal.classList.remove('marks-table__lesson--show')
-            modal.classList.add('marks-table__lesson--hide')
+            modal.classList.remove('lesson-modal--show')
+            modal.classList.add('lesson-modal--hide')
           }
         })
       })

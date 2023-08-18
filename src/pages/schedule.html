@@ -71,7 +71,7 @@
                   </div>
                   <div class="header__block">
                     <button class="header__avatar" id="header-avatar">
-                      <img src="https://picsum.photos/200/300" alt="" />
+                      <img class="header__avatar-image" src="https://picsum.photos/200/300" alt="" />
                     </button>
                     <div class="header__wrapper">
                       <div class="header__info">
@@ -995,8 +995,80 @@
               </div>
             </section>
 
-            <section class="schedule-table schedule-table--week">
+            <section class="schedule-table schedule-table--week" style="display: none">
               <div class="schedule-table__wrapper">
+                <div class="schedule-table__lesson lesson-modal lesson-modal--big">
+                  <div class="lesson-modal__content">
+                    <div class="lesson-modal__top">
+                      <div class="lesson-modal__subject">
+                        <span class="lesson-modal__counter">1</span>
+                        <a href="#" class="lesson-modal__name">Всесвітня історія</a>
+                      </div>
+                      <div class="lesson-modal__right types">
+                        <ul class="types__list">
+                          <li class="types__unit">
+                            <div class="types__icon types__icon--active" data-tippy-content="Онлайн-урок">
+                              <svg class="types__icon-svg">
+                                <use xlink:href="img/sprite.svg#webcam"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="types__unit">
+                            <div class="types__icon" data-tippy-content="Домашня робота">
+                              <svg class="types__icon-svg">
+                                <use xlink:href="img/sprite.svg#home"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="types__unit">
+                            <div class="types__icon" data-tippy-content="Тест">
+                              <svg class="types__icon-svg">
+                                <use xlink:href="img/sprite.svg#test"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="types__unit">
+                            <div class="types__icon" data-tippy-content="Контрольна робота">
+                              <svg class="types__icon-svg">
+                                <use xlink:href="img/sprite.svg#pen"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <time class="lesson-modal__time">25 квітня, 9:00</time>
+                      <a href="#" class="lesson-modal__teacher teacher">
+                        <div class="teacher__img">
+                          <img src="https://picsum.photos/200/300" alt="" />
+                        </div>
+                        Бондар Олег Михайлович
+                      </a>
+                    </div>
+                    <div class="lesson-modal__bottom">
+                      <div class="lesson-modal__image">
+                        <span class="lesson-modal__mark">10, 8</span>
+                        <img src="https://picsum.photos/200/300?random=1" alt="" />
+                      </div>
+
+                      <div class="lesson-modal__text">
+                        <a href="#">
+                          Тема уроку: Числові множини. Взаємно однозначна відповідність між елементами множин.
+                        </a>
+                      </div>
+                    </div>
+                    <div class="lesson-modal__buttons">
+                      <div class="lesson-modal__times">
+                        <time class="lesson-modal__time">9:00</time>-<time class="lesson-modal__time">9:45</time>
+                      </div>
+                      <a href="#" class="lesson-modal__link btn btn--accent">
+                        <svg class="btn__icon">
+                          <use xlink:href="img/sprite.svg#webcam"></use>
+                        </svg>
+                        Перейти
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <!-- here -->
                 <div class="schedule-table__block" data-simplebar>
                   <div class="schedule-table__top">
@@ -1540,8 +1612,81 @@
                 </div>
               </div>
             </section>
-            <section class="schedule-table schedule-table--month" style="display: none">
+
+            <section class="schedule-table schedule-table--month">
               <div class="schedule-table__wrapper">
+                <div class="schedule-table__lesson lesson-modal lesson-modal--big">
+                  <div class="lesson-modal__content">
+                    <div class="lesson-modal__top">
+                      <div class="lesson-modal__subject">
+                        <span class="lesson-modal__counter">1</span>
+                        <a href="#" class="lesson-modal__name">Всесвітня історія</a>
+                      </div>
+                      <div class="lesson-modal__right types">
+                        <ul class="types__list">
+                          <li class="types__unit">
+                            <div class="types__icon types__icon--active" data-tippy-content="Онлайн-урок">
+                              <svg class="types__icon-svg">
+                                <use xlink:href="img/sprite.svg#webcam"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="types__unit">
+                            <div class="types__icon" data-tippy-content="Домашня робота">
+                              <svg class="types__icon-svg">
+                                <use xlink:href="img/sprite.svg#home"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="types__unit">
+                            <div class="types__icon" data-tippy-content="Тест">
+                              <svg class="types__icon-svg">
+                                <use xlink:href="img/sprite.svg#test"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="types__unit">
+                            <div class="types__icon" data-tippy-content="Контрольна робота">
+                              <svg class="types__icon-svg">
+                                <use xlink:href="img/sprite.svg#pen"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <time class="lesson-modal__time">25 квітня, 9:00</time>
+                      <a href="#" class="lesson-modal__teacher teacher">
+                        <div class="teacher__img">
+                          <img src="https://picsum.photos/200/300" alt="" />
+                        </div>
+                        Бондар Олег Михайлович
+                      </a>
+                    </div>
+                    <div class="lesson-modal__bottom">
+                      <div class="lesson-modal__image">
+                        <span class="lesson-modal__mark">10, 8</span>
+                        <img src="https://picsum.photos/200/300?random=1" alt="" />
+                      </div>
+
+                      <div class="lesson-modal__text">
+                        <a href="#">
+                          Тема уроку: Числові множини. Взаємно однозначна відповідність між елементами множин.
+                        </a>
+                      </div>
+                    </div>
+                    <div class="lesson-modal__buttons">
+                      <div class="lesson-modal__times">
+                        <time class="lesson-modal__time">9:00</time>-<time class="lesson-modal__time">9:45</time>
+                      </div>
+                      <a href="#" class="lesson-modal__link btn btn--accent">
+                        <svg class="btn__icon">
+                          <use xlink:href="img/sprite.svg#webcam"></use>
+                        </svg>
+                        Перейти
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div class="schedule-table__overlay" style="display: none">
                   <div class="schedule-table__lesson lesson lesson--small">
                     <div class="lesson__image">
@@ -1607,7 +1752,7 @@
 
                       <div class="schedule-table__main">
                         <ul class="schedule-table__grid">
-                          @@for (var i = 0; i < 7; i++) {
+                          @@for (var i = 0; i < 6; i++) {
                           <li class="schedule-table__lessons-list lessons-schedule">
                             <span class="lessons-schedule__date">11</span>
                             <ul class="lessons-schedule__list">
@@ -1653,9 +1798,33 @@
                                       <time class="lesson-label__time">11:35</time>
                                     </li>
                                   </ul>
+                                  <ul class="lessons-schedule__sublist">
+                                    @@for (var i = 0; i < 2; i++) {
+                                    <li class="lessons-schedule__subitem">
+                                      <a href="#" class="lessons-schedule__name">Всесвітня історія</a>
+                                      <time class="lessons-schedule__data">25 квітня, 9:00</time>
+                                      <a href="#" class="lessons-schedule__teacher teacher">
+                                        <div class="teacher__img">
+                                          <img src="https://picsum.photos/200/300" alt="" />
+                                        </div>
+                                        Бондар Олег Михайлович
+                                      </a>
+                                    </li>
+                                    <li class="lessons-schedule__subitem">
+                                      <a href="#" class="lessons-schedule__name">Всесвітня історія lkl; k;kq q; k</a>
+                                      <time class="lessons-schedule__data">25 квітня, 9:00</time>
+                                      <a href="#" class="lessons-schedule__teacher teacher">
+                                        <div class="teacher__img">
+                                          <img src="https://picsum.photos/200/300" alt="" />
+                                        </div>
+                                        Бондар Олег Михайлович
+                                      </a>
+                                    </li>
+                                    }
+                                  </ul>
                                 </div>
                                 <div class="lessons-schedule__block">
-                                  <h2 class="lessons-schedule__title">Заняття</h2>
+                                  <h2 class="lessons-schedule__title">Курси</h2>
                                   <ul class="lessons-schedule__list">
                                     <li class="lessons-schedule__label lesson-label lesson-label--purple">
                                       <span>Українська мова</span>
@@ -1674,26 +1843,29 @@
                                       <time class="lesson-label__time">11:35</time>
                                     </li>
                                   </ul>
-                                </div>
-                                <div class="lessons-schedule__block">
-                                  <h2 class="lessons-schedule__title">Заняття</h2>
-                                  <ul class="lessons-schedule__list">
-                                    <li class="lessons-schedule__label lesson-label lesson-label--purple">
-                                      <span>Українська мова</span>
-                                      <time class="lesson-label__time">08:35</time>
+                                  <ul class="lessons-schedule__sublist">
+                                    @@for (var i = 0; i < 1; i++) {
+                                    <li class="lessons-schedule__subitem">
+                                      <a href="#" class="lessons-schedule__name">Всесвітня історія</a>
+                                      <time class="lessons-schedule__data">25 квітня, 9:00</time>
+                                      <a href="#" class="lessons-schedule__teacher teacher">
+                                        <div class="teacher__img">
+                                          <img src="https://picsum.photos/200/300" alt="" />
+                                        </div>
+                                        Бондар Олег Михайлович
+                                      </a>
                                     </li>
-                                    <li class="lessons-schedule__label lesson-label lesson-label--red">
-                                      <span>Математика</span>
-                                      <time class="lesson-label__time">09:35</time>
+                                    <li class="lessons-schedule__subitem">
+                                      <a href="#" class="lessons-schedule__name">Всесвітня історія lkl; k;kq q; k</a>
+                                      <time class="lessons-schedule__data">25 квітня, 9:00</time>
+                                      <a href="#" class="lessons-schedule__teacher teacher">
+                                        <div class="teacher__img">
+                                          <img src="https://picsum.photos/200/300" alt="" />
+                                        </div>
+                                        Бондар Олег Михайлович
+                                      </a>
                                     </li>
-                                    <li class="lessons-schedule__label lesson-label lesson-label--orange">
-                                      <span>Фізкультура</span>
-                                      <time class="lesson-label__time">10:35</time>
-                                    </li>
-                                    <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                      <span>Історія</span>
-                                      <time class="lesson-label__time">11:35</time>
-                                    </li>
+                                    }
                                   </ul>
                                 </div>
                               </div>

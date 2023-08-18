@@ -1,4 +1,24 @@
 .pagination {
+  &__btn {
+    @include flex-all-center;
+
+    flex-shrink: 0;
+    width: rem(24);
+    height: rem(24);
+
+    &-svg {
+      width: rem(24);
+      height: rem(24);
+      fill: var(--blue-400);
+    }
+
+    &--prev {
+      .pagination__btn-svg {
+        transform: scale(-1, 1);
+      }
+    }
+  }
+
   &__list {
     @include flex-v-center;
   }
@@ -22,6 +42,21 @@
     &--active {
       color: var(--black);
       background-color: var(--blue-50);
+    }
+  }
+
+  &--new {
+    @include flex-v-center;
+
+    gap: rem(32);
+  }
+}
+
+@include mq('md') {
+  .pagination {
+    &--new {
+      justify-content: space-between;
+      width: 100%;
     }
   }
 }

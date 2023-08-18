@@ -21,6 +21,11 @@
       <button class="btn-3 btn btn--accent">Перевірте свою пошту</button>
       <button class="btn-4 btn btn--accent">Створіть новий пароль</button>
       <button class="btn-5 btn btn--accent">Завантаження документа</button>
+      <button class="btn-6 btn btn--accent">Введіть суму поповнення</button>
+      <button class="btn-7 btn btn--accent">Дякуюємо за поповнення</button>
+      <button class="btn-8 btn btn--accent">Вибачте але сталась якась помилка</button>
+      <button class="btn-9 btn btn--accent">Зміна зображення профілю</button>
+      <button class="btn-10 btn btn--accent">Обрізати й обернути</button>
     </div>
     <div class="modal login">
   <div class="modal__body">
@@ -304,6 +309,189 @@
 
             <button class="modal__btn btn btn--accent">Відправити на перевірку</button>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="modal deposit modal--mobile">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__main">
+        <button class="modal__close">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <svg class="modal__logo">
+          <use xlink:href="img/sprite.svg#full-logo"></use>
+        </svg>
+        <h2 class="modal__title">Введіть суму поповнення</h2>
+
+        <div class="modal__wrapper">
+          <form class="modal__form">
+            <div class="modal__field field">
+              <div class="field__wrapper">
+                <input type="text" id="form[email]" class="field__input input" placeholder="Ім’я" inputmode="email" data-input="" required="">
+                <svg class="field__icon">
+                  <use xlink:href="img/sprite.svg#warn"></use>
+                </svg>
+              </div>
+            </div>
+
+            <button class="modal__btn btn btn--accent">
+              далі
+              <svg class="btn__icon">
+                <use xlink:href="img/sprite.svg#login"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal thanks modal--mobile">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__main">
+        <button class="modal__close">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <svg class="modal__logo">
+          <use xlink:href="img/sprite.svg#full-logo"></use>
+        </svg>
+        <h2 class="modal__title">Дякуюємо за поповнення</h2>
+
+        <div class="modal__wrapper">
+          <svg class="modal__mood">
+            <use xlink:href="img/sprite.svg#mood-true"></use>
+          </svg>
+          <button class="modal__btn btn btn--accent">ок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="modal error modal--mobile">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__main">
+        <button class="modal__close">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <svg class="modal__logo">
+          <use xlink:href="img/sprite.svg#full-logo"></use>
+        </svg>
+        <h2 class="modal__title">Вибачте але сталась якась помилка</h2>
+
+        <div class="modal__wrapper">
+          <svg class="modal__mood">
+            <use xlink:href="img/sprite.svg#mood-false"></use>
+          </svg>
+          <button class="modal__btn btn btn--accent">ок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal modal--big change-photo">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__main">
+        <button class="modal__close">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <h2 class="modal__title">Зміна зображення профілю</h2>
+
+        <div class="modal__wrapper">
+          <div class="modal__warn">
+            <svg>
+              <use xlink:href="img/sprite.svg#warn"></use>
+            </svg>
+            <strong> Увага!</strong>
+            <p>Фото можна змінити тільки раз на рік</p>
+          </div>
+          <form class="modal__from">
+            <div class="modal__upload">
+              <svg class="modal__upload-svg">
+                <use xlink:href="img/sprite.svg#upload"></use>
+              </svg>
+              <div class="modal__drop">
+                <span>Перетягніть <br>
+                  або</span>
+                <label for="upload-files">
+                  оберіть файл
+                  <input type="file" id="upload-files" hidden>
+                </label>
+              </div>
+            </div>
+            <div class="modal__document document">
+              <div class="document__wrapper">
+                <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                  <svg class="document__remove-svg">
+                    <use xlink:href="img/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+                <svg class="document__image">
+                  <use xlink:href="img/sprite.svg#avatar-image"></use>
+                </svg>
+                <span class="document__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, earum?</span>
+                <small class="document__weight">12 mb</small>
+              </div>
+            </div>
+
+            <button class="modal__btn btn btn--accent">Відправити на перевірку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="modal rotate modal--open modal--big">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__main">
+        <button class="modal__close">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <button class="modal__back">
+          <svg class="modal__back-svg">
+            <use xlink:href="img/sprite.svg#arrow-back"></use>
+          </svg>
+        </button>
+
+        <svg class="modal__logo">
+          <use xlink:href="img/sprite.svg#full-logo"></use>
+        </svg>
+        <h2 class="modal__title">Обрізати й обернути</h2>
+
+        <div class="modal__wrapper">
+          <div class="modal__settings">
+            <img src="img/static/avatar.jpg" alt="">
+          </div>
+
+          <button class="modal__rotate">
+            <svg>
+              <use xlink:href="img/sprite.svg#rotate"></use>
+            </svg>
+            Обернути
+          </button>
+          <button class="modal__btn btn btn--accent">ок</button>
         </div>
       </div>
     </div>

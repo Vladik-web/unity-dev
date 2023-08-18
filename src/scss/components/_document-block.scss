@@ -10,6 +10,21 @@
     gap: rem(20);
   }
 
+  &__text {
+    p {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: rem(14);
+      line-height: normal;
+      color: var(--black);
+
+      + p {
+        margin-top: rem(5);
+      }
+    }
+  }
+
   &__title {
     font-weight: 500;
     font-size: rem(16);

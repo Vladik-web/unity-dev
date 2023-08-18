@@ -5,6 +5,7 @@
   border-top: rem(1) solid var(--grey-5);
   padding: rem(15) 0 rem(14);
   width: 100%;
+  min-height: rem(135);
   background-color: var(--white);
   gap: rem(12) rem(16);
 
@@ -195,6 +196,7 @@
       margin-top: rem(12);
       border-top: rem(1) solid var(--grey-6);
       padding-top: rem(12);
+      min-height: rem(40);
     }
   }
 }
