@@ -6,6 +6,28 @@ const header = () => {
 
   const headerAvatar = headerEl?.querySelector('#header-avatar')
   const headerClose = headerEl?.querySelector('#header-close')
+  const headerNotificationsBlock = headerEl?.querySelector('.header__wrapper')
+  const headerNotificationsBtn = headerEl?.querySelector('.header__notifications')
+  const headerNotificationsBtnClose = headerEl?.querySelector('.notifications__close')
+
+  if (headerNotificationsBlock && headerNotificationsBtn) {
+    headerNotificationsBtn.addEventListener('click', () => {
+      headerNotificationsBlock.classList.toggle('header__wrapper--active')
+    })
+
+    headerNotificationsBtnClose.addEventListener('click', () => {
+      headerNotificationsBlock.classList.remove('header__wrapper--active')
+    })
+
+    document.addEventListener('click', event => {
+      const isClickInside =
+        headerNotificationsBlock.contains(event.target) || headerNotificationsBtn.contains(event.target)
+
+      if (!isClickInside) {
+        headerNotificationsBlock.classList.remove('header__wrapper--active')
+      }
+    })
+  }
 
   if (!headerEl) return null
 
