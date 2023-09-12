@@ -6,7 +6,7 @@ const header = () => {
 
   const headerAvatar = headerEl?.querySelector('#header-avatar')
   const headerClose = headerEl?.querySelector('#header-close')
-  const headerNotificationsBlock = headerEl?.querySelector('.header__wrapper')
+  const headerNotificationsBlock = headerEl?.querySelector('.header__notifications + .header__wrapper')
   const headerNotificationsBtn = headerEl?.querySelector('.header__notifications')
   const headerNotificationsBtnClose = headerEl?.querySelector('.notifications__close')
 
@@ -35,8 +35,6 @@ const header = () => {
     const headerUserInfo = headerAvatar.nextElementSibling
 
     headerAvatar.addEventListener('click', () => {
-      // headerUserInfo.classList.toggle('header__wrapper--active')
-
       if (!headerUserInfo.classList.contains('header__wrapper--active')) {
         headerUserInfo.classList.add('header__wrapper--active')
         if (window.matchMedia(breakpoints.lg).matches) {
