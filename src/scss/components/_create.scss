@@ -59,7 +59,7 @@
           border-radius: rem(5);
           color: var(--grey-3);
           background-color: var(--blue-50);
-          opacity: 1;
+          opacity: 1; 
           pointer-events: none;
         }
       }
@@ -67,7 +67,7 @@
       .calendar__days,
       .calendar__weekdays {
         grid-template-columns: repeat(7, 1fr);
-        gap: rem(16) rem(12);
+        gap: rem(25) rem(12);
       }
 
       .calendar__days .calendar__day-box {
@@ -87,7 +87,7 @@
         .calendar__day-box {
           border-color: var(--blue-200);
           background-color: transparent;
-          opacity: 1;
+          // opacity: 1;
         }
       }
 

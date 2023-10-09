@@ -60,6 +60,23 @@ const header = () => {
       }
     })
   }
+  
+  
 }
+const inputs = document.querySelectorAll('input[type="radio"]');
+const textElements = document.querySelectorAll('.header__children-span');
+
+// Обработчик клика на инпут
+inputs.forEach((input, index) => {
+    input.addEventListener('click', () => {
+        // Сбрасываем цвет для всех текстовых элементов
+        textElements.forEach((textElement) => {
+            textElement.style.color = '#828282'; // Восстанавливаем исходный цвет текста
+        });
+
+        // Устанавливаем цвет для выбранного текстового элемента
+        textElements[index].style.color = '#7D98F6'; // Задаем новый цвет текста
+    });
+});
 
 export default header

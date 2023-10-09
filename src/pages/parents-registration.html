@@ -39,7 +39,7 @@
               <svg class="auth-header__inner-svg">
                 <use xlink:href="img/sprite.svg#account"></use>
               </svg>
-              <h1 class="auth-header__title">Реєстрація батьків</h1>
+              <h1 class="auth-header__title">Завершення реєстрації</h1>
             </div>
           </div>
         </header>
@@ -56,10 +56,14 @@
                 <li class="auth-content__item">
                   <a href="student-registration.html" class="auth-content__link">Реєстрація учнів</a>
                 </li>
+                <li class="auth-content__item">
+                  <a href="finish-registration.html" class="auth-content__link">Успішна реєстрація</a>
+                </li>
               </ul>
             </div>
 
-            <form class="auth-content__main">
+            <form class="auth-content__main  accordion-item">
+              <h1 class="auth-content__title accordion-open">Інформація про одного з батьків</h1>
               <div class="auth-content__avatar load-avatar">
                 <label for="avatar" class="load-avatar__label">
                   <div class="load-avatar__image">
@@ -412,7 +416,7 @@
                     </label>
                   </div>
                 </div>
-              </div>
+              </div> 
               <div class="auth-content__block">
                 <h2 class="auth-content__title">Скани документів</h2>
                 <div class="auth-content__grid auth-content__grid--mb-60">
@@ -465,6 +469,7 @@
                         </div>
                       </li>
                     </ul>
+                   
                   </div>
                   <div class="auth-content__document document-block">
                     <div class="document-block__top">
@@ -585,6 +590,11 @@
                         </div>
                       </li>
                     </ul>
+                    <button class="auth-content__btn btn btn--accent accordion-down">Зберегти і перейти далі
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                        <path d="M0.799805 12.6082C0.799992 12.3954 0.884682 12.1914 1.03525 12.041L5.14065 7.93562C5.26491 7.81139 5.36348 7.6639 5.43074 7.50157C5.49799 7.33924 5.5326 7.16525 5.5326 6.98954C5.5326 6.81383 5.49799 6.63984 5.43074 6.47751C5.36348 6.31518 5.26491 6.16769 5.14065 6.04346L1.04061 1.94074C0.894393 1.78936 0.813488 1.5866 0.815317 1.37614C0.817146 1.16568 0.901562 0.964363 1.05038 0.815541C1.19921 0.66672 1.40053 0.582304 1.61098 0.580475C1.82144 0.578646 2.0242 0.659551 2.17558 0.805764L6.27563 4.90527C6.82692 5.45765 7.13654 6.20619 7.13654 6.9866C7.13654 7.76701 6.82692 8.51555 6.27563 9.06793L2.17023 13.1733C2.05814 13.2855 1.91533 13.3619 1.75982 13.393C1.60432 13.4241 1.4431 13.4084 1.29649 13.348C1.14989 13.2875 1.02447 13.185 0.936076 13.0534C0.847679 12.9217 0.800261 12.7668 0.799805 12.6082Z" fill="white"/>
+                        </svg>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -593,7 +603,7 @@
 
               <div class="auth-content__new-user auth-content__new-user--includes">
                 <div class="auth-content__up">
-                  <h2 class="auth-content__title">Додати другу контактну особу</h2>
+                  <h2 class="auth-content__title accordion-open">Інформація про другу контактну особу</h2>
                   <button
                     class="auth-content__add"
                     type="button"
@@ -608,8 +618,8 @@
                     </svg>
                   </button>
                 </div>
-                <!-- new user start -->
-                <div class="auth-content__user">
+                 <!-- new user start  -->
+                <div class="auth-content__user collection-accordion">
                   <div class="auth-content__wrapper">
                     <div class="auth-content__avatar load-avatar">
                       <label for="new-avatar-user" class="load-avatar__label">
@@ -785,24 +795,22 @@
                       </div>
                     </div>
                   </div>
+                  <div class="auth-content__next">
+                    <div class="auth-content__buttons">
+                      <button class="auth-content__btn btn btn--accent accordion-down" type="button">
+                        Зберегти і перейти далі
+                        <svg class="btn__icon">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <!-- new user end -->
-              </div>
-
-              <div class="auth-content__next">
-                <div class="auth-content__buttons">
-                  <button class="auth-content__btn btn btn--accent" type="button">
-                    далі
-                    <svg class="btn__icon">
-                      <use xlink:href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </button>
-                </div>
               </div>
             </form>
           </div>
         </div>
-
         @@include("../components/_footer.html")
       </main>
     </div>

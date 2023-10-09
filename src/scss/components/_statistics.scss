@@ -3,12 +3,13 @@
     display: flex;
     gap: rem(30);
   }
-
+ 
   &--big {
     margin-bottom: rem(40);
 
     .statistics-block__list {
-      grid-template-columns: repeat(4, 1fr);
+      display: flex;
+      justify-content: space-between;
 
       // grid-template-columns: repeat(auto-fit, minmax(rem(208), 1fr));
     }
@@ -17,9 +18,19 @@
       display: flex;
     }
   }
+  &__curse {
+    margin-bottom: 416px;
+  }
+  &__curse-title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--Black, #1c1c1c);
+  }
 }
 
-@include mq('xl') {
+@include mq("xl") {
   .statistics {
     &__inner {
       gap: rem(15);
@@ -38,7 +49,7 @@
   }
 }
 
-@include mq('lg') {
+@include mq("lg") {
   .statistics {
     &__block {
       display: none;
@@ -53,5 +64,15 @@
         flex-direction: column;
       }
     }
+    
   }
+  .graph__bottom-adap {
+    display: block;
+  }
+  .graph__bottom {
+    display: none;
+  }
+}
+.graph__bottom-adap {
+  display: none;
 }

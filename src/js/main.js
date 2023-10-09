@@ -16,6 +16,8 @@ import maintenance from './modules/maintenance'
 import graph from './modules/graph'
 import table from './modules/table'
 import calendar from './modules/calendar'
+import adaptChartToScreenSize from './modules/table-adaptation'
+import './modules/registration-accordion';
 
 window.addEventListener('DOMContentLoaded', () => {
   try {
@@ -40,4 +42,27 @@ window.addEventListener('DOMContentLoaded', () => {
   graph()
   table()
   calendar()
+  adaptChartToScreenSize()
 })
+
+
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach((item, index) => {
+    const toggleButton = item.querySelector('.toggle-button');
+    const accordionContent = item.querySelector('.accordion-content');
+
+    toggleButton.addEventListener('click', () => {
+        accordionContent.style.maxHeight = accordionContent.style.maxHeight ? null : accordionContent.scrollHeight + 'px';
+        // Закрыть текущий аккордеон
+        item.classList.toggle('active');
+
+        // Открыть следующий аккордеон, если он есть
+        if (index < accordionItems.length - 1) {
+            accordionItems[index + 1].classList.toggle('active');
+        }
+    });
+});
+
+// Открыть первый аккордеон по умолчанию
+accordionItems[0].classList.add('active');

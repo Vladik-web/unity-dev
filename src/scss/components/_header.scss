@@ -105,7 +105,7 @@
       position: relative;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: rem(2);
         top: rem(1);
@@ -170,6 +170,8 @@
     margin-right: rem(-12);
     margin-left: rem(-12);
     padding-bottom: rem(16);
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
   }
 
   &__item {
@@ -290,7 +292,26 @@
       fill: var(--grey-3);
     }
   }
-
+  &__children-from {
+    display: none;
+    display: flex;
+   flex-direction: column;
+    padding: 28px 0 16px;
+    border-top: 1px solid #E0E0E0;
+    // border-bottom: 1px solid #E0E0E0;
+  }
+  &__childer-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+  }
+  &__children-span:checked {
+    color: #7D98F6;
+  }
   &__lesson {
     @include flex-v-center;
 
@@ -324,12 +345,12 @@
   &__hours,
   &__minutes {
     &::after {
-      content: ':';
+      content: ":";
     }
   }
 }
 
-@include mq('lg') {
+@include mq("lg") {
   .header {
     margin: 0;
 
@@ -356,11 +377,19 @@
       display: none;
     }
 
-    &__children-list {
-      display: block;
-      margin-bottom: rem(28);
-      border-bottom: rem(1) solid var(--grey-6);
-      padding-bottom: rem(28);
+    &__children-box {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    &__child:checked  + &__child-span {
+      color: #7D98F6;
+    }
+    &
+    &__children__list-img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
     }
 
     &__child {
@@ -425,12 +454,15 @@
         display: block;
       }
     }
-
+    &__children-from {
+      display: block;
+    }
     &__list {
+      padding-top: 28px;
       margin-right: rem(0);
       margin-bottom: rem(28);
       margin-left: rem(0);
-      border-bottom: rem(1) solid var(--grey-6);
+      // border-bottom: 1px solid var(--grey-6);
       padding-bottom: rem(28);
     }
 

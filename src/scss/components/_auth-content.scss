@@ -17,7 +17,7 @@
 
     &:not(:last-child) {
       &::after {
-        content: '';
+        content: "";
         display: block;
         flex-shrink: 0;
         width: rem(20);
@@ -45,12 +45,11 @@
   &__next {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-top: rem(60);
     border-radius: rem(5);
     padding: rem(20);
     background-color: var(--orange-50);
-    gap: rem(30);
+    gap: 32px;
   }
 
   &__checkbox {
@@ -60,8 +59,8 @@
 
   &__buttons {
     display: flex;
-    margin-right: 0;
-    margin-left: auto;
+    // margin-right: 0;
+    // margin-left: auto;
     gap: rem(10);
   }
 
@@ -102,7 +101,7 @@
   &__up {
     @include flex-all-sb;
 
-    border-bottom: rem(1) solid var(--grey-5);
+    // border-bottom: rem(1) solid var(--grey-5);
     padding: rem(10) rem(10) rem(18);
 
     .auth-content__title {
@@ -213,8 +212,74 @@
     @include flex-all-center;
   }
 }
+.content {
+  // display: none;
+}
 
-@include mq('lg') {
+/* Стили для аккордеона */
+input[type="radio"] {
+  // display: none;
+}
+
+.auth__save-content {
+  display: flex;
+  gap: 8px;
+  max-width: 236px;
+  padding: 8px 16px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffa349;
+  color: #fff;
+}
+
+/* Добавляем стиль для активной радиокнопки */
+
+
+/* Показываем содержимое активной радиокнопки при загрузке страницы */
+input[type="radio"]:checked + label + .content {
+  display: block;
+}
+
+.auth__container-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  border-bottom: 1px solid #e0e0e0;
+  color: #1c1c1c;
+}
+.uth__container__title-span {
+  display: block;
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  border-bottom: 1px solid #e0e0e0;
+  color: #1c1c1c;
+}
+.auth__container-info {
+  margin-top: 24px;
+}
+.content__photo {
+  margin-bottom: 32px;
+}
+
+.auth-content__buttons {
+  background-color: #fff8ed;
+  padding: 20px 0 20px 20px;
+}
+
+@include mq("lg") {
   .auth-content {
     &__title {
       margin-bottom: rem(32);
@@ -226,7 +291,7 @@
   }
 }
 
-@include mq('md') {
+@include mq("md") {
   .auth-content {
     &__message {
       margin: 0;
@@ -259,9 +324,6 @@
       width: 100%;
     }
 
-    &__checkbox {
-    }
-
     &__btn {
       width: 100%;
 
@@ -275,4 +337,69 @@
       gap: rem(20);
     }
   }
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.toggle-button {
+  display: block;
+  background-color: #314452;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.active .content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.toggle-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
