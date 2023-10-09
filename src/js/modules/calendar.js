@@ -32,4 +32,44 @@ const calendar = () => {
     })
   }
 }
+
+// calendar  form regist 
+document.querySelector('.dropdawn__button').addEventListener('click', function () {
+  document.querySelector('.dropdawn__list').classList.toggle('dropdawn__list--visible');
+  this.classList.add('dropdown__button--active')
+});
+
+document.querySelectorAll('.dropdawn__list-item').forEach(function (listItem) {
+  listItem.addEventListener('click', function () {
+    document.querySelector('.dropdawn__button').innerText = this.innerText;
+    document.querySelector('.dropdawn__button').focus();
+    document.querySelector('.dropdown__ipnut-hidden').value = this.dataset.value;
+    document.querySelector('.dropdawn__list').classList.remove('dropdawn__list--visible')
+  })
+});
+
+// calendar from register //
+
+//calendar data from register 
+document.querySelector('.from__data-btn').addEventListener('click', function () {
+  document.querySelector('.from__list').classList.toggle('from__list--visible');
+});
+
+
+document.querySelectorAll('.from__list-item').forEach(function (listData) {
+  listData.addEventListener('click', function () {
+    document.querySelector('.from__data-btn').innerText = this.innerText;
+    document.querySelector('.from__input-hidden').value = this.dataset.value;
+    document.querySelector('.from__list').classList.remove('from__list--visible')
+  });
+});
+
+//calendar data from register //
+
+
+
+
 export default calendar
+
+
+

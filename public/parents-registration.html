@@ -33,7 +33,7 @@
       </div>
     </aside>
 
-    <main class="main" style="background-color: red;">
+    <main class="main">
       <header class="auth-header">
         <div class="auth-header__container auth-container">
           <div class="auth-header__inner">
@@ -114,83 +114,155 @@
                 <!-- Date of birth -->
                 <div class="auth-content__field field">
                   <span class="field__label">Дата народження</span>
-                  <ul class="field__selects">
-                    <li class="field__select select">
-                      <div class="select__top">
-                        <span class="select__value">день</span>
-                        <svg class="select__top-svg">
-                          <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
-                        </svg>
+                  <div class="auth-auth__calendar">
+                    <div class="from-group">
+                      <div class="dropdown">
+                        <div class="dropdown__nav">
+                          <button class="dropdawn__button">Місяць
+                          </button>
+                          <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path d="M7.06005 9.29915L9.47543 11.7138C9.5427 11.7813 9.62263 11.8349 9.71065 11.8714C9.79866 11.908 9.89303 11.9268 9.98833 11.9268C10.0836 11.9268 10.178 11.908 10.266 11.8714C10.354 11.8349 10.434 11.7813 10.5012 11.7138L12.9166 9.29915C13.018 9.1977 13.0871 9.06844 13.1151 8.92774C13.143 8.78704 13.1287 8.6412 13.0738 8.50866C13.0189 8.37612 12.9259 8.26283 12.8067 8.18311C12.6874 8.10339 12.5472 8.06083 12.4037 8.06079H7.57366C7.43014 8.06069 7.28981 8.10315 7.17043 8.18281C7.05106 8.26248 6.95799 8.37576 6.90301 8.50833C6.84803 8.6409 6.8336 8.7868 6.86155 8.92757C6.88951 9.06834 6.95859 9.19765 7.06005 9.29915Z" fill="#828282"/>
+                            </svg></span>
+                        </div>
+                        <ul class="dropdawn__list">
+                          <li class="dropdawn__list-item" data-value="january">Січень</li>
+                          <li class="dropdawn__list-item" data-value="february">Лютий</li>
+                          <li class="dropdawn__list-item" data-value="march">Березень</li>
+                          <li class="dropdawn__list-item" data-value="april">Квітень</li>
+                          <li class="dropdawn__list-item" data-value="may">Травень</li>
+                          <li class="dropdawn__list-item" data-value="june">Червень</li>
+                          <li class="dropdawn__list-item" data-value="july">Липень</li>
+                          <li class="dropdawn__list-item" data-value="august">Серпень</li>
+                          <li class="dropdawn__list-item" data-value="september">Вересень</li>
+                          <li class="dropdawn__list-item" data-value="october">Жовтень</li>
+                          <li class="dropdawn__list-item" data-value="november">Листопад</li>
+                          <li class="dropdawn__list-item" data-value="december">Грудень</li>
+                        </ul>
+                        <input class="dropdown__ipnut-hidden" type="text" name="select-catagory" value="">
                       </div>
-                      <div class="select__bottom">
-                        <div class="select__counter">
-                          <span class="select__num">12</span>
-                          <div class="select__buttons">
-                            <button class="select__button select__button--plus" aria-label="Додати" type="button">
-                              <svg class="select__button-svg">
-                                <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
-                              </svg>
-                            </button>
-                            <button class="select__button select__button--minus" aria-label="Відняти" type="button">
-                              <svg class="select__button-svg">
-                                <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
-                              </svg>
-                            </button>
-                          </div>
+                    </div>
+                    <div class="from__data">
+                      <div class="from__data-dropdown">
+                        <div class="from__data-button">
+                          <button class="from__data-btn">
+                            2023
+                            <span class="from__data-span"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.06005 9.29915L9.47543 11.7138C9.5427 11.7813 9.62263 11.8349 9.71065 11.8714C9.79866 11.908 9.89303 11.9268 9.98833 11.9268C10.0836 11.9268 10.178 11.908 10.266 11.8714C10.354 11.8349 10.434 11.7813 10.5012 11.7138L12.9166 9.29915C13.018 9.1977 13.0871 9.06844 13.1151 8.92774C13.143 8.78704 13.1287 8.6412 13.0738 8.50866C13.0189 8.37612 12.9259 8.26283 12.8067 8.18311C12.6874 8.10339 12.5472 8.06083 12.4037 8.06079H7.57366C7.43014 8.06069 7.28981 8.10315 7.17043 8.18281C7.05106 8.26248 6.95799 8.37576 6.90301 8.50833C6.84803 8.6409 6.8336 8.7868 6.86155 8.92757C6.88951 9.06834 6.95859 9.19765 7.06005 9.29915Z" fill="#828282"/>
+                              </svg></span>
+                          </button>
+
                         </div>
                       </div>
-                    </li>
-                    <li class="field__select select">
-                      <div class="select__top">
-                        <span class="select__value">місяць</span>
-                        <svg class="select__top-svg">
-                          <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
-                        </svg>
-                      </div>
-                      <div class="select__bottom">
-                        <div class="select__counter">
-                          <span class="select__num">12</span>
-                          <div class="select__buttons">
-                            <button class="select__button select__button--plus" aria-label="Додати" type="button">
-                              <svg class="select__button-svg">
-                                <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
-                              </svg>
-                            </button>
-                            <button class="select__button select__button--minus" aria-label="Відняти" type="button">
-                              <svg class="select__button-svg">
-                                <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="field__select select">
-                      <div class="select__top">
-                        <span class="select__value">рік</span>
-                        <svg class="select__top-svg">
-                          <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
-                        </svg>
-                      </div>
-                      <div class="select__bottom">
-                        <div class="select__counter">
-                          <span class="select__num">2022</span>
-                          <div class="select__buttons">
-                            <button class="select__button select__button--plus" aria-label="Додати" type="button">
-                              <svg class="select__button-svg">
-                                <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
-                              </svg>
-                            </button>
-                            <button class="select__button select__button--minus" aria-label="Відняти" type="button">
-                              <svg class="select__button-svg">
-                                <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+                      <ul class="from__list">
+                        <li class="from__list-item" data-value="data1920">1920 p.</li>
+                        <li class="from__list-item" data-value="data1921">1921 p.</li>
+                        <li class="from__list-item" data-value="data1922">1922 p.</li>
+                        <li class="from__list-item" data-value="data1923">1923 p.</li>
+                        <li class="from__list-item" data-value="data1924">1924 p.</li>
+                        <li class="from__list-item" data-value="data1925">1925 p.</li>
+                        <li class="from__list-item" data-value="data1926">1926 p.</li>
+                        <li class="from__list-item" data-value="data1927">1927 p.</li>
+                        <li class="from__list-item" data-value="data1928">1928 p.</li>
+                        <li class="from__list-item" data-value="data1929">1929 p.</li>
+                        <li class="from__list-item" data-value="data1930">1930 p.</li>
+                        <li class="from__list-item" data-value="data1931">1931 p.</li>
+                        <li class="from__list-item" data-value="data1932">1932 p.</li>
+                        <li class="from__list-item" data-value="data1933">1933 p.</li>
+                        <li class="from__list-item" data-value="data1934">1934 p.</li>
+                        <li class="from__list-item" data-value="data1935">1935 p.</li>
+                        <li class="from__list-item" data-value="data1936">1936 p.</li>
+                        <li class="from__list-item" data-value="data1937">1937 p.</li>
+                        <li class="from__list-item" data-value="data1938">1938 p.</li>
+                        <li class="from__list-item" data-value="data1939">1939 p.</li>
+                        <li class="from__list-item" data-value="data1940">1940 p.</li>
+                        <li class="from__list-item" data-value="data1941">1941 p.</li>
+                        <li class="from__list-item" data-value="data1942">1942 p.</li>
+                        <li class="from__list-item" data-value="data1943">1943 p.</li>
+                        <li class="from__list-item" data-value="data1944">1944 p.</li>
+                        <li class="from__list-item" data-value="data1945">1945 p.</li>
+                        <li class="from__list-item" data-value="data1946">1946 p.</li>
+                        <li class="from__list-item" data-value="data1947">1947 p.</li>
+                        <li class="from__list-item" data-value="data1948">1948 p.</li>
+                        <li class="from__list-item" data-value="data1949">1949 p.</li>
+                        <li class="from__list-item" data-value="data1950">1950 p.</li>
+                        <li class="from__list-item" data-value="data1921">1951 p.</li>
+                        <li class="from__list-item" data-value="data1952">1952 p.</li>
+                        <li class="from__list-item" data-value="data1953">1953 p.</li>
+                        <li class="from__list-item" data-value="data1954">1954 p.</li>
+                        <li class="from__list-item" data-value="data1955">1955 p.</li>
+                        <li class="from__list-item" data-value="data1956">1956 p.</li>
+                        <li class="from__list-item" data-value="data1957">1957 p.</li>
+                        <li class="from__list-item" data-value="data1958">1958 p.</li>
+                        <li class="from__list-item" data-value="data1959">1959 p.</li>
+                        <li class="from__list-item" data-value="data1960">1960 p.</li>
+                        <li class="from__list-item" data-value="data1961">1961 p.</li>
+                        <li class="from__list-item" data-value="data1962">1962 p.</li>
+                        <li class="from__list-item" data-value="data1963">1963 p.</li>
+                        <li class="from__list-item" data-value="data1964">1964 p.</li>
+                        <li class="from__list-item" data-value="data1965">1965 p.</li>
+                        <li class="from__list-item" data-value="data1966">1966 p.</li>
+                        <li class="from__list-item" data-value="data1967">1967 p.</li>
+                        <li class="from__list-item" data-value="data1968">1968 p.</li>
+                        <li class="from__list-item" data-value="data1969">1969 p.</li>
+                        <li class="from__list-item" data-value="data1970">1970 p.</li>
+                        <li class="from__list-item" data-value="data1971">1971 p.</li>
+                        <li class="from__list-item" data-value="data1972">1972 p.</li>
+                        <li class="from__list-item" data-value="data1973">1973 p.</li>
+                        <li class="from__list-item" data-value="data1974">1974 p.</li>
+                        <li class="from__list-item" data-value="data1975">1975 p.</li>
+                        <li class="from__list-item" data-value="data1976">1976 p.</li>
+                        <li class="from__list-item" data-value="data1977">1977 p.</li>
+                        <li class="from__list-item" data-value="data1978">1978 p.</li>
+                        <li class="from__list-item" data-value="data1979">1979 p.</li>
+                        <li class="from__list-item" data-value="data1980">1980 p.</li>
+                        <li class="from__list-item" data-value="data1981">1981 p.</li>
+                        <li class="from__list-item" data-value="data1982">1982 p.</li>
+                        <li class="from__list-item" data-value="data1983">1983 p.</li>
+                        <li class="from__list-item" data-value="data1984">1984 p.</li>
+                        <li class="from__list-item" data-value="data1985">1985 p.</li>
+                        <li class="from__list-item" data-value="data1986">1986 p.</li>
+                        <li class="from__list-item" data-value="data1987">1987 p.</li>
+                        <li class="from__list-item" data-value="data1988">1988 p.</li>
+                        <li class="from__list-item" data-value="data1989">1989 p.</li>
+                        <li class="from__list-item" data-value="data1990">1990 p.</li>
+                        <li class="from__list-item" data-value="data1991">1991 p.</li>
+                        <li class="from__list-item" data-value="data1992">1992 p.</li>
+                        <li class="from__list-item" data-value="data1993">1993 p.</li>
+                        <li class="from__list-item" data-value="data1994">1994 p.</li>
+                        <li class="from__list-item" data-value="data1995">1995 p.</li>
+                        <li class="from__list-item" data-value="data1996">1996 p.</li>
+                        <li class="from__list-item" data-value="data1997">1997 p.</li>
+                        <li class="from__list-item" data-value="data1998">1998 p.</li>
+                        <li class="from__list-item" data-value="data1999">1999 p.</li>
+                        <li class="from__list-item" data-value="data2023">2000 p.</li>
+                        <li class="from__list-item" data-value="data2023">2001 p.</li>
+                        <li class="from__list-item" data-value="data2023">2002 p.</li>
+                        <li class="from__list-item" data-value="data2023">2003 p.</li>
+                        <li class="from__list-item" data-value="data2023">2004 p.</li>
+                        <li class="from__list-item" data-value="data2023">2005 p.</li>
+                        <li class="from__list-item" data-value="data2023">2006 p.</li>
+                        <li class="from__list-item" data-value="data2023">2007 p.</li>
+                        <li class="from__list-item" data-value="data2023">2008 p.</li>
+                        <li class="from__list-item" data-value="data2023">2009 p.</li>
+                        <li class="from__list-item" data-value="data2023">2010 p.</li>
+                        <li class="from__list-item" data-value="data2023">2011 p.</li>
+                        <li class="from__list-item" data-value="data2023">2012 p.</li>
+                        <li class="from__list-item" data-value="data2023">2013 p.</li>
+                        <li class="from__list-item" data-value="data2023">2014 p.</li>
+                        <li class="from__list-item" data-value="data2017">2015 p.</li>
+                        <li class="from__list-item" data-value="data2018">2016 p.</li>
+                        <li class="from__list-item" data-value="data2017">2017 p.</li>
+                        <li class="from__list-item" data-value="data2018">2018 p.</li>
+                        <li class="from__list-item" data-value="data2019">2019 p.</li>
+                        <li class="from__list-item" data-value="data2020">2020 p.</li>
+                        <li class="from__list-item" data-value="data2021">2021 p.</li>
+                        <li class="from__list-item" data-value="data2022">2022 p.</li>
+                        <li class="from__list-item" data-value="data2023">2023 p.</li>
+                      </ul>
+                      <input type="hidden" class="from__input-hidden" name="select-data" value="">
+                      
+                    </div>
+                  </div>
                 </div>
 
                 <!-- Sex -->
@@ -526,12 +598,15 @@
                         </div>
                       </li>
                     </ul>
-                    <button class="auth-content__btn btn btn--accent accordion-down">Зберегти і перейти далі
-                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
-                        <path d="M0.799805 12.6082C0.799992 12.3954 0.884682 12.1914 1.03525 12.041L5.14065 7.93562C5.26491 7.81139 5.36348 7.6639 5.43074 7.50157C5.49799 7.33924 5.5326 7.16525 5.5326 6.98954C5.5326 6.81383 5.49799 6.63984 5.43074 6.47751C5.36348 6.31518 5.26491 6.16769 5.14065 6.04346L1.04061 1.94074C0.894393 1.78936 0.813488 1.5866 0.815317 1.37614C0.817146 1.16568 0.901562 0.964363 1.05038 0.815541C1.19921 0.66672 1.40053 0.582304 1.61098 0.580475C1.82144 0.578646 2.0242 0.659551 2.17558 0.805764L6.27563 4.90527C6.82692 5.45765 7.13654 6.20619 7.13654 6.9866C7.13654 7.76701 6.82692 8.51555 6.27563 9.06793L2.17023 13.1733C2.05814 13.2855 1.91533 13.3619 1.75982 13.393C1.60432 13.4241 1.4431 13.4084 1.29649 13.348C1.14989 13.2875 1.02447 13.185 0.936076 13.0534C0.847679 12.9217 0.800261 12.7668 0.799805 12.6082Z" fill="white"/>
-                      </svg>
-                    </button>
                   </div>
+
+                </div>
+                <div class="document-button__box">
+                  <button class="auth-content__btn btn btn--accent accordion-down">Зберегти і перейти далі
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                      <path d="M0.799805 12.6082C0.799992 12.3954 0.884682 12.1914 1.03525 12.041L5.14065 7.93562C5.26491 7.81139 5.36348 7.6639 5.43074 7.50157C5.49799 7.33924 5.5326 7.16525 5.5326 6.98954C5.5326 6.81383 5.49799 6.63984 5.43074 6.47751C5.36348 6.31518 5.26491 6.16769 5.14065 6.04346L1.04061 1.94074C0.894393 1.78936 0.813488 1.5866 0.815317 1.37614C0.817146 1.16568 0.901562 0.964363 1.05038 0.815541C1.19921 0.66672 1.40053 0.582304 1.61098 0.580475C1.82144 0.578646 2.0242 0.659551 2.17558 0.805764L6.27563 4.90527C6.82692 5.45765 7.13654 6.20619 7.13654 6.9866C7.13654 7.76701 6.82692 8.51555 6.27563 9.06793L2.17023 13.1733C2.05814 13.2855 1.91533 13.3619 1.75982 13.393C1.60432 13.4241 1.4431 13.4084 1.29649 13.348C1.14989 13.2875 1.02447 13.185 0.936076 13.0534C0.847679 12.9217 0.800261 12.7668 0.799805 12.6082Z" fill="white"/>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -684,16 +759,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="auth-content__next">
-                  <div class="auth-content__buttons">
-                    <button class="auth-content__btn btn btn--accent accordion-down" type="button">
-                      Зберегти і перейти далі
-                      <svg class="btn__icon">
-                        <use xlink:href="img/sprite.svg#arrow-right"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
+
               </div>
               <!-- new user end -->
             </div>
@@ -701,17 +767,27 @@
           <button class="auth-content__button-user">
 
             <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <g clip-path="url(#clip0_2007_34302)">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.66317 1.45907C8.66317 1.12814 8.3949 0.859863 8.06396 0.859863C7.73303 0.859863 7.46476 1.12814 7.46476 1.45907V7.96476H0.959072C0.628138 7.96476 0.359863 8.23303 0.359863 8.56397C0.359863 8.8949 0.628138 9.16318 0.959072 9.16318H7.46476V15.6689C7.46476 15.9998 7.73303 16.2681 8.06396 16.2681C8.3949 16.2681 8.66317 15.9998 8.66317 15.6689V9.16318H15.1689C15.4998 9.16318 15.7681 8.8949 15.7681 8.56397C15.7681 8.23303 15.4998 7.96476 15.1689 7.96476H8.66317V1.45907Z" fill="#828282"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_2007_34302">
-              <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
-              </clipPath>
-              </defs>
+                <g clip-path="url(#clip0_2007_34302)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.66317 1.45907C8.66317 1.12814 8.3949 0.859863 8.06396 0.859863C7.73303 0.859863 7.46476 1.12814 7.46476 1.45907V7.96476H0.959072C0.628138 7.96476 0.359863 8.23303 0.359863 8.56397C0.359863 8.8949 0.628138 9.16318 0.959072 9.16318H7.46476V15.6689C7.46476 15.9998 7.73303 16.2681 8.06396 16.2681C8.3949 16.2681 8.66317 15.9998 8.66317 15.6689V9.16318H15.1689C15.4998 9.16318 15.7681 8.8949 15.7681 8.56397C15.7681 8.23303 15.4998 7.96476 15.1689 7.96476H8.66317V1.45907Z" fill="#828282"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_2007_34302">
+                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                </defs>
               </svg></span>
-              Додати другу контактну особу
-            </button>
+            Додати другу контактну особу
+          </button>
+          <div class="auth-content__next auth__btn-done">
+            <div class="auth-content__buttons">
+              <button class="auth-content__btn btn btn--accent accordion-down" type="button">
+                Зберегти і перейти далі
+                <svg class="btn__icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <footer class="footer">
