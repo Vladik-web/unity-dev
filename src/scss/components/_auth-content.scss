@@ -238,7 +238,6 @@ input[type="radio"] {
 
 /* Добавляем стиль для активной радиокнопки */
 
-
 /* Показываем содержимое активной радиокнопки при загрузке страницы */
 input[type="radio"]:checked + label + .content {
   display: block;
@@ -353,7 +352,6 @@ input[type="radio"]:checked + label + .content {
 }
 
 .content {
-  display: none;
   background-color: #f0f0f0;
   padding: 10px;
 }
@@ -362,44 +360,34 @@ input[type="radio"]:checked + label + .content {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.accordion-item {
-  margin-bottom: 10px;
+.auth-content__button-user {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #FFA349;
+  text-transform: uppercase;
+  background-color: transparent;
+  color:  #1c1c1c;
 }
 
-.toggle-button {
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+.auth-content__new-user--includes {
+  display: none;
+}
+.auth-content__button-user {
+  display: none;
 }
 
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
+.active-1 {
+  display: none;
+}
+.active-2 {
+  display: flex;
+}
+.active-3 {
+  display: block;
 }
