@@ -3061,7 +3061,6 @@ body .simplebar-track {
   width: 8.0625rem;
   height: 8.0625rem;
   background-color: var(--bg);
-  cursor: pointer;
 }
 
 .load-avatar__image-svg {
@@ -6861,9 +6860,9 @@ body .simplebar-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   margin-top: 3.75rem;
   border-radius: 0.3125rem;
   padding: 1.25rem;
@@ -6875,7 +6874,7 @@ body .simplebar-track {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  max-width: 22.125rem;
+  max-width: 388px;
 }
 
 .auth-content__buttons {
@@ -6915,10 +6914,6 @@ body .simplebar-track {
   padding-top: 2rem;
 }
 
-.auth-content__title {
-  cursor: pointer;
-}
-
 .auth-content__up {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6929,11 +6924,12 @@ body .simplebar-track {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.625rem 0.625rem 1.125rem;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+  border-bottom: 0.0625rem solid var(--grey-5);
 }
 
 .auth-content__up .auth-content__title {
-  cursor: pointer;
   margin: 0;
   border: none;
   padding: 0;
@@ -6984,7 +6980,7 @@ body .simplebar-track {
 }
 
 .auth-content__head {
-  margin-bottom: 1.875rem;
+  margin-bottom: 30px;
   font-weight: 600;
   font-style: normal;
   font-size: 1.5rem;
@@ -7002,10 +6998,16 @@ body .simplebar-track {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 1.25rem;
   border: 0.125rem dashed var(--blue-50);
   border-radius: 0.3125rem;
-  padding: 1.75rem 2.375rem;
+  padding: 1.75rem 1.5625rem;
   gap: 0.625rem;
 }
 
@@ -7022,6 +7024,7 @@ body .simplebar-track {
 }
 
 .auth-content__text p {
+  margin-bottom: 20px;
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
@@ -7056,11 +7059,54 @@ body .simplebar-track {
   padding: 20px 0 20px 20px;
   margin-top: 97px;
   border-radius: 5px;
-  background-color: #FFF8ED;
+  background-color: #fff8ed;
 }
 
 .auth-content__from-btn {
   max-width: 236px;
+}
+
+.auth-content__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.auth-content__header {
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.auth-content__titleuser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #1c1c1c;
 }
 
 .content {
@@ -7096,6 +7142,29 @@ input[type=radio] {
 
 input[type=radio]:checked + label + .content {
   display: block;
+}
+
+.load-button__save {
+  padding: 8px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  opacity: 0.5;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #ffa349;
+  color: #fff;
+}
+
+.load-box__save {
+  margin-top: 60px;
+  padding: 20px 0 20px 16px;
+  border-radius: 5px;
+  background: #fff8ed;
 }
 
 .auth__container-title {
@@ -7347,6 +7416,16 @@ input[type=radio]:checked + label + .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.form__verified {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .aside {
@@ -9165,6 +9244,22 @@ input[type=radio]:checked + label + .content {
   gap: 1.25rem;
 }
 
+.lesson-section__subtitle {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+
 .lesson-section__info {
   margin-bottom: 3.75rem;
   border-bottom: 0.0625rem solid var(--grey-4);
@@ -9593,6 +9688,45 @@ input[type=radio]:checked + label + .content {
 .lesson-section__text ul,
 .lesson-section__work ul {
   list-style: unset;
+}
+
+.lesson-section__lesson {
+  padding: 8px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #ffa349;
+  color: #1c1c1c;
+}
+
+.lesson-section__materials-title {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #1c1c1c;
+}
+
+.lesson-section__materials-list {
+  margin-bottom: 60px;
+}
+
+.lesson-section__materials {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .maintenance {
@@ -12298,11 +12432,17 @@ input[type=radio]:checked + label + .content {
 
   .dropdawn__list {
     width: 336px;
+    left: 19px;
   }
 
   .dropdawn__list-item {
     width: 100%;
     text-align: center;
+  }
+
+  .auth-content__text p {
+    text-align: center;
+    max-width: 235px;
   }
 
   .aside {
@@ -13226,6 +13366,10 @@ input[type=radio]:checked + label + .content {
   .auth-content__grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
+  }
+
+  .dropdawn__list {
+    left: 25px;
   }
 
   .document-block {

@@ -44,7 +44,7 @@
 
   &__next {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin-top: rem(60);
     border-radius: rem(5);
     padding: rem(20);
@@ -54,7 +54,7 @@
 
   &__checkbox {
     align-items: flex-start;
-    max-width: rem(354);
+    max-width: 388px;
   }
 
   &__buttons {
@@ -98,16 +98,16 @@
     padding-top: rem(32);
   }
   &__title {
-    cursor: pointer;
+    // cursor: pointer;
   }
   &__up {
     @include flex-all-sb;
-
-    // border-bottom: rem(1) solid var(--grey-5);
-    padding: rem(10) rem(10) rem(18);
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+    border-bottom: rem(1) solid var(--grey-5);
+    // padding: rem(10) rem(10) rem(18);
 
     .auth-content__title {
-      cursor: pointer;
       margin: 0;
       border: none;
       padding: 0;
@@ -148,6 +148,7 @@
   }
 
   &__title {
+  
     margin-bottom: rem(24);
     border-bottom: rem(1) solid var(--grey-5);
     padding-bottom: rem(8);
@@ -161,7 +162,7 @@
   }
 
   &__head {
-    margin-bottom: rem(30);
+    margin-bottom: 30px;
     font-weight: 600;
     font-style: normal;
     font-size: rem(24);
@@ -171,11 +172,13 @@
 
   &__smile {
     @include flex-all-center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: rem(20);
     border: rem(2) dashed var(--blue-50);
     border-radius: rem(5);
-    padding: rem(28) rem(38);
+    padding: rem(28) rem(25);
     gap: rem(10);
 
     &-svg {
@@ -192,6 +195,7 @@
 
   &__text {
     p {
+      margin-bottom: 20px;
       font-weight: 500;
       font-style: normal;
       font-size: rem(16);
@@ -217,11 +221,34 @@
   &__form-button {
     padding: 20px 0 20px 20px;
     margin-top: 97px;
-    border-radius:  5px;
-    background-color:  #FFF8ED;
+    border-radius: 5px;
+    background-color: #fff8ed;
   }
   &__from-btn {
     max-width: 236px;
+  }
+  &__down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__header {
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  &__titleuser {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    color:  #1c1c1c;
   }
 }
 .content {
@@ -254,7 +281,25 @@ input[type="radio"] {
 input[type="radio"]:checked + label + .content {
   display: block;
 }
-
+.load-button__save {
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+  opacity: 0.5;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #ffa349;
+  color: #fff;
+}
+.load-box__save {
+  margin-top: 60px;
+  padding: 20px 0 20px 16px;
+  border-radius: 5px;
+  background: #fff8ed;
+}
 .auth__container-title {
   display: flex;
   justify-content: space-between;
@@ -305,10 +350,15 @@ input[type="radio"]:checked + label + .content {
   }
   .dropdawn__list {
     width: 336px;
+    left: 19px;
   }
   .dropdawn__list-item {
     width: 100%;
     text-align: center;
+  }
+  .auth-content__text p {
+    text-align: center;
+    max-width: 235px;
   }
 }
 
@@ -320,6 +370,8 @@ input[type="radio"]:checked + label + .content {
     }
 
     &__smile {
+    
+
       padding: rem(20) rem(15);
 
       &--mobile {
@@ -357,6 +409,9 @@ input[type="radio"]:checked + label + .content {
       grid-template-columns: 1fr;
       gap: rem(20);
     }
+  }
+  .dropdawn__list {
+    left: 25px;
   }
 }
 .form__regist {
@@ -529,3 +584,9 @@ input[type="radio"]:checked + label + .content {
 .open-element {
   display: flex;
 }
+.form__verified {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+

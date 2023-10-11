@@ -31,7 +31,17 @@
     margin-bottom: rem(60);
     gap: rem(20);
   }
-
+  &__subtitle {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #bdbdbd;
+  }
   &__info {
     margin-bottom: rem(60);
     border-bottom: rem(1) solid var(--grey-4);
@@ -302,7 +312,7 @@
 
     .definition {
       padding: rem(20);
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-size: rem(18);
       line-height: normal;
@@ -343,9 +353,39 @@
       list-style: unset;
     }
   }
+  &__lesson {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #ffa349;
+    color: #1c1c1c;
+  }
+  &__materials-title {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+    color:  #1c1c1c;
+  }
+ 
+}
+.lesson-section__materials-list {
+  margin-bottom: 60px;
+}
+.lesson-section__materials {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #E0E0E0;
 }
 
-@include mq('lg') {
+@include mq("lg") {
   .lesson-section {
     &__edit {
       width: 100%;
@@ -436,7 +476,9 @@
         .lesson-section__theme {
           border-bottom-right-radius: 0;
           border-bottom-left-radius: 0;
-          transition: border-bottom-right-radius 0.3s ease, border-bottom-left-radius 0.3s ease;
+          transition:
+            border-bottom-right-radius 0.3s ease,
+            border-bottom-left-radius 0.3s ease;
         }
 
         .theme-card__more-svg {
@@ -454,7 +496,7 @@
       z-index: var(--ui-index-1);
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: rem(15);
         right: rem(15);
@@ -518,7 +560,7 @@
   }
 }
 
-@include mq('md') {
+@include mq("md") {
   .lesson-section {
     &__next.btn.btn--trans {
       width: 100%;
