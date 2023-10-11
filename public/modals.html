@@ -26,6 +26,7 @@
       <button class="btn-8 btn btn--accent">Вибачте але сталась якась помилка</button>
       <button class="btn-9 btn btn--accent">Зміна зображення профілю</button>
       <button class="btn-10 btn btn--accent">Обрізати й обернути</button>
+      <button class="btn-11 btn btn--accent">Завантаження фото</button>
     </div>
     <div class="modal login">
   <div class="modal__body">
@@ -317,7 +318,7 @@
  <div class="modal deposit modal--mobile">
   <div class="modal__body">
     <div class="modal__content">
-      <div class="modal__main">
+      <div class="modal__main sumIncrease">
         <button class="modal__close">
           <svg class="modal__close-svg">
             <use xlink:href="img/sprite.svg#close"></use>
@@ -333,7 +334,7 @@
           <form class="modal__form">
             <div class="modal__field field">
               <div class="field__wrapper">
-                <input type="text" id="form[email]" class="field__input input" placeholder="Ім’я" inputmode="email" data-input="" required="">
+                <input type="text" id="form[email]" class="field__input input" placeholder="введіть суму" inputmode="email" data-input="" required="">
                 <svg class="field__icon">
                   <use xlink:href="img/sprite.svg#warn"></use>
                 </svg>
@@ -353,7 +354,7 @@
   </div>
 </div>
 
-    <div class="modal thanks modal--mobile">
+    <div class="modal thanks modal--mobile thanks">
   <div class="modal__body">
     <div class="modal__content">
       <div class="modal__main">
@@ -378,7 +379,7 @@
     </div>
   </div>
 </div>
- <div class="modal error modal--mobile">
+ <div class="modal error modal--mobile error">
   <div class="modal__body">
     <div class="modal__content">
       <div class="modal__main">
@@ -439,30 +440,32 @@
               </div>
             </div>
             <div class="modal__document document">
-              <div class="document__wrapper">
+              <!-- <div class="document__wrapper">
                 <button class="document__remove" type="button" aria-label="Видалити цей документ">
                   <svg class="document__remove-svg">
                     <use xlink:href="img/sprite.svg#remove"></use>
                   </svg>
                 </button>
-                <svg class="document__image">
+                 <svg class="document__image">
                   <use xlink:href="img/sprite.svg#avatar-image"></use>
-                </svg>
-                <span class="document__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, earum?</span>
+                </svg> -->
+                <!-- <span class="document__title"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, earum?</span
+                
                 <small class="document__weight">12 mb</small>
-              </div>
+              </div>  -->
             </div>
 
-            <button class="modal__btn btn btn--accent">Відправити на перевірку</button>
+            <!-- <button class="modal__btn btn btn--accent">Відправити на перевірку</button> -->
           </form>
         </div>
       </div>
     </div>
   </div>
 </div>
- <div class="modal rotate modal--open modal--big">
+ <div class="modal rotate modal--big">
   <div class="modal__body">
-    <div class="modal__content">
+    <div class="modal__content rotate">
       <div class="modal__main">
         <button class="modal__close">
           <svg class="modal__close-svg">
@@ -491,12 +494,125 @@
             </svg>
             Обернути
           </button>
-          <button class="modal__btn btn btn--accent">ок</button>
+          <div class="modal__button">
+            <button class="modal__btn btn">Завантажити заново</button>
+            <button class="modal__btn btn btn--accent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M1.76198 9.65877L4.20447 12.2491C4.36259 12.4212 4.55474 12.5586 4.76874 12.6527C4.98275 12.7467 5.21394 12.7952 5.44769 12.7952C5.68143 12.7952 5.91263 12.7467 6.12663 12.6527C6.34064 12.5586 6.53278 12.4212 6.6909 12.2491L14.2329 4.24878C14.3414 4.12727 14.4001 3.96941 14.3975 3.80657C14.3948 3.64373 14.331 3.48786 14.2187 3.36994C14.1661 3.31476 14.1029 3.27083 14.0329 3.24082C13.9628 3.2108 13.8874 3.19531 13.8112 3.19531C13.735 3.19531 13.6596 3.2108 13.5896 3.24082C13.5195 3.27083 13.4563 3.31476 13.4037 3.36994L5.86171 11.3697C5.80905 11.4271 5.74503 11.4729 5.67371 11.5043C5.60239 11.5357 5.52532 11.5519 5.4474 11.5519C5.36949 11.5519 5.29242 11.5357 5.2211 11.5043C5.14977 11.4729 5.08575 11.4271 5.03309 11.3697L2.59117 8.77937C2.53736 8.72297 2.47243 8.67835 2.40048 8.64835C2.32853 8.61834 2.25114 8.6036 2.1732 8.60504C2.09526 8.60649 2.01846 8.6241 1.94768 8.65676C1.8769 8.68942 1.81366 8.73642 1.76198 8.79478C1.65613 8.91378 1.59766 9.06751 1.59766 9.22678C1.59766 9.38605 1.65613 9.53977 1.76198 9.65877Z" fill="white"/>
+              </svg>Зберегти</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+    <div class="modal modal--big change-photo-process">
+    <div class="modal__body">
+      <div class="modal__content">
+        <div class="modal__main">
+          <button class="modal__close">
+            <svg class="modal__close-svg">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+
+          <h2 class="modal__title">Зміна зображення профілю</h2>
+          <div class="modal__warn">
+            <svg>
+              <use xlink:href="img/sprite.svg#warn"></use>
+            </svg>
+            <strong> Увага!</strong>
+            <p>Фото можна змінити тільки раз на рік</p>
+          </div>
+          <div class="modal__wrapper">
+            <form class="modal__from">
+              <div class="modal__upload">
+                <svg class="modal__upload-svg">
+                  <use xlink:href="img/sprite.svg#upload"></use>
+                </svg>
+                <div class="modal__drop">
+                  <span>Перетягніть <br>
+                    або</span>
+                  <label for="upload-files">
+                    оберіть файл
+                    <input type="file" id="upload-files" hidden>
+                  </label>
+                </div>
+              </div>
+              <div class="modal__case" data-simplebar>
+                <ul class="modal__documents">
+                  <li class="document-block__item document document--error">
+                    <div class="document__wrapper">
+                      <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                        <svg class="document__remove-svg">
+                          <use xlink:href="img/sprite.svg#remove"></use>
+                        </svg>
+                      </button>
+                      <svg class="document__image">
+                        <use xlink:href="img/sprite.svg#avatar-image"></use>
+                      </svg>
+                      <span class="document__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, earum?</span>
+                      <small class="document__weight">12 mb</small>
+                    </div>
+                    <div class="document__error">
+                      <svg class="document__error-icon">
+                        <use xlink:href="img/sprite.svg#warn"></use>
+                      </svg>
+
+                      Завантажте ще раз
+                    </div>
+                  </li>
+                  <li class="modal__document document">
+                    <div class="document__wrapper">
+                      <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                        <svg class="document__remove-svg">
+                          <use xlink:href="img/sprite.svg#remove"></use>
+                        </svg>
+                      </button>
+                      <svg class="document__image">
+                        <use xlink:href="img/sprite.svg#avatar-image"></use>
+                      </svg>
+                      <span class="document__title">Фото_27.04.2023</span>
+                      <small class="document__weight">12 mb</small>
+
+                      <div class="document__progress progress">
+                        <span class="progress-line">
+                          <span style="width: 80%"></span>
+                        </span>
+                        80%
+                      </div>
+                    </div>
+                  </li>
+                  <li class="modal__document document">
+                    <div class="document__wrapper">
+                      <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                        <svg class="document__remove-svg">
+                          <use xlink:href="img/sprite.svg#remove"></use>
+                        </svg>
+                      </button>
+                      <svg class="document__image">
+                        <use xlink:href="img/sprite.svg#avatar-image"></use>
+                      </svg>
+                      <span class="document__title">Фото_27.04.2023</span>
+                      <small class="document__weight">12 mb</small>
+                      <div class="document__progress progress">
+                        <span class="progress-line">
+                          <span style="width: 80%"></span>
+                        </span>
+                        80%
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="modal__btn btn btn--accent">Відправити на перевірку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   </body>
 </html>

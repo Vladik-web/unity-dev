@@ -53,5 +53,6 @@ const accordion = () => {
     'інформацію про предмет'
   )
   bindAccordion('.subject__plan.plan', '.plan__top', '.plan__bottom', 'plan--active', 'розділ')
+  bindAccordion('.accordion-item','.accordion-open')
 }
 export default accordion

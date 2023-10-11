@@ -511,3 +511,15 @@
     }
   }
 }
+
+.modal__button {
+  margin: 0 auto;
+  max-width: 350px;
+  display: flex;
+  gap: 24px;
+}
+.modal__btn {
+  width: 196px;
+  border-radius: 5px;
+  border: 1px solid var(--orange-orange-400, #FFA349);
+}

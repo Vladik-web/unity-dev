@@ -16,7 +16,11 @@ import maintenance from './modules/maintenance'
 import graph from './modules/graph'
 import table from './modules/table'
 import calendar from './modules/calendar'
-
+import adaptChartToScreenSize from './modules/table-adaptation'
+import './modules/registration-accordion';
+import registrationCalendarMonth from './modules/registration-calendar'
+import registrationCalendarData from './modules/register-calendar-data'
+import registerAccordion from './modules/registration-accordion'
 window.addEventListener('DOMContentLoaded', () => {
   try {
     new SimpleBar(document.querySelector('[data-simplebar]'), { autoHide: false })
@@ -40,4 +44,9 @@ window.addEventListener('DOMContentLoaded', () => {
   graph()
   table()
   calendar()
+  adaptChartToScreenSize()
+  registrationCalendarMonth()
+  registrationCalendarData()
+  registerAccordion()
 })
+

@@ -169,7 +169,7 @@
       .lessons-schedule__list {
         display: none;
       }
-
+      
       &:not(:last-child) {
         margin-bottom: rem(20);
         border: none;
@@ -177,6 +177,7 @@
       }
     }
   }
+
 
   .schedule-table__item {
     &:not(:first-child) {
@@ -232,4 +233,8 @@
       grid-column: 2 span;
     }
   }
+}
+
+.lessons-schedule__list {
+  max-width: 176px;
 }
