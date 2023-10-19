@@ -12,7 +12,7 @@ const calendar = () => {
       fontFamilyHeader: 'Roboto, sans-serif',
       fontFamilyWeekdays: 'Roboto, sans-serif',
       fontFamilyBody: 'Roboto, sans-serif',
-      startWeekday: 5,
+      startWeekday: 1,
       disableMonthYearPickers: true,
       customMonthValues: [
         'Cічень',
@@ -28,7 +28,7 @@ const calendar = () => {
         'Листопад',
         'Грудень'
       ],
-      customWeekdayValues: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
+      customWeekdayValues: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Cб']
     })
   }
 }

@@ -10,36 +10,36 @@
   &__block {
     max-height: calc(var(--app-height) - rem(107.19) - rem(65) - rem(40));
 
-    .simplebar-track.simplebar-horizontal {
-      bottom: rem(-20);
-      overflow: unset;
-      border-radius: rem(5);
-      width: calc(100%);
-      height: rem(4);
-      background-color: #e0e0e0;
+    // .simplebar-track.simplebar-horizontal {
+    //   bottom: rem(-20);
+    //   overflow: unset;
+    //   border-radius: rem(5);
+    //   width: calc(100%);
+    //   height: rem(4);
+    //   background-color: #e0e0e0;
 
-      .simplebar-scrollbar::before {
-        left: 0;
-        top: 50%;
-        bottom: 0;
-        width: unset;
-        height: rem(10);
-        background-color: #eef4ff;
-        opacity: 1 !important;
-        transform: translateY(-50%);
-      }
-    }
+    //   .simplebar-scrollbar::before {
+    //     left: 0;
+    //     top: 50%;
+    //     bottom: 0;
+    //     width: unset;
+    //     height: rem(10);
+    //     background-color: #eef4ff;
+    //     opacity: 1 !important;
+    //     transform: translateY(-50%);
+    //   }
+    // }
 
-    .simplebar-track.simplebar-vertical {
-      overflow: unset;
-      border-radius: rem(5);
-      width: rem(4);
-      background-color: #e0e0e0;
-    }
+    // .simplebar-track.simplebar-vertical {
+    //   overflow: unset;
+    //   border-radius: rem(5);
+    //   width: rem(4);
+    //   background-color: #e0e0e0;
+    // }
 
-    .simplebar-track {
-      right: rem(-17);
-    }
+    // .simplebar-track {
+    //   right: rem(-17);
+    // }
 
     .simplebar-scrollbar {
       width: rem(3);

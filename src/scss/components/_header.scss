@@ -222,7 +222,7 @@
 
   &__link {
     @include flex-v-center;
-
+    margin-top: rem(12);
     padding: rem(4) rem(12);
     width: 100%;
     line-height: 1;
@@ -243,8 +243,8 @@
   &__top {
     display: flex;
     align-items: center;
-    margin-bottom: rem(16);
-    border-bottom: rem(1) solid var(--grey-6);
+    // margin-bottom: rem(16);
+    // border-bottom: rem(1) solid var(--grey-6);
     padding-bottom: rem(16);
     gap: rem(12);
 
@@ -589,4 +589,9 @@
       }
     }
   }
+}
+
+// style header student cabinet (notifications__top-svg)
+.notifications__top-svg {
+  fill: #bdbdbd;
 }
