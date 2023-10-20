@@ -1,17 +1,186 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    @@include('../components/_head.html', {title: 'Кабінет батьків'})
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 
-    <meta property="og:title" content="Title" />
-    <meta property="og:url" content="url" />
-    <meta property="og:image" content="img/favicon/favicon.svg" />
+<!-- favicon -->
+
+<link rel="stylesheet" href="css/main.min.css">
+
+<script src="js/main.js" defer="defer"></script>
+<title>Вчитель головна</title>
+
+    <meta property="og:title" content="Title">
+    <meta property="og:url" content="url">
+    <meta property="og:image" content="img/favicon/favicon.svg">
   </head>
 
   <body class="body-mob-fixed">
     <div class="base-layout">
-      @@include("../components/modals/gears.html")
-      @@include("../components/_aside.html")
+
+      <aside class="aside aside--main aside--hide">
+    <div class="aside__wrapper">
+      <button class="aside__btn" id="aside-btn">
+        <svg class="aside__btn-svg">
+          <use xlink:href="img/sprite.svg#aside-arrows"></use>
+        </svg>
+      </button>
+
+      <div class="aside__top">
+        <a href="/" class="aside__logo">
+          <svg class="aside__top-svg" width="72" height="28" viewBox="0 0 72 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="aside__top-path" d="M13.3477 1.63601H17.6531V14.8604C17.6531 16.3453 17.2984 17.6445 16.5891 18.7582C15.8865 19.8718 14.9021 20.7402 13.636 21.3633C12.3699 21.9798 10.895 22.288 9.21129 22.288C7.52095 22.288 6.04273 21.9798 4.77663 21.3633C3.51054 20.7402 2.52616 19.8718 1.82351 18.7582C1.12086 17.6445 0.769531 16.3453 0.769531 14.8604V1.63601H5.07493V14.4925C5.07493 15.2681 5.24396 15.9575 5.58203 16.5607C5.92673 17.1639 6.41063 17.6379 7.03374 17.9826C7.65684 18.3273 8.38269 18.4996 9.21129 18.4996C10.0465 18.4996 10.7724 18.3273 11.3889 17.9826C12.012 17.6379 12.4925 17.1639 12.8306 16.5607C13.1753 15.9575 13.3477 15.2681 13.3477 14.4925V1.63601Z" fill="#4F4F4F"/>
+            <path class="aside__top-path aside__top-path--hide" d="M25.3516 13.1701V21.9996H21.1158V6.72692H25.1527V9.42152H25.3317C25.6697 8.53326 26.2365 7.83061 27.032 7.31357C27.8274 6.78989 28.7919 6.52806 29.9254 6.52806C30.986 6.52806 31.9107 6.76006 32.6996 7.22408C33.4884 7.68809 34.1016 8.35097 34.5391 9.21271C34.9766 10.0678 35.1953 11.0887 35.1953 12.2752V21.9996H30.9595V13.0309C30.9661 12.0962 30.7275 11.3671 30.2436 10.8434C29.7597 10.3131 29.0935 10.0479 28.245 10.0479C27.675 10.0479 27.1712 10.1706 26.7337 10.4158C26.3028 10.6611 25.9647 11.0191 25.7195 11.4897C25.4808 11.9537 25.3582 12.5139 25.3516 13.1701Z" fill="#4F4F4F"/>
+            <path class="aside__top-path aside__top-path--hide" d="M38.5337 21.9996V6.72692H42.7695V21.9996H38.5337ZM40.6616 4.75817C40.0318 4.75817 39.4916 4.54936 39.0408 4.13175C38.5967 3.70751 38.3746 3.2004 38.3746 2.61044C38.3746 2.02711 38.5967 1.52663 39.0408 1.10902C39.4916 0.684778 40.0318 0.472656 40.6616 0.472656C41.2913 0.472656 41.8282 0.684778 42.2724 1.10902C42.7231 1.52663 42.9485 2.02711 42.9485 2.61044C42.9485 3.2004 42.7231 3.70751 42.2724 4.13175C41.8282 4.54936 41.2913 4.75817 40.6616 4.75817Z" fill="#4F4F4F"/>
+            <path class="aside__top-path aside__top-path--hide" d="M54.2862 6.72692V9.90874H45.0888V6.72692H54.2862ZM47.1768 3.06783H51.4126V17.3065C51.4126 17.6976 51.4723 18.0025 51.5916 18.2212C51.7109 18.4334 51.8767 18.5825 52.0888 18.6687C52.3075 18.7549 52.5594 18.7979 52.8445 18.7979C53.0433 18.7979 53.2422 18.7814 53.4411 18.7482C53.6399 18.7085 53.7924 18.6786 53.8984 18.6587L54.5646 21.8107C54.3525 21.877 54.0542 21.9532 53.6697 22.0394C53.2853 22.1322 52.8179 22.1886 52.2678 22.2085C51.2469 22.2482 50.352 22.1123 49.5831 21.8008C48.8208 21.4892 48.2275 21.0053 47.8033 20.3491C47.379 19.6928 47.1702 18.8642 47.1768 17.8633V3.06783Z" fill="#4F4F4F"/>
+            <path class="aside__top-path aside__top-path--hide" d="M59.6605 27.7269C59.1236 27.7269 58.6198 27.6838 58.1491 27.5977C57.6851 27.5181 57.3007 27.4154 56.9957 27.2894L57.9503 24.1275C58.4474 24.2799 58.8949 24.3628 59.2926 24.3761C59.697 24.3893 60.045 24.2965 60.3366 24.0977C60.6349 23.8988 60.8769 23.5607 61.0625 23.0835L61.3111 22.4371L55.8324 6.72692H60.2869L63.4489 17.9428H63.608L66.7997 6.72692H71.2841L65.348 23.6502C65.063 24.4722 64.6752 25.1881 64.1847 25.7979C63.7008 26.4144 63.0876 26.8884 62.3452 27.2198C61.6027 27.5579 60.7079 27.7269 59.6605 27.7269Z" fill="#4F4F4F"/>
+            <path class="aside__top-path aside__top-path--hide" d="M40.6619 4.75817C40.0322 4.75817 39.492 4.54936 39.0412 4.13175C38.5971 3.70751 38.375 3.2004 38.375 2.61044C38.375 2.02711 38.5971 1.52663 39.0412 1.10902C39.492 0.684778 40.0322 0.472656 40.6619 0.472656C41.2917 0.472656 41.8286 0.684778 42.2727 1.10902C42.7235 1.52663 42.9489 2.02711 42.9489 2.61044C42.9489 3.2004 42.7235 3.70751 42.2727 4.13175C41.8286 4.54936 41.2917 4.75817 40.6619 4.75817Z" fill="#4F4F4F"/>
+          </svg>
+        </a>
+      </div>
+      <nav class="aside__navigation nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--home">
+            <a href="#" class="nav__link nav__link--active">
+              <svg class="nav__link-svg">
+                <use xlink:href="img/sprite.svg#group"></use>
+              </svg>
+
+              <span class="nav__link-text">Головне</span>
+            </a>
+          </li>
+          <li class="nav__item nav__item--wallet">
+            <a href="#" class="nav__link">
+              <svg class="nav__link-svg">
+                <use xlink:href="img/sprite.svg#wallet"></use>
+              </svg>
+
+              <span class="nav__link-text">Гаманець</span>
+            </a>
+          </li>
+          <li class="nav__item nav__item--childrens">
+            <a href="#" class="nav__link">
+              <svg class="nav__link-svg">
+                <use xlink:href="img/sprite.svg#childrens"></use>
+              </svg>
+
+              <span class="nav__link-text">Діти</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg class="nav__link-svg">
+                <use xlink:href="img/sprite.svg#chat"></use>
+              </svg>
+
+              <span class="nav__link-text">Чаты</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg class="nav__link-svg">
+                <use xlink:href="img/sprite.svg#statistics"></use>
+              </svg>
+
+              <span class="nav__link-text">Статистика</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <div class="nav__accordion">
+              <div class="nav__top">
+                <a href="#" class="nav__link">
+                  <svg class="nav__link-svg">
+                    <use xlink:href="img/sprite.svg#book"></use>
+                  </svg>
+                  <span class="nav__link-text">Предмети</span>
+                </a>
+                <button class="nav__open" aria-expanded="false" aria-label="Відкрити меню">
+                  <svg class="nav__open-arrow">
+                    <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="nav__down">
+                <ul class="nav__sublist">
+                  <li class="nav__subitem">
+                    <a href="#" class="nav__sublink"> Англ. мова </a>
+                  </li>
+                  <li class="nav__subitem">
+                    <a href="#" class="nav__sublink"> Всесвітня історія </a>
+                  </li>
+                  <li class="nav__subitem">
+                    <a href="#" class="nav__sublink"> Історія України </a>
+                  </li>
+                  <li class="nav__subitem">
+                    <a href="#" class="nav__sublink"> Математика </a>
+                  </li>
+                  <li class="nav__subitem">
+                    <a href="#" class="nav__sublink"> Малювання </a>
+                  </li>
+                  <li class="nav__subitem">
+                    <a href="#" class="nav__sublink"> Укр. мова </a>
+                  </li>
+                  <li class="nav__subitem">
+                    <a href="#" class="nav__sublink"> Укр. література </a>
+                  </li>
+                  <li class="nav__subitem">
+                    <a href="#" class="nav__sublink"> Фізкультура </a>
+                  </li>
+                  <li class="nav__subitem">
+                    <a href="#" class="nav__sublink"> Фізика </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item">
+            <div class="nav__accordion">
+              <div class="nav__top">
+                <a href="#" class="nav__link">
+                  <svg class="nav__link-svg">
+                    <use xlink:href="img/sprite.svg#cours"></use>
+                  </svg>
+                  <span class="nav__link-text">Курси</span>
+                </a>
+                <button class="nav__open" aria-expanded="false" aria-label="Відкрити меню">
+                  <svg class="nav__open-arrow">
+                    <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="nav__down">
+                <button class="nav__down-btn lesson-section__change">Створити курс</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="nav__tip tip">
+          <div class="tip__wrapper">
+            <button class="tip__button">
+              <svg class="tip__button-svg">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <div class="tip__top">
+              <img src="img/static/tip.svg" alt="tip">
+            </div>
+            <div class="tip__content">
+              <h2 class="tip__title">Підказка для вас</h2>
+              <p class="tip__description">
+                Щоб бути завжди в курсі своєї успішності — заходь у розділ «Статистика». Там наведені всі твої оцінки за
+                семестри, а також твою успішність по кожному предмету.
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </aside>
+
       <main class="main">
         <header class="header">
           <div class="header__container container">
@@ -28,11 +197,11 @@
                     <ul class="content-tabs__list">
                       <li class="content-tabs__item">
                         <button class="content-tabs__btn content-tabs__btn--active" data-tab="на сьогодні">
-                          на сьогодні
+                          на сьогодні
                         </button>
                       </li>
                       <li class="content-tabs__item">
-                        <button class="content-tabs__btn" data-tab="на завтра">на завтра</button>
+                        <button class="content-tabs__btn" data-tab="на завтра">на завтра</button>
                       </li>
                     </ul>
                   </div>
@@ -77,20 +246,20 @@
                                 <div class="notifications__item-text">
                                   <span>
                                     ДLorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto nihil dolore non
-                                    ab minima vero eius suscipit eos laborum.
+                                    ab minima vero eius suscipit eos laborum.
                                   </span>
                                 </div>
-                                <time class="notifications__item-time">15.04.23 - 10:52</time>
+                                <time class="notifications__item-time">15.04.23 — 10:52</time>
                               </li>
                               <li class="notifications__item notifications__item--orange">
                                 <svg class="notifications__item-icon">
                                   <use xlink:href="img/sprite.svg#warn"></use>
                                 </svg>
                                 <div class="notifications__item-text">
-                                  <span> Тест по Укр. мові</span>
+                                  <span> Тест по Укр. мові</span>
                                   <div class="notifications__date date date--orange">15.04 9:00</div>
                                 </div>
-                                <time class="notifications__item-time">15.04.23 - 10:52</time>
+                                <time class="notifications__item-time">15.04.23 — 10:52</time>
                               </li>
                             </ul>
                           </div>
@@ -104,27 +273,27 @@
                                 <div class="notifications__item-text">
                                   <span>Додано курс «Образотворче мистецтво»</span>
                                 </div>
-                                <time class="notifications__item-time">15.04.23 - 10:52</time>
+                                <time class="notifications__item-time">15.04.23 — 10:52</time>
                               </li>
                               <li class="notifications__item notifications__item--read">
                                 <svg class="notifications__item-icon">
                                   <use xlink:href="img/sprite.svg#warn"></use>
                                 </svg>
                                 <div class="notifications__item-text">
-                                  <span>Вчитель математики відкрив доступ до уроку</span>
+                                  <span>Вчитель математики відкрив доступ до уроку</span>
                                   <div class="notifications__date date date--grey">15.04 9:00</div>
                                 </div>
-                                <time class="notifications__item-time">15.04.23 - 10:52</time>
+                                <time class="notifications__item-time">15.04.23 — 10:52</time>
                               </li>
                               <li class="notifications__item notifications__item--read">
                                 <svg class="notifications__item-icon">
                                   <use xlink:href="img/sprite.svg#warn"></use>
                                 </svg>
                                 <div class="notifications__item-text">
-                                  <span>Вчитель математики відкрив доступ до уроку</span>
+                                  <span>Вчитель математики відкрив доступ до уроку</span>
                                   <div class="notifications__date date date--grey">15.04 9:00</div>
                                 </div>
-                                <time class="notifications__item-time">15.04.23 - 10:52</time>
+                                <time class="notifications__item-time">15.04.23 — 10:52</time>
                               </li>
                             </ul>
                           </div>
@@ -134,7 +303,7 @@
                   </div>
                   <div class="header__block">
                     <button class="header__avatar" id="header-avatar">
-                      <img class="header__avatar-image" src="https://picsum.photos/200/300" alt="" />
+                      <img class="header__avatar-image" src="https://picsum.photos/200/300" alt="">
                     </button>
                     <div class="header__wrapper">
                       <div class="header__info">
@@ -144,7 +313,7 @@
                               <use xlink:href="img/sprite.svg#arrow-right"></use>
                             </svg>
                           </button>
-                          <img class="header__top-image" src="https://picsum.photos/200/300" alt="" />
+                          <img class="header__top-image" src="https://picsum.photos/200/300" alt="">
                           <span class="header__top-name">Лисенко Олександра</span>
                         </div>
                         <ul class="header__list">
@@ -236,7 +405,7 @@
                     <li class="lessons-list__lesson lesson">
                       <div class="lesson__image">
                         <span class="lesson__mark">10, 8</span>
-                        <img src="https://picsum.photos/200/300?random=1" alt="" />
+                        <img src="https://picsum.photos/200/300?random=1" alt="">
                       </div>
                       <div class="lesson__top">
                         <div class="lesson__subject">
@@ -246,7 +415,7 @@
                         <span class="lesson__point"></span>
                         <a href="#" class="lesson__teacher teacher">
                           <div class="teacher__img">
-                            <img src="https://picsum.photos/200/300" alt="" />
+                            <img src="https://picsum.photos/200/300" alt="">
                           </div>
                           Бондар Олег Михайлович
                         </a>
@@ -297,7 +466,7 @@
                         <div class="lesson__times">
                           <time class="lesson__time">9:00</time>-<time class="lesson__time">9:45</time>
                         </div>
-                        <a href="#" class="lesson__button btn btn--grey" disabled>
+                        <a href="#" class="lesson__button btn btn--grey" disabled="disabled">
                           <svg class="btn__icon">
                             <use xlink:href="img/sprite.svg#close"></use>
                           </svg>
@@ -308,7 +477,7 @@
                     <li class="schedule__lesson lesson">
                       <div class="lesson__image">
                         <span class="lesson__mark">10, 8</span>
-                        <img src="https://picsum.photos/200/300?random=2" alt="" />
+                        <img src="https://picsum.photos/200/300?random=2" alt="">
                       </div>
                       <div class="lesson__top">
                         <div class="lesson__subject">
@@ -320,7 +489,7 @@
 
                         <a href="#" class="lesson__teacher teacher">
                           <div class="teacher__img">
-                            <img src="https://picsum.photos/200/300" alt="" />
+                            <img src="https://picsum.photos/200/300" alt="">
                           </div>
                           Кайдаш Людмила Миколаївна
                         </a>
@@ -372,7 +541,7 @@
                         <div class="lesson__times">
                           <time class="lesson__time">9:00</time>-<time class="lesson__time">9:45</time>
                         </div>
-                        <a href="#" class="lesson__button btn btn--grey" disabled>
+                        <a href="#" class="lesson__button btn btn--grey" disabled="disabled">
                           <svg class="btn__icon">
                             <use xlink:href="img/sprite.svg#check"></use>
                           </svg>
@@ -382,7 +551,7 @@
                     </li>
                     <li class="schedule__lesson lesson">
                       <div class="lesson__image">
-                        <img src="https://picsum.photos/200/300?random=3" alt="" />
+                        <img src="https://picsum.photos/200/300?random=3" alt="">
                       </div>
                       <div class="lesson__top">
                         <div class="lesson__subject">
@@ -393,7 +562,7 @@
 
                         <a href="#" class="lesson__teacher teacher">
                           <div class="teacher__img">
-                            <img src="https://picsum.photos/200/300" alt="" />
+                            <img src="https://picsum.photos/200/300" alt="">
                           </div>
                           Бондар Олег Михайлович
                         </a>
@@ -455,7 +624,7 @@
                     </li>
                     <li class="schedule__lesson lesson">
                       <div class="lesson__image">
-                        <img src="https://picsum.photos/200/300?random=4" alt="" />
+                        <img src="https://picsum.photos/200/300?random=4" alt="">
                       </div>
                       <div class="lesson__top">
                         <div class="lesson__subject">
@@ -465,7 +634,7 @@
                         <span class="lesson__point"></span>
                         <a href="#" class="lesson__teacher teacher">
                           <div class="teacher__img">
-                            <img src="https://picsum.photos/200/300" alt="" />
+                            <img src="https://picsum.photos/200/300" alt="">
                           </div>
                           Бондар Олег Михайлович
                         </a>
@@ -517,10 +686,7 @@
                         <div class="lesson__times">
                           <time class="lesson__time">9:00</time>-<time class="lesson__time">9:45</time>
                         </div>
-                        <a
-                          class="lesson__button btn btn--accent disabled"
-                          data-tippy-content="Онлайн-урок ще не почався"
-                        >
+                        <a class="lesson__button btn btn--accent disabled" data-tippy-content="Онлайн-урок ще не почався">
                           <svg class="btn__icon">
                             <use xlink:href="img/sprite.svg#time"></use>
                           </svg>
@@ -530,7 +696,7 @@
                     </li>
                     <li class="schedule__lesson lesson">
                       <div class="lesson__image">
-                        <img src="https://picsum.photos/200/300?random=5" alt="" />
+                        <img src="https://picsum.photos/200/300?random=5" alt="">
                       </div>
                       <div class="lesson__top">
                         <div class="lesson__subject">
@@ -540,7 +706,7 @@
                         <span class="lesson__point"></span>
                         <a href="#" class="lesson__teacher teacher">
                           <div class="teacher__img">
-                            <img src="https://picsum.photos/200/300" alt="" />
+                            <img src="https://picsum.photos/200/300" alt="">
                           </div>
                           Бондар Олег Михайлович
                         </a>
@@ -592,10 +758,7 @@
                         <div class="lesson__times">
                           <time class="lesson__time">9:00</time>-<time class="lesson__time">9:45</time>
                         </div>
-                        <a
-                          class="lesson__button btn btn--accent disabled"
-                          data-tippy-content="Онлайн-урок ще не почався"
-                        >
+                        <a class="lesson__button btn btn--accent disabled" data-tippy-content="Онлайн-урок ще не почався">
                           <svg class="btn__icon">
                             <use xlink:href="img/sprite.svg#time"></use>
                           </svg>
@@ -612,14 +775,14 @@
                   <ul class="schedule__lessons lessons-list">
                     <li class="lessons-list__lesson lesson">
                       <div class="lesson__image">
-                        <img src="https://picsum.photos/200/300?random=7" alt="" />
+                        <img src="https://picsum.photos/200/300?random=7" alt="">
                       </div>
                       <div class="lesson__top">
                         <a href="#" class="lesson__name">Основи образотворчого мистецтва</a>
                         <span class="lesson__point"></span>
                         <a href="#" class="lesson__teacher teacher">
                           <div class="teacher__img">
-                            <img src="https://picsum.photos/200/300" alt="" />
+                            <img src="https://picsum.photos/200/300" alt="">
                           </div>
                           Бондар Олег Михайлович
                         </a>
@@ -671,10 +834,7 @@
                         <div class="lesson__times">
                           <time class="lesson__time">9:00</time>-<time class="lesson__time">9:45</time>
                         </div>
-                        <a
-                          class="lesson__button btn btn--accent disabled"
-                          data-tippy-content="Онлайн-урок ще не почався"
-                        >
+                        <a class="lesson__button btn btn--accent disabled" data-tippy-content="Онлайн-урок ще не почався">
                           <svg class="btn__icon">
                             <use xlink:href="img/sprite.svg#time"></use>
                           </svg>
@@ -684,15 +844,15 @@
                     </li>
                     <li class="lessons-list__lesson lesson">
                       <div class="lesson__image">
-                        <img src="https://picsum.photos/200/300?random=6" alt="" />
+                        <img src="https://picsum.photos/200/300?random=6" alt="">
                       </div>
                       <div class="lesson__top">
-                        <a href="#" class="lesson__name">Знайомство з ІТ</a>
+                        <a href="#" class="lesson__name">Знайомство з ІТ</a>
                         <span class="lesson__point"></span>
 
                         <a href="#" class="lesson__teacher teacher">
                           <div class="teacher__img">
-                            <img src="https://picsum.photos/200/300" alt="" />
+                            <img src="https://picsum.photos/200/300" alt="">
                           </div>
                           Мітрошина Ганна Олександрівна
                         </a>
@@ -744,10 +904,7 @@
                         <div class="lesson__times">
                           <time class="lesson__time">9:00</time>-<time class="lesson__time">9:45</time>
                         </div>
-                        <a
-                          class="lesson__button btn btn--accent disabled"
-                          data-tippy-content="Онлайн-урок ще не почався"
-                        >
+                        <a class="lesson__button btn btn--accent disabled" data-tippy-content="Онлайн-урок ще не почався">
                           <svg class="btn__icon">
                             <use xlink:href="img/sprite.svg#time"></use>
                           </svg>
@@ -761,7 +918,7 @@
                 <!-- Таб 3 - Задачи -->
                 <div class="schedule__block" data-tab-content="Задачі">
                   <a href="#" class="schedule__link schedule__link--todo link">
-                    В календар
+                    В календар
                     <svg>
                       <use xlink:href="img/sprite.svg#arrow-right"></use>
                     </svg>
@@ -778,7 +935,7 @@
                               <li class="todo__item todo-item">
                                 <div class="todo-item__checkbox checkbox">
                                   <div class="checkbox__todo">
-                                    <div class="checkbox__value">Тест по Укр. мові</div>
+                                    <div class="checkbox__value">Тест по Укр. мові</div>
                                     <div class="checkbox__date date date--orange">15.04 9:00</div>
                                   </div>
                                 </div>
@@ -803,7 +960,7 @@
                             <ul class="todo__list">
                               <li class="todo__item todo-item">
                                 <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
+                                  <input type="checkbox" value="" class="checkbox__input">
                                   <div class="checkbox__block">
                                     <span class="checkbox__checkmark checkbox__checkmark--default">
                                       <svg>
@@ -824,7 +981,7 @@
                               </li>
                               <li class="todo__item todo-item">
                                 <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
+                                  <input type="checkbox" value="" class="checkbox__input">
                                   <div class="checkbox__block">
                                     <span class="checkbox__checkmark checkbox__checkmark--default">
                                       <svg>
@@ -838,14 +995,14 @@
                                     </span>
                                   </div>
                                   <div class="checkbox__todo">
-                                    <div class="checkbox__value">Тест по Укр. мові</div>
+                                    <div class="checkbox__value">Тест по Укр. мові</div>
                                     <div class="checkbox__date date date--blue">15.04 15:00</div>
                                   </div>
                                 </label>
                               </li>
                               <li class="todo__item todo-item">
                                 <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
+                                  <input type="checkbox" value="" class="checkbox__input">
                                   <div class="checkbox__block">
                                     <span class="checkbox__checkmark checkbox__checkmark--default">
                                       <svg>
@@ -859,14 +1016,14 @@
                                     </span>
                                   </div>
                                   <div class="checkbox__todo">
-                                    <div class="checkbox__value">Підготувати реферат по Географії</div>
+                                    <div class="checkbox__value">Підготувати реферат по Географії</div>
                                     <div class="checkbox__date date date--blue">15.04 15:00</div>
                                   </div>
                                 </label>
                               </li>
                               <li class="todo__item todo-item">
                                 <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
+                                  <input type="checkbox" value="" class="checkbox__input">
                                   <div class="checkbox__block">
                                     <span class="checkbox__checkmark checkbox__checkmark--default">
                                       <svg>
@@ -880,13 +1037,13 @@
                                     </span>
                                   </div>
                                   <div class="checkbox__todo">
-                                    <div class="checkbox__value">Записатись до психолога</div>
+                                    <div class="checkbox__value">Записатись до психолога</div>
                                   </div>
                                 </label>
                               </li>
                               <li class="todo__item todo-item">
                                 <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
+                                  <input type="checkbox" value="" class="checkbox__input">
                                   <div class="checkbox__block">
                                     <span class="checkbox__checkmark checkbox__checkmark--default">
                                       <svg>
@@ -907,7 +1064,7 @@
                               </li>
                               <li class="todo__item todo-item">
                                 <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
+                                  <input type="checkbox" value="" class="checkbox__input">
                                   <div class="checkbox__block">
                                     <span class="checkbox__checkmark checkbox__checkmark--default">
                                       <svg>
@@ -921,14 +1078,14 @@
                                     </span>
                                   </div>
                                   <div class="checkbox__todo">
-                                    <div class="checkbox__value">Тест по Укр. мові</div>
+                                    <div class="checkbox__value">Тест по Укр. мові</div>
                                     <div class="checkbox__date date date--blue">15.04 15:00</div>
                                   </div>
                                 </label>
                               </li>
                               <li class="todo__item todo-item">
                                 <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
+                                  <input type="checkbox" value="" class="checkbox__input">
                                   <div class="checkbox__block">
                                     <span class="checkbox__checkmark checkbox__checkmark--default">
                                       <svg>
@@ -942,14 +1099,14 @@
                                     </span>
                                   </div>
                                   <div class="checkbox__todo">
-                                    <div class="checkbox__value">Підготувати реферат по Географії</div>
+                                    <div class="checkbox__value">Підготувати реферат по Географії</div>
                                     <div class="checkbox__date date date--blue">15.04 15:00</div>
                                   </div>
                                 </label>
                               </li>
                               <li class="todo__item todo-item">
                                 <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
+                                  <input type="checkbox" value="" class="checkbox__input">
                                   <div class="checkbox__block">
                                     <span class="checkbox__checkmark checkbox__checkmark--default">
                                       <svg>
@@ -963,7 +1120,7 @@
                                     </span>
                                   </div>
                                   <div class="checkbox__todo">
-                                    <div class="checkbox__value">Записатись до психолога</div>
+                                    <div class="checkbox__value">Записатись до психолога</div>
                                   </div>
                                 </label>
                               </li>
@@ -1010,7 +1167,7 @@
                               <span class="create__head">Час</span>
                               <div class="create__select select">
                                 <div class="select__top">
-                                  <span class="select__value"><span>00</span> : <span>00</span></span>
+                                  <span class="select__value"><span>00</span>: <span>00</span></span>
                                 </div>
                                 <div class="select__bottom">
                                   <div class="select__counter" data-simplebar>
@@ -1068,10 +1225,10 @@
                         <div class="todo__bottom">
                           <div class="todo__wrapper" data-simplebar>
                             <ul class="todo__list">
-                              @@for (var i = 0; i < 5; i++) {
+
                               <li class="todo__item todo-item">
                                 <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" checked />
+                                  <input type="checkbox" value="" class="checkbox__input" checked="checked">
                                   <div class="checkbox__block">
                                     <span class="checkbox__checkmark checkbox__checkmark--default">
                                       <svg>
@@ -1092,7 +1249,7 @@
                               </li>
                               <li class="todo__item todo-item">
                                 <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" checked />
+                                  <input type="checkbox" value="" class="checkbox__input" checked="checked">
                                   <div class="checkbox__block">
                                     <span class="checkbox__checkmark checkbox__checkmark--default">
                                       <svg>
@@ -1113,7 +1270,187 @@
                                   </div>
                                 </label>
                               </li>
-                              }
+
+                              <li class="todo__item todo-item">
+                                <label class="todo-item__checkbox checkbox">
+                                  <input type="checkbox" value="" class="checkbox__input" checked="checked">
+                                  <div class="checkbox__block">
+                                    <span class="checkbox__checkmark checkbox__checkmark--default">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
+                                      </svg>
+                                    </span>
+                                    <span class="checkbox__checkmark checkbox__checkmark--active">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="checkbox__todo">
+                                    <div class="checkbox__value">Ранкова зарядка</div>
+                                    <div class="checkbox__date date date--blue">15.04 9:00</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li class="todo__item todo-item">
+                                <label class="todo-item__checkbox checkbox">
+                                  <input type="checkbox" value="" class="checkbox__input" checked="checked">
+                                  <div class="checkbox__block">
+                                    <span class="checkbox__checkmark checkbox__checkmark--default">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
+                                      </svg>
+                                    </span>
+                                    <span class="checkbox__checkmark checkbox__checkmark--active">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="checkbox__todo">
+                                    <div class="checkbox__value">
+                                      Попередити класуху про відсутність завтра після 1 уроку
+                                    </div>
+                                    <div class="checkbox__date date date--blue">15.04 15:00</div>
+                                  </div>
+                                </label>
+                              </li>
+
+                              <li class="todo__item todo-item">
+                                <label class="todo-item__checkbox checkbox">
+                                  <input type="checkbox" value="" class="checkbox__input" checked="checked">
+                                  <div class="checkbox__block">
+                                    <span class="checkbox__checkmark checkbox__checkmark--default">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
+                                      </svg>
+                                    </span>
+                                    <span class="checkbox__checkmark checkbox__checkmark--active">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="checkbox__todo">
+                                    <div class="checkbox__value">Ранкова зарядка</div>
+                                    <div class="checkbox__date date date--blue">15.04 9:00</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li class="todo__item todo-item">
+                                <label class="todo-item__checkbox checkbox">
+                                  <input type="checkbox" value="" class="checkbox__input" checked="checked">
+                                  <div class="checkbox__block">
+                                    <span class="checkbox__checkmark checkbox__checkmark--default">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
+                                      </svg>
+                                    </span>
+                                    <span class="checkbox__checkmark checkbox__checkmark--active">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="checkbox__todo">
+                                    <div class="checkbox__value">
+                                      Попередити класуху про відсутність завтра після 1 уроку
+                                    </div>
+                                    <div class="checkbox__date date date--blue">15.04 15:00</div>
+                                  </div>
+                                </label>
+                              </li>
+
+                              <li class="todo__item todo-item">
+                                <label class="todo-item__checkbox checkbox">
+                                  <input type="checkbox" value="" class="checkbox__input" checked="checked">
+                                  <div class="checkbox__block">
+                                    <span class="checkbox__checkmark checkbox__checkmark--default">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
+                                      </svg>
+                                    </span>
+                                    <span class="checkbox__checkmark checkbox__checkmark--active">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="checkbox__todo">
+                                    <div class="checkbox__value">Ранкова зарядка</div>
+                                    <div class="checkbox__date date date--blue">15.04 9:00</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li class="todo__item todo-item">
+                                <label class="todo-item__checkbox checkbox">
+                                  <input type="checkbox" value="" class="checkbox__input" checked="checked">
+                                  <div class="checkbox__block">
+                                    <span class="checkbox__checkmark checkbox__checkmark--default">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
+                                      </svg>
+                                    </span>
+                                    <span class="checkbox__checkmark checkbox__checkmark--active">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="checkbox__todo">
+                                    <div class="checkbox__value">
+                                      Попередити класуху про відсутність завтра після 1 уроку
+                                    </div>
+                                    <div class="checkbox__date date date--blue">15.04 15:00</div>
+                                  </div>
+                                </label>
+                              </li>
+
+                              <li class="todo__item todo-item">
+                                <label class="todo-item__checkbox checkbox">
+                                  <input type="checkbox" value="" class="checkbox__input" checked="checked">
+                                  <div class="checkbox__block">
+                                    <span class="checkbox__checkmark checkbox__checkmark--default">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
+                                      </svg>
+                                    </span>
+                                    <span class="checkbox__checkmark checkbox__checkmark--active">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="checkbox__todo">
+                                    <div class="checkbox__value">Ранкова зарядка</div>
+                                    <div class="checkbox__date date date--blue">15.04 9:00</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li class="todo__item todo-item">
+                                <label class="todo-item__checkbox checkbox">
+                                  <input type="checkbox" value="" class="checkbox__input" checked="checked">
+                                  <div class="checkbox__block">
+                                    <span class="checkbox__checkmark checkbox__checkmark--default">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
+                                      </svg>
+                                    </span>
+                                    <span class="checkbox__checkmark checkbox__checkmark--active">
+                                      <svg>
+                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="checkbox__todo">
+                                    <div class="checkbox__value">
+                                      Попередити класуху про відсутність завтра після 1 уроку
+                                    </div>
+                                    <div class="checkbox__date date date--blue">15.04 15:00</div>
+                                  </div>
+                                </label>
+                              </li>
+
                             </ul>
                           </div>
                         </div>
@@ -1125,415 +1462,62 @@
             </section>
             <!-- Статистика -->
             <section class="statistics">
-              <div class="statistics__inner">
-                <!-- Таб 4 - Статистика -->
-                <div class="statistics__block statistics-block" data-tab-content="Статистика">
-                  <div class="statistics-block__top">
-                    <div class="statistics-block__left">
-                      <h2 class="statistics-block__title">Статистика</h2>
-                      <div class="statistics-block__select select select--small">
-                        <div class="select__top">
-                          <span class="select__value">по всім предметам</span>
-                          <svg class="select__top-svg">
-                            <use xlink:href="img/sprite.svg#arrow-up"></use>
-                          </svg>
-                        </div>
-                        <div class="select__bottom">
-                          <div class="select__wrapper">
-                            <ul class="select__list" data-simplebar>
-                              <li class="select__item select__item--chosen">Батько</li>
-                              <li class="select__item">Мати</li>
-                              <li class="select__item">Бабуся</li>
-                              <li class="select__item">Дідусь</li>
-                              <li class="select__item">Сестра</li>
-                              <li class="select__item">Брат</li>
-                              <li class="select__item">Брат</li>
-                              <li class="select__item">Брат</li>
-                              <li class="select__item">Брат</li>
-                              <li class="select__item">Брат</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#" class="statistics-block__link link">
-                      Всі статистики
-                      <svg>
-                        <use xlink:href="img/sprite.svg#arrow-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="statistics-block__bottom">
-                    <ul class="statistics-block__list">
-                      <li class="statistics-block__item rating-block">
-                        <div class="rating-block__top">
-                          <h3 class="rating-block__title">Відвідуваність на онлайн уроках</h3>
-                          <svg class="rating-block__icon">
-                            <use xlink:href="img/sprite.svg#webcam"></use>
-                          </svg>
-                        </div>
-                        <div class="rating-block__bottom">
-                          <div class="rating-block__left">
-                            <span class="rating-block__percent">80%</span>
-                            <svg class="rating-block__arrow rating-block__arrow--green">
-                              <use xlink:href="img/sprite.svg#arrow-up-outline"></use>
-                            </svg>
-                          </div>
-                          <div class="rating-block__right"><span class="rating-block__mark">16</span>/20</div>
-                        </div>
-                      </li>
-                      <li class="statistics-block__item rating-block">
-                        <div class="rating-block__top">
-                          <h3 class="rating-block__title">Середня прогнозована оцінка</h3>
-                          <svg class="rating-block__icon">
-                            <use xlink:href="img/sprite.svg#statistics"></use>
-                          </svg>
-                        </div>
-                        <div class="rating-block__bottom">
-                          <div class="rating-block__left">
-                            <span class="rating-block__percent">80%</span>
-                            <svg class="rating-block__arrow rating-block__arrow--red">
-                              <use xlink:href="img/sprite.svg#arrow-up-outline"></use>
-                            </svg>
-                          </div>
-                          <div class="rating-block__right"><span class="rating-block__mark">9</span>/10</div>
-                        </div>
-                      </li>
-                      <li class="statistics-block__item rating-block">
-                        <div class="rating-block__top">
-                          <h3 class="rating-block__title">Відвідуваність на онлайн уроках</h3>
-                          <svg class="rating-block__icon">
-                            <use xlink:href="img/sprite.svg#webcam"></use>
-                          </svg>
-                        </div>
-                        <div class="rating-block__bottom">
-                          <div class="rating-block__left">
-                            <span class="rating-block__percent">80%</span>
-                            <svg class="rating-block__arrow rating-block__arrow--green">
-                              <use xlink:href="img/sprite.svg#arrow-up-outline"></use>
-                            </svg>
-                          </div>
-                          <div class="rating-block__right"><span class="rating-block__mark">16</span>/20</div>
-                        </div>
-                      </li>
-                      <li class="statistics-block__item rating-block">
-                        <div class="rating-block__top">
-                          <h3 class="rating-block__title">Середня прогнозована оцінка</h3>
-                          <svg class="rating-block__icon">
-                            <use xlink:href="img/sprite.svg#statistics"></use>
-                          </svg>
-                        </div>
-                        <div class="rating-block__bottom">
-                          <div class="rating-block__left">
-                            <span class="rating-block__percent">80%</span>
-                            <svg class="rating-block__arrow rating-block__arrow--green">
-                              <use xlink:href="img/sprite.svg#arrow-up-outline"></use>
-                            </svg>
-                          </div>
-                          <div class="rating-block__right"><span class="rating-block__mark">9</span>/10</div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="statistics__wrapper">
+                <div class="statistics__wrapper-top">
+                  <h3 class="statistics__wrapper-title">Перевірка знань</h3>
+                  <a href="#">Всі роботи
+                    <svg>
+                      <use xlink:href="/img/sprite.svg#название самой иконки"></use>
+                    </svg>
+                  </a>
                 </div>
-
-                <!-- Таб 5 - Прогресс по курсам -->
-                <div
-                  class="statistics__block statistics-block statistics-block--progress"
-                  data-tab-content="Прогрес курсів"
-                >
-                  <div class="statistics-block__top">
-                    <h2 class="statistics-block__title">Прогрес курсів</h2>
-                    <a href="#" class="statistics-block__link link">
-                      До моїх курсів
-                      <svg>
-                        <use xlink:href="img/sprite.svg#arrow-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="statistics-block__bottom">
-                    <div class="statistics-block__empty" style="display: none">
-                      <div class="statistics-block__image">
-                        <img src="img/static/tip.svg" alt="tip" />
-                      </div>
-                      <div class="statistics-block__info">
-                        <h3>
-                          Відкрий двері до знань! <br />
-                          Обери свій курс в нашій базі
-                        </h3>
-                        <a href="#" class="statistics-block__link link">
-                          До бази курсів
-                          <svg>
-                            <use xlink:href="img/sprite.svg#arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
+                <div class="statistics__wrapper-info">
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-text">Контрольна робота</p>
+                    <div class="statistics__wrapper-performance">
+                      <div class="statistics__wrapper__performance-given"></div>
+                      <div class="statistics__wrapper__performance-verified"></div>
                     </div>
-                    <div class="statistics-block__wrapper" data-simplebar>
-                      <ul class="statistics-block__courses">
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Основи образотворчого мистецтва для підлітків</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                TypeScript с нуля - полный курс и паттерны проектирования
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=10" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Mastering TypeScript - 2023 Edition</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 98%"></span>
-                                </span>
-                                98%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Vue JS 3 Modern Web Development with Vuex & Vue Router
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Java (Джава) для начинающих: с нуля до сертификата Oracle
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                      <ul class="statistics-block__courses">
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Основи образотворчого мистецтва для підлітків</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                TypeScript с нуля - полный курс и паттерны проектирования
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=10" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Mastering TypeScript - 2023 Edition</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 98%"></span>
-                                </span>
-                                98%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Vue JS 3 Modern Web Development with Vuex & Vue Router
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Java (Джава) для начинающих: с нуля до сертификата Oracle
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                      <ul class="statistics-block__courses">
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Основи образотворчого мистецтва для підлітків</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                TypeScript с нуля - полный курс и паттерны проектирования
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=10" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Mastering TypeScript - 2023 Edition</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 98%"></span>
-                                </span>
-                                98%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Vue JS 3 Modern Web Development with Vuex & Vue Router
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Java (Джава) для начинающих: с нуля до сертификата Oracle
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
+                  </div>
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-text">Самостійна робота</p>
+                    <div class="statistics__wrapper-performance">
+                      <div class="statistics__wrapper__performance-given"></div>
+                      <div class="statistics__wrapper__performance-verified"></div>
+                    </div>
+                  </div>
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-text">Домашня робота</p>
+                    <div class="statistics__wrapper-performance">
+                      <div class="statistics__wrapper__performance-given"></div>
+                      <div class="statistics__wrapper__performance-verified"></div>
+                    </div>
+                  </div>
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-text">Домашня робота</p>
+                    <div class="statistics__wrapper-performance">
+                      <div class="statistics__wrapper__performance-given"></div>
+                      <div class="statistics__wrapper__performance-verified"></div>
+                    </div>
+                  </div>
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Перевірено</h4>
+                    <p class="statistics__wrapper__box-text">Контрольна робота</p>
+                    <div class="statistics__wrapper-performance">
+                        <div class="statistics__wrapper__performance-given"></div>
+                        <div class="statistics__wrapper__performance-verified"></div>
+                    </div>
+                  </div>
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Завершено</h4>
+                    <p class="statistics__wrapper__box-text">Домашня робота</p>
+                    <div class="statistics__wrapper-performance">
+                      <div class="statistics__wrapper__performance-given"></div>
+                      <div class="statistics__wrapper__performance-verified"></div>
                     </div>
                   </div>
                 </div>
@@ -1542,89 +1526,71 @@
 
             <section class="recommended">
               <div class="recommended__inner">
-                <div class="recommended__top">
-                  <h2 class="recommended__title">Ми рекомендуємо, буде цікаво</h2>
-                  <a href="#" class="recommended__link link">
-                    Всі рекомендації
-                    <svg>
-                      <use xlink:href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-                <div class="recommended__bottom">
-                  <ul class="recommended__list">
-                    <li class="recommended__card">
-                      <article class="recommended-card">
-                        <a href="#" class="recommended-card__image">
-                          <img src="https://picsum.photos/600/500?random=1" alt="" />
-                        </a>
-                        <div class="recommended-card__info">
-                          <a href="" class="recommended-card__title">Вступ до мови програмування Python</a>
-                          <a href="#" class="recommended-card__teacher teacher">
-                            <div class="teacher__img">
-                              <img src="https://picsum.photos/200/300" alt="" />
-                            </div>
-                            Бондар Олег Михайлович
-                          </a>
-                        </div>
-                      </article>
-                    </li>
-                    <li class="recommended__card">
-                      <article class="recommended-card">
-                        <a href="#" class="recommended-card__image">
-                          <img src="https://picsum.photos/600/500?random=2" alt="" />
-                        </a>
-                        <div class="recommended-card__info">
-                          <a href="" class="recommended-card__title">Образотворче мистецтво для 10-11 класів</a>
-                          <a href="#" class="recommended-card__teacher teacher">
-                            <div class="teacher__img">
-                              <img src="https://picsum.photos/200/300" alt="" />
-                            </div>
-                            Бондар Олег Михайлович
-                          </a>
-                        </div>
-                      </article>
-                    </li>
-                    <li class="recommended__card">
-                      <article class="recommended-card">
-                        <a href="#" class="recommended-card__image">
-                          <img src="https://picsum.photos/600/500?random=3" alt="" />
-                        </a>
-                        <div class="recommended-card__info">
-                          <a href="" class="recommended-card__title">Medium рівень програмування на JavaScript</a>
-                          <a href="#" class="recommended-card__teacher teacher">
-                            <div class="teacher__img">
-                              <img src="https://picsum.photos/200/300" alt="" />
-                            </div>
-                            Бондар Олег Михайлович
-                          </a>
-                        </div>
-                      </article>
-                    </li>
-                  </ul>
-                </div>
+                <h5 class="recommended__inner-title">Збільши свій заробіток — почни вести курс
+                    з поглибленої математики</h5>
               </div>
             </section>
 
             <section class="banner">
               <div class="banner__inner">
-                <h2
-                  style="
-                    font-size: 40px;
+                <h2 style="font-size: 40px;
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
-                    color: var(--white);
-                  "
-                >
-                  ? Banner ?
+                    color: var(--white);">
+                 ? Banner?
                 </h2>
               </div>
             </section>
           </div>
         </div>
-        @@include("../components/_footer.html")
+        <footer class="footer">
+  <div class="footer__inner">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <svg class="footer__link-svg footer__link-svg--stroke">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+          Про Unity
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <svg class="footer__link-svg">
+            <use xlink:href="img/sprite.svg#play"></use>
+          </svg>
+          Відео-інструкція
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <svg class="footer__link-svg">
+            <use xlink:href="img/sprite.svg#ask"></use>
+          </svg>
+          Питання-відповіді
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.4804 7.67981L4.44043 12.5398L9.30043 14.1598M18.4804 7.67981L9.30043 14.1598M18.4804 7.67981L14.1604 19.0198L9.30043 14.1598" stroke="#A6C0FB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.0002 22.7999C17.965 22.7999 22.8002 17.9648 22.8002 12C22.8002 6.03511 17.965 1.19995 12.0002 1.19995C6.03536 1.19995 1.2002 6.03511 1.2002 12C1.2002 17.9648 6.03536 22.7999 12.0002 22.7999Z" stroke="#A6C0FB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          Написати в месенджер
+        </a>
+      </li>
+    </ul>
+    <a href="tel:380682552522" class="footer__link footer__link--last">
+      <svg class="footer__link-svg">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg>
+      +38 068 255 25 22</a>
+  </div>
+</footer>
+
       </main>
     </div>
   </body>

@@ -52,6 +52,7 @@ const modals = () => {
   bindModal('.btn-9', '.change-photo')
   bindModal('.btn-10', '.rotate')
   bindModal('.btn-11', '.change-photo-process')
+  bindModal('.btn-13', '.gears')
   
   // main
   bindModal('#upload-homework', '.upload')

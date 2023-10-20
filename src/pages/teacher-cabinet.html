@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    @@include('../components/_head.html', {title: 'Кабінет батьків'})
+    @@include('../components/_head.html', {title: 'Вчитель головна'})
 
     <meta property="og:title" content="Title" />
     <meta property="og:url" content="url" />
@@ -10,8 +10,8 @@
 
   <body class="body-mob-fixed">
     <div class="base-layout">
-      @@include("../components/modals/gears.html")
-      @@include("../components/_aside.html")
+      <!-- @@include("../components/modals/gears.html") -->
+      @@include("../components/_aside-teacher.html")
       <main class="main">
         <header class="header">
           <div class="header__container container">
@@ -1125,415 +1125,63 @@
             </section>
             <!-- Статистика -->
             <section class="statistics">
-              <div class="statistics__inner">
-                <!-- Таб 4 - Статистика -->
-                <div class="statistics__block statistics-block" data-tab-content="Статистика">
-                  <div class="statistics-block__top">
-                    <div class="statistics-block__left">
-                      <h2 class="statistics-block__title">Статистика</h2>
-                      <div class="statistics-block__select select select--small">
-                        <div class="select__top">
-                          <span class="select__value">по всім предметам</span>
-                          <svg class="select__top-svg">
-                            <use xlink:href="img/sprite.svg#arrow-up"></use>
-                          </svg>
-                        </div>
-                        <div class="select__bottom">
-                          <div class="select__wrapper">
-                            <ul class="select__list" data-simplebar>
-                              <li class="select__item select__item--chosen">Батько</li>
-                              <li class="select__item">Мати</li>
-                              <li class="select__item">Бабуся</li>
-                              <li class="select__item">Дідусь</li>
-                              <li class="select__item">Сестра</li>
-                              <li class="select__item">Брат</li>
-                              <li class="select__item">Брат</li>
-                              <li class="select__item">Брат</li>
-                              <li class="select__item">Брат</li>
-                              <li class="select__item">Брат</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#" class="statistics-block__link link">
-                      Всі статистики
-                      <svg>
-                        <use xlink:href="img/sprite.svg#arrow-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="statistics-block__bottom">
-                    <ul class="statistics-block__list">
-                      <li class="statistics-block__item rating-block">
-                        <div class="rating-block__top">
-                          <h3 class="rating-block__title">Відвідуваність на онлайн уроках</h3>
-                          <svg class="rating-block__icon">
-                            <use xlink:href="img/sprite.svg#webcam"></use>
-                          </svg>
-                        </div>
-                        <div class="rating-block__bottom">
-                          <div class="rating-block__left">
-                            <span class="rating-block__percent">80%</span>
-                            <svg class="rating-block__arrow rating-block__arrow--green">
-                              <use xlink:href="img/sprite.svg#arrow-up-outline"></use>
-                            </svg>
-                          </div>
-                          <div class="rating-block__right"><span class="rating-block__mark">16</span>/20</div>
-                        </div>
-                      </li>
-                      <li class="statistics-block__item rating-block">
-                        <div class="rating-block__top">
-                          <h3 class="rating-block__title">Середня прогнозована оцінка</h3>
-                          <svg class="rating-block__icon">
-                            <use xlink:href="img/sprite.svg#statistics"></use>
-                          </svg>
-                        </div>
-                        <div class="rating-block__bottom">
-                          <div class="rating-block__left">
-                            <span class="rating-block__percent">80%</span>
-                            <svg class="rating-block__arrow rating-block__arrow--red">
-                              <use xlink:href="img/sprite.svg#arrow-up-outline"></use>
-                            </svg>
-                          </div>
-                          <div class="rating-block__right"><span class="rating-block__mark">9</span>/10</div>
-                        </div>
-                      </li>
-                      <li class="statistics-block__item rating-block">
-                        <div class="rating-block__top">
-                          <h3 class="rating-block__title">Відвідуваність на онлайн уроках</h3>
-                          <svg class="rating-block__icon">
-                            <use xlink:href="img/sprite.svg#webcam"></use>
-                          </svg>
-                        </div>
-                        <div class="rating-block__bottom">
-                          <div class="rating-block__left">
-                            <span class="rating-block__percent">80%</span>
-                            <svg class="rating-block__arrow rating-block__arrow--green">
-                              <use xlink:href="img/sprite.svg#arrow-up-outline"></use>
-                            </svg>
-                          </div>
-                          <div class="rating-block__right"><span class="rating-block__mark">16</span>/20</div>
-                        </div>
-                      </li>
-                      <li class="statistics-block__item rating-block">
-                        <div class="rating-block__top">
-                          <h3 class="rating-block__title">Середня прогнозована оцінка</h3>
-                          <svg class="rating-block__icon">
-                            <use xlink:href="img/sprite.svg#statistics"></use>
-                          </svg>
-                        </div>
-                        <div class="rating-block__bottom">
-                          <div class="rating-block__left">
-                            <span class="rating-block__percent">80%</span>
-                            <svg class="rating-block__arrow rating-block__arrow--green">
-                              <use xlink:href="img/sprite.svg#arrow-up-outline"></use>
-                            </svg>
-                          </div>
-                          <div class="rating-block__right"><span class="rating-block__mark">9</span>/10</div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="statistics__wrapper">
+                <div class="statistics__wrapper-top">
+                  <h3 class="statistics__wrapper-title">Перевірка знань</h3>
+                  <a href="#"
+                    >Всі роботи
+                    <svg>
+                      <use xlink:href="/img/sprite.svg#название самой иконки"></use>
+                    </svg>
+                  </a>
                 </div>
-
-                <!-- Таб 5 - Прогресс по курсам -->
-                <div
-                  class="statistics__block statistics-block statistics-block--progress"
-                  data-tab-content="Прогрес курсів"
-                >
-                  <div class="statistics-block__top">
-                    <h2 class="statistics-block__title">Прогрес курсів</h2>
-                    <a href="#" class="statistics-block__link link">
-                      До моїх курсів
-                      <svg>
-                        <use xlink:href="img/sprite.svg#arrow-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="statistics-block__bottom">
-                    <div class="statistics-block__empty" style="display: none">
-                      <div class="statistics-block__image">
-                        <img src="img/static/tip.svg" alt="tip" />
-                      </div>
-                      <div class="statistics-block__info">
-                        <h3>
-                          Відкрий двері до знань! <br />
-                          Обери свій курс в нашій базі
-                        </h3>
-                        <a href="#" class="statistics-block__link link">
-                          До бази курсів
-                          <svg>
-                            <use xlink:href="img/sprite.svg#arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
+                <div class="statistics__wrapper-info">
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-text">Контрольна робота</p>
+                    <div class="statistics__wrapper-performance">
+                      <div class="statistics__wrapper__performance-given"></div>
+                      <div class="statistics__wrapper__performance-verified"></div>
                     </div>
-                    <div class="statistics-block__wrapper" data-simplebar>
-                      <ul class="statistics-block__courses">
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Основи образотворчого мистецтва для підлітків</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                TypeScript с нуля - полный курс и паттерны проектирования
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=10" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Mastering TypeScript - 2023 Edition</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 98%"></span>
-                                </span>
-                                98%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Vue JS 3 Modern Web Development with Vuex & Vue Router
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Java (Джава) для начинающих: с нуля до сертификата Oracle
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                      <ul class="statistics-block__courses">
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Основи образотворчого мистецтва для підлітків</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                TypeScript с нуля - полный курс и паттерны проектирования
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=10" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Mastering TypeScript - 2023 Edition</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 98%"></span>
-                                </span>
-                                98%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Vue JS 3 Modern Web Development with Vuex & Vue Router
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Java (Джава) для начинающих: с нуля до сертификата Oracle
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                      <ul class="statistics-block__courses">
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Основи образотворчого мистецтва для підлітків</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                TypeScript с нуля - полный курс и паттерны проектирования
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=10" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">Mastering TypeScript - 2023 Edition</h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 98%"></span>
-                                </span>
-                                98%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=8" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Vue JS 3 Modern Web Development with Vuex & Vue Router
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 80%"></span>
-                                </span>
-                                80%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="statistics-block__course">
-                          <a href="#" class="course-progress">
-                            <div class="course-progress__image">
-                              <img src="https://picsum.photos/200/300?random=9" alt="" />
-                            </div>
-                            <div class="course-progress__info">
-                              <h3 class="course-progress__title">
-                                Java (Джава) для начинающих: с нуля до сертификата Oracle
-                              </h3>
-                              <div class="course-progress__progress progress">
-                                <span class="progress-line">
-                                  <span style="width: 20%"></span>
-                                </span>
-                                20%
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
+                  </div>
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-text">Самостійна робота</p>
+                    <div class="statistics__wrapper-performance">
+                      <div class="statistics__wrapper__performance-given"></div>
+                      <div class="statistics__wrapper__performance-verified"></div>
+                    </div>
+                  </div>
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-text">Домашня робота</p>
+                    <div class="statistics__wrapper-performance">
+                      <div class="statistics__wrapper__performance-given"></div>
+                      <div class="statistics__wrapper__performance-verified"></div>
+                    </div>
+                  </div>
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-text">Домашня робота</p>
+                    <div class="statistics__wrapper-performance">
+                      <div class="statistics__wrapper__performance-given"></div>
+                      <div class="statistics__wrapper__performance-verified"></div>
+                    </div>
+                  </div>
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Перевірено</h4>
+                    <p class="statistics__wrapper__box-text">Контрольна робота</p>
+                    <div class="statistics__wrapper-performance">
+                        <div class="statistics__wrapper__performance-given"></div>
+                        <div class="statistics__wrapper__performance-verified"></div>
+                    </div>
+                  </div>
+                  <div class="statistics__wrapper-box">
+                    <h4 class="statistics__wrapper__box-info">Завершено</h4>
+                    <p class="statistics__wrapper__box-text">Домашня робота</p>
+                    <div class="statistics__wrapper-performance">
+                      <div class="statistics__wrapper__performance-given"></div>
+                      <div class="statistics__wrapper__performance-verified"></div>
                     </div>
                   </div>
                 </div>
@@ -1542,67 +1190,8 @@
 
             <section class="recommended">
               <div class="recommended__inner">
-                <div class="recommended__top">
-                  <h2 class="recommended__title">Ми рекомендуємо, буде цікаво</h2>
-                  <a href="#" class="recommended__link link">
-                    Всі рекомендації
-                    <svg>
-                      <use xlink:href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-                <div class="recommended__bottom">
-                  <ul class="recommended__list">
-                    <li class="recommended__card">
-                      <article class="recommended-card">
-                        <a href="#" class="recommended-card__image">
-                          <img src="https://picsum.photos/600/500?random=1" alt="" />
-                        </a>
-                        <div class="recommended-card__info">
-                          <a href="" class="recommended-card__title">Вступ до мови програмування Python</a>
-                          <a href="#" class="recommended-card__teacher teacher">
-                            <div class="teacher__img">
-                              <img src="https://picsum.photos/200/300" alt="" />
-                            </div>
-                            Бондар Олег Михайлович
-                          </a>
-                        </div>
-                      </article>
-                    </li>
-                    <li class="recommended__card">
-                      <article class="recommended-card">
-                        <a href="#" class="recommended-card__image">
-                          <img src="https://picsum.photos/600/500?random=2" alt="" />
-                        </a>
-                        <div class="recommended-card__info">
-                          <a href="" class="recommended-card__title">Образотворче мистецтво для 10-11 класів</a>
-                          <a href="#" class="recommended-card__teacher teacher">
-                            <div class="teacher__img">
-                              <img src="https://picsum.photos/200/300" alt="" />
-                            </div>
-                            Бондар Олег Михайлович
-                          </a>
-                        </div>
-                      </article>
-                    </li>
-                    <li class="recommended__card">
-                      <article class="recommended-card">
-                        <a href="#" class="recommended-card__image">
-                          <img src="https://picsum.photos/600/500?random=3" alt="" />
-                        </a>
-                        <div class="recommended-card__info">
-                          <a href="" class="recommended-card__title">Medium рівень програмування на JavaScript</a>
-                          <a href="#" class="recommended-card__teacher teacher">
-                            <div class="teacher__img">
-                              <img src="https://picsum.photos/200/300" alt="" />
-                            </div>
-                            Бондар Олег Михайлович
-                          </a>
-                        </div>
-                      </article>
-                    </li>
-                  </ul>
-                </div>
+                <h5 class="recommended__inner-title">Збільши свій заробіток — почни вести курс 
+                    з поглибленої математики</h5>
               </div>
             </section>
 
