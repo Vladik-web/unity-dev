@@ -583,6 +583,12 @@
   }
 }
 
+.lesson-section__border {
+  margin-bottom: rem(60);
+  border-bottom: rem(1) solid #e0e0e0;
+  padding-bottom: rem(60);
+}
+
 // style test page
 
 .header__go-btn {
@@ -626,3 +632,28 @@
   height: 20px;
   fill: #828282;
 }
+
+.lesson-section__marks-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: rem(1) solid #ffa349;
+  border-radius: rem(5);
+  padding: rem(8) rem(16);
+  width: 195px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  gap: rem(8);
+  text-edge: cap;
+}
+
+.lesson-section__marks-svg {
+  width: 16px;
+  height: 16px;
+  fill: #828282;
+}
+
+// 
