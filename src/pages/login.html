@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    @@include('../components/_head.html', {title: 'Реєстрація'})
+
+    <meta property="og:title" content="Title" />
+    <meta property="og:url" content="url" />
+    <meta property="og:image" content="img/favicon/favicon.svg" />
+  </head>
+  <body>
+    <div class="auth-layout">
+      <main class="main">
+        <div class="auth-content auth-content--center">
+          <div class="auth-content__container auth-container">
+            <div class="auth-content__message">
+              <div class="auth-content__smile">
+                <img src="../img/static/logo.png" alt="логотип комп" />
+                <h1>Вхід</h1>
+                <form action="">
+                  <label for="">
+                    <span>Пошта</span>
+                    <input type="email" />
+                  </label>
+                  <label for="">
+                    <span>Пароль</span>
+                    <input type="password" />
+                  </label>
+                  <div class="">
+                    <label for="">
+                      <input type="checkbox" />
+                      <span>Запам’ятати мене</span>
+                    </label>
+                    <a href="#">Забули пароль?</a>
+                  </div>
+                </form>
+                <button>Увійти</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        @@include("../components/_footer.html")
+      </main>
+    </div>
+  </body>
+</html>

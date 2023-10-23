@@ -163,12 +163,137 @@
 }
 
 // style teacher-cabiner
+.statistics__wrapper {
+  border-radius: rem(10);
+  padding: rem(20);
+  background: #eef4ff;
+}
+
+.statistics__wrapper-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(20) rem(20);
+}
 
 .statistics__wrapper-top {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  margin-bottom: rem(20);
 }
+
+.statistics__wrapper-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: rem(20);
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.statistics__wrapper-portfolio {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  gap: rem(5);
+}
+
+.statistics__wrapper-svg {
+  width: 12px;
+  height: 12px;
+  fill: #bdbdbd;
+}
+
+.statistics__wrapper-box {
+  padding: rem(16);
+  max-width: rem(356);
+  background-color: #fff;
+}
+
+.statistics__wrapper__box-info {
+  display: inline-block;
+  margin-bottom: rem(12);
+  border-radius: rem(2);
+  padding: rem(5);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: rem(14);
+  color: #fff;
+  background: #ffa349;
+}
+
+.statistics__wrapper__box-text {
+  margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.statistics__wrapper-performance {
+  display: flex;
+  justify-content: space-between;
+  border-top: rem(1) solid #e0e0e0;
+}
+
+.statistics__wrapper__box-title {
+  margin-bottom: rem(16);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.statistics__wrapper__performance-given,
+.statistics__wrapper__performance-verified {
+  display: flex;
+  padding-top: rem(16);
+  font-weight: 500;
+  font-size: rem(14);
+  line-height: 120%;
+  color: #828282;
+  gap: rem(8);
+
+  span {
+    color: #1c1c1c;
+  }
+}
+
+.statistics__wrapper__box--blue {
+  background-color: #7d98f6;
+}
+
+.statistics__wrapper__box--grey {
+  background-color: #bdbdbd;
+}
+
+.recommended {
+  padding: rem(82) 0 rem(82);
+  background-color: #f2f2f2;
+}
+
+.recommended__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.recommended__inner-title {
+
+  text-align: center;
+  max-width: rem(720);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%; /* 36px */
+  text-align: center;
+  text-transform: uppercase;
+  color: #1c1c1c;
+}
+
 //
 
 @include mq('lg') {

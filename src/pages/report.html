@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    @@include('../components/_head.html', {title: 'Вчитель головна'})
+    @@include('../components/_head.html', {title: 'Звіт'})
 
     <meta property="og:title" content="Title" />
     <meta property="og:url" content="url" />
@@ -13,32 +13,30 @@
       <!-- @@include("../components/modals/gears.html") -->
       @@include("../components/_aside-teacher.html")
       <main class="main">
-        <header class="header">
+        <header class="header header--schedule">
           <div class="header__container container">
             <div class="header__inner">
               <div class="header__left">
-                <h2 class="header__title">Головне</h2>
-
-                <!-- <div class="header__buttons">
-                  <button class="header__btn header__btn--active">на сьогодні</button>
-                  <button class="header__btn">на завтра</button>
-                </div> -->
-                <div class="header__content-tabs content-tabs content-tabs--small">
-                  <div class="content-tabs__wrapper">
-                    <ul class="content-tabs__list">
-                      <li class="content-tabs__item">
-                        <button class="content-tabs__btn content-tabs__btn--active" data-tab="на сьогодні">
-                          на сьогодні
-                        </button>
-                      </li>
-                      <li class="content-tabs__item">
-                        <button class="content-tabs__btn" data-tab="на завтра">на завтра</button>
-                      </li>
-                    </ul>
-                  </div>
+                <h2 class="header__title">Розклад</h2>
+                <div class="header__stepper stepper">
+                  <button class="stepper__button">
+                    <svg class="stepper__button-svg">
+                      <use xlink:href="img/sprite.svg#chevron-left"></use>
+                    </svg>
+                  </button>
+                  <svg class="stepper__icon">
+                    <use xlink:href="img/sprite.svg#calendar"></use>
+                  </svg>
+                  <span class="stepper__value">Серпень 2023</span>
+                  <button class="stepper__button">
+                    <svg class="stepper__button-svg">
+                      <use xlink:href="img/sprite.svg#chevron-right"></use>
+                    </svg>
+                  </button>
                 </div>
               </div>
               <div class="header__right">
+                <div class="header__select select select--border"></div>
                 <div class="header__time">
                   <span class="header__hours"></span>
                   <span class="header__minutes"></span>
@@ -60,11 +58,6 @@
                             </svg>
                           </button>
                           <span class="notifications__top-name">Сповіщення</span>
-                          <button class="notifications__top-setting btn-13">
-                            <svg class="notifications__top-svg">
-                              <use xlink:href="/img/sprite.svg#settings"></use>
-                            </svg>
-                          </button>
                         </div>
                         <div class="notifications__inner">
                           <div class="notifications__block">
@@ -135,6 +128,7 @@
                   <div class="header__block">
                     <button class="header__avatar" id="header-avatar">
                       <img class="header__avatar-image" src="https://picsum.photos/200/300" alt="" />
+                      <img class="header__avatar-child" src="https://picsum.photos/200/300?random=10" alt="" />
                     </button>
                     <div class="header__wrapper">
                       <div class="header__info">
@@ -147,6 +141,8 @@
                           <img class="header__top-image" src="https://picsum.photos/200/300" alt="" />
                           <span class="header__top-name">Лисенко Олександра</span>
                         </div>
+                    
+
                         <ul class="header__list">
                           <li class="header__item">
                             <a href="#" class="header__link">
@@ -156,14 +152,7 @@
                               Моя картка
                             </a>
                           </li>
-                          <li class="header__item">
-                            <a href="#" class="header__link">
-                              <svg class="header__link-svg">
-                                <use xlink:href="img/sprite.svg#file"></use>
-                              </svg>
-                              Мої файли
-                            </a>
-                          </li>
+
                           <li class="header__item">
                             <a href="#" class="header__link">
                               <svg class="header__link-svg">
@@ -760,477 +749,19 @@
 
                 <!-- Таб 3 - Задачи -->
                 <div class="schedule__block" data-tab-content="Задачі">
-                  <a href="#" class="schedule__link schedule__link--todo link">
-                    В календар
-                    <svg>
-                      <use xlink:href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                  <div class="schedule__todo todo">
-                    <div class="todo__block todo__block--yellow">
-                      <div class="todo__tasks">
-                        <div class="todo__top">
-                          <h2 class="todo__title">Терміново!</h2>
-                        </div>
-                        <div class="todo__bottom">
-                          <div class="todo__wrapper" data-simplebar>
-                            <ul class="todo__list">
-                              <li class="todo__item todo-item">
-                                <div class="todo-item__checkbox checkbox">
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">Тест по Укр. мові</div>
-                                    <div class="checkbox__date date date--orange">15.04 9:00</div>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="todo__block todo__block--tasks">
-                      <div class="todo__tasks">
-                        <div class="todo__top">
-                          <h2 class="todo__title">Задачі</h2>
-                          <button class="todo__add" id="todo-add" aria-label="Додати задачу">
-                            <svg class="todo__add-svg">
-                              <use xlink:href="img/sprite.svg#plus"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="todo__bottom">
-                          <div class="todo__wrapper" data-simplebar>
-                            <ul class="todo__list">
-                              <li class="todo__item todo-item">
-                                <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
-                                  <div class="checkbox__block">
-                                    <span class="checkbox__checkmark checkbox__checkmark--default">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
-                                      </svg>
-                                    </span>
-                                    <span class="checkbox__checkmark checkbox__checkmark--active">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">Ранкова зарядка</div>
-                                    <div class="checkbox__date date date--blue">15.04 9:00</div>
-                                  </div>
-                                </label>
-                              </li>
-                              <li class="todo__item todo-item">
-                                <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
-                                  <div class="checkbox__block">
-                                    <span class="checkbox__checkmark checkbox__checkmark--default">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
-                                      </svg>
-                                    </span>
-                                    <span class="checkbox__checkmark checkbox__checkmark--active">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">Тест по Укр. мові</div>
-                                    <div class="checkbox__date date date--blue">15.04 15:00</div>
-                                  </div>
-                                </label>
-                              </li>
-                              <li class="todo__item todo-item">
-                                <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
-                                  <div class="checkbox__block">
-                                    <span class="checkbox__checkmark checkbox__checkmark--default">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
-                                      </svg>
-                                    </span>
-                                    <span class="checkbox__checkmark checkbox__checkmark--active">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">Підготувати реферат по Географії</div>
-                                    <div class="checkbox__date date date--blue">15.04 15:00</div>
-                                  </div>
-                                </label>
-                              </li>
-                              <li class="todo__item todo-item">
-                                <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
-                                  <div class="checkbox__block">
-                                    <span class="checkbox__checkmark checkbox__checkmark--default">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
-                                      </svg>
-                                    </span>
-                                    <span class="checkbox__checkmark checkbox__checkmark--active">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">Записатись до психолога</div>
-                                  </div>
-                                </label>
-                              </li>
-                              <li class="todo__item todo-item">
-                                <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
-                                  <div class="checkbox__block">
-                                    <span class="checkbox__checkmark checkbox__checkmark--default">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
-                                      </svg>
-                                    </span>
-                                    <span class="checkbox__checkmark checkbox__checkmark--active">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">Ранкова зарядка</div>
-                                    <div class="checkbox__date date date--blue">15.04 9:00</div>
-                                  </div>
-                                </label>
-                              </li>
-                              <li class="todo__item todo-item">
-                                <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
-                                  <div class="checkbox__block">
-                                    <span class="checkbox__checkmark checkbox__checkmark--default">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
-                                      </svg>
-                                    </span>
-                                    <span class="checkbox__checkmark checkbox__checkmark--active">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">Тест по Укр. мові</div>
-                                    <div class="checkbox__date date date--blue">15.04 15:00</div>
-                                  </div>
-                                </label>
-                              </li>
-                              <li class="todo__item todo-item">
-                                <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
-                                  <div class="checkbox__block">
-                                    <span class="checkbox__checkmark checkbox__checkmark--default">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
-                                      </svg>
-                                    </span>
-                                    <span class="checkbox__checkmark checkbox__checkmark--active">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">Підготувати реферат по Географії</div>
-                                    <div class="checkbox__date date date--blue">15.04 15:00</div>
-                                  </div>
-                                </label>
-                              </li>
-                              <li class="todo__item todo-item">
-                                <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" />
-                                  <div class="checkbox__block">
-                                    <span class="checkbox__checkmark checkbox__checkmark--default">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
-                                      </svg>
-                                    </span>
-                                    <span class="checkbox__checkmark checkbox__checkmark--active">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">Записатись до психолога</div>
-                                  </div>
-                                </label>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-
-                        <div class="todo__create create">
-                          <div class="create__top">
-                            <div class="create__types">
-                              <button class="create__type">
-                                <div class="create__icon">
-                                  <svg class="create__icon-svg">
-                                    <use xlink:href="img/sprite.svg#calendar-wrapper"></use>
-                                  </svg>
-                                  <span class="create__icon-num">9</span>
-                                </div>
-                                Сьогодні
-                              </button>
-                              <button class="create__type">
-                                <div class="create__icon">
-                                  <svg class="create__icon-svg">
-                                    <use xlink:href="img/sprite.svg#calendar-wrapper"></use>
-                                  </svg>
-                                  <span class="create__icon-num">+1</span>
-                                </div>
-                                Завтра
-                              </button>
-                              <button class="create__type create__type--active">
-                                <div class="create__icon">
-                                  <svg class="create__icon-svg">
-                                    <use xlink:href="img/sprite.svg#close"></use>
-                                  </svg>
-                                </div>
-                                Без дати
-                              </button>
-                            </div>
-                          </div>
-                          <div class="create__main" id="calendar"></div>
-                          <div class="create__bottom">
-                            <button class="create__add-time">Додати час</button>
-
-                            <div class="create__time">
-                              <span class="create__head">Час</span>
-                              <div class="create__select select">
-                                <div class="select__top">
-                                  <span class="select__value"><span>00</span> : <span>00</span></span>
-                                </div>
-                                <div class="select__bottom">
-                                  <div class="select__counter" data-simplebar>
-                                    <ul class="select__times">
-                                      <li class="select__time">01:00</li>
-                                      <li class="select__time">02:00</li>
-                                      <li class="select__time">03:00</li>
-                                      <li class="select__time">04:00</li>
-                                      <li class="select__time">05:00</li>
-                                      <li class="select__time">06:00</li>
-                                      <li class="select__time">07:00</li>
-                                      <li class="select__time">08:00</li>
-                                      <li class="select__time">09:00</li>
-                                      <li class="select__time">10:00</li>
-                                      <li class="select__time">11:00</li>
-                                      <li class="select__time">12:00</li>
-                                      <li class="select__time">13:00</li>
-                                      <li class="select__time">14:00</li>
-                                      <li class="select__time">15:00</li>
-                                      <li class="select__time">16:00</li>
-                                      <li class="select__time">17:00</li>
-                                      <li class="select__time">18:00</li>
-                                      <li class="select__time">19:00</li>
-                                      <li class="select__time">20:00</li>
-                                      <li class="select__time">21:00</li>
-                                      <li class="select__time">22:00</li>
-                                      <li class="select__time">23:00</li>
-                                      <li class="select__time">24:00</li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="create__buttons">
-                              <button class="create__button btn btn--trans" id="task-cancel">Скасувати</button>
-                              <button class="create__button btn btn--accent" id="task-save">
-                                <svg class="btn__icon">
-                                  <use xlink:href="img/sprite.svg#webcam"></use>
-                                </svg>
-                                Зберегти
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="todo__tasks todo__tasks--done todo__tasks--active">
-                        <div class="todo__top">
-                          <h2 class="todo__title">Виконано</h2>
-                          <button class="todo__add" aria-expanded="false" aria-label="Відкрити виконані завдання">
-                            <svg class="todo__add-svg">
-                              <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="todo__bottom">
-                          <div class="todo__wrapper" data-simplebar>
-                            <ul class="todo__list">
-                              @@for (var i = 0; i < 5; i++) {
-                              <li class="todo__item todo-item">
-                                <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" checked />
-                                  <div class="checkbox__block">
-                                    <span class="checkbox__checkmark checkbox__checkmark--default">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
-                                      </svg>
-                                    </span>
-                                    <span class="checkbox__checkmark checkbox__checkmark--active">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">Ранкова зарядка</div>
-                                    <div class="checkbox__date date date--blue">15.04 9:00</div>
-                                  </div>
-                                </label>
-                              </li>
-                              <li class="todo__item todo-item">
-                                <label class="todo-item__checkbox checkbox">
-                                  <input type="checkbox" value="" class="checkbox__input" checked />
-                                  <div class="checkbox__block">
-                                    <span class="checkbox__checkmark checkbox__checkmark--default">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
-                                      </svg>
-                                    </span>
-                                    <span class="checkbox__checkmark checkbox__checkmark--active">
-                                      <svg>
-                                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div class="checkbox__todo">
-                                    <div class="checkbox__value">
-                                      Попередити класуху про відсутність завтра після 1 уроку
-                                    </div>
-                                    <div class="checkbox__date date date--blue">15.04 15:00</div>
-                                  </div>
-                                </label>
-                              </li>
-                              }
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="schedule__info">
+                    <img src="" alt="аватарка користувача" />
+                    <div class="schedule__info-data">
+                      <h1 class="schedule__info__data-title">Бойко Василь Петрович</h1>
+                      <p class="schedule__info__data-subtitle">Викладач Основ здоров’я, Психолог</p>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
             <!-- Статистика -->
-            <section class="statistics">
-              <div class="statistics__wrapper">
-                <div class="statistics__wrapper-top">
-                  <h3 class="statistics__wrapper-title">Перевірка знань</h3>
-                  <a class="statistics__wrapper-portfolio" href="#"
-                    >Всі роботи
-                    <svg class="statistics__wrapper-svg">
-                      <use xlink:href="/img/sprite.svg#errow-ridth"></use>
-                    </svg>
-                  </a>
-                </div>
-                <div class="statistics__wrapper-info">
-                  <div class="statistics__wrapper-box">
-                    <p class="statistics__wrapper__box-info">Очікує на перевірку</p>
-                    <p class="statistics__wrapper__box-text">Контрольна робота</p>
-                    <h5 class="statistics__wrapper__box-title">Алгебра, 6Б</h5>
-                    <div class="statistics__wrapper-performance">
-                      <div class="statistics__wrapper__performance-given">Здано:
-                        <span>50%</span>
-                      </div>
-                      <div class="statistics__wrapper__performance-verified">
-                        Перевірено: 8/10
-                        <span>80%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="statistics__wrapper-box">
-                    <p class="statistics__wrapper__box-info">Очікує на перевірку</p>
-                    <p class="statistics__wrapper__box-text">Самостійна робота</p>
-                    <h5 class="statistics__wrapper__box-title">Математика, 5Б</h5>
-                    <div class="statistics__wrapper-performance">
-                      <div class="statistics__wrapper__performance-given">Здано:
-                        <span>50%</span>
-                      </div>
-                      <div class="statistics__wrapper__performance-verified">
-                        Перевірено: 8/10
-                        <span>80%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="statistics__wrapper-box">
-                    <p class="statistics__wrapper__box-info">Очікує на перевірку</p>
-                    <p class="statistics__wrapper__box-text">Домашня робота</p>
-                    <h5 class="statistics__wrapper__box-title">Алгебра, 6Б</h5>
-                    <div class="statistics__wrapper-performance">
-                      <div class="statistics__wrapper__performance-given">Здано:
-                        <span>50%</span>
-                      </div>
-                      <div class="statistics__wrapper__performance-verified">
-                        Перевірено: 8/10
-                        <span>80%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="statistics__wrapper-box">
-                    <p class="statistics__wrapper__box-info statistics__wrapper__box--grey">Очікує на перевірку</p>
-                    <p class="statistics__wrapper__box-text">Домашня робота</p>
-                    <h5 class="statistics__wrapper__box-title">Математика, 5Б</h5>
-                    <div class="statistics__wrapper-performance">
-                      <div class="statistics__wrapper__performance-given">Здано:
-                        <span>50%</span>
-                      </div>
-                      <div class="statistics__wrapper__performance-verified">
-                        Перевірено: 8/10
-                        <span>80%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="statistics__wrapper-box">
-                    <p class="statistics__wrapper__box-info">Перевірено</p>
-                    <p class="statistics__wrapper__box-text">Контрольна робота</p>
-                    <h5 class="statistics__wrapper__box-title">Геометрія, 7А</h5>
-                    <div class="statistics__wrapper-performance">
-                        <div class="statistics__wrapper__performance-given">Здано:
-                          <span>50%</span>
-                        </div>
-                        <div class="statistics__wrapper__performance-verified">
-                          Перевірено: 8/10
-                          <span>80%</span>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="statistics__wrapper-box">
-                    <p class="statistics__wrapper__box-info statistics__wrapper__box--blue">Завершено</p>
-                    <p class="statistics__wrapper__box-text">Домашня робота</p>
-                    <h5 class="statistics__wrapper__box-title">Геометрія, 7А</h5>
-                    <div class="statistics__wrapper-performance">
-                      <div class="statistics__wrapper__performance-given">Здано:
-                        <span>50%</span>
-                      </div>
-                      <div class="statistics__wrapper__performance-verified">
-                        Перевірено: 8/10
-                        <span>80%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
 
-            <section class="recommended">
-              <div class="recommended__inner">
-                <h5 class="recommended__inner-title">Збільши свій заробіток — почни вести курс 
-                    з поглибленої математики</h5>
-              </div>
-            </section>
-<!-- 
+            <!-- 
             <section class="banner">
               <div class="banner__inner">
                 <h2

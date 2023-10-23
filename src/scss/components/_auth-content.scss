@@ -404,6 +404,7 @@ input[type='radio']:checked + label + .content {
       &--mobile {
         display: flex;
         align-items: center;
+
         // align-items: flex-start;
       }
     }
@@ -644,4 +645,12 @@ input[type='radio']:checked + label + .content {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.auth-container__login-btn {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFA349;
 }

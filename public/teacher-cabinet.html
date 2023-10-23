@@ -1465,59 +1465,95 @@
               <div class="statistics__wrapper">
                 <div class="statistics__wrapper-top">
                   <h3 class="statistics__wrapper-title">Перевірка знань</h3>
-                  <a href="#">Всі роботи
-                    <svg>
-                      <use xlink:href="/img/sprite.svg#название самой иконки"></use>
+                  <a class="statistics__wrapper-portfolio" href="#">Всі роботи
+                    <svg class="statistics__wrapper-svg">
+                      <use xlink:href="/img/sprite.svg#errow-ridth"></use>
                     </svg>
                   </a>
                 </div>
                 <div class="statistics__wrapper-info">
                   <div class="statistics__wrapper-box">
-                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-info">Очікує на перевірку</p>
                     <p class="statistics__wrapper__box-text">Контрольна робота</p>
+                    <h5 class="statistics__wrapper__box-title">Алгебра, 6Б</h5>
                     <div class="statistics__wrapper-performance">
-                      <div class="statistics__wrapper__performance-given"></div>
-                      <div class="statistics__wrapper__performance-verified"></div>
+                      <div class="statistics__wrapper__performance-given">Здано:
+                        <span>50%</span>
+                      </div>
+                      <div class="statistics__wrapper__performance-verified">
+                        Перевірено: 8/10
+                        <span>80%</span>
+                      </div>
                     </div>
                   </div>
                   <div class="statistics__wrapper-box">
-                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-info">Очікує на перевірку</p>
                     <p class="statistics__wrapper__box-text">Самостійна робота</p>
+                    <h5 class="statistics__wrapper__box-title">Математика, 5Б</h5>
                     <div class="statistics__wrapper-performance">
-                      <div class="statistics__wrapper__performance-given"></div>
-                      <div class="statistics__wrapper__performance-verified"></div>
+                      <div class="statistics__wrapper__performance-given">Здано:
+                        <span>50%</span>
+                      </div>
+                      <div class="statistics__wrapper__performance-verified">
+                        Перевірено: 8/10
+                        <span>80%</span>
+                      </div>
                     </div>
                   </div>
                   <div class="statistics__wrapper-box">
-                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-info">Очікує на перевірку</p>
                     <p class="statistics__wrapper__box-text">Домашня робота</p>
+                    <h5 class="statistics__wrapper__box-title">Алгебра, 6Б</h5>
                     <div class="statistics__wrapper-performance">
-                      <div class="statistics__wrapper__performance-given"></div>
-                      <div class="statistics__wrapper__performance-verified"></div>
+                      <div class="statistics__wrapper__performance-given">Здано:
+                        <span>50%</span>
+                      </div>
+                      <div class="statistics__wrapper__performance-verified">
+                        Перевірено: 8/10
+                        <span>80%</span>
+                      </div>
                     </div>
                   </div>
                   <div class="statistics__wrapper-box">
-                    <h4 class="statistics__wrapper__box-info">Очікує на перевірку</h4>
+                    <p class="statistics__wrapper__box-info statistics__wrapper__box--grey">Очікує на перевірку</p>
                     <p class="statistics__wrapper__box-text">Домашня робота</p>
+                    <h5 class="statistics__wrapper__box-title">Математика, 5Б</h5>
                     <div class="statistics__wrapper-performance">
-                      <div class="statistics__wrapper__performance-given"></div>
-                      <div class="statistics__wrapper__performance-verified"></div>
+                      <div class="statistics__wrapper__performance-given">Здано:
+                        <span>50%</span>
+                      </div>
+                      <div class="statistics__wrapper__performance-verified">
+                        Перевірено: 8/10
+                        <span>80%</span>
+                      </div>
                     </div>
                   </div>
                   <div class="statistics__wrapper-box">
-                    <h4 class="statistics__wrapper__box-info">Перевірено</h4>
+                    <p class="statistics__wrapper__box-info">Перевірено</p>
                     <p class="statistics__wrapper__box-text">Контрольна робота</p>
+                    <h5 class="statistics__wrapper__box-title">Геометрія, 7А</h5>
                     <div class="statistics__wrapper-performance">
-                        <div class="statistics__wrapper__performance-given"></div>
-                        <div class="statistics__wrapper__performance-verified"></div>
+                        <div class="statistics__wrapper__performance-given">Здано:
+                          <span>50%</span>
+                        </div>
+                        <div class="statistics__wrapper__performance-verified">
+                          Перевірено: 8/10
+                          <span>80%</span>
+                        </div>
                     </div>
                   </div>
                   <div class="statistics__wrapper-box">
-                    <h4 class="statistics__wrapper__box-info">Завершено</h4>
+                    <p class="statistics__wrapper__box-info statistics__wrapper__box--blue">Завершено</p>
                     <p class="statistics__wrapper__box-text">Домашня робота</p>
+                    <h5 class="statistics__wrapper__box-title">Геометрія, 7А</h5>
                     <div class="statistics__wrapper-performance">
-                      <div class="statistics__wrapper__performance-given"></div>
-                      <div class="statistics__wrapper__performance-verified"></div>
+                      <div class="statistics__wrapper__performance-given">Здано:
+                        <span>50%</span>
+                      </div>
+                      <div class="statistics__wrapper__performance-verified">
+                        Перевірено: 8/10
+                        <span>80%</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1530,19 +1566,23 @@
                     з поглибленої математики</h5>
               </div>
             </section>
-
+<!-- 
             <section class="banner">
               <div class="banner__inner">
-                <h2 style="font-size: 40px;
+                <h2
+                  style="
+                    font-size: 40px;
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
-                    color: var(--white);">
-                 ? Banner?
+                    color: var(--white);
+                  "
+                >
+                  ? Banner ?
                 </h2>
               </div>
-            </section>
+            </section> -->
           </div>
         </div>
         <footer class="footer">

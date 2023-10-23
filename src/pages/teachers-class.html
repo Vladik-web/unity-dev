@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    @@include('../components/_head.html', {title: 'Мій класс'})
+
+    <meta property="og:title" content="Title" />
+    <meta property="og:url" content="url" />
+    <meta property="og:image" content="img/favicon/favicon.svg" />
+  </head>
+
+  <body class="body-mob-fixed">
+    <div class="base-layout">
+      <!-- @@include("../components/modals/gears.html") -->
+      @@include("../components/_aside-teacher.html")
+      <main class="main">
+        <header class="header">
+          <div class="header__container container">
+            <div class="header__inner">
+              <div class="header__left">
+                <h2 class="header__title">Мій клас 5Б</h2>
+
+                <!-- <div class="header__buttons">
+                  <button class="header__btn header__btn--active">на сьогодні</button>
+                  <button class="header__btn">на завтра</button>
+                </div> -->
+                <div class="header__content-tabs content-tabs content-tabs--small">
+                  <div class="content-tabs__wrapper">
+                    <!-- <ul class="content-tabs__list">
+                      <li class="content-tabs__item">
+                        <button class="content-tabs__btn content-tabs__btn--active" data-tab="на сьогодні">
+                          на сьогодні
+                        </button>
+                      </li>
+                      <li class="content-tabs__item">
+                        <button class="content-tabs__btn" data-tab="на завтра">на завтра</button>
+                      </li>
+                    </ul> -->
+                  </div>
+                </div>
+              </div>
+              <div class="header__right">
+                <div class="header__time">
+                  <span class="header__hours"></span>
+                  <span class="header__minutes"></span>
+                  <span class="header__seconds"></span>
+                </div>
+                <div class="header__user">
+                  <div class="header__block">
+                    <button class="header__notifications">
+                      <svg class="header__notifications-svg">
+                        <use xlink:href="img/sprite.svg#notifications"></use>
+                      </svg>
+                    </button>
+                    <div class="header__wrapper">
+                      <div class="header__ntf notifications">
+                        <div class="notifications__top">
+                          <button class="notifications__close" id="notifications-close">
+                            <svg class="notifications__close-svg">
+                              <use xlink:href="img/sprite.svg#arrow-right"></use>
+                            </svg>
+                          </button>
+                          <span class="notifications__top-name">Сповіщення</span>
+                          <button class="notifications__top-setting btn-13">
+                            <svg class="notifications__top-svg">
+                              <use xlink:href="/img/sprite.svg#settings"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="notifications__inner">
+                          <div class="notifications__block">
+                            <div class="notifications__head">Нові сповіщення</div>
+                            <ul class="notifications__list">
+                              <li class="notifications__item notifications__item--blue">
+                                <svg class="notifications__item-icon">
+                                  <use xlink:href="img/sprite.svg#cours"></use>
+                                </svg>
+                                <div class="notifications__item-text">
+                                  <span>
+                                    ДLorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto nihil dolore non
+                                    ab minima vero eius suscipit eos laborum.
+                                  </span>
+                                </div>
+                                <time class="notifications__item-time">15.04.23 - 10:52</time>
+                              </li>
+                              <li class="notifications__item notifications__item--orange">
+                                <svg class="notifications__item-icon">
+                                  <use xlink:href="img/sprite.svg#warn"></use>
+                                </svg>
+                                <div class="notifications__item-text">
+                                  <span> Тест по Укр. мові</span>
+                                  <div class="notifications__date date date--orange">15.04 9:00</div>
+                                </div>
+                                <time class="notifications__item-time">15.04.23 - 10:52</time>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="notifications__block">
+                            <div class="notifications__head">Переглянуті сьогодні</div>
+                            <ul class="notifications__list">
+                              <li class="notifications__item notifications__item--read">
+                                <svg class="notifications__item-icon">
+                                  <use xlink:href="img/sprite.svg#cours"></use>
+                                </svg>
+                                <div class="notifications__item-text">
+                                  <span>Додано курс «Образотворче мистецтво»</span>
+                                </div>
+                                <time class="notifications__item-time">15.04.23 - 10:52</time>
+                              </li>
+                              <li class="notifications__item notifications__item--read">
+                                <svg class="notifications__item-icon">
+                                  <use xlink:href="img/sprite.svg#warn"></use>
+                                </svg>
+                                <div class="notifications__item-text">
+                                  <span>Вчитель математики відкрив доступ до уроку</span>
+                                  <div class="notifications__date date date--grey">15.04 9:00</div>
+                                </div>
+                                <time class="notifications__item-time">15.04.23 - 10:52</time>
+                              </li>
+                              <li class="notifications__item notifications__item--read">
+                                <svg class="notifications__item-icon">
+                                  <use xlink:href="img/sprite.svg#warn"></use>
+                                </svg>
+                                <div class="notifications__item-text">
+                                  <span>Вчитель математики відкрив доступ до уроку</span>
+                                  <div class="notifications__date date date--grey">15.04 9:00</div>
+                                </div>
+                                <time class="notifications__item-time">15.04.23 - 10:52</time>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__block">
+                    <button class="header__avatar" id="header-avatar">
+                      <img class="header__avatar-image" src="https://picsum.photos/200/300" alt="" />
+                    </button>
+                    <div class="header__wrapper">
+                      <div class="header__info">
+                        <div class="header__top">
+                          <button class="header__close" id="header-close">
+                            <svg class="header__close-svg">
+                              <use xlink:href="img/sprite.svg#arrow-right"></use>
+                            </svg>
+                          </button>
+                          <img class="header__top-image" src="https://picsum.photos/200/300" alt="" />
+                          <span class="header__top-name">Лисенко Олександра</span>
+                        </div>
+                        <ul class="header__list">
+                          <li class="header__item">
+                            <a href="#" class="header__link">
+                              <svg class="header__link-svg">
+                                <use xlink:href="img/sprite.svg#account"></use>
+                              </svg>
+                              Моя картка
+                            </a>
+                          </li>
+                          <li class="header__item">
+                            <a href="#" class="header__link">
+                              <svg class="header__link-svg">
+                                <use xlink:href="img/sprite.svg#file"></use>
+                              </svg>
+                              Мої файли
+                            </a>
+                          </li>
+                          <li class="header__item">
+                            <a href="#" class="header__link">
+                              <svg class="header__link-svg">
+                                <use xlink:href="img/sprite.svg#play"></use>
+                              </svg>
+                              База знань
+                            </a>
+                          </li>
+                          <li class="header__item">
+                            <a href="#" class="header__link">
+                              <svg class="header__link-svg">
+                                <use xlink:href="img/sprite.svg#logo"></use>
+                              </svg>
+                              Про Unity
+                            </a>
+                          </li>
+                          <li class="header__item">
+                            <button class="header__link">
+                              <svg class="header__link-svg">
+                                <use xlink:href="img/sprite.svg#logout"></use>
+                              </svg>
+                              Вийти
+                            </button>
+                          </li>
+                        </ul>
+                        <div class="header__language">
+                          <button class="header__lang header__lang--active">Укр</button>
+                          <button class="header__lang">Рус</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="content-tabs" id="main-tab">
+          <div class="content-tabs__wrapper">
+            <ul class="content-tabs__list">
+              <li class="content-tabs__item">
+                <button class="content-tabs__btn content-tabs__btn--active" data-tab="Розклад уроків">
+                  Розклад уроків
+                </button>
+              </li>
+              <li class="content-tabs__item">
+                <button class="content-tabs__btn" data-tab="Курси">Курси</button>
+              </li>
+              <li class="content-tabs__item">
+                <button class="content-tabs__btn" data-tab="Задачі">Задачі</button>
+              </li>
+              <li class="content-tabs__item">
+                <button class="content-tabs__btn" data-tab="Статистика">Статистика</button>
+              </li>
+              <li class="content-tabs__item">
+                <button class="content-tabs__btn" data-tab="Прогрес курсів">Прогрес курсів</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content" id="main-content">
+          <div class="content__container container">
+            <!-- журнал учеников -->
+            <section class="students">
+              <div class="schedule__inner">
+                <!-- Таб 1 - Уроки -->
+                <div class="schedule__block" data-tab-content="Розклад уроків">
+                <div class="students__nav">
+                    <p class="students__nav-name">
+                        Учні
+                    </p>
+                    <ul class="students__list">
+                        <li class="students__list-item">Відвідуваність на уроках</li>
+                        <li class="students__list-item">Середня оцінка</li>
+                        <p class="students__nav-attention">Потребує уваги</p>
+                    </ul>
+                </div>
+            
+                </div>
+            </section>  
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

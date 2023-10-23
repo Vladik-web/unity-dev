@@ -7431,6 +7431,14 @@ input[type=radio]:checked + label + .content {
   gap: 20px;
 }
 
+.auth-container__login-btn {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFA349;
+}
+
 .aside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11085,16 +11093,154 @@ input[type=radio]:checked + label + .content {
   z-index: 2;
 }
 
+.statistics__wrapper {
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  background: #eef4ff;
+}
+
+.statistics__wrapper-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem 1.25rem;
+}
+
 .statistics__wrapper-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.statistics__wrapper-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.statistics__wrapper-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  gap: 0.3125rem;
+}
+
+.statistics__wrapper-svg {
+  width: 12px;
+  height: 12px;
+  fill: #bdbdbd;
+}
+
+.statistics__wrapper-box {
+  padding: 1rem;
+  max-width: 22.25rem;
+  background-color: #fff;
+}
+
+.statistics__wrapper__box-info {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  border-radius: 0.125rem;
+  padding: 0.3125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #fff;
+  background: #ffa349;
+}
+
+.statistics__wrapper__box-text {
+  margin-bottom: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.statistics__wrapper-performance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  border-top: 0.0625rem solid #e0e0e0;
+}
+
+.statistics__wrapper__box-title {
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.statistics__wrapper__performance-given,
+.statistics__wrapper__performance-verified {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: #828282;
+  gap: 0.5rem;
+}
+
+.statistics__wrapper__performance-given span,
+.statistics__wrapper__performance-verified span {
+  color: #1c1c1c;
+}
+
+.statistics__wrapper__box--blue {
+  background-color: #7d98f6;
+}
+
+.statistics__wrapper__box--grey {
+  background-color: #bdbdbd;
+}
+
+.recommended {
+  padding: 5.125rem 0 5.125rem;
+  background-color: #f2f2f2;
+}
+
+.recommended__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.recommended__inner-title {
+  text-align: center;
+  max-width: 45rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  /* 36px */
+  text-align: center;
+  text-transform: uppercase;
+  color: #1c1c1c;
 }
 
 .personal-cabinet__avatar-title {
@@ -11348,6 +11494,43 @@ input[type=radio]:checked + label + .content {
 
 .deposit__form-title {
   background-color: black;
+}
+
+.students__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.students__nav:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 19.5rem;
+}
+
+.students__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4.625rem;
+}
+
+.students__list:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 54px;
+}
+
+.log {
+  background-color: #e0ebff;
 }
 
 .content {

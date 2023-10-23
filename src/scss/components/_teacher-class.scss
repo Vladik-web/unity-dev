@@ -1,0 +1,20 @@
+.students {
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__nav:nth-child(1) {
+    display: flex;
+    gap: rem(312);
+  }
+  &__list {
+    display: flex;
+    gap: rem(74);
+  }
+
+  &__list:nth-child(2) {
+    display: flex;
+    align-items: center;
+    height: 54px;
+  }
+}
