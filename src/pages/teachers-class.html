@@ -201,7 +201,7 @@
             </div>
           </div>
         </header>
-        <div class="content-tabs" id="main-tab">
+        <div class="students-tabs__wrapper content-tabs" id="main-tab">
           <div class="content-tabs__wrapper">
             <ul class="content-tabs__list">
               <li class="content-tabs__item">
@@ -218,9 +218,6 @@
               <li class="content-tabs__item">
                 <button class="content-tabs__btn" data-tab="Статистика">Статистика</button>
               </li>
-              <li class="content-tabs__item">
-                <button class="content-tabs__btn" data-tab="Прогрес курсів">Прогрес курсів</button>
-              </li>
             </ul>
           </div>
         </div>
@@ -231,21 +228,415 @@
               <div class="schedule__inner">
                 <!-- Таб 1 - Уроки -->
                 <div class="schedule__block" data-tab-content="Розклад уроків">
-                <div class="students__nav">
-                    <p class="students__nav-name">
-                        Учні
-                    </p>
-                    <ul class="students__list">
-                        <li class="students__list-item">Відвідуваність на уроках</li>
-                        <li class="students__list-item">Середня оцінка</li>
-                        <p class="students__nav-attention">Потребує уваги</p>
-                    </ul>
+                  <div class="students__block">
+                    <div class="students__block">
+                      <ul class="students__list">
+                        <li class="students__content-item">Учні</li>
+                        <li class="students__content-item">Відвідуваність на уроках</li>
+                        <li class="students__content-item">Середня оцінка</li>
+                        <li class="students__content-item">Потребує уваги</li>
+                      </ul>
+                      <ul class="students__item">
+                        <li class="students__box">
+                          <div class="students__images">
+                            <img class="students__images-img" src="../img/static/photo-account.png" alt="">
+                            <div class="students__images-box">
+                              <h1 class="students__images-title">Лисенко Олександра Миколаївна</h1>
+                              <button class="students__images-btn">
+                                <svg class="students__images-svg">
+                                  <use xlink:href="/img/sprite.svg#message"></use>
+                        </svg>
+                                Написати</button>
+                            </div>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#camera"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        16 <span>/20</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#statistic"></use>
+                    </svg> 
+                      <p class="students__view-number">
+                        9 <span>/12</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__status">
+                            <p class="students__status-text students__text--blue">Не заходив 10 днів</p>
+                            <p class="students__status-text students__text--orange">Отримано 12</p>
+                            <!-- <p class="students__status-text students__text--blue">1 бал - 10 раз</p> -->
+                            <p class="students__status-text students__text--blue">20 незакритих завдань</p>
+                          </div>
+                        </li>
+                        <li class="students__box">
+                          <div class="students__images">
+                            <img class="students__images-img" src="../img/static/photo-account.png" alt="">
+                            <div class="students__images-box">
+                              <h1 class="students__images-title">Лисенко Олександра Миколаївна</h1>
+                              <button class="students__images-btn">
+                                <svg class="students__images-svg">
+                                  <use xlink:href="/img/sprite.svg#message"></use>
+                        </svg>
+                                Написати</button>
+                            </div>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#camera"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        16 <span>/20</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#statistic"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        9 <span>/12</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__status">
+                            <!-- <p class="students__status-text students__text--blue">Не заходив 10 днів</p> -->
+                            <p class="students__status-text students__text--orange">Отримано 12</p>
+                            <p class="students__status-text students__text--blue">1 бал - 10 раз</p>
+                            <p class="students__status-text students__text--blue">20 незакритих завдань</p>
+                          </div>
+                        </li>
+                        <li class="students__box">
+                          <div class="students__images">
+                            <img class="students__images-img" src="../img/static/photo-account.png" alt="">
+                            <div class="students__images-box">
+                              <h1 class="students__images-title">Лисенко Олександра Миколаївна</h1>
+                              <button class="students__images-btn">
+                                <svg class="students__images-svg">
+                                  <use xlink:href="/img/sprite.svg#message"></use>
+                        </svg>
+                                Написати</button>
+                            </div>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#camera"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        16 <span>/20</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#statistic"></use>
+                    </svg> 
+                      <p class="students__view-number">
+                        9 <span>/12</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__status">
+                            <p class="students__status-text students__text--blue">Не заходив 10 днів</p>
+                            <p class="students__status-text students__text--orange">Отримано 12</p>
+                            <!-- <p class="students__status-text students__text--blue">1 бал - 10 раз</p> -->
+                            <p class="students__status-text students__text--blue">20 незакритих завдань</p>
+                          </div>
+                        </li>
+                        <li class="students__box">
+                          <div class="students__images">
+                            <img class="students__images-img" src="../img/static/photo-account.png" alt="">
+                            <div class="students__images-box">
+                              <h1 class="students__images-title">Лисенко Олександра Миколаївна</h1>
+                              <button class="students__images-btn">
+                                <svg class="students__images-svg">
+                                  <use xlink:href="/img/sprite.svg#message"></use>
+                        </svg>
+                                Написати</button>
+                            </div>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#camera"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        16 <span>/20</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#statistic"></use>
+                    </svg> 
+                      <p class="students__view-number">
+                        9 <span>/12</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__status">
+                            <p class="students__status-text students__text--blue">Не заходив 10 днів</p>
+                            <p class="students__status-text students__text--orange">Отримано 12</p>
+                            <p class="students__status-text students__text--blue">1 бал - 10 раз</p>
+                            <!-- <p class="students__status-text students__text--blue">20 незакритих завдань</p> -->
+                          </div>
+                        </li>
+                        <li class="students__box">
+                          <div class="students__images">
+                            <img class="students__images-img" src="../img/static/photo-account.png" alt="">
+                            <div class="students__images-box">
+                              <h1 class="students__images-title">Лисенко Олександра Миколаївна</h1>
+                              <button class="students__images-btn">
+                                
+                                <svg class="students__images-svg">
+                                  <use xlink:href="/img/sprite.svg#message"></use>
+                        </svg>
+                                Написати</button>
+                            </div>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#camera"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        16 <span>/20</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#statistic"></use>
+                    </svg> 
+                      <p class="students__view-number">
+                        9 <span>/12</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__status">
+                            <!-- <p class="students__status-text students__text--blue">Не заходив 10 днів</p> -->
+                            <p class="students__status-text students__text--orange">Отримано 12</p>
+                            <p class="students__status-text students__text--blue">1 бал - 10 раз</p>
+                            <p class="students__status-text students__text--blue">20 незакритих завдань</p>
+                          </div>
+                        </li>
+                        <li class="students__box">
+                          <div class="students__images">
+                            <img class="students__images-img" src="../img/static/photo-account.png" alt="">
+                            <div class="students__images-box">
+                              <h1 class="students__images-title">Лисенко Олександра Миколаївна</h1>
+                              <button class="students__images-btn">
+                                
+                                <svg class="students__images-svg">
+                                  <use xlink:href="/img/sprite.svg#message"></use>
+                        </svg>
+                                Написати</button>
+                            </div>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#camera"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        16 <span>/20</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#statistic"></use>
+                    </svg> 
+                      <p class="students__view-number">
+                        9 <span>/12</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__status">
+                            <p class="students__status-text students__text--blue">Не заходив 10 днів</p>
+                            <!-- <p class="students__status-text students__text--orange">Отримано 12</p>
+                            <p class="students__status-text students__text--blue">1 бал - 10 раз</p> -->
+                            <p class="students__status-text students__text--blue">20 незакритих завдань</p>
+                          </div>
+                        </li>
+                        <li class="students__box">
+                          <div class="students__images">
+                            <img class="students__images-img" src="../img/static/photo-account.png" alt="">
+                            <div class="students__images-box">
+                              <h1 class="students__images-title">Лисенко Олександра Миколаївна</h1>
+                              <button class="students__images-btn">
+                                <svg class="students__images-svg">
+                                  <use xlink:href="/img/sprite.svg#message"></use>
+                        </svg>
+                                
+                                
+                                Написати</button>
+                            </div>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#camera"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        16 <span>/20</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#statistic"></use>
+                    </svg> 
+                      <p class="students__view-number">
+                        9 <span>/12</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__status">
+                            <p class="students__status-text students__text--blue">Не заходив 10 днів</p>
+                            <p class="students__status-text students__text--orange">Отримано 12</p>
+                            <!-- <p class="students__status-text students__text--blue">1 бал - 10 раз</p> -->
+                            <p class="students__status-text students__text--blue">20 незакритих завдань</p>
+                          </div>
+                        </li>
+                        <li class="students__box">
+                          <div class="students__images">
+                            <img class="students__images-img" src="../img/static/photo-account.png" alt="">
+                            <div class="students__images-box">
+                              <h1 class="students__images-title">Лисенко Олександра Миколаївна</h1>
+                              <button class="students__images-btn">
+                                <svg class="students__images-svg">
+                                  <use xlink:href="/img/sprite.svg#message"></use>
+                        </svg>
+                                
+                                
+                                Написати</button>
+                            </div>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#camera"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        16 <span>/20</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#statistic"></use>
+                    </svg> 
+                      <p class="students__view-number">
+                        9 <span>/12</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__status">
+                            <p class="students__status-text students__text--blue">Не заходив 10 днів</p>
+                            <p class="students__status-text students__text--orange">Отримано 12</p>
+                            <p class="students__status-text students__text--blue">1 бал - 10 раз</p>
+                            <!-- <p class="students__status-text students__text--blue">20 незакритих завдань</p> -->
+                          </div>
+                        </li>
+                        <li class="students__box">
+                          <div class="students__images">
+                            <img class="students__images-img" src="../img/static/photo-account.png" alt="">
+                            <div class="students__images-box">
+                              <h1 class="students__images-title">Лисенко Олександра Миколаївна</h1>
+                              <button class="students__images-btn">
+                                <svg class="students__images-svg">
+                                  <use xlink:href="/img/sprite.svg#message"></use>
+                        </svg>
+                                
+                                
+                                Написати</button>
+                            </div>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#camera"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        16 <span>/20</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#statistic"></use>
+                    </svg> 
+                      <p class="students__view-number">
+                        9 <span>/12</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__status">
+                            <!-- <p class="students__status-text students__text--blue">Не заходив 10 днів</p>
+                            <p class="students__status-text students__text--orange">Отримано 12</p> -->
+                            <p class="students__status-text students__text--blue">1 бал - 10 раз</p>
+                            <p class="students__status-text students__text--blue">20 незакритих завдань</p>
+                          </div>
+                        </li>
+                        <li class="students__box">
+                          <div class="students__images">
+                            <img class="students__images-img" src="../img/static/photo-account.png" alt="">
+                            <div class="students__images-box">
+                              <h1 class="students__images-title">Лисенко Олександра Миколаївна</h1>
+                              <button class="students__images-btn">
+                                
+                                <svg class="students__images-svg">
+                                  <use xlink:href="/img/sprite.svg#message"></use>
+                        </svg>
+                                Написати</button>
+                            </div>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#camera"></use>
+                    </svg>
+                      <p class="students__view-number">
+                        16 <span>/20</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__view">
+                            <svg class="students__view-svg">
+                              <use xlink:href="/img/sprite.svg#statistic"></use>
+                    </svg> 
+                      <p class="students__view-number">
+                        9 <span>/12</span>
+                      </p>
+                      <p class="students__view-percent">80%</p>
+                          </div>
+                          <div class="students__status">
+                            <p class="students__status-text students__text--blue">Не заходив 10 днів</p>
+                            <!-- <p class="students__status-text students__text--orange">Отримано 12</p>
+                            <p class="students__status-text students__text--blue">1 бал - 10 раз</p>
+                            <p class="students__status-text students__text--blue">20 незакритих завдань</p> -->
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-            
+                <div class="students__ridth">
+                  <div class="students__advertising">
+                    <svg class="students__advertising-svg">
+                      <use xlink:href="/img/sprite.svg#add"></use>
+            </svg>
+                  </div>
+                  <div class="students__advertising">
+                    <svg class="students__advertising-svg">
+                      <use xlink:href="/img/sprite.svg#add"></use>
+            </svg>
+                  </div>
                 </div>
             </section>  
           </div>
         </div>
+         @@include("../components/_footer.html")
       </main>
     </div>
   </body>
