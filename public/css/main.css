@@ -11533,6 +11533,134 @@ input[type=radio]:checked + label + .content {
   background-color: #e0ebff;
 }
 
+.table__subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.teacher__images {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.teacher__images-span {
+  position: absolute;
+  left: -0.3125rem;
+  top: 0;
+}
+
+.teacher__cabinet {
+  border-radius: 0.4375rem;
+  padding: 1rem 1.25rem;
+  background-color: rgba(246, 125, 125, 0.1);
+}
+
+.teacher__cabinet-blue {
+  border-radius: 0.4375rem;
+  padding: 1rem 1.25rem;
+  background-color: #c8d9fd;
+}
+
+.teacher__images-name {
+  padding-left: 0.5rem;
+  max-width: 6.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.teacher__img-children {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 1.25rem;
+}
+
+.subject__card__title-span {
+  border-radius: 50%;
+  padding: 0.25rem 0.3125rem;
+  background-color: rgba(246, 125, 125, 0.3);
+}
+
+.teacher-img__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #828282;
+  gap: 0.5625rem;
+}
+
+.teacher__img-svg {
+  width: 12px;
+  height: 12px;
+  fill: #828282;
+}
+
+.subject-card--blue {
+  background: #e0ebff;
+  cursor: auto;
+}
+
+.subject-card--red {
+  cursor: auto;
+}
+
+.title__span--blue {
+  border-radius: 50%;
+  padding: 0.25rem 0.3125rem;
+  background-color: gba(156, 125, 246, 0.3);
+}
+
+.title__span-blue {
+  border-radius: 50%;
+  padding: 0.25rem 0.3125rem;
+  background: #c8d9fd;
+}
+
+.subject__content-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #828282;
+  gap: 0.3125rem;
+}
+
+.subject__content__btn-svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: #828282;
+}
+
 .content {
   display: block;
 }
@@ -11695,6 +11823,20 @@ input[type=radio]:checked + label + .content {
 
   .footer__list {
     gap: 2.5rem;
+  }
+
+  .marks-table__inner--mob {
+    display: block;
+  }
+
+  .teacher__cabinet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
