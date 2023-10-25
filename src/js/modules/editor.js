@@ -13,7 +13,7 @@ const editor = () => {
         toolbar: toolbarOptions
       },
 
-      placeholder: 'Моя відповідь',
+      placeholder: 'Мій коментар',
 
       theme: 'snow'
     })

@@ -21,6 +21,13 @@ import './modules/registration-accordion';
 import registrationCalendarMonth from './modules/registration-calendar'
 import registrationCalendarData from './modules/register-calendar-data'
 import registerAccordion from './modules/registration-accordion'
+import initializeTabs from './modules/lesson-teacher'
+
+
+
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
   try {
     new SimpleBar(document.querySelector('[data-simplebar]'), { autoHide: false })
@@ -48,4 +55,6 @@ window.addEventListener('DOMContentLoaded', () => {
   registrationCalendarMonth()
   registrationCalendarData()
   registerAccordion()
+  initializeTabs()
 })
+

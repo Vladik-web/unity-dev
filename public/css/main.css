@@ -9885,6 +9885,565 @@ input[type=radio]:checked + label + .content {
   fill: #828282;
 }
 
+.content-tabs__edit__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #828282;
+  gap: 0.3125rem;
+}
+
+.content-tabs__edit__svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: #828282;
+}
+
+.lesson__section__info-text {
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr) minmax(0, 1fr);
+  /* Добавляем последний столбец */
+  margin-bottom: 1rem;
+}
+
+/* Устанавливаем свойство grid-column для последнего элемента */
+
+.lesson__section__info-text input.lesson__section__info-input {
+  grid-column: 4;
+  /* Последний столбец */
+  margin-left: -7px;
+  /* Чтобы сдвинуть его влево на 10px */
+}
+
+.lesson__section__info-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  color: #828282;
+  gap: 0.5rem;
+}
+
+.lesson__section__info-item {
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 0.75rem;
+  border: 0.0625rem solid #c8d9fd;
+  border-radius: 0.3125rem;
+  padding: 1rem;
+}
+
+.lesson__section__info-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lesson__section__info-name {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdawn__button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 120%;
+  text-align: left;
+  background-color: #eef4ff;
+  gap: 12px;
+}
+
+.dropdawn__list {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 1;
+  display: none;
+  overflow-y: auto;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  padding: 12px 16px !important;
+  height: 280px;
+}
+
+.dropdawn__list::-webkit-scrollbar {
+  border: 10px;
+  width: 3px;
+  height: 83px;
+}
+
+.dropdawn__list::-webkit-scrollbar-thumb {
+  background-color: #a6c0fb;
+}
+
+.dropdawn__list-item {
+  margin-bottom: 8px;
+  border-radius: 3px;
+  padding: 8px;
+  width: 80px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  background-color: #eef4ff;
+  cursor: pointer;
+}
+
+.dropdawn__list-item:hover {
+  background-color: #c8d9fd;
+}
+
+.dropdawn__list--visible {
+  display: block;
+}
+
+.dropdown__ipnut-hidden {
+  display: none;
+}
+
+.lesson__section__info-title {
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.dropdown__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.dropdawn__button-svg {
+  width: 0.625rem;
+  height: 0.3125rem;
+  fill: #828282;
+}
+
+.lesson__section__info-input {
+  border: 0.0625rem solid #c8d9fd;
+  border-radius: 0.3125rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.dropdawn__button-check {
+  height: 2.5625rem;
+}
+
+.lesson__section__info-grade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 0.0625rem solid #e0ebff;
+  border-radius: 0.3125rem;
+  padding: 0.25rem 0.5rem;
+  max-width: 3.75rem;
+  gap: 0.5rem;
+}
+
+.lesson__section__info-grade-svg {
+  border-radius: 3.125rem;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  fill: #7d98f6;
+  background: #eef4ff;
+}
+
+.content-tabs__edit {
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #828282;
+}
+
+.content-tabs__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #828282;
+}
+
+.lesson-section__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.lesson-section__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.625rem;
+}
+
+.lesson__section__expectation-input {
+  border: 0.0625rem solid #c8d9fd;
+  border-radius: 0.3125rem;
+  width: 1.5rem;
+  height: 1.5625rem;
+  text-align: center;
+  background: #fff;
+}
+
+.lesson__section__nav-btn {
+  border: 0.0625rem solid #bdbdbd;
+  border-radius: 0.3125rem;
+  padding: 0.46875rem 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+
+.lesson__section-options--tab01 {
+  display: grid;
+  grid-template-columns: 1fr 48%;
+  margin-bottom: 1rem;
+}
+
+.lesson__section-options {
+  display: grid;
+  grid-template-columns: 1fr 26% 1fr;
+  margin-bottom: 1rem;
+}
+
+.lesson__section__options-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  color: #828282;
+}
+
+.lesson__section__expectation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lesson__section__expectation-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: 0.0625rem solid #c8d9fd;
+  border-radius: 0.3125rem;
+  padding: 1rem;
+}
+
+.lesson__section-expectation {
+  display: none;
+}
+
+.lesson__section-expectation:target {
+  display: block;
+}
+
+.active {
+  border-color: #7d98f6;
+  color: #7d98f6;
+}
+
+.lesson__section--message {
+  border-radius: 0.3125rem;
+  padding: 0.5rem 1rem;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  background: #f2f2f2;
+}
+
+.lesson__section__expectation-profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lesson__section__expectation-profil p {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.lesson-section__class-room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.lesson-section__lable {
+  position: relative;
+}
+
+.lesson-section__lable p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #bdbdbd;
+  margin-bottom: 0.5rem;
+}
+
+.lesson-section__class-link-svg {
+  position: absolute;
+  left: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #bdbdbd;
+}
+
+.lesson-section__class-room-input {
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 0.5rem 1rem 0.5rem 3.5rem;
+  width: 26.25rem;
+  height: 2.5rem;
+  background: #eef4ff;
+}
+
+.lesson-section__class-room-btn {
+  border-radius: 0 0.3125rem 0.3125rem 0;
+  padding: 1rem 1rem;
+  background: #ffa349;
+}
+
+.lesson-section__class-check {
+  width: 1rem;
+  height: 1rem;
+  fill: #fff;
+}
+
+.lesson-section__text__box-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 2.125rem;
+}
+
+.lesson-section__text__box-tab h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lesson-section__text-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tab {
+  border: 0.0625rem solid #bdbdbd;
+  border-radius: 0.3125rem;
+  padding: 0.25rem 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #bdbdbd;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-color: #7d98f6;
+  color: #7d98f6;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.lesson__section__expectation-img {
+  max-width: 20rem;
+}
+
+.lesson-section__content-nav {
+  display: grid;
+  grid-template-columns: 1fr 0fr 12%;
+  margin-bottom: 1rem;
+}
+
+.lesson-section__content-nav-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 120%;
+  color: #828282;
+}
+
+.lesson-section__content-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lesson-section__content__nav-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: 0.0625rem solid #c8d9fd;
+  border-radius: 0.3125rem;
+  padding: 1rem;
+}
+
+.lesson__section-nav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3.75rem;
+}
+
+.lesson__section__nav-content-btn {
+  border: 0.0625rem solid #ffa349;
+  border-radius: 0.3125rem;
+  padding: 0.5rem 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #1c1c1c;
+}
+
+.lesson__section-nav-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e0ebff;
+  border-radius: 0.3125rem;
+  padding: 0.25rem 0.5rem;
+  gap: 0.5rem;
+}
+
+.lesson__section__nav-box-svg {
+  width: 0.6875rem;
+  height: 0.6875rem;
+  fill: #7d98f6;
+}
+
+.class__room--active {
+  width: 30.75rem;
+}
+
+.lesson-section__class-room-svg {
+  position: absolute;
+  right: 0.5625rem;
+  width: 1.1875rem;
+  height: 1.125rem;
+  fill: #828282;
+}
+
 .maintenance {
   position: fixed;
   z-index: 100;
@@ -11788,233 +12347,51 @@ input[type=radio]:checked + label + .content {
   fill: #828282;
 }
 
-.content-tabs__edit__btn {
+.lesson-section__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #828282;
-  gap: 0.3125rem;
-}
-
-.content-tabs__edit__svg {
-  width: 0.75rem;
-  height: 0.75rem;
-  fill: #828282;
-}
-
-.lesson__section__info-text {
-  display: grid;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr) minmax(0, 1fr);
-  /* Добавляем последний столбец */
-  margin-bottom: 1rem;
-}
-
-/* Устанавливаем свойство grid-column для последнего элемента */
-
-.lesson__section__info-text input.lesson__section__info-input {
-  grid-column: 4;
-  /* Последний столбец */
-  margin-left: -7px;
-  /* Чтобы сдвинуть его влево на 10px */
-}
-
-.lesson__section__info-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 120%;
-  color: #828282;
-  gap: 0.5rem;
-}
-
-.lesson__section__info-item {
-  display: grid;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 0.75rem;
-  border: 0.0625rem solid #c8d9fd;
-  border-radius: 0.3125rem;
-  padding: 1rem;
-}
-
-.lesson__section__info-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  margin-bottom: 2.1875rem;
   gap: 0.75rem;
 }
 
-.lesson__section__info-name {
-  font-family: "Roboto";
+.lesson-section__box-input {
+  border: 1px solid #e0ebff;
+  border-radius: 0.3125rem;
+  width: 1.5rem;
+  height: 1.5625rem;
+  text-align: center;
+}
+
+.lesson-section__grade {
+  margin-bottom: 2rem;
+}
+
+.lesson-section__grade p {
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 120%;
-  color: #1c1c1c;
+  color: #bdbdbd;
 }
 
-.dropdown {
-  position: relative;
-}
-
-.dropdawn__button {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: none;
-  border-radius: 0.375rem;
-  padding: 0.5rem 1rem;
-  font-family: "Roboto";
+.lesson-section__block-text {
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   line-height: 120%;
-  text-align: left;
-  background-color: #eef4ff;
-  gap: 12px;
+  color: #bdbdbd;
 }
 
-.dropdawn__list {
-  position: absolute;
-  left: 0;
-  top: 50px;
-  z-index: 1;
-  display: none;
-  overflow-y: auto;
-  border: 1px solid #f2f2f2;
-  border-radius: 10px;
-  padding: 12px 16px !important;
-  height: 280px;
-}
-
-.dropdawn__list::-webkit-scrollbar {
-  border: 10px;
-  width: 3px;
-  height: 83px;
-}
-
-.dropdawn__list::-webkit-scrollbar-thumb {
-  background-color: #a6c0fb;
-}
-
-.dropdawn__list-item {
-  margin-bottom: 8px;
-  border-radius: 3px;
-  padding: 8px;
-  width: 80px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 120%;
-  background-color: #eef4ff;
-  cursor: pointer;
-}
-
-.dropdawn__list-item:hover {
-  background-color: #c8d9fd;
-}
-
-.dropdawn__list--visible {
-  display: block;
-}
-
-.dropdown__ipnut-hidden {
-  display: none;
-}
-
-.lesson__section__info-title {
-  margin-bottom: 2rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 120%;
-  color: #1c1c1c;
-}
-
-.dropdown__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.dropdawn__button-svg {
-  width: 0.625rem;
-  height: 0.3125rem;
-  fill: #828282;
-}
-
-.lesson__section__info-input {
-  border: 0.0625rem solid #c8d9fd;
-  border-radius: 0.3125rem;
+.header__title__teacher-svg {
   width: 1.5rem;
   height: 1.5rem;
-}
-
-.dropdawn__button-check {
-  height: 2.5625rem;
-}
-
-.lesson__section__info-grade {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: 0.0625rem solid #e0ebff;
-  border-radius: 0.3125rem;
-  padding: 0.25rem 0.5rem;
-  max-width: 3.75rem;
-  gap: 0.5rem;
-}
-
-.lesson__section__info-grade-svg {
-  border-radius: 3.125rem;
-  width: 0.6875rem;
-  height: 0.6875rem;
-  fill: #7d98f6;
-  background: #eef4ff;
-}
-
-.content-tabs__edit {
-  font-weight: 500;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  color: #828282;
-}
-
-.content-tabs__link {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #828282;
+  fill: #bdbdbd;
 }
 
 .content {

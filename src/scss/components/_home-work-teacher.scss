@@ -1,0 +1,46 @@
+.lesson-section {
+  &__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(35);
+    gap: rem(12);
+  }
+
+  &__box-input {
+    border: 1px solid #e0ebff;
+    border-radius: rem(5);
+
+    // padding: rem(4) rem(8);
+    width: rem(24);
+    height: rem(25);
+    text-align: center;
+  }
+
+  &__grade {
+    margin-bottom: rem(32);
+
+    p {
+      margin-bottom: rem(8);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      color: #bdbdbd;
+    }
+  }
+
+  &__block-text {
+    margin-bottom: rem(8);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 120%;
+    color: #bdbdbd;
+  }
+}
+
+.header__title__teacher-svg {
+  width: rem(24);
+  height: rem(24);
+  fill: #bdbdbd;
+}
