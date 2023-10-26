@@ -18,8 +18,8 @@
                 <div class="header__lesson">
                   <button class="header__lesson-btn">
                     <svg class="header__title__teacher-svg">
-                        <use xlink:href="/img/sprite.svg#home"></use>
-              </svg>
+                      <use xlink:href="/img/sprite.svg#home"></use>
+                    </svg>
                   </button>
                   <h2 class="header__title">Домашня робота</h2>
                 </div>
@@ -203,13 +203,18 @@
                     <div class="theme-card__top">Тема: Множини і операції над ними</div>
 
                     <h1 class="theme-card__title">
-                        Тема уроку: Числові множини. Взаємно однозначна відповідність між елементами множин. 
+                      Тема уроку: Числові множини. Взаємно однозначна відповідність між елементами множин.
                     </h1>
                     <svg class="theme-card__icon">
                       <use xlink:href="img/sprite.svg#math"></use>
                     </svg>
                   </div>
-                  <button class="theme-card__more" aria-expanded="false" aria-label="Відкрити інформацію про предмет"  style="display: none">
+                  <button
+                    class="theme-card__more"
+                    aria-expanded="false"
+                    aria-label="Відкрити інформацію про предмет"
+                    style="display: none"
+                  >
                     <svg class="theme-card__more-svg">
                       <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
                     </svg>
@@ -219,98 +224,18 @@
 
                 <div class="lesson-section__right">
                   <div class="lesson-section__container">
-                    <div class="lesson-section__teacher teacher-card">
-                      <div class="teacher-card__top">
-                        <div class="teacher-card__image">
-                          <img src="https://picsum.photos/200/300" alt="" />
-                        </div>
-                        <div class="teacher-card__info">
-                          <div class="teacher-card__name">Кайдаш Людмила Миколаївна</div>
-                          <div class="teacher-card__status">Викладач математики, Класний керівник</div>
-                        </div>
-                      </div>
-                      <button class="teacher-card__question">
-                        <svg class="teacher-card__question-svg">
-                          <use xlink:href="img/sprite.svg#chat"></use>
-                        </svg>
-                        Задати питання
-                      </button>
-                    </div>
-                    <!-- todo-block--done - если все задания выполнены -->
-                    <div class="lesson-section__todo todo-block">
-                      <div class="todo-block__inner">
-                        <h2 class="todo-block__title">TO DO:</h2>
-                        <ul class="todo-block__list">
-                          <li class="todo-block__item todo-block__item--done">
-                            <div class="todo-block__icon">
-                              <svg class="todo-block__icon-svg">
-                                <use xlink:href="img/sprite.svg#check"></use>
-                              </svg>
-                            </div>
-
-                            Прослухати онлайн-урок
-                          </li>
-                          <li class="todo-block__item">
-                            <div class="todo-block__icon">
-                              <svg class="todo-block__icon-svg">
-                                <use xlink:href="img/sprite.svg#webcam"></use>
-                              </svg>
-                            </div>
-                            Прослухати онлайн-урок
-                          </li>
-                          <li class="todo-block__item">
-                            <div class="todo-block__icon">
-                              <svg class="todo-block__icon-svg">
-                                <use xlink:href="img/sprite.svg#home"></use>
-                              </svg>
-                            </div>
-
-                            Здати домашню роботу
-                          </li>
-                          <li class="todo-block__item">
-                            <div class="todo-block__icon">
-                              <svg class="todo-block__icon-svg">
-                                <use xlink:href="img/sprite.svg#pen"></use>
-                              </svg>
-                            </div>
-                            Написати контрольну роботу
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- кр выполненно -->
-                      <!-- <div class="todo-block__inner-orange">
-                        <h2 class="todo-block__title">TO DO:</h2>
-                        <ul class="todo-block__list">
-                          <li class="todo-block__item">
-                            <div class="todo-block__icon">
-                              <img src="../img/static/verified-account.png" alt="завдання виконано">
-                            </div>
-                            Написати контрольну роботу
-                          </li>
-                        </ul>
-                      </div> -->
-                      <!-- нужно написать кр -->
-                      <!-- <div class="todo-block__inner">
-                        <h2 class="todo-block__title">TO DO:</h2>
-                        <ul class="todo-block__list">
-                          <li class="todo-block__item">
-                            <div class="todo-block__icon">
-                              <svg class="todo-block__svg">
-                                <use xlink:href="/img/sprite.svg#warning"></use>
-                              </svg>
-                            </div>
-                            Написати контрольну роботу
-                          </li>
-                        </ul>
-                      </div> -->
-                    </div>
-
-                    <div class="lesson-section__marks marks">
-                      <h2 class="marks__title">Оцінки:</h2>
-                      <ul class="marks__list">
-                        <li class="marks__item"><span>10</span>- за урок</li>
-                        <li class="marks__item"><span>3</span>- домашня робота</li>
-                        <li class="marks__item"><span>5</span>- контрольна робота</li>
+                    <div class="lesson-section__card">
+                      <ul class="lesson-section__card-item">
+                        <li class="lesson-section__card-images">
+                          <img class="lesson-section__card-img" src="../img/static/photo-children-2.png" alt="фото аккаунта" />
+                        </li>
+                        <li class="lesson-section__card-link">Лисенко Олександра</li>
+                        <button class="lesson-section__card-message">
+                          <svg class="lesson-section__card__message-svg">
+                            <use xlink:href="/img/sprite.svg#message"></use>
+                          </svg>
+                          НАписати
+                        </button>
                       </ul>
                     </div>
                   </div>
@@ -373,18 +298,32 @@
                       <div class="text-wrapp">
                         <h2>Робота Лисенко Олександри</h2>
                         <p>
-                            Я не була на минулих роботах, але я сама вивчила цю тему і впевнена, що все правильно зробила.
+                          Я не була на минулих роботах, але я сама вивчила цю тему і впевнена, що все правильно зробила.
                         </p>
                         <h3>Відповіді:</h3>
                         <ol>
-                          <li>Множина натуральних чисел від 1 до 10 можна записати у вигляді множини так: A = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}.</li>
-                          <li>Щоб знайти перетин множин A та B, треба знайти числа, які належать обом множинам: A = {1, 2, 3, 4, 5}, B = {4, 5, 6, 7, 8}. Перетин множин A та B записується як A ∩ B. A ∩ B = {4, 5}.</li>
-                          <li>Щоб знайти об'єднання множин C та D, треба об'єднати всі елементи з обох множин: C = {2, 4, 6, 8}, D = {1, 3, 5, 7}. Об'єднання множин C та D записується як C ∪ D. C ∪ D = {1, 2, 3, 4, 5, 6, 7, 8}.</li>
                           <li>
-                            Щоб знайти різницю множин E та F, треба видалити з множини E всі елементи, які також належать до множини F: E = {1, 2, 3, 4, 5}, F = {3, 4, 5, 6, 7}. Різниця множин E та F записується як E \ F. E \ F = {1, 2}.
+                            Множина натуральних чисел від 1 до 10 можна записати у вигляді множини так: A = {1, 2, 3, 4,
+                            5, 6, 7, 8, 9, 10}.
                           </li>
                           <li>
-                            Щоб знайти доповнення множини G до множини U, треба видалити з множини U всі елементи, які належать до множини G: G = {1, 2, 3, 4, 5}, U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Доповнення множини G записується як U \ G. U \ G = {6, 7, 8, 9, 10}.
+                            Щоб знайти перетин множин A та B, треба знайти числа, які належать обом множинам: A = {1, 2,
+                            3, 4, 5}, B = {4, 5, 6, 7, 8}. Перетин множин A та B записується як A ∩ B. A ∩ B = {4, 5}.
+                          </li>
+                          <li>
+                            Щоб знайти об'єднання множин C та D, треба об'єднати всі елементи з обох множин: C = {2, 4,
+                            6, 8}, D = {1, 3, 5, 7}. Об'єднання множин C та D записується як C ∪ D. C ∪ D = {1, 2, 3, 4,
+                            5, 6, 7, 8}.
+                          </li>
+                          <li>
+                            Щоб знайти різницю множин E та F, треба видалити з множини E всі елементи, які також
+                            належать до множини F: E = {1, 2, 3, 4, 5}, F = {3, 4, 5, 6, 7}. Різниця множин E та F
+                            записується як E \ F. E \ F = {1, 2}.
+                          </li>
+                          <li>
+                            Щоб знайти доповнення множини G до множини U, треба видалити з множини U всі елементи, які
+                            належать до множини G: G = {1, 2, 3, 4, 5}, U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Доповнення
+                            множини G записується як U \ G. U \ G = {6, 7, 8, 9, 10}.
                           </li>
                         </ol>
                       </div>
@@ -394,78 +333,48 @@
                   <div class="lesson-section__section-block">
                     <h2 class="lesson-section__title">Перевірка знань</h2>
                     <div class="lesson-section__box">
-                        <p class="lesson-section__box-text">Попередня перевірка:</p>
-                       <input class="lesson-section__box-input" type="text">
+                      <p class="lesson-section__box-text">Попередня перевірка:</p>
+                      <input class="lesson-section__box-input" type="text" />
                     </div>
                     <div class="lesson-section__grade">
-                        <p>Оцінка</p>
-                        <div class="dropdown">
-                            <div class="dropdown__nav">
-                              <button class="dropdawn__button">
-                                0
-                              </button>
-                            </div>
-                            <ul class="dropdawn__list">
-                              <li class="dropdawn__list-item" data-value="january">1</li>
-                              <li class="dropdawn__list-item" data-value="february">2</li>
-                              <li class="dropdawn__list-item" data-value="march">3</li>
-                              <li class="dropdawn__list-item" data-value="april">4</li>
-                              <li class="dropdawn__list-item" data-value="may">5</li>
-                              <li class="dropdawn__list-item" data-value="june">6</li>
-                              <li class="dropdawn__list-item" data-value="july">7</li>
-                              <li class="dropdawn__list-item" data-value="august">8</li>
-                              <li class="dropdawn__list-item" data-value="september">9</li>
-                              <li class="dropdawn__list-item" data-value="october">10</li>
-                              <li class="dropdawn__list-item" data-value="november">11</li>
-                              <li class="dropdawn__list-item" data-value="december">12</li>
-                            </ul>
-                            <input class="dropdown__ipnut-hidden" type="text" name="select-catagory" value="" />
-                          </div>
+                      <p>Оцінка</p>
+                      <div class="dropdown">
+                        <div class="dropdown__nav">
+                          <button class="dropdawn__button">
+                            0
+                            <svg class="lesson-section__grade-svg">
+                              <use xlink:href="/img/sprite.svg#errow-select"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <ul class="dropdawn__list">
+                          <li class="dropdawn__list-item" data-value="january">1</li>
+                          <li class="dropdawn__list-item" data-value="february">2</li>
+                          <li class="dropdawn__list-item" data-value="march">3</li>
+                          <li class="dropdawn__list-item" data-value="april">4</li>
+                          <li class="dropdawn__list-item" data-value="may">5</li>
+                          <li class="dropdawn__list-item" data-value="june">6</li>
+                          <li class="dropdawn__list-item" data-value="july">7</li>
+                          <li class="dropdawn__list-item" data-value="august">8</li>
+                          <li class="dropdawn__list-item" data-value="september">9</li>
+                          <li class="dropdawn__list-item" data-value="october">10</li>
+                          <li class="dropdawn__list-item" data-value="november">11</li>
+                          <li class="dropdawn__list-item" data-value="december">12</li>
+                        </ul>
+                        <input class="dropdown__ipnut-hidden" type="text" name="select-catagory" value="" />
+                      </div>
                     </div>
                   </div>
-                  <!-- Написан текст -->
-                  <!-- <div class="lesson-section__case">
-                    <div class="lesson-section__work">
-                      <ol>
-                        <li>
-                          Множина натуральних чисел від 1 до 10 можна записати у вигляді множини так: A = {1, 2,
-                          3, 4, 5, 6, 7, 8, 9, 10}.
-                        </li>
-                        <li>
-                          Щоб знайти перетин множин A та B, треба знайти числа, які належать обом множинам: A =
-                          {1, 2, 3, 4, 5}, B = {4, 5, 6, 7, 8}. Перетин множин A та B записується як A ∩ B. A ∩ B
-                          = {4, 5}.
-                        </li>
-                        <li>
-                          Щоб знайти об'єднання множин C та D, треба об'єднати всі елементи з обох множин: C = {2,
-                          4, 6, 8}, D = {1, 3, 5, 7}. Об'єднання множин C та D записується як C ∪ D. C ∪ D = {1,
-                          2, 3, 4, 5, 6, 7, 8}.
-                        </li>
-                        <li>
-                          Щоб знайти різницю множин E та F, треба видалити з множини E всі елементи, які також
-                          належать до множини F: E = {1, 2, 3, 4, 5}, F = {3, 4, 5, 6, 7}. Різниця множин E та F
-                          записується як E \ F. E \ F = {1, 2}.
-                        </li>
-                        <li>
-                          Щоб знайти доповнення множини G до множини U, треба видалити з множини U всі елементи,
-                          які належать до множини G: G = {1, 2, 3, 4, 5}, U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}.
-                          Доповнення множини G записується як U \ G. U \ G = {6, 7, 8, 9, 10}.
-                        </li>
-                      </ol>
-                    </div>
-                    <div class="lesson-section__edit">
-                      <button class="lesson-section__change">
-                        <svg class="lesson-section__change-svg">
-                          <use xlink:href="img/sprite.svg#edit"></use>
-                        </svg>
-                        Редагувати
-                      </button>
-                      <span class="lesson-section__change-timer">(залишилось 14 хв 49 сек)</span>
-                    </div>
-                  </div> -->
-                  <!-- Поле для ввода -->
                   <p class="lesson-section__block-text">Коментар до роботи</p>
-                   <div class="lesson-section__case">
+                  <p class="lesson-section__block-text">Коментар до роботи:</p>
+                  <div class="lesson-section__block-result">
+                    <p>Олександра, ти молодець, все правильно!</p>
+                    <div class="lesson-section__block__result-button">
+                      <button class="lesson-section__block__result-btn lesson-section__change">Змінити рішення</button>
+                      <button class="lesson-section__block__result-btn lesson-section__change">Дозволити перездати</button>
+                    </div>
+                  </div>
+                  <div class="lesson-section__case">
                     <div class="lesson-section__editor editor">
                       <!-- <h2 class="lesson-section__title">Моя контрольна робота</h2> -->
                       <div class="editor__block"></div>
@@ -477,11 +386,66 @@
                       </svg>
                       Відправити учню
                     </button>
-                  </div> 
-                   <div class="lesson-section__case">
+                  </div>
+                  <div class="lesson-section__case">
                     <div class="lesson-section__document-block document-block">
-                         <h2 class="lesson-section__title">Попередня перевірка</h2>
-                      <ul class="document-block__list">
+                      <h2 class="lesson-section__title">Попередня перевірка</h2>
+                      <div class="lesson-section__box">
+                        <p class="lesson-section__text--black">17.09.23 15:27</p>
+                        <p class="lesson-section__box-text">Оцінка:</p>
+                        <input class="lesson-section__box-input" type="text" />
+                      </div>
+                      <p class="lesson-section__box-text lesson-section__box--text">Робота Лисенко Олександри</p>
+                      <!-- <div class="lesson-section__date date date--blue">26.04 16:00</div> -->
+                      <div class="lesson-section__document-home">
+                        <div class="lesson-section__work">
+                          <p>
+                            Я не була на минулих роботах, але я сама вивчила цю тему і впевнена, що все правильно
+                            зробила.
+                          </p>
+                          <h3>Відповіді:</h3>
+                          <ol>
+                            <li>
+                              Множина натуральних чисел від 1 до 10 можна записати у вигляді множини так: A = {1, 2, 3,
+                              4, 5, 6, 7, 8, 9, 10}.
+                            </li>
+                            <li>
+                              Щоб знайти перетин множин A та B, треба знайти числа, які належать обом множинам: A = {1,
+                              2, 3, 4, 5}, B = {4, 5, 6, 7, 8}. Перетин множин A та B записується як A ∩ B. A ∩ B = {4,
+                              5}.
+                            </li>
+                            <li>
+                              Щоб знайти об'єднання множин C та D, треба об'єднати всі елементи з обох множин: C = {2,
+                              4, 6, 8}, D = {1, 3, 5, 7}. Об'єднання множин C та D записується як C ∪ D. C ∪ D = {1, 2,
+                              3, 4, 5, 6, 7, 8}.
+                            </li>
+                            <li>
+                              Щоб знайти різницю множин E та F, треба видалити з множини E всі елементи, які також
+                              належать до множини F: E = {1, 2, 3, 4, 5}, F = {3, 4, 5, 6, 7}. Різниця множин E та F
+                              записується як E \ F. E \ F = {1, 2}.
+                            </li>
+                            <li>
+                              Щоб знайти доповнення множини G до множини U, треба видалити з множини U всі елементи, які
+                              належать до множини G: G = {1, 2, 3, 4, 5}, U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}.
+                              Доповнення множини G записується як U \ G. U \ G = {6, 7, 8, 9, 10}.
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                      <p class="lesson-section__box-text lesson-section__box--text">Коментар до роботи:</p>
+                      <div class="lesson-section__document-home">
+                        <div class="lesson-section__work">
+                          <ol>
+                            <li>+</li>
+                            <li>-</li>
+                            <li>+</li>
+                            <li>-</li>
+                            <li>+</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <h2 class="lesson-section__title">Робота Лисенко Олександри</h2>
+                       <ul class="document-block__list">
                         <li class="document-block__item document">
                           <div class="document__wrapper">
                             <a
@@ -499,7 +463,7 @@
                               <use xlink:href="img/sprite.svg#avatar-image"></use>
                             </svg>
                             <span class="document__title">Фото_27.04.2023</span>
-                            <small class="document__weight">12 mb</small>
+                            
                           </div>
                         </li>
                         <li class="document-block__item document">
@@ -519,12 +483,32 @@
                               <use xlink:href="img/sprite.svg#avatar-image"></use>
                             </svg>
                             <span class="document__title">Фото_27.04.2023</span>
-                            <small class="document__weight">12 mb</small>
+                           
                           </div>
                         </li>
-                      </ul>
+                        <li class="document-block__item document">
+                          <div class="document__wrapper">
+                            <a
+                              href="#"
+                              class="document__remove"
+                              type="button"
+                              aria-label="Завантажити цей документ"
+                              download
+                            >
+                              <svg class="document__remove-svg">
+                                <use xlink:href="img/sprite.svg#remove"></use>
+                              </svg>
+                            </a>
+                            <svg class="document__image">
+                              <use xlink:href="img/sprite.svg#avatar-image"></use>
+                            </svg>
+                            <span class="document__title">Фото_27.04.2023</span>
+                           
+                          </div>
+                        </li>
+                      </ul> 
                     </div>
-                    <div class="lesson-section__edit">
+                    <!-- <div class="lesson-section__edit">
                       <button class="lesson-section__change">
                         <svg class="lesson-section__change-svg">
                           <use xlink:href="img/sprite.svg#edit"></use>
@@ -532,8 +516,8 @@
                         Редагувати
                       </button>
                       <span class="lesson-section__change-timer">(залишилось 14 хв 49 сек)</span>
-                    </div>
-                  </div> 
+                    </div> -->
+                  </div>
                 </div>
               </div>
             </section>

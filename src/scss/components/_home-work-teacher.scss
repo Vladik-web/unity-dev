@@ -6,6 +6,43 @@
     gap: rem(12);
   }
 
+  &__card {
+    border: rem(1) solid #e0e0e0;
+    border-radius: rem(10);
+    padding: rem(16) rem(40) rem(16) rem(12);
+  }
+
+  &__card-img {
+    margin-bottom: rem(8);
+    width: rem(65);
+  }
+
+  &__card-message {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    text-transform: uppercase;
+    color: #bdbdbd;
+    gap: rem(8);
+  }
+
+  &__card__message-svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #bdbdbd;
+  }
+
+  &__card-link {
+    margin-bottom: rem(12);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 120%;
+    color: #1c1c1c;
+  }
+
   &__box-input {
     border: 1px solid #e0ebff;
     border-radius: rem(5);
@@ -36,6 +73,89 @@
     font-size: rem(16);
     line-height: 120%;
     color: #bdbdbd;
+  }
+
+  &__grade-svg {
+    width: rem(10);
+    height: rem(5);
+    fill: #828282;
+  }
+
+  &__box-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 120%;
+    color: #bdbdbd;
+
+    // margin-bottom: rem(20);
+  }
+
+  &__box--text {
+    margin-bottom: rem(20);
+  }
+
+  &__text--black {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: 120%;
+    color: #1c1c1c;
+  }
+
+  &__document-home {
+    margin-bottom: rem(20);
+    border: rem(1) solid #e0e0e0;
+    border-radius: rem(5);
+    padding: rem(12);
+    max-width: rem(869);
+
+    p {
+      margin-bottom: rem(32);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: 130%;
+      color: #1c1c1c;
+    }
+
+    h3 {
+      margin-bottom: rem(20);
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: rem(16);
+      line-height: 130%;
+      color: #1c1c1c;
+    }
+
+    ol {
+      max-width: rem(845);
+    }
+
+    li {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: 130%;
+      color: #1c1c1c;
+    }
+  }
+
+  &__block-result {
+    p {
+      margin-bottom: rem(32);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: 130%;
+      color: #1c1c1c;
+    }
+  }
+
+  &__block__result-button {
+    display: flex;
+    align-items: center;
+    gap: rem(12);
   }
 }
 

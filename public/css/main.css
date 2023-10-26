@@ -9565,6 +9565,102 @@ input[type=radio]:checked + label + .content {
   color: #1c1c1c;
 }
 
+.lesson-section__materials-list {
+  margin-bottom: 60px;
+}
+
+.lesson-section__materials {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.lesson-section__border {
+  margin-bottom: 3.75rem;
+  border-bottom: 0.0625rem solid #e0e0e0;
+  padding-bottom: 3.75rem;
+}
+
+.lesson-section__marks-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 0.0625rem solid #ffa349;
+  border-radius: 0.3125rem;
+  padding: 0.5rem 1rem;
+  width: 195px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  gap: 0.5rem;
+  text-edge: cap;
+}
+
+.lesson-section__marks-svg {
+  width: 16px;
+  height: 16px;
+  fill: #828282;
+}
+
+.lesson-section__info-text {
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr) minmax(0, 1fr);
+  /* Добавляем последний столбец */
+  margin-bottom: 1rem;
+}
+
+.lesson-section__content__nav-list-item {
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Выравнивание элементов по вертикали */
+  grid-template-columns: 9fr 3fr;
+}
+
+.lesson-section__class-room-svg {
+  position: absolute;
+  right: 0.5625rem;
+  width: 1.1875rem;
+  height: 1.125rem;
+  fill: #828282;
+}
+
+.lesson-section__content-nav {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  margin-bottom: 1rem;
+}
+
+.lesson-section__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border: 0.0625rem solid #c8d9fd;
+  border-radius: 0.3125rem;
+  padding: 1rem;
+}
+
+.lesson-section__info-top {
+  display: grid;
+  grid-template-columns: 14fr 3fr;
+  margin-bottom: 1rem;
+}
+
 .lesson-section__text,
 .lesson-section__work {
   color: var(--black);
@@ -9795,21 +9891,6 @@ input[type=radio]:checked + label + .content {
   list-style: unset;
 }
 
-.lesson-section__materials-list {
-  margin-bottom: 60px;
-}
-
-.lesson-section__materials {
-  margin-bottom: 60px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.lesson-section__border {
-  margin-bottom: 3.75rem;
-  border-bottom: 0.0625rem solid #e0e0e0;
-  padding-bottom: 3.75rem;
-}
-
 .header__go-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9853,35 +9934,6 @@ input[type=radio]:checked + label + .content {
 .todo-block__svg {
   width: 20px;
   height: 20px;
-  fill: #828282;
-}
-
-.lesson-section__marks-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border: 0.0625rem solid #ffa349;
-  border-radius: 0.3125rem;
-  padding: 0.5rem 1rem;
-  width: 195px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #1c1c1c;
-  gap: 0.5rem;
-  text-edge: cap;
-}
-
-.lesson-section__marks-svg {
-  width: 16px;
-  height: 16px;
   fill: #828282;
 }
 
@@ -9938,18 +9990,6 @@ input[type=radio]:checked + label + .content {
   line-height: 120%;
   color: #828282;
   gap: 0.5rem;
-}
-
-.lesson__section__info-item {
-  display: grid;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 0.75rem;
-  border: 0.0625rem solid #c8d9fd;
-  border-radius: 0.3125rem;
-  padding: 1rem;
 }
 
 .lesson__section__info-images {
@@ -10255,12 +10295,12 @@ input[type=radio]:checked + label + .content {
 }
 
 .lesson-section__lable p {
+  margin-bottom: 0.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   line-height: 120%;
   color: #bdbdbd;
-  margin-bottom: 0.5rem;
 }
 
 .lesson-section__class-link-svg {
@@ -10358,12 +10398,6 @@ input[type=radio]:checked + label + .content {
   max-width: 20rem;
 }
 
-.lesson-section__content-nav {
-  display: grid;
-  grid-template-columns: 1fr 0fr 12%;
-  margin-bottom: 1rem;
-}
-
 .lesson-section__content-nav-item {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -10384,12 +10418,6 @@ input[type=radio]:checked + label + .content {
 }
 
 .lesson-section__content__nav-list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   border: 0.0625rem solid #c8d9fd;
   border-radius: 0.3125rem;
   padding: 1rem;
@@ -10436,12 +10464,27 @@ input[type=radio]:checked + label + .content {
   width: 30.75rem;
 }
 
-.lesson-section__class-room-svg {
-  position: absolute;
-  right: 0.5625rem;
-  width: 1.1875rem;
-  height: 1.125rem;
-  fill: #828282;
+.lesson__section-nav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Выравнивание элементов по вертикали */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  /* Распределение пространства между элементами */
+}
+
+.lesson__section__nav-content-btn {
+  margin-left: auto;
+  /* Перемещение кнопки вправо (в самый конец) */
+}
+
+.lesson-section__case-btn {
+  opacity: 0.5;
 }
 
 .maintenance {
@@ -12358,6 +12401,47 @@ input[type=radio]:checked + label + .content {
   gap: 0.75rem;
 }
 
+.lesson-section__card {
+  border: 0.0625rem solid #e0e0e0;
+  border-radius: 0.625rem;
+  padding: 1rem 2.5rem 1rem 0.75rem;
+}
+
+.lesson-section__card-img {
+  margin-bottom: 0.5rem;
+  width: 4.0625rem;
+}
+
+.lesson-section__card-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  gap: 0.5rem;
+}
+
+.lesson-section__card__message-svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #bdbdbd;
+}
+
+.lesson-section__card-link {
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
 .lesson-section__box-input {
   border: 1px solid #e0ebff;
   border-radius: 0.3125rem;
@@ -12386,6 +12470,89 @@ input[type=radio]:checked + label + .content {
   font-size: 1rem;
   line-height: 120%;
   color: #bdbdbd;
+}
+
+.lesson-section__grade-svg {
+  width: 0.625rem;
+  height: 0.3125rem;
+  fill: #828282;
+}
+
+.lesson-section__box-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+
+.lesson-section__box--text {
+  margin-bottom: 1.25rem;
+}
+
+.lesson-section__text--black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.lesson-section__document-home {
+  margin-bottom: 1.25rem;
+  border: 0.0625rem solid #e0e0e0;
+  border-radius: 0.3125rem;
+  padding: 0.75rem;
+  max-width: 54.3125rem;
+}
+
+.lesson-section__document-home p {
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
+  color: #1c1c1c;
+}
+
+.lesson-section__document-home h3 {
+  margin-bottom: 1.25rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 130%;
+  color: #1c1c1c;
+}
+
+.lesson-section__document-home ol {
+  max-width: 52.8125rem;
+}
+
+.lesson-section__document-home li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
+  color: #1c1c1c;
+}
+
+.lesson-section__block-result p {
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
+  color: #1c1c1c;
+}
+
+.lesson-section__block__result-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .header__title__teacher-svg {

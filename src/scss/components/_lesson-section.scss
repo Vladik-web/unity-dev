@@ -236,6 +236,86 @@
     color: #1c1c1c;
   }
 
+  &__materials-list {
+    margin-bottom: 60px;
+  }
+
+  &__materials {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__border {
+    margin-bottom: rem(60);
+    border-bottom: rem(1) solid #e0e0e0;
+    padding-bottom: rem(60);
+  }
+
+  &__marks-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rem(1) solid #ffa349;
+    border-radius: rem(5);
+    padding: rem(8) rem(16);
+    width: 195px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1c1c1c;
+    gap: rem(8);
+    text-edge: cap;
+  }
+
+  &__marks-svg {
+    width: 16px;
+    height: 16px;
+    fill: #828282;
+  }
+
+  &__info-text {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr) minmax(0, 1fr); /* Добавляем последний столбец */
+    margin-bottom: rem(16);
+  }
+
+  &__content__nav-list-item {
+    display: grid;
+    align-items: center; /* Выравнивание элементов по вертикали */
+    grid-template-columns: 9fr 3fr;
+  }
+
+  &__class-room-svg {
+    position: absolute;
+    right: rem(9);
+    width: rem(19);
+    height: rem(18);
+    fill: #828282;
+  }
+
+  &__content-nav {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    margin-bottom: rem(16);
+  }
+
+  &__info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(16);
+    border: rem(1) solid #c8d9fd;
+    border-radius: rem(5);
+    padding: rem(16);
+  }
+
+  &__info-top {
+    display: grid;
+    grid-template-columns: 14fr 3fr;
+    margin-bottom: rem(16);
+  }
+
   &__text,
   &__work {
     color: var(--black);
@@ -384,14 +464,21 @@
   }
 }
 
-.lesson-section__materials-list {
-  margin-bottom: 60px;
-}
+// .lesson__section__info-text {
+//   display: grid;
+//   align-items: center;
+//   grid-template-columns: repeat(3, 1fr) minmax(0, 1fr); /* Добавляем последний столбец */
+//   margin-bottom: rem(16);
+// }
 
-.lesson-section__materials {
-  margin-bottom: 60px;
-  border-bottom: 1px solid #e0e0e0;
-}
+// .lesson-section__materials-list {
+//   margin-bottom: 60px;
+// }
+
+// .lesson-section__materials {
+//   margin-bottom: 60px;
+//   border-bottom: 1px solid #e0e0e0;
+// }
 
 @include mq('lg') {
   .lesson-section {
@@ -583,11 +670,11 @@
   }
 }
 
-.lesson-section__border {
-  margin-bottom: rem(60);
-  border-bottom: rem(1) solid #e0e0e0;
-  padding-bottom: rem(60);
-}
+// .lesson-section__border {
+//   margin-bottom: rem(60);
+//   border-bottom: rem(1) solid #e0e0e0;
+//   padding-bottom: rem(60);
+// }
 
 // style test page
 
@@ -633,28 +720,28 @@
   fill: #828282;
 }
 
-.lesson-section__marks-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: rem(1) solid #ffa349;
-  border-radius: rem(5);
-  padding: rem(8) rem(16);
-  width: 195px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #1c1c1c;
-  gap: rem(8);
-  text-edge: cap;
-}
+// .lesson-section__marks-btn {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border: rem(1) solid #ffa349;
+//   border-radius: rem(5);
+//   padding: rem(8) rem(16);
+//   width: 195px;
+//   font-family: 'Roboto', sans-serif;
+//   font-weight: 500;
+//   font-size: 14px;
+//   text-transform: uppercase;
+//   color: #1c1c1c;
+//   gap: rem(8);
+//   text-edge: cap;
+// }
 
-.lesson-section__marks-svg {
-  width: 16px;
-  height: 16px;
-  fill: #828282;
-}
+// .lesson-section__marks-svg {
+//   width: 16px;
+//   height: 16px;
+//   fill: #828282;
+// }
 
 // 
 .content-tabs__edit__btn {
@@ -696,16 +783,6 @@
   line-height: 120%;
   color: #828282;
   gap: rem(8);
-}
-
-.lesson__section__info-item {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: rem(12);
-  border: rem(1) solid #c8d9fd;
-  border-radius: rem(5);
-  padding: rem(16);
 }
 
 .lesson__section__info-line-input {
@@ -977,12 +1054,12 @@
   position: relative;
 
   p {
+    margin-bottom: rem(8);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: rem(16);
     line-height: 120%;
-    color:  #bdbdbd;
-    margin-bottom: rem(8);
+    color: #bdbdbd;
   }
 }
 
@@ -1070,12 +1147,6 @@
   max-width: rem(320);
 }
 
-.lesson-section__content-nav {
-  display: grid;
-  grid-template-columns: 1fr 0fr 12%;
-  margin-bottom: rem(16);
-}
-
 .lesson-section__content-nav-item {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -1091,8 +1162,6 @@
 }
 
 .lesson-section__content__nav-list-item {
-  display: flex;
-  justify-content: space-between;
   border: rem(1) solid #c8d9fd;
   border-radius: rem(5);
   padding: rem(16);
@@ -1133,10 +1202,16 @@
   width: rem(492);
 }
 
-.lesson-section__class-room-svg {
-  position: absolute;
-  right: rem(9);
-  width: rem(19);
-  height: rem(18);
-  fill: #828282;
+.lesson__section-nav-content {
+  display: flex;
+  align-items: center; /* Выравнивание элементов по вертикали */
+  justify-content: space-between; /* Распределение пространства между элементами */
+}
+
+.lesson__section__nav-content-btn {
+  margin-left: auto; /* Перемещение кнопки вправо (в самый конец) */
+}
+
+.lesson-section__case-btn {
+  opacity: 0.5;
 }

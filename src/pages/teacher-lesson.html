@@ -1200,14 +1200,14 @@
                         <div class="lesson-section__top">
                           <h2 class="lesson-section__title">Перевірка знань</h2>
                           <nav class="lesson-section__nav">
-                            <a href="#tab_01" class="lesson__section__nav-btn">Очікує на перевірку</a>
-                            <a href="#tab_02" class="lesson__section__nav-btn">Перевірено</a>
-                            <a href="#tab_03" class="lesson__section__nav-btn">Не здано</a>
+                            <a href="" class="lesson__section__nav-btn">Очікує на перевірку</a>
+                            <a href="" class="lesson__section__nav-btn">Перевірено</a>
+                            <a href="" class="lesson__section__nav-btn">Не здано</a>
                           </nav>
                         </div>
                         <div class="lesson-section-body">
                           <!-- Очікує на перевірку -->
-                          <div id="tab_01" class="lesson__section-expectation">
+                          <div  class="lesson__section-expectation ">
                             <ul class="lesson__section-options--tab01">
                               <li class="lesson__section__options-item">Учні</li>
                               <li class="lesson__section__options-item">Попередні оцінки</li>
@@ -1261,7 +1261,7 @@
                             </ul>
                           </div>
                           <!-- Перевірено -->
-                          <div id="tab_02" class="lesson__section-expectation">
+                          <div  class="lesson__section-expectation ">
                             <ul class="lesson__section-options">
                               <li class="lesson__section__options-item">Учні</li>
                               <li class="lesson__section__options-item">Попередні оцінки</li>
@@ -1325,7 +1325,7 @@
                             </ul>
                           </div>
                           <!-- Не здано -->
-                          <div id="tab_03" class="lesson__section-expectation">
+                          <div  class="lesson__section-expectation ">
                             <ul class="lesson__section-options">
                               <li class="lesson__section__options-item">Учні</li>
                             </ul>
@@ -1385,6 +1385,11 @@
                               </svg>
                             </div>
                           </label>
+                          <button class="lesson-section__case-btn btn btn--accent">
+                            <svg class="btn__icon">
+                              <use xlink:href="/img/sprite.svg#item"></use>
+                    </svg>
+                            Перейти до тесту</button>
                           <button class="btn btn--accent">
                             <svg class="btn__icon">
                               <use xlink:href="/img/sprite.svg#item"></use>
@@ -1402,6 +1407,7 @@
                           </div>
                         </div>
                         <div class="lesson-section__result">
+                          <!-- здано -->
                           <div class="lesson-section__content-tab tab-content" id="tab1">
                             <ul class="lesson-section__content-nav">
                               <li class="lesson-section__content-nav-item">Учні</li>
@@ -1716,14 +1722,14 @@
                               </li>
                             </ul>
                           </div>
-
+                          <!-- не здано -->
                           <div class="lesson-section__content-tab tab-content" id="tab2">
-                            <ul class="lesson-section__content-nav">
-                              <li class="lesson-section__content-nav-item">Учні</li>
-                              <li class="lesson-section__content-nav-item">Оцінка</li>
+                            <ul class="lesson-section__info-top">
+                              <li class="lesson-section__info__top-text lesson-section__content-nav-item">Учні</li>
+                              <li class="lesson-section__info__top-text lesson-section__content-nav-item">Оцінка</li>
                             </ul>
-                            <ul class="lesson-section__content-nav-list">
-                            <li class="lesson-section__content__nav-list-item">
+                            <ul class="lesson-section__info-list">
+                            <li class="lesson-section__info-item">
                               <div class="lesson__section__expectation-profil">
                                 <img
                                   class="lesson__section__expectation-img"
@@ -1737,7 +1743,7 @@
                                 <button class="lesson__section--message">Учню відправлено сповіщення</button>
                               </div>
                             </li>
-                            <li class="lesson-section__content__nav-list-item">
+                            <li class="lesson-section__info-item">
                               <div class="lesson__section__expectation-profil">
                                 <img
                                   class="lesson__section__expectation-img"
@@ -1747,7 +1753,8 @@
                                 <p>Лисенко Олександра</p>
                               </div>
                               <div class="lesson__section-nav-content">
-                                <button class="lesson__section__nav-content-btn">Нагадати</button>
+                               
+                                <button class="lesson-section__change">Нагадати</button>
                               </div>
                             </li>
                           </ul>
