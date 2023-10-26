@@ -220,7 +220,7 @@
                 </div>
                 <div class="lesson-section__right">
                   <div class="lesson-section__container">
-                    <div class="lesson-section__teacher teacher-card">
+                    <div class="lesson-section__teacher teacher-card lesson-section__card-card">
                       <div class="teacher-card__top">
                         <div class="teacher-card__image">
                           <img src="https://picsum.photos/200/300" alt="" />
@@ -230,12 +230,6 @@
                           <div class="teacher-card__status">Викладач математики, Класний керівник</div>
                         </div>
                       </div>
-                      <button class="teacher-card__question">
-                        <svg class="teacher-card__question-svg">
-                          <use xlink:href="img/sprite.svg#chat"></use>
-                        </svg>
-                        Задати питання
-                      </button>
                     </div>
                     <div class="lesson-section__teacher teacher-card">
                       <div class="teacher-card__top">
@@ -247,71 +241,7 @@
                           <div class="teacher-card__status">Викладач математики, Класний керівник</div>
                         </div>
                       </div>
-                      <button class="teacher-card__question">
-                        <svg class="teacher-card__question-svg">
-                          <use xlink:href="img/sprite.svg#chat"></use>
-                        </svg>
-                        Задати питання
-                      </button>
                     </div>
-                    <!-- todo-block--done - если все задания выполнены -->
-                    <!-- <div class="lesson-section__todo todo-block">
-                      <div class="todo-block__inner">
-                        <h2 class="todo-block__title">TO DO:</h2>
-                        <ul class="todo-block__list">
-                          <li class="todo-block__item todo-block__item--done">
-                            <div class="todo-block__icon">
-                              <svg class="todo-block__icon-svg">
-                                <use xlink:href="img/sprite.svg#check"></use>
-                              </svg>
-                            </div>
-
-                            Прослухати онлайн-урок
-                          </li>
-                          <li class="todo-block__item">
-                            <div class="todo-block__icon">
-                              <svg class="todo-block__icon-svg">
-                                <use xlink:href="img/sprite.svg#webcam"></use>
-                              </svg>
-                            </div>
-                            Прослухати онлайн-урок
-                          </li>
-                          <li class="todo-block__item">
-                            <div class="todo-block__icon">
-                              <svg class="todo-block__icon-svg">
-                                <use xlink:href="img/sprite.svg#home"></use>
-                              </svg>
-                            </div>
-
-                            Здати домашню роботу
-                          </li>
-                          <li class="todo-block__item">
-                            <div class="todo-block__icon">
-                              <svg class="todo-block__icon-svg">
-                                <use xlink:href="img/sprite.svg#pen"></use>
-                              </svg>
-                            </div>
-                            Написати контрольну роботу
-                          </li>
-                          <li class="todo-block__item">
-                            <div class="todo-block__icon">
-                              <svg class="todo-block__icon-svg">
-                                <use xlink:href="img/sprite.svg#list-test"></use>
-                              </svg>
-                            </div>
-                            Пройти тест
-                          </li>
-                        </ul>
-                      </div>
-                    </div> -->
-                    <!-- <div class="lesson-section__marks marks">
-                      <h2 class="marks__title">Оцінки:</h2>
-                      <ul class="marks__list">
-                        <li class="marks__item"><span>10</span>- за урок</li>
-                        <li class="marks__item"><span>3</span>- домашня робота</li>
-                        <li class="marks__item"><span>5</span>- контрольна робота</li>
-                      </ul>
-                    </div> -->
                     <div class="lesson-section__marks">
                       <button class="lesson-section__marks-btn">
                         <svg class="lesson-section__marks-svg">
@@ -328,7 +258,7 @@
                   </button>
                 </div>
                 <div class="lesson-section__content">
-                  <div class="lesson-section__content-tabs content-tabs content-tabs--big">
+                  <div class="lesson-section__content-tabs content-tabs content-tabs--big lesson-section__content-adap">
                     <div class="content-tabs__wrapper">
                       <ul class="content-tabs__list">
                         <li class="content-tabs__item">
@@ -1200,161 +1130,190 @@
                         <div class="lesson-section__top">
                           <h2 class="lesson-section__title">Перевірка знань</h2>
                           <nav class="lesson-section__nav">
-                            <a href="" class="lesson__section__nav-btn">Очікує на перевірку</a>
-                            <a href="" class="lesson__section__nav-btn">Перевірено</a>
-                            <a href="" class="lesson__section__nav-btn">Не здано</a>
+                            <a href="#" class="lesson__section__nav-link" data-tab="tab-1">Очікує на перевірку</a>
+                            <a href="#" class="lesson__section__nav-link" data-tab="tab-2">Перевірено</a>
+                            <a href="#" class="lesson__section__nav-link" data-tab="tab-3">Не здано</a>
                           </nav>
                         </div>
                         <div class="lesson-section-body">
-                          <!-- Очікує на перевірку -->
-                          <div  class="lesson__section-expectation ">
-                            <ul class="lesson__section-options--tab01">
-                              <li class="lesson__section__options-item">Учні</li>
-                              <li class="lesson__section__options-item">Попередні оцінки</li>
+                          <!-- Очікує на перевірку  -->
+                          <div class="tab-content-item" id="tab-1">
+                            <ul class="lesson-section__menu">
+                              <li>Учні</li>
+                              <li>Попередні оцінки</li>
                             </ul>
-                            <ul class="lesson__section__expectation-list">
-                              <li class="lesson__section__expectation-item">
-                                <div class="lesson__section__expectation-profil">
-                                  <img
-                                    class="lesson__section__expectation-img"
-                                    src="../img/static/photo-account.png"
-                                    alt="аватар профiлю"
-                                  />
-                                  <p>Лисенко Олександра</p>
+                            <ul class="lesson-section__list-person">
+                              <li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
                                 </div>
-                                <input class="lesson__section__expectation-input" type="text" />
-                                <a class="lesson__section__expectation-link btn btn--accent" href="#">Перевірити</a>
+                                <!-- <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                </div> -->
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn btn btn--accent">Перевірити</button>
+                                </div>
                               </li>
-                              <li class="lesson__section__expectation-item">
-                                <div class="lesson__section__expectation-profil">
-                                  <img
-                                    class="lesson__section__expectation-img"
-                                    src="../img/static/photo-account.png"
-                                    alt="аватар профiлю"
-                                  />
-                                  <p>Лисенко Олександра</p>
+                              <li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
                                 </div>
-                                <a class="lesson__section__expectation-link btn btn--accent" href="#">Перевірити</a>
-                              </li>
-                              <li class="lesson__section__expectation-item">
-                                <div class="lesson__section__expectation-profil">
-                                  <img
-                                    class="lesson__section__expectation-img"
-                                    src="../img/static/photo-account.png"
-                                    alt="аватар профiлю"
-                                  />
-                                  <p>Лисенко Олександра</p>
+                                <!-- <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                </div> -->
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn btn btn--accent">Перевірити</button>
                                 </div>
-                                <a class="lesson__section__expectation-link btn btn--accent" href="#">Перевірити</a>
-                              </li>
-                              <li class="lesson__section__expectation-item">
-                                <div class="lesson__section__expectation-profil">
-                                  <img
-                                    class="lesson__section__expectation-img"
-                                    src="../img/static/photo-account.png"
-                                    alt="аватар профiлю"
-                                  />
-                                  <p>Лисенко Олександра</p>
+                              </li><li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
                                 </div>
-                                <a class="lesson__section__expectation-link btn btn--accent" href="#">Перевірити</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- Перевірено -->
-                          <div  class="lesson__section-expectation ">
-                            <ul class="lesson__section-options">
-                              <li class="lesson__section__options-item">Учні</li>
-                              <li class="lesson__section__options-item">Попередні оцінки</li>
-                              <li class="lesson__section__options-item">Оцінка</li>
-                            </ul>
-                            <ul class="lesson__section__expectation-list">
-                              <li class="lesson__section__expectation-item">
-                                <div class="lesson__section__expectation-profil">
-                                  <img
-                                    class="lesson__section__expectation-img"
-                                    src="../img/static/photo-account.png"
-                                    alt="аватар профiлю"
-                                  />
-                                  <p>Лисенко Олександра</p>
+                                <!-- <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                </div> -->
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn btn btn--accent">Перевірити</button>
                                 </div>
-                                <input class="lesson__section__expectation-input" type="text" />
-                                <input class="lesson__section__expectation-input" type="text" />
-                                <a class="lesson__section__expectation-link lesson-section__marks-btn" href="#"
-                                  >Переглянути</a
-                                >
-                              </li>
-                              <li class="lesson__section__expectation-item">
-                                <div class="lesson__section__expectation-profil">
-                                  <img
-                                    class="lesson__section__expectation-img"
-                                    src="../img/static/photo-account.png"
-                                    alt="аватар профiлю"
-                                  />
-                                  <p>Лисенко Олександра</p>
+                              </li><li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
                                 </div>
-                                <a class="lesson__section__expectation-link lesson-section__marks-btn" href="#"
-                                  >Переглянути</a
-                                >
-                              </li>
-                              <li class="lesson__section__expectation-item">
-                                <div class="lesson__section__expectation-profil">
-                                  <img
-                                    class="lesson__section__expectation-img"
-                                    src="../img/static/photo-account.png"
-                                    alt="аватар профiлю"
-                                  />
-                                  <p>Лисенко Олександра</p>
+                                <!-- <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                </div> -->
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn btn btn--accent">Перевірити</button>
                                 </div>
-                                <a class="lesson__section__expectation-link lesson-section__marks-btn" href="#"
-                                  >Переглянути</a
-                                >
-                              </li>
-                              <li class="lesson__section__expectation-item">
-                                <div class="lesson__section__expectation-profil">
-                                  <img
-                                    class="lesson__section__expectation-img"
-                                    src="../img/static/photo-account.png"
-                                    alt="аватар профiлю"
-                                  />
-                                  <p>Лисенко Олександра</p>
+                              </li><li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
                                 </div>
-                                <a class="lesson__section__expectation-link lesson-section__marks-btn" href="#"
-                                  >Переглянути</a
-                                >
+                                <!-- <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                </div> -->
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn btn btn--accent">Перевірити</button>
+                                </div>
+                              </li><li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
+                                </div>
+                                <!-- <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                </div> -->
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn btn btn--accent">Перевірити</button>
+                                </div>
+                              </li><li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
+                                </div>
+                                <!-- <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                </div> -->
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn btn btn--accent">Перевірити</button>
+                                </div>
+                              </li><li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name ">Лисенко Олександра</p>
+                                </div>
+                                <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="" placeholder="9">
+                                  <p class="lesson-section__item__person__text">
+                                    Попередні оцінки</p>
+                                </div>
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn btn btn--accent">Перевірити</button>
+                                </div>
                               </li>
                             </ul>
                           </div>
-                          <!-- Не здано -->
-                          <div  class="lesson__section-expectation ">
-                            <ul class="lesson__section-options">
-                              <li class="lesson__section__options-item">Учні</li>
+                          <!-- перевірено -->
+                          <div class="tab-content-item" id="tab-2">
+                            <ul class="lesson-section__menu-big">
+                              <li>Учні</li>
+                              <li>Попередні оцінки</li>
+                              <li>Оцінка</li>
                             </ul>
-                            <ul class="lesson__section__expectation-list">
-                              <li class="lesson__section__expectation-item">
-                                <div class="lesson__section__expectation-profil">
-                                  <img
-                                    class="lesson__section__expectation-img"
-                                    src="../img/static/photo-account.png"
-                                    alt="аватар профiлю"
-                                  />
-                                  <p>Лисенко Олександра</p>
+                            <ul class="lesson-section__list-person">
+                              <li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
                                 </div>
-                                <a class="lesson__section__expectation-link lesson__section--message" href="#"
-                                  >Учню відправлено сповіщення</a
-                                >
+                                <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                  <p class="lesson-section__item__person__text">
+                                    Попередні оцінки</p>
+                                </div>
+                                <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                  <p class="lesson-section__item__person__text">
+                                    Оцінка</p>
+                                </div>
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn lesson-section__change">Переглянути</button>
+                                </div>
                               </li>
-                              <li class="lesson__section__expectation-item">
-                                <div class="lesson__section__expectation-profil">
-                                  <img
-                                    class="lesson__section__expectation-img"
-                                    src="../img/static/photo-account.png"
-                                    alt="аватар профiлю"
-                                  />
-                                  <p>Лисенко Олександра</p>
+                              <li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
                                 </div>
-                                <a class="lesson__section__expectation-link lesson-section__marks-btn" href="#"
-                                  >Нагадати</a
-                                >
+                                <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                  <p class="lesson-section__item__person__text">
+                                    Попередні оцінки</p>
+                                </div>
+                                <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                  <p class="lesson-section__item__person__text">
+                                    Оцінка</p>
+                                </div>
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn lesson-section__change">Переглянути</button>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- не здано -->
+                          <div class="tab-content-item" id="tab-3">
+                            <ul class="lesson-section__menu">
+                              <li>Учні</li>
+                            </ul>
+                            <ul class="lesson-section__list-person">
+                              <li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
+                                </div>
+                                <!-- <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                </div> -->
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn lesson__section--message">Учню відправлено сповіщення</button>
+                                </div>
+                              </li>
+                              <li class="lesson-section__item-person-item">
+                                <div  class="lesson-section__item-person-box">
+                                  <img class="lesson-section__item-person-img" src="../img/static/photo-children-1.png" alt="">
+                                  <p class="lesson-section__item-person-name">Лисенко Олександра</p>
+                                </div>
+                                <!-- <div class="lesson-section__item__person-input">
+                                  <input class="lesson-section__item__person-inp" type="">
+                                </div> -->
+                                <div class="lesson-section__item-person-button">
+                                  <button class="lesson-section__item-person-btn lesson-section__change">Нагадати</button>
+                                </div>
                               </li>
                             </ul>
                           </div>
@@ -1374,27 +1333,67 @@
                         <div class="lesson-section__case">
                           <label class="lesson-section__lable">
                             <p>Посилання на Google Клас</p>
-                            
-                            <div class="lesson-section__class-room ">
+                            <div class="lesson-section__class-room">
                               <svg class="lesson-section__class-link-svg">
                                 <use xlink:href="/img/sprite.svg#link"></use>
                               </svg>
-                              <input class="lesson-section__class-room-input class__room--active" type="text" placeholder="https://classroom.google.com/15dfHJU512fgrK"/>
+                              <input
+                                class="lesson-section__class-room-input class__room--active"
+                                type="text"
+                                
+                              />
                               <svg class="lesson-section__class-room-svg">
                                 <use xlink:href="/img/sprite.svg#pensil"></use>
                               </svg>
                             </div>
                           </label>
+                          <label class="lesson-section__lable">
+                            <p>Посилання на Google Клас</p>
+
+                            <div class="lesson-section__class-room">
+                              <svg class="lesson-section__class-link-svg">
+                                <use xlink:href="/img/sprite.svg#link"></use>
+                              </svg>
+                              <input
+                                class="lesson-section__class-room-input"
+                                type="text"
+                                placeholder="https://classroom.google.com/15dfHJU512fgrK"
+                                style="background: none;"
+                              />
+                            </div>
+                          </label>
+                          <label class="lesson-section__lable">
+                            <p>Посилання на Google Клас</p>
+
+                        
+                            <div class="lesson-section__class-room">
+                              <svg class="lesson-section__class-link-svg">
+                                <use xlink:href="/img/sprite.svg#link"></use>
+                              </svg>
+                              <input
+                                class="lesson-section__class-room-input class__room--active"
+                                type="text"
+                                placeholder="https://classroom.google.com/15dfHJU512fgrK"
+                              />
+                              <button class="lesson-section__class-btn">
+                                <svg class="lesson-section__class-mark-svg">
+                                  <use xlink:href="/img/sprite.svg#check-mark"></use>
+                        </svg>
+                              </button>
+                            </div>
+                          </label>
                           <button class="lesson-section__case-btn btn btn--accent">
                             <svg class="btn__icon">
                               <use xlink:href="/img/sprite.svg#item"></use>
-                    </svg>
-                            Перейти до тесту</button>
+                            </svg>
+                            Перейти до тесту
+                          </button>
                           <button class="btn btn--accent">
                             <svg class="btn__icon">
                               <use xlink:href="/img/sprite.svg#item"></use>
-                    </svg>
-                            Перейти до тесту</button>
+                            </svg>
+                            Перейти до тесту
+                          </button>
                         </div>
                       </div>
                       <div class="lesson-section__section">
@@ -1729,35 +1728,33 @@
                               <li class="lesson-section__info__top-text lesson-section__content-nav-item">Оцінка</li>
                             </ul>
                             <ul class="lesson-section__info-list">
-                            <li class="lesson-section__info-item">
-                              <div class="lesson__section__expectation-profil">
-                                <img
-                                  class="lesson__section__expectation-img"
-                                  src="../img/static/photo-account.png"
-                                  alt="аватар профiлю"
-                                />
-                                <p>Лисенко Олександра</p>
-                              </div>
-                              <div class="lesson__section-nav-content">
-                               
-                                <button class="lesson__section--message">Учню відправлено сповіщення</button>
-                              </div>
-                            </li>
-                            <li class="lesson-section__info-item">
-                              <div class="lesson__section__expectation-profil">
-                                <img
-                                  class="lesson__section__expectation-img"
-                                  src="../img/static/photo-account.png"
-                                  alt="аватар профiлю"
-                                />
-                                <p>Лисенко Олександра</p>
-                              </div>
-                              <div class="lesson__section-nav-content">
-                               
-                                <button class="lesson-section__change">Нагадати</button>
-                              </div>
-                            </li>
-                          </ul>
+                              <li class="lesson-section__info-item">
+                                <div class="lesson__section__expectation-profil">
+                                  <img
+                                    class="lesson__section__expectation-img"
+                                    src="../img/static/photo-account.png"
+                                    alt="аватар профiлю"
+                                  />
+                                  <p>Лисенко Олександра</p>
+                                </div>
+                                <div class="lesson__section-nav-content">
+                                  <button class="lesson__section--message">Учню відправлено сповіщення</button>
+                                </div>
+                              </li>
+                              <li class="lesson-section__info-item">
+                                <div class="lesson__section__expectation-profil">
+                                  <img
+                                    class="lesson__section__expectation-img"
+                                    src="../img/static/photo-account.png"
+                                    alt="аватар профiлю"
+                                  />
+                                  <p>Лисенко Олександра</p>
+                                </div>
+                                <div class="lesson__section-nav-content">
+                                  <button class="lesson-section__change">Нагадати</button>
+                                </div>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>

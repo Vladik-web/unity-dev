@@ -284,20 +284,32 @@
   &__content__nav-list-item {
     display: grid;
     align-items: center; /* Выравнивание элементов по вертикали */
-    grid-template-columns: 9fr 3fr;
+    grid-template-columns: 9fr 6fr;
   }
 
   &__class-room-svg {
     position: absolute;
-    right: rem(9);
+    right: rem(10);
     width: rem(19);
     height: rem(18);
     fill: #828282;
   }
 
+  &__menu-big {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 8fr 6fr 8fr;
+    margin-bottom: rem(16);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: rem(13);
+    line-height: 120%;
+    color: var(--Gray-3, #828282);
+  }
+
   &__content-nav {
     display: grid;
-    grid-template-columns: 9fr 3fr;
+    grid-template-columns: 9fr 6fr;
     margin-bottom: rem(16);
   }
 
@@ -314,6 +326,105 @@
     display: grid;
     grid-template-columns: 14fr 3fr;
     margin-bottom: rem(16);
+  }
+
+  &__item-person-item {
+    // display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(12);
+
+    // grid-template-columns: 17fr 16fr 1fr;
+    border: rem(1) solid #c8d9fd;
+    border-radius: rem(10);
+    padding: rem(16);
+  }
+
+  &__menu {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 9fr 8fr 2%;
+    margin-bottom: rem(16);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: rem(13);
+    line-height: 120%;
+    color: #828282;
+  }
+
+  &__item-person-img {
+    width: rem(50);
+  }
+
+  &__item-person-box {
+    display: flex;
+    align-items: center;
+    gap: rem(12);
+  }
+
+  &__item-person-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 120%;
+    color: #1c1c1c;
+  }
+
+  &__item__person__text {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: rem(13);
+    line-height: 120%;
+    color: #828282;
+  }
+
+  &__item__person-inp {
+    border: rem(1) solid #e0ebff;
+    border-radius: rem(5);
+    width: rem(24);
+    height: rem(25);
+    text-align: center;
+  }
+
+  &__class-room-input {
+    border: none;
+    border-radius: rem(5);
+    padding: rem(8) rem(16) rem(8) rem(56);
+    width: rem(420);
+    height: rem(40);
+    background: #eef4ff;
+  }
+
+  &__class-room {
+    display: flex;
+    align-items: center;
+  }
+
+  &__class-link-svg {
+    position: absolute;
+    left: rem(16);
+    width: rem(24);
+    height: rem(24);
+    fill: #bdbdbd;
+  }
+
+  &__class-btn {
+    border-radius: 0 rem(5) rem(5) 0;
+    padding: rem(12) rem(16);
+    background: #ffa349;
+  }
+
+  &__class-mark-svg {
+    width: rem(16);
+    height: rem(16);
+    fill: #fff;
+  }
+
+  &__card-card {
+    border: rem(1) solid  #ffdba8;
+    background: #fff8ed;
   }
 
   &__text,
@@ -464,21 +575,40 @@
   }
 }
 
-// .lesson__section__info-text {
-//   display: grid;
-//   align-items: center;
-//   grid-template-columns: repeat(3, 1fr) minmax(0, 1fr); /* Добавляем последний столбец */
-//   margin-bottom: rem(16);
-// }
+@include mq('xl') {
+  .content-tabs__edit__btn {
+    position: absolute;
+    right: rem(25);
+    top: rem(80);
+  }
+}
 
-// .lesson-section__materials-list {
-//   margin-bottom: 60px;
-// }
+@include mq('xm') {
+  .lesson-section__content-adap {
+    display: flex;
+    flex-direction: column;
+  }
 
-// .lesson-section__materials {
-//   margin-bottom: 60px;
-//   border-bottom: 1px solid #e0e0e0;
-// }
+  .content-tabs__edit__box {
+    display: flex;
+    justify-content: end;
+    margin-bottom: rem(10);
+    width: 100%;
+  }
+}
+
+@include mq('xz') {
+  .lesson-section__content__nav-list-item {
+    display: grid;
+    grid-template-columns: 9fr 11fr;
+  }
+
+  .lesson-section__content-nav {
+    display: grid;
+    grid-template-columns: 9fr 11fr;
+    margin-bottom: 1rem;
+  }
+}
 
 @include mq('lg') {
   .lesson-section {
@@ -668,13 +798,85 @@
       }
     }
   }
+
+  .lesson__section__nav-link {
+    text-align: center;
+  }
+
+  .lesson-section__top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(20);
+  }
+
+  .lesson-section__menu {
+    li {
+      display: none;
+    }
+  }
+
+  .lesson-section__item-person-box {
+    margin-bottom: rem(12);
+  }
+
+  .lesson-section__item-person-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lesson-section__item-person-button {
+    width: 100%;
+  }
+
+  .lesson-section__item__person-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(12);
+    gap: rem(24);
+  }
+
+  .lesson-section__item__person__text {
+    display: block;
+  }
+
+  .lesson-section__menu-big {
+    display: none;
+  }
+
+  .lesson-section__content__nav-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lesson__section-nav-content {
+    margin-top: rem(12);
+  }
+
+  .lesson-section__content-nav {
+    display: none;
+  }
 }
 
-// .lesson-section__border {
-//   margin-bottom: rem(60);
-//   border-bottom: rem(1) solid #e0e0e0;
-//   padding-bottom: rem(60);
-// }
+@include mq('sm') {
+  .lesson-section__text__box-tab {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: rem(10);
+    }
+  }
+
+  .lesson-section__class-room-input {
+    width: rem(420);
+  }
+
+  .lesson-section__class-room {
+    width: rem(367);
+  }
+}
 
 // style test page
 
@@ -719,23 +921,6 @@
   height: 20px;
   fill: #828282;
 }
-
-// .lesson-section__marks-btn {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border: rem(1) solid #ffa349;
-//   border-radius: rem(5);
-//   padding: rem(8) rem(16);
-//   width: 195px;
-//   font-family: 'Roboto', sans-serif;
-//   font-weight: 500;
-//   font-size: 14px;
-//   text-transform: uppercase;
-//   color: #1c1c1c;
-//   gap: rem(8);
-//   text-edge: cap;
-// }
 
 // .lesson-section__marks-svg {
 //   width: 16px;
@@ -1045,12 +1230,7 @@
 
 // style independent work
 
-.lesson-section__class-room {
-  display: flex;
-  align-items: center;
-}
-
-.lesson-section__lable {
+.lesson-section .lesson-section__lable {
   position: relative;
 
   p {
@@ -1061,23 +1241,6 @@
     line-height: 120%;
     color: #bdbdbd;
   }
-}
-
-.lesson-section__class-link-svg {
-  position: absolute;
-  left: rem(16);
-  width: rem(24);
-  height: rem(24);
-  fill: #bdbdbd;
-}
-
-.lesson-section__class-room-input {
-  border: none;
-  border-radius: rem(5);
-  padding: rem(8) rem(16) rem(8) rem(56);
-  width: rem(420);
-  height: rem(40);
-  background: #eef4ff;
 }
 
 .lesson-section__class-room-btn {
@@ -1214,4 +1377,34 @@
 
 .lesson-section__case-btn {
   opacity: 0.5;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content-item {
+  display: none;
+}
+
+.tab-content-item.active {
+  display: block;
+}
+
+.lesson__section__nav-link.active {
+  border-color: #7d98f6;
+  color: #7d98f6;
+  background-color: #fff;
+}
+
+.lesson__section__nav-link {
+  border: rem(1) solid  #bdbdbd;
+  border-radius: rem(5);
+  padding: rem(4) rem(12);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: 120%;
+  color: #bdbdbd;
+  background-color: #fff;
 }
