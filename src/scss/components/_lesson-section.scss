@@ -427,6 +427,40 @@
     background: #fff8ed;
   }
 
+  &__attention-svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #eb5757;
+  }
+
+  &__attention {
+    display: flex;
+    align-items: center;
+    color: #eb5757;
+    gap: rem(5);
+  }
+
+  &__container__box-list {
+    display: flex;
+    flex-direction: column;
+    border-radius: rem(5);
+    padding: rem(12);
+    background-color: #fff8ed;
+    gap: rem(12);
+  }
+
+  &__container__list-item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 120%;
+    color: #828282;
+  }
+  &__btn-svg {
+    fill: #FFFFFF;
+    width: rem(16);
+    height: rem(16);
+  }
   &__text,
   &__work {
     color: var(--black);
@@ -875,6 +909,15 @@
 
   .lesson-section__class-room {
     width: rem(367);
+  }
+
+  .lesson-section__info-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lesson__section--message {
+    width: 100%;
   }
 }
 

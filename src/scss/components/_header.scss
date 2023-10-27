@@ -328,6 +328,12 @@
     display: none;
   }
 
+  &__title-svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #828282;
+  }
+
   &--lesson {
     .header {
       &__inner {
@@ -353,6 +359,11 @@
     &::after {
       content: ':';
     }
+  }
+  &__lesson-editing {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
   }
 }
 

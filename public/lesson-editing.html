@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+<!-- favicon -->
+
+<link rel="stylesheet" href="css/main.min.css">
+
+<script src="js/main.js" defer="defer"></script>
+<title>Урок з математики </title>
+
+    <meta property="og:title" content="Title">
+    <meta property="og:url" content="url">
+    <meta property="og:image" content="img/favicon/favicon.svg">
+  </head>
+  <body class="body-mob-fixed">
+    <div class="lesson-layout">
+      <aside class="aside aside--main aside--hide">
+  <div class="aside__wrapper">
+    <button class="aside__btn" id="aside-btn">
+      <svg class="aside__btn-svg">
+        <use xlink:href="img/sprite.svg#aside-arrows"></use>
+      </svg>
+    </button>
+
+    <div class="aside__top">
+      <a href="/" class="aside__logo">
+        <svg class="aside__top-svg" width="72" height="28" viewBox="0 0 72 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="aside__top-path" d="M13.3477 1.63601H17.6531V14.8604C17.6531 16.3453 17.2984 17.6445 16.5891 18.7582C15.8865 19.8718 14.9021 20.7402 13.636 21.3633C12.3699 21.9798 10.895 22.288 9.21129 22.288C7.52095 22.288 6.04273 21.9798 4.77663 21.3633C3.51054 20.7402 2.52616 19.8718 1.82351 18.7582C1.12086 17.6445 0.769531 16.3453 0.769531 14.8604V1.63601H5.07493V14.4925C5.07493 15.2681 5.24396 15.9575 5.58203 16.5607C5.92673 17.1639 6.41063 17.6379 7.03374 17.9826C7.65684 18.3273 8.38269 18.4996 9.21129 18.4996C10.0465 18.4996 10.7724 18.3273 11.3889 17.9826C12.012 17.6379 12.4925 17.1639 12.8306 16.5607C13.1753 15.9575 13.3477 15.2681 13.3477 14.4925V1.63601Z" fill="#4F4F4F"/>
+          <path class="aside__top-path aside__top-path--hide" d="M25.3516 13.1701V21.9996H21.1158V6.72692H25.1527V9.42152H25.3317C25.6697 8.53326 26.2365 7.83061 27.032 7.31357C27.8274 6.78989 28.7919 6.52806 29.9254 6.52806C30.986 6.52806 31.9107 6.76006 32.6996 7.22408C33.4884 7.68809 34.1016 8.35097 34.5391 9.21271C34.9766 10.0678 35.1953 11.0887 35.1953 12.2752V21.9996H30.9595V13.0309C30.9661 12.0962 30.7275 11.3671 30.2436 10.8434C29.7597 10.3131 29.0935 10.0479 28.245 10.0479C27.675 10.0479 27.1712 10.1706 26.7337 10.4158C26.3028 10.6611 25.9647 11.0191 25.7195 11.4897C25.4808 11.9537 25.3582 12.5139 25.3516 13.1701Z" fill="#4F4F4F"/>
+          <path class="aside__top-path aside__top-path--hide" d="M38.5337 21.9996V6.72692H42.7695V21.9996H38.5337ZM40.6616 4.75817C40.0318 4.75817 39.4916 4.54936 39.0408 4.13175C38.5967 3.70751 38.3746 3.2004 38.3746 2.61044C38.3746 2.02711 38.5967 1.52663 39.0408 1.10902C39.4916 0.684778 40.0318 0.472656 40.6616 0.472656C41.2913 0.472656 41.8282 0.684778 42.2724 1.10902C42.7231 1.52663 42.9485 2.02711 42.9485 2.61044C42.9485 3.2004 42.7231 3.70751 42.2724 4.13175C41.8282 4.54936 41.2913 4.75817 40.6616 4.75817Z" fill="#4F4F4F"/>
+          <path class="aside__top-path aside__top-path--hide" d="M54.2862 6.72692V9.90874H45.0888V6.72692H54.2862ZM47.1768 3.06783H51.4126V17.3065C51.4126 17.6976 51.4723 18.0025 51.5916 18.2212C51.7109 18.4334 51.8767 18.5825 52.0888 18.6687C52.3075 18.7549 52.5594 18.7979 52.8445 18.7979C53.0433 18.7979 53.2422 18.7814 53.4411 18.7482C53.6399 18.7085 53.7924 18.6786 53.8984 18.6587L54.5646 21.8107C54.3525 21.877 54.0542 21.9532 53.6697 22.0394C53.2853 22.1322 52.8179 22.1886 52.2678 22.2085C51.2469 22.2482 50.352 22.1123 49.5831 21.8008C48.8208 21.4892 48.2275 21.0053 47.8033 20.3491C47.379 19.6928 47.1702 18.8642 47.1768 17.8633V3.06783Z" fill="#4F4F4F"/>
+          <path class="aside__top-path aside__top-path--hide" d="M59.6605 27.7269C59.1236 27.7269 58.6198 27.6838 58.1491 27.5977C57.6851 27.5181 57.3007 27.4154 56.9957 27.2894L57.9503 24.1275C58.4474 24.2799 58.8949 24.3628 59.2926 24.3761C59.697 24.3893 60.045 24.2965 60.3366 24.0977C60.6349 23.8988 60.8769 23.5607 61.0625 23.0835L61.3111 22.4371L55.8324 6.72692H60.2869L63.4489 17.9428H63.608L66.7997 6.72692H71.2841L65.348 23.6502C65.063 24.4722 64.6752 25.1881 64.1847 25.7979C63.7008 26.4144 63.0876 26.8884 62.3452 27.2198C61.6027 27.5579 60.7079 27.7269 59.6605 27.7269Z" fill="#4F4F4F"/>
+          <path class="aside__top-path aside__top-path--hide" d="M40.6619 4.75817C40.0322 4.75817 39.492 4.54936 39.0412 4.13175C38.5971 3.70751 38.375 3.2004 38.375 2.61044C38.375 2.02711 38.5971 1.52663 39.0412 1.10902C39.492 0.684778 40.0322 0.472656 40.6619 0.472656C41.2917 0.472656 41.8286 0.684778 42.2727 1.10902C42.7235 1.52663 42.9489 2.02711 42.9489 2.61044C42.9489 3.2004 42.7235 3.70751 42.2727 4.13175C41.8286 4.54936 41.2917 4.75817 40.6619 4.75817Z" fill="#4F4F4F"/>
+        </svg>
+      </a>
+    </div>
+    <nav class="aside__navigation nav">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--home">
+          <a href="#" class="nav__link nav__link--active">
+            <svg class="nav__link-svg">
+              <use xlink:href="img/sprite.svg#group"></use>
+            </svg>
+
+            <span class="nav__link-text">Головне</span>
+          </a>
+        </li>
+        <li class="nav__item nav__item--wallet">
+          <a href="#" class="nav__link">
+            <svg class="nav__link-svg">
+              <use xlink:href="img/sprite.svg#wallet"></use>
+            </svg>
+
+            <span class="nav__link-text">Гаманець</span>
+          </a>
+        </li>
+        <li class="nav__item nav__item--childrens">
+          <a href="#" class="nav__link">
+            <svg class="nav__link-svg">
+              <use xlink:href="img/sprite.svg#childrens"></use>
+            </svg>
+
+            <span class="nav__link-text">Діти</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__link-svg">
+              <use xlink:href="img/sprite.svg#chat"></use>
+            </svg>
+
+            <span class="nav__link-text">Чаты</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__link-svg">
+              <use xlink:href="img/sprite.svg#statistics"></use>
+            </svg>
+
+            <span class="nav__link-text">Статистика</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <div class="nav__accordion">
+            <div class="nav__top">
+              <a href="#" class="nav__link">
+                <svg class="nav__link-svg">
+                  <use xlink:href="img/sprite.svg#book"></use>
+                </svg>
+                <span class="nav__link-text">Предмети</span>
+              </a>
+              <button class="nav__open" aria-expanded="false" aria-label="Відкрити меню">
+                <svg class="nav__open-arrow">
+                  <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="nav__down">
+              <ul class="nav__sublist">
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Англ. мова </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Всесвітня історія </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Історія України </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Математика </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Малювання </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Укр. мова </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Укр. література </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Фізкультура </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Фізика </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item">
+          <div class="nav__accordion">
+            <div class="nav__top">
+              <a href="#" class="nav__link">
+                <svg class="nav__link-svg">
+                  <use xlink:href="img/sprite.svg#cours"></use>
+                </svg>
+                <span class="nav__link-text">Курси</span>
+              </a>
+              <button class="nav__open" aria-expanded="false" aria-label="Відкрити меню">
+                <svg class="nav__open-arrow">
+                  <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="nav__down">
+              <ul class="nav__sublist">
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Основи образотворчого мистецтва </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Всесвітня історія </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Історія України </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Математика </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Малювання </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Укр. мова </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Укр. література </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Фізкультура </a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink"> Фізика </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="nav__tip tip">
+        <div class="tip__wrapper">
+          <button class="tip__button">
+            <svg class="tip__button-svg">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <div class="tip__top">
+            <img src="img/static/tip.svg" alt="tip">
+          </div>
+          <div class="tip__content">
+            <h2 class="tip__title">Підказка для вас</h2>
+            <p class="tip__description">
+              Щоб бути завжди в курсі своєї успішності — заходь у розділ «Статистика». Там наведені всі твої оцінки за
+              семестри, а також твою успішність по кожному предмету.
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</aside>
+
+      <main class="main">
+        <header class="header header--lesson">
+          <div class="header__container container">
+            <div class="header__inner">
+              <div class="header__left">
+                <div class="header__lesson">
+                  <a href="#" class="header__back">
+                    <svg class="header__back-svg">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+
+                  <h2 class="header__title header__lesson-editing">
+                    <svg class="header__title-svg">
+                      <use xlink:href="/img/sprite.svg#pensil"></use>
+                    </svg>
+                    Редагування уроку з математики
+                  </h2>
+                </div>
+                <div class="header__go">
+                  <time class="header__date" datetime="25 квітня, 9:00">25 квітня, 9:00</time>
+                </div>
+              </div>
+              <div class="header__right">
+                <div class="header__time">
+                  <span class="header__hours"></span>
+                  <span class="header__minutes"></span>
+                  <span class="header__seconds"></span>
+                </div>
+                <div class="header__user">
+                  <div class="header__block">
+                    <button class="header__notifications">
+                      <svg class="header__notifications-svg">
+                        <use xlink:href="img/sprite.svg#notifications"></use>
+                      </svg>
+                    </button>
+                    <div class="header__wrapper">
+                      <div class="header__ntf notifications">
+                        <div class="notifications__top">
+                          <button class="notifications__close" id="notifications-close">
+                            <svg class="notifications__close-svg">
+                              <use xlink:href="img/sprite.svg#arrow-right"></use>
+                            </svg>
+                          </button>
+                          <span class="notifications__top-name">Сповіщення</span>
+                        </div>
+                        <div class="notifications__inner">
+                          <div class="notifications__block">
+                            <div class="notifications__head">Нові сповіщення</div>
+                            <ul class="notifications__list">
+                              <li class="notifications__item notifications__item--blue">
+                                <svg class="notifications__item-icon">
+                                  <use xlink:href="img/sprite.svg#cours"></use>
+                                </svg>
+                                <div class="notifications__item-text">
+                                  <span>
+                                    ДLorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto nihil dolore non
+                                    ab minima vero eius suscipit eos laborum.
+                                  </span>
+                                </div>
+                                <time class="notifications__item-time">15.04.23 — 10:52</time>
+                              </li>
+                              <li class="notifications__item notifications__item--orange">
+                                <svg class="notifications__item-icon">
+                                  <use xlink:href="img/sprite.svg#warn"></use>
+                                </svg>
+                                <div class="notifications__item-text">
+                                  <span> Тест по Укр. мові</span>
+                                  <div class="notifications__date date date--orange">15.04 9:00</div>
+                                </div>
+                                <time class="notifications__item-time">15.04.23 — 10:52</time>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="notifications__block">
+                            <div class="notifications__head">Переглянуті сьогодні</div>
+                            <ul class="notifications__list">
+                              <li class="notifications__item notifications__item--read">
+                                <svg class="notifications__item-icon">
+                                  <use xlink:href="img/sprite.svg#cours"></use>
+                                </svg>
+                                <div class="notifications__item-text">
+                                  <span>Додано курс «Образотворче мистецтво»</span>
+                                </div>
+                                <time class="notifications__item-time">15.04.23 — 10:52</time>
+                              </li>
+                              <li class="notifications__item notifications__item--read">
+                                <svg class="notifications__item-icon">
+                                  <use xlink:href="img/sprite.svg#warn"></use>
+                                </svg>
+                                <div class="notifications__item-text">
+                                  <span>Вчитель математики відкрив доступ до уроку</span>
+                                  <div class="notifications__date date date--grey">15.04 9:00</div>
+                                </div>
+                                <time class="notifications__item-time">15.04.23 — 10:52</time>
+                              </li>
+                              <li class="notifications__item notifications__item--read">
+                                <svg class="notifications__item-icon">
+                                  <use xlink:href="img/sprite.svg#warn"></use>
+                                </svg>
+                                <div class="notifications__item-text">
+                                  <span>Вчитель математики відкрив доступ до уроку</span>
+                                  <div class="notifications__date date date--grey">15.04 9:00</div>
+                                </div>
+                                <time class="notifications__item-time">15.04.23 — 10:52</time>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__block">
+                    <button class="header__avatar" id="header-avatar">
+                      <img class="header__avatar-image" src="https://picsum.photos/200/300" alt="">
+                    </button>
+                    <div class="header__wrapper">
+                      <div class="header__info">
+                        <div class="header__top">
+                          <button class="header__close" id="header-close">
+                            <svg class="header__close-svg">
+                              <use xlink:href="img/sprite.svg#arrow-right"></use>
+                            </svg>
+                          </button>
+                          <img class="header__top-image" src="https://picsum.photos/200/300" alt="">
+                          <span class="header__top-name">Лисенко Олександра</span>
+                        </div>
+                        <ul class="header__list">
+                          <li class="header__item">
+                            <a href="#" class="header__link">
+                              <svg class="header__link-svg">
+                                <use xlink:href="img/sprite.svg#account"></use>
+                              </svg>
+                              Моя картка
+                            </a>
+                          </li>
+                          <!-- <li class="header__item">
+                            <a href="#" class="header__link">
+                              <svg class="header__link-svg">
+                                <use xlink:href="img/sprite.svg#file"></use>
+                              </svg>
+                              Мої файли
+                            </a>
+                          </li> -->
+                          <li class="header__item">
+                            <a href="#" class="header__link">
+                              <svg class="header__link-svg">
+                                <use xlink:href="img/sprite.svg#play"></use>
+                              </svg>
+                              База знань
+                            </a>
+                          </li>
+                          <li class="header__item">
+                            <a href="#" class="header__link">
+                              <svg class="header__link-svg">
+                                <use xlink:href="img/sprite.svg#logo"></use>
+                              </svg>
+                              Про Unity
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="header__language">
+                          <button class="header__lang header__lang--active">Укр</button>
+                          <button class="header__lang">Рус</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="content">
+          <div class="content__container container">
+            <section class="lesson-section">
+              <div class="lesson-section__inner">
+                <div class="lesson-section__theme theme-card theme-card--purple">
+                  <div class="theme-card__inner">
+                    <div class="theme-card__top">Тема: Множини і операції над ними</div>
+
+                    <h1 class="theme-card__title">
+                      Тема уроку: Числові множини. Взаємно однозначна відповідність між елементами множин.
+                    </h1>
+                    <svg class="theme-card__icon">
+                      <use xlink:href="img/sprite.svg#math"></use>
+                    </svg>
+                  </div>
+                  <button class="theme-card__more" aria-expanded="false" aria-label="Відкрити інформацію про предмет">
+                    <svg class="theme-card__more-svg">
+                      <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
+                    </svg>
+                  </button>
+                  <div class="theme-card__info"></div>
+                </div>
+                <div class="lesson-section__right">
+                  <div class="lesson-section__container">
+                    <div class="lesson-section__container-box">
+                      <ul class="lesson-section__container__box-list">
+                        <li class="lesson-section__container__list-item lesson-section__attention">
+                          <svg class="lesson-section__attention-svg">
+                            <use xlink:href="/img/sprite.svg#attention"></use>
+                          </svg>
+                          Увага!
+                        </li>
+                        <li class="lesson-section__container__list-item">
+                          Ваші зміни врахуються тільки якщо вони пройдуть можерацію.
+                        </li>
+                        <li class="lesson-section__container__list-item">
+                          Рішення про вистовок модерації ви отримаєте сповіщенням в своєму кабінеті.
+                        </li>
+                        <li class="lesson-section__container__list-item">
+                          Якщо через 24 годин після відправлення змін ви не отримали сповіщення про рішення модерації,
+                          зверніться до служби підтримки.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="lesson-section__back" id="btn-up">
+                    <svg class="lesson-section__back-svg">
+                      <use xlink:href="img/sprite.svg#arrow-up"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="lesson-section__content">
+                  <div class="lesson-section__content-tabs content-tabs content-tabs--big">
+                    <div class="content-tabs__wrapper">
+                      <ul class="content-tabs__list">
+                        <li class="content-tabs__item">
+                          <button class="content-tabs__btn" data-tab="Конспект">Конспект</button>
+                        </li>
+                        <li class="content-tabs__item">
+                          <button class="content-tabs__btn content-tabs__btn--active" data-tab="Домашня робота">
+                            Домашня робота
+                          </button>
+                        </li>
+                        <li class="content-tabs__item">
+                          <button class="content-tabs__btn" data-tab="Контрольна робота">Самостійна роботу</button>
+                        </li>
+                        <li class="content-tabs__item">
+                          <button class="content-tabs__btn" data-tab="Додатково">Тест</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="lesson-section__btn-adit btn btn--accent">
+                      <svg class="lesson-section__btn-svg">
+                        <use xlink:href="img/sprite.svg#check-mark"></use>
+                      </svg>
+                      відправити на модерацію
+                    </button>
+                  </div>
+                  <div class="lesson-section__blocks">
+                    <div class="lesson-section__block" data-tab-content="Конспект">
+                      <div class="lesson-section__info">
+                        <div class="lesson-section__text">
+                          <button class="lesson-section__subtitle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path d="M16.5851 5.33451H16.3148V3.65746C16.3138 2.89973 16.0123 2.17329 15.4765 1.63756C14.9406 1.10184 14.2141 0.80056 13.4564 0.799805H6.98708C6.22935 0.80056 5.50287 1.10184 4.967 1.63756C4.43114 2.17329 4.12967 2.89973 4.12872 3.65746V5.33451H3.85836C3.10057 5.33546 2.37408 5.63692 1.83824 6.17276C1.3024 6.70861 1.00094 7.43511 1 8.1929V12.4116C1.00076 13.1694 1.30215 13.8961 1.83803 14.4319C2.37391 14.9678 3.10051 15.2692 3.85836 15.27H4.12872V17.4392C4.12948 17.9174 4.31981 18.3758 4.65799 18.7138C4.99617 19.0519 5.4546 19.242 5.93277 19.2426H14.5107C14.9889 19.242 15.4473 19.0519 15.7855 18.7138C16.1237 18.3758 16.314 17.9174 16.3148 17.4392V15.27H16.5851C17.343 15.2692 18.0696 14.9678 18.6054 14.4319C19.1413 13.8961 19.4427 13.1694 19.4435 12.4116V8.1929C19.4425 7.43511 19.1411 6.70861 18.6052 6.17276C18.0694 5.63692 17.3429 5.33546 16.5851 5.33451ZM5.62817 3.65746C5.62874 3.29691 5.77226 2.95131 6.02727 2.69643C6.28229 2.44156 6.62796 2.2982 6.98851 2.29783H13.4578C13.8184 2.2982 14.164 2.44156 14.4191 2.69643C14.6741 2.95131 14.8176 3.29691 14.8182 3.65746V5.33451H5.62817V3.65746ZM14.8182 17.4392C14.818 17.5203 14.7857 17.5979 14.7283 17.6552C14.6709 17.7124 14.5932 17.7446 14.5121 17.7446H5.93419C5.85315 17.7446 5.77542 17.7124 5.71805 17.6552C5.66068 17.5979 5.62836 17.5203 5.62817 17.4392V12.4573H14.8182V17.4392ZM17.9469 12.4116C17.9465 12.7723 17.8031 13.1181 17.548 13.3731C17.293 13.6281 16.9472 13.7716 16.5865 13.772H16.3162V12.4573H16.4104C16.609 12.4573 16.7995 12.3784 16.94 12.2379C17.0804 12.0974 17.1594 11.9069 17.1594 11.7082C17.1594 11.5096 17.0804 11.3191 16.94 11.1786C16.7995 11.0381 16.609 10.9592 16.4104 10.9592H4.03598C3.83733 10.9592 3.64682 11.0381 3.50636 11.1786C3.36589 11.3191 3.28697 11.5096 3.28697 11.7082C3.28697 11.9069 3.36589 12.0974 3.50636 12.2379C3.64682 12.3784 3.83733 12.4573 4.03598 12.4573H4.13015V13.772H3.85979C3.49912 13.7716 3.15333 13.6281 2.8983 13.3731C2.64327 13.1181 2.49983 12.7723 2.49945 12.4116V8.1929C2.50001 7.83229 2.64352 7.48659 2.89851 7.2316C3.1535 6.9766 3.49918 6.8331 3.85979 6.83253H16.5851C16.9457 6.8331 17.2914 6.9766 17.5464 7.2316C17.8014 7.48659 17.9449 7.83229 17.9455 8.1929L17.9469 12.4116ZM12.3764 13.9588C12.3762 14.1574 12.2972 14.3478 12.1568 14.4883C12.0164 14.6287 11.826 14.7076 11.6274 14.7078H8.81681C8.61816 14.7078 8.42765 14.6289 8.28718 14.4885C8.14672 14.348 8.0678 14.1575 8.0678 13.9588C8.0678 13.7602 8.14672 13.5697 8.28718 13.4292C8.42765 13.2887 8.61816 13.2098 8.81681 13.2098H11.6295C11.8278 13.2104 12.0178 13.2896 12.1578 13.43C12.2978 13.5704 12.3764 13.7605 12.3764 13.9588ZM12.3764 16.2087C12.3764 16.4074 12.2975 16.5979 12.157 16.7384C12.0165 16.8788 11.826 16.9577 11.6274 16.9577H8.81681C8.61816 16.9577 8.42765 16.8788 8.28718 16.7384C8.14672 16.5979 8.0678 16.4074 8.0678 16.2087C8.0678 16.0101 8.14672 15.8196 8.28718 15.6791C8.42765 15.5386 8.61816 15.4597 8.81681 15.4597H11.6295C11.8278 15.4603 12.0178 15.5394 12.1578 15.6798C12.2978 15.8202 12.3764 16.0104 12.3764 16.2087ZM6.46991 8.33341C6.46991 8.53206 6.391 8.72259 6.25053 8.86305C6.11007 9.00352 5.91955 9.08242 5.7209 9.08242H4.03385C3.8352 9.08242 3.64468 9.00352 3.50422 8.86305C3.36375 8.72259 3.28484 8.53206 3.28484 8.33341C3.28484 8.13476 3.36375 7.94427 3.50422 7.8038C3.64468 7.66334 3.8352 7.5844 4.03385 7.5844H5.7209C5.81944 7.58412 5.91707 7.60328 6.0082 7.64079C6.09932 7.67831 6.18214 7.73346 6.25192 7.80304C6.3217 7.87262 6.37706 7.95528 6.41483 8.0463C6.45261 8.13731 6.47205 8.23487 6.47205 8.33341H6.46991Z" fill="#BDBDBD"/></svg>Роздрукувати конспект
+                          </button>
+                          <h2>Числові множини</h2>
+                          <h3>Подивіться відео</h3>
+                          <div class="iframe-wrapper">
+                            <iframe src="https://www.youtube.com/embed/n-PfWFmjYAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
+                          <div class="text-wrapp">
+                            <p>
+                              Всі числа можна віднести до тієї чи іншої групи, об’єднуючи їх за певними ознаками та
+                              властивостями. <br>
+                              Найпростішою та найзрозумілішою множиною чисел є натуральні числа.
+                            </p>
+                            <img src="img/static/formula.jpg" alt="">
+                            <h3>Означення</h3>
+                            <div class="definition">
+                              <strong>Натуральнi числа</strong> — це числа, якi виникають природним чином при лiчбi
+                              предметiв.
+                            </div>
+                            <p>
+                              Наприклад: 1,2,3,4…<br>
+                              Числовi множини прийнято позначати латинськими великими лiтерами. <br>
+                              Множину натуральних чисел позначають знаком N.<br>
+                            </p>
+                            <p>
+                              Наприклад: 1,2,3,4…<br>
+                              Числовi множини прийнято позначати латинськими великими лiтерами. <br>
+                              Множину натуральних чисел позначають знаком N.<br>
+                            </p>
+                            <h3>Означення</h3>
+                            <div class="definition">
+                              <strong>Цiлi числа</strong> — множина, що складається з множини натуральних чисел, нуля,
+                              та множини вiд’ємних чисел (є протилежними до натуральних).
+                            </div>
+                            <p>
+                              Наприклад: 1,2,3,4…<br>
+                              Числовi множини прийнято позначати латинськими великими лiтерами. <br>
+                              Множину натуральних чисел позначають знаком N.<br>
+                            </p>
+                            <h2>Взаємно однозначна відповідність між елементами множин</h2>
+
+                            <p>
+                              Всі числа можна віднести до тієї чи іншої групи, об’єднуючи їх за певними ознаками та
+                              властивостями. <br>Найпростішою та найзрозумілішою множиною чисел є натуральні числа.
+                            </p>
+                            <img src="img/static/formula-2.jpg" alt="">
+                            <h3>Означення</h3>
+                            <div class="definition">
+                              <strong>Натуральнi числа</strong> — це числа, якi виникають природним чином при лiчбi
+                              предметiв.
+                            </div>
+                            <p>
+                              Наприклад: 1,2,3,4…<br>
+                              Числовi множини прийнято позначати латинськими великими лiтерами. <br>
+                              Множину натуральних чисел позначають знаком N.<br>
+                            </p>
+                            <h3>Означення</h3>
+                            <div class="definition">
+                              <strong>Цiлi числа</strong> — множина, що складається з множини натуральних чисел, нуля,
+                              та множини вiд’ємних чисел (є протилежними до натуральних).
+                            </div>
+                            <p>
+                              Наприклад: 1,2,3,4…<br>
+                              Числовi множини прийнято позначати латинськими великими лiтерами. <br>
+                              Множину натуральних чисел позначають знаком N.<br>
+                            </p>
+                            <h2>Взаємно однозначна відповідність між елементами множин</h2>
+
+                            <p>
+                              Всі числа можна віднести до тієї чи іншої групи, об’єднуючи їх за певними ознаками та
+                              властивостями. <br>Найпростішою та найзрозумілішою множиною чисел є натуральні числа.
+                            </p>
+                            <img src="img/static/formula-2.jpg" alt="">
+                            <h3>Означення</h3>
+                            <div class="definition">
+                              <strong>Натуральнi числа</strong> — це числа, якi виникають природним чином при лiчбi
+                              предметiв.
+                            </div>
+                            <p>
+                              Наприклад: 1,2,3,4…<br>
+                              Числовi множини прийнято позначати латинськими великими лiтерами. <br>
+                              Множину натуральних чисел позначають знаком N.<br>
+                            </p>
+                            <h3>Означення</h3>
+                            <div class="definition">
+                              <strong>Натуральнi числа</strong> — це числа, якi виникають природним чином при лiчбi
+                              предметiв.
+                            </div>
+                            <p>
+                              Наприклад: 1,2,3,4…<br>
+                              Числовi множини прийнято позначати латинськими великими лiтерами. <br>
+                              Множину натуральних чисел позначають знаком N.<br>
+                            </p>
+                          </div>
+                          <div class="lesson-section__pagination pagination">
+                            <ul class="pagination__list">
+                              <li class="pagination__item">
+                                <a href="#" class="pagination__link pagination__link--active">1</a>
+                              </li>
+                              <li class="pagination__item"><a href="/?_page=2" class="pagination__link">2</a></li>
+                              <li class="pagination__item"><a href="/?_page=3" class="pagination__link">3</a></li>
+                              <li class="pagination__item"><a href="/?_page=4" class="pagination__link">4</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lesson-section__section">
+                        <h2 class="lesson-section__title">Матеріали уроку:</h2>
+                        <div class="lesson-section__document-block document-block">
+                          <ul class="document-block__list">
+                            <li class="document-block__item document">
+                              <div class="document__wrapper">
+                                <a href="#" class="document__remove" type="button" aria-label="Завантажити цей документ" download>
+                                  <svg class="document__remove-svg">
+                                    <use xlink:href="img/sprite.svg#download-file"></use>
+                                  </svg>
+                                </a>
+                                <svg class="document__image">
+                                  <use xlink:href="img/sprite.svg#avatar-image"></use>
+                                </svg>
+                                <span class="document__title">Презентація уроку 2</span>
+                                <small class="document__weight">12 mb</small>
+                              </div>
+                            </li>
+                            <li class="document-block__item document">
+                              <div class="document__wrapper">
+                                <a href="#" class="document__remove" type="button" aria-label="Завантажити цей документ" download>
+                                  <svg class="document__remove-svg">
+                                    <use xlink:href="img/sprite.svg#download-file"></use>
+                                  </svg>
+                                </a>
+                                <svg class="document__image">
+                                  <use xlink:href="img/sprite.svg#avatar-image"></use>
+                                </svg>
+                                <span class="document__title">Презентація уроку 2</span>
+                                <small class="document__weight">12 mb</small>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="lesson-section__section">
+                        <h2 class="lesson-section__title">Посилання:</h2>
+                        <ul class="lesson-section__links">
+                          <li class="lesson-section__unit">
+                            <a href="#" class="lesson-section__link">
+                              <svg><use xlink:href="img/sprite.svg#link"></use></svg>
+                              <span> https://www.houseofmath.com/uk/flk; lfkjq; kl; k;</span>
+                            </a>
+                            <p class="lesson-section__description">
+                              Множини чисел так вiдносяться одна до одної: множина натуральних чисел ℕ включена до
+                              множини цiлих чисел ℤ.
+                            </p>
+                          </li>
+                          <li class="lesson-section__unit">
+                            <a href="#" class="lesson-section__link">
+                              <svg><use xlink:href="img/sprite.svg#link"></use></svg>
+                              <span> https://uk.economy-pedia.com/11040408-numeric-sets</span>
+                            </a>
+                            <p class="lesson-section__description">
+                              Множини чисел так вiдносяться одна до одної: множина натуральних чисел ℕ включена до
+                              множини цiлих чисел ℤ, яка, своєю чергою, включена до множини рацiональних чисел ℚ, а та,
+                              нарештi, включена до множини дiйсних чисел ℝ.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="lesson-section__next btn btn--trans">Перейти до наступного уроку
+                        <svg class="btn__icon">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="lesson-section__block" data-tab-content="Домашня робота">
+                      <div class="lesson-section__deadline">
+                        Дедлайн:
+                        <div class="lesson-section__date date date--blue">26.04 16:00</div>
+                      </div>
+                      <div class="lesson-section__info">
+                        <div class="lesson-section__text">
+                          <div class="text-wrapp">
+                            <h2>Ознайомтесь з домашнім завданням</h2>
+                            <p>
+                              Перепишіть завдання у зошит. Відскануйте або охайно сфотографуйте ваші відповіді і
+                              завантажте домашню роботу до цього уроку.
+                            </p>
+                            <h3>Вправи:</h3>
+                            <ol>
+                              <li>Запишіть у вигляді множини натуральні числа від 1 до 10.</li>
+                              <li>Маються множини A = {1, 2, 3, 4, 5} та B = {4, 5, 6, 7, 8}. Знайдіть їх перетин.</li>
+                              <li>Маються множини C = {2, 4, 6, 8} та D = {1, 3, 5, 7}. Знайдіть їх об'єднання.</li>
+                              <li>
+                                Маються множини E = {1, 2, 3, 4, 5} та F = {3, 4, 5, 6, 7}. Знайдіть різницю між E та F.
+                              </li>
+                              <li>
+                                Маються множини G = {1, 2, 3, 4, 5} та U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Знайдіть
+                                доповнення множини G до множини U.
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lesson-section__section">
+                        <h2 class="lesson-section__title">Моя домашня робота</h2>
+
+                        <!-- Загрузка файлол -->
+                        <div class="lesson-section__case">
+                          <button class="lesson-section__btn btn btn--accent" id="upload-homework">
+                            <svg class="btn__icon">
+                              <use xlink:href="img/sprite.svg#home"></use>
+                            </svg>
+                            Завантажити роботу
+                          </button>
+                        </div>
+                        <!-- Поле для ввода -->
+                        <div class="lesson-section__case">
+                          <div class="lesson-section__editor editor">
+                            <div class="editor__block"></div>
+                          </div>
+
+                          <button class="lesson-section__btn btn btn--accent">
+                            <svg class="btn__icon">
+                              <use xlink:href="img/sprite.svg#home"></use>
+                            </svg>
+                            Завантажити роботу
+                          </button>
+                        </div>
+
+                        <!-- Загружены файлы -->
+                        <div class="lesson-section__case">
+                          <div class="lesson-section__document-block document-block">
+                            <ul class="document-block__list">
+                              <li class="document-block__item document">
+                                <div class="document__wrapper">
+                                  <a href="#" class="document__remove" type="button" aria-label="Завантажити цей документ" download>
+                                    <svg class="document__remove-svg">
+                                      <use xlink:href="img/sprite.svg#remove"></use>
+                                    </svg>
+                                  </a>
+                                  <svg class="document__image">
+                                    <use xlink:href="img/sprite.svg#avatar-image"></use>
+                                  </svg>
+                                  <span class="document__title">Фото_27.04.2023</span>
+                                  <small class="document__weight">12 mb</small>
+                                </div>
+                              </li>
+                              <li class="document-block__item document">
+                                <div class="document__wrapper">
+                                  <a href="#" class="document__remove" type="button" aria-label="Завантажити цей документ" download>
+                                    <svg class="document__remove-svg">
+                                      <use xlink:href="img/sprite.svg#remove"></use>
+                                    </svg>
+                                  </a>
+                                  <svg class="document__image">
+                                    <use xlink:href="img/sprite.svg#avatar-image"></use>
+                                  </svg>
+                                  <span class="document__title">Фото_27.04.2023</span>
+                                  <small class="document__weight">12 mb</small>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="lesson-section__edit">
+                            <button class="lesson-section__change">
+                              <svg class="lesson-section__change-svg">
+                                <use xlink:href="img/sprite.svg#edit"></use>
+                              </svg>
+                              Редагувати
+                            </button>
+                            <span class="lesson-section__change-timer">(залишилось 14 хв 49 сек)</span>
+                          </div>
+                        </div>
+
+                        <!-- Написан текст -->
+                        <div class="lesson-section__case">
+                          <div class="lesson-section__work">
+                            <ol>
+                              <li>
+                                Множина натуральних чисел від 1 до 10 можна записати у вигляді множини так: A = {1, 2,
+                                3, 4, 5, 6, 7, 8, 9, 10}.
+                              </li>
+                              <li>
+                                Щоб знайти перетин множин A та B, треба знайти числа, які належать обом множинам: A =
+                                {1, 2, 3, 4, 5}, B = {4, 5, 6, 7, 8}. Перетин множин A та B записується як A ∩ B. A ∩ B
+                                = {4, 5}.
+                              </li>
+                              <li>
+                                Щоб знайти об'єднання множин C та D, треба об'єднати всі елементи з обох множин: C = {2,
+                                4, 6, 8}, D = {1, 3, 5, 7}. Об'єднання множин C та D записується як C ∪ D. C ∪ D = {1,
+                                2, 3, 4, 5, 6, 7, 8}.
+                              </li>
+                              <li>
+                                Щоб знайти різницю множин E та F, треба видалити з множини E всі елементи, які також
+                                належать до множини F: E = {1, 2, 3, 4, 5}, F = {3, 4, 5, 6, 7}. Різниця множин E та F
+                                записується як E \ F. E \ F = {1, 2}.
+                              </li>
+                              <li>
+                                Щоб знайти доповнення множини G до множини U, треба видалити з множини U всі елементи,
+                                які належать до множини G: G = {1, 2, 3, 4, 5}, U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}.
+                                Доповнення множини G записується як U \ G. U \ G = {6, 7, 8, 9, 10}.
+                              </li>
+                            </ol>
+                          </div>
+                          <div class="lesson-section__edit">
+                            <button class="lesson-section__change">
+                              <svg class="lesson-section__change-svg">
+                                <use xlink:href="img/sprite.svg#edit"></use>
+                              </svg>
+                              Редагувати
+                            </button>
+                            <span class="lesson-section__change-timer">(залишилось 14 хв 49 сек)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lesson-section__block" data-tab-content="Контрольна робота">
+                      <div class="lesson-section__deadline">
+                        Дедлайн:
+                        <div class="lesson-section__date date date--blue">26.04 16:00</div>
+                      </div>
+                      <div class="lesson-section__section lesson-section__border">
+                        <div class="lesson-section__text">
+                          <h2>Зробіть самостійна роботу</h2>
+                        </div>
+
+                        <div class="lesson-section__case">
+                          <a href="#" class="lesson-section__btn btn lesson-section__marks-btn">
+                            Перейти до тесту
+                            <svg class="btn__icon">
+                              <use xlink:href="img/sprite.svg#errow-ridth"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="lesson-section__section">
+                        <div class="lesson-section__text">
+                          <h2>Моя робота</h2>
+                        </div>
+
+                        <div class="lesson-section__case">
+                          <a href="#" class="lesson-section__btn btn btn--accent">
+                            <svg class="btn__icon">
+                              <use xlink:href="img/sprite.svg#check-mark"></use>
+                            </svg>
+                            Тест пройшов (ла)
+                          </a>
+                        </div>
+                      </div>
+                      <!-- тест прошёл(ла)  -->
+                      <div class="lesson-section__section">
+                        <div class="lesson-section__text">
+                          <h2>Моя робота</h2>
+                        </div>
+
+                        <div class="lesson-section__case">
+                          <a href="#" class="lesson-section__btn btn header__go-btn">
+                            <svg class="header__go-svg">
+                              <use xlink:href="img/sprite.svg#check-mark"></use>
+                            </svg>
+                            Тест пройшов (ла)
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <footer class="footer">
+  <div class="footer__inner">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <svg class="footer__link-svg footer__link-svg--stroke">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+          Про Unity
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <svg class="footer__link-svg">
+            <use xlink:href="img/sprite.svg#play"></use>
+          </svg>
+          Відео-інструкція
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <svg class="footer__link-svg">
+            <use xlink:href="img/sprite.svg#ask"></use>
+          </svg>
+          Питання-відповіді
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.4804 7.67981L4.44043 12.5398L9.30043 14.1598M18.4804 7.67981L9.30043 14.1598M18.4804 7.67981L14.1604 19.0198L9.30043 14.1598" stroke="#A6C0FB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.0002 22.7999C17.965 22.7999 22.8002 17.9648 22.8002 12C22.8002 6.03511 17.965 1.19995 12.0002 1.19995C6.03536 1.19995 1.2002 6.03511 1.2002 12C1.2002 17.9648 6.03536 22.7999 12.0002 22.7999Z" stroke="#A6C0FB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          Написати в месенджер
+        </a>
+      </li>
+    </ul>
+    <a href="tel:380682552522" class="footer__link footer__link--last">
+      <svg class="footer__link-svg">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg>
+      +38 068 255 25 22</a>
+  </div>
+</footer>
+
+      </main>
+    </div>
+    <div class="modal modal--big upload">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__main">
+        <button class="modal__close">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <h2 class="modal__title">Завантаження документа</h2>
+
+        <div class="modal__wrapper">
+          <form class="modal__from">
+            <div class="modal__upload">
+              <svg class="modal__upload-svg">
+                <use xlink:href="img/sprite.svg#upload"></use>
+              </svg>
+              <div class="modal__drop">
+                <span>Перетягніть <br>
+                  або</span>
+                <label for="upload-files">
+                  оберіть файл
+                  <input type="file" id="upload-files" hidden>
+                </label>
+              </div>
+            </div>
+            <div class="modal__case" data-simplebar>
+              <ul class="modal__documents">
+                <li class="document-block__item document document--error">
+                  <div class="document__wrapper">
+                    <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                      <svg class="document__remove-svg">
+                        <use xlink:href="img/sprite.svg#remove"></use>
+                      </svg>
+                    </button>
+                    <svg class="document__image">
+                      <use xlink:href="img/sprite.svg#avatar-image"></use>
+                    </svg>
+                    <span class="document__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, earum?</span>
+                    <small class="document__weight">12 mb</small>
+                  </div>
+                  <div class="document__error">
+                    <svg class="document__error-icon">
+                      <use xlink:href="img/sprite.svg#warn"></use>
+                    </svg>
+
+                    Завантажте ще раз
+                  </div>
+                </li>
+                <li class="modal__document document">
+                  <div class="document__wrapper">
+                    <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                      <svg class="document__remove-svg">
+                        <use xlink:href="img/sprite.svg#remove"></use>
+                      </svg>
+                    </button>
+                    <svg class="document__image">
+                      <use xlink:href="img/sprite.svg#avatar-image"></use>
+                    </svg>
+                    <span class="document__title">Фото_27.04.2023</span>
+                    <small class="document__weight">12 mb</small>
+
+                    <div class="document__progress progress">
+                      <span class="progress-line">
+                        <span style="width: 80%"></span>
+                      </span>
+                      80%
+                    </div>
+                  </div>
+                </li>
+                <li class="modal__document document">
+                  <div class="document__wrapper">
+                    <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                      <svg class="document__remove-svg">
+                        <use xlink:href="img/sprite.svg#remove"></use>
+                      </svg>
+                    </button>
+                    <svg class="document__image">
+                      <use xlink:href="img/sprite.svg#avatar-image"></use>
+                    </svg>
+                    <span class="document__title">Фото_27.04.2023</span>
+                    <small class="document__weight">12 mb</small>
+                    <div class="document__progress progress">
+                      <span class="progress-line">
+                        <span style="width: 80%"></span>
+                      </span>
+                      80%
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <button class="modal__btn btn btn--accent">Відправити на перевірку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="maintenance">
+  <div class="maintenance__content">
+    <div class="maintenance__top">
+      <h2 class="maintenance__title">Математика</h2>
+      <button class="maintenance__close" aria-label="Закрити зміст">
+        <svg class="maintenance__close-svg">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="maintenance__class">8 клас</div>
+    </div>
+    <div class="maintenance__bottom" data-simplebar>
+      <ol class="maintenance__list">
+        <li class="maintenance__item">
+          <button class="maintenance__btn" aria-expanded="false" aria-label="Відкрити розділ">
+            <span class="maintenance__btn-num"></span>
+            Повторення і систематизація навчального матеріалу з курсу 7 класу
+            <div class="maintenance__icon">
+              <svg class="maintenance__icon-svg">
+                <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
+              </svg>
+            </div>
+          </button>
+          <div class="maintenance__block">
+            <ol class="maintenance__sublist">
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Множина. Елемент множини. Порожня множина.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Підмножина. Переріз і об'єднання множин. Круги Ейлера.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Операції над множинами.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Числові множини. Взаємно однозначна відповідність між елементами множин.
+                </a>
+              </li>
+            </ol>
+          </div>
+        </li>
+        <li class="maintenance__item">
+          <button class="maintenance__btn">
+            <span class="maintenance__btn-num"></span>
+            Раціональні вирази
+            <div class="maintenance__icon">
+              <svg class="maintenance__icon-svg">
+                <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
+              </svg>
+            </div>
+          </button>
+          <div class="maintenance__block">
+            <ol class="maintenance__sublist">
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Множина. Елемент множини. Порожня множина.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Підмножина. Переріз і об'єднання множин. Круги Ейлера.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Операції над множинами.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Числові множини. Взаємно однозначна відповідність між елементами множин.
+                </a>
+              </li>
+            </ol>
+          </div>
+        </li>
+        <li class="maintenance__item">
+          <button class="maintenance__btn">
+            <span class="maintenance__btn-num"></span>
+            Множини і операції над ними
+            <div class="maintenance__icon">
+              <svg class="maintenance__icon-svg">
+                <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
+              </svg>
+            </div>
+          </button>
+          <div class="maintenance__block">
+            <ol class="maintenance__sublist">
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Множина. Елемент множини. Порожня множина.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Підмножина. Переріз і об'єднання множин. Круги Ейлера.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Операції над множинами.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Числові множини. Взаємно однозначна відповідність між елементами множин.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Множина. Елемент множини. Порожня множина.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Підмножина. Переріз і об'єднання множин. Круги Ейлера.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Операції над множинами.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Числові множини. Взаємно однозначна відповідність між елементами множин.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link maintenance__link--active">
+                  <span class="maintenance__btn-num"></span>
+                  Множина. Елемент множини. Порожня множина.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Підмножина. Переріз і об'єднання множин. Круги Ейлера.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Операції над множинами.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Числові множини. Взаємно однозначна відповідність між елементами множин.
+                </a>
+              </li>
+            </ol>
+          </div>
+        </li>
+        <li class="maintenance__item">
+          <button class="maintenance__btn">
+            <span class="maintenance__btn-num"></span>
+            Раціональні рівняння
+            <div class="maintenance__icon">
+              <svg class="maintenance__icon-svg">
+                <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
+              </svg>
+            </div>
+          </button>
+          <div class="maintenance__block">
+            <ol class="maintenance__sublist">
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Множина. Елемент множини. Порожня множина.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Підмножина. Переріз і об'єднання множин. Круги Ейлера.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Операції над множинами.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Числові множини. Взаємно однозначна відповідність між елементами множин.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Множина. Елемент множини. Порожня множина.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Підмножина. Переріз і об'єднання множин. Круги Ейлера.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Операції над множинами.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Числові множини. Взаємно однозначна відповідність між елементами множин.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link maintenance__link--active">
+                  <span class="maintenance__btn-num"></span>
+                  Множина. Елемент множини. Порожня множина.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Підмножина. Переріз і об'єднання множин. Круги Ейлера.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Операції над множинами.
+                </a>
+              </li>
+              <li class="maintenance__subitem">
+                <a href="#" class="maintenance__link">
+                  <span class="maintenance__btn-num"></span>
+                  Числові множини. Взаємно однозначна відповідність між елементами множин.
+                </a>
+              </li>
+            </ol>
+          </div>
+        </li>
+        <li class="maintenance__item">
+          <button class="maintenance__btn">Контрольна робота за І семестр</button>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

@@ -6745,6 +6745,12 @@ body .simplebar-track {
   display: none;
 }
 
+.header__title-svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #828282;
+}
+
 .header--lesson .header__inner {
   border-bottom: 0.0625rem solid var(--grey-4);
 }
@@ -6764,6 +6770,16 @@ body .simplebar-track {
 .header__hours::after,
 .header__minutes::after {
   content: ":";
+}
+
+.header__lesson-editing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .notifications__top-svg {
@@ -9787,6 +9803,51 @@ input[type=radio]:checked + label + .content {
   background: #fff8ed;
 }
 
+.lesson-section__attention-svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #eb5757;
+}
+
+.lesson-section__attention {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #eb5757;
+  gap: 0.3125rem;
+}
+
+.lesson-section__container__box-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 0.3125rem;
+  padding: 0.75rem;
+  background-color: #fff8ed;
+  gap: 0.75rem;
+}
+
+.lesson-section__container__list-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: #828282;
+}
+
+.lesson-section__btn-svg {
+  fill: #FFFFFF;
+  width: 1rem;
+  height: 1rem;
+}
+
 .lesson-section__text,
 .lesson-section__work {
   color: var(--black);
@@ -12277,6 +12338,12 @@ input[type=radio]:checked + label + .content {
   font-size: 14px;
   line-height: 120%;
   color: #1c1c1c;
+}
+
+.students__images-title:hover {
+  color: #7d98f6;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .students__images-btn {
@@ -15273,6 +15340,20 @@ input[type=radio]:checked + label + .content {
 
   .lesson-section__class-room {
     width: 22.9375rem;
+  }
+
+  .lesson-section__info-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .lesson__section--message {
+    width: 100%;
   }
 }
 

@@ -1,7 +1,7 @@
 import Quill from 'quill'
 
 const toolbarOptions = [
-  ['bold', 'italic', 'underline', { color: [] }, { list: 'ordered' }, { list: 'bullet' }] // toggled buttons
+  ['bold', 'italic', 'underline', { color: [] }, { list: 'ordered' }, { list: 'bullet' },'', '', '', '' ,] // toggled buttons
 ]
 const editor = () => {
   const createEditor = el => {
