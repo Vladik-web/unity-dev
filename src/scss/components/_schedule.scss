@@ -157,6 +157,7 @@
           border-radius: rem(3);
           color: var(--black);
           background-color: var(--orange-100);
+
           // opacity: 1;
         }
 
@@ -256,6 +257,10 @@
     }
   }
 
+  &__block-title {
+    display: flex;
+  }
+
   &--parent {
     .schedule__inner {
       display: flex;
@@ -281,6 +286,8 @@
       }
     }
   }
+
+  
 }
 
 .header__children {

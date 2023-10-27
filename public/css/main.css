@@ -8548,6 +8548,12 @@ input[type=radio]:checked + label + .content {
   opacity: 1;
 }
 
+.schedule__block-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .schedule--parent .schedule__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12330,6 +12336,10 @@ input[type=radio]:checked + label + .content {
   gap: 0.75rem;
 }
 
+.students__images-img {
+  width: 3.9375rem;
+}
+
 .students__images-title {
   margin-bottom: 0.8125rem;
   max-width: 10.8125rem;
@@ -12371,9 +12381,9 @@ input[type=radio]:checked + label + .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: self-end;
+  -ms-flex-align: self-end;
+  align-items: self-end;
   gap: 1rem;
 }
 
@@ -12769,7 +12779,7 @@ input[type=radio]:checked + label + .content {
   }
 }
 
-@media only screen and (max-width: 82.1125em) {
+@media only screen and (max-width: 82.3625em) {
   .lesson-section__content__nav-list-item {
     display: grid;
     grid-template-columns: 9fr 11fr;
@@ -12779,6 +12789,28 @@ input[type=radio]:checked + label + .content {
     display: grid;
     grid-template-columns: 9fr 11fr;
     margin-bottom: 1rem;
+  }
+
+  .students__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+
+  .students__images-title {
+    width: 1.125rem;
+    font-size: 0.75rem;
+  }
+
+  .students__images-img {
+    margin-right: auto;
   }
 }
 
@@ -12951,6 +12983,10 @@ input[type=radio]:checked + label + .content {
 
   .students-tabs__wrapper {
     display: none;
+  }
+
+  .students__images-title {
+    font-size: 0.75rem;
   }
 
   .marks-table__inner--mob {
@@ -15354,6 +15390,23 @@ input[type=radio]:checked + label + .content {
 
   .lesson__section--message {
     width: 100%;
+  }
+
+  .students__view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .students__content-item {
+    font-size: 0.625rem;
   }
 }
 

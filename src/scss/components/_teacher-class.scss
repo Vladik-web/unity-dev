@@ -32,6 +32,10 @@
     gap: rem(12);
   }
 
+  &__images-img {
+    width: rem(63);
+  }
+
   &__images-title {
     margin-bottom: rem(13);
     max-width: rem(173);
@@ -66,7 +70,7 @@
 
   &__view {
     display: flex;
-    align-items: center;
+    align-items: self-end;
     gap: rem(16);
   }
 
@@ -140,6 +144,23 @@
   }
 }
 
+@include mq('xz') {
+  .students__images {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .students__images-title {
+    width: rem(18);
+    font-size: rem(12);
+  }
+
+  .students__images-img {
+    margin-right: auto;
+  }
+}
+
 @include mq('xl') {
   .students__content-item {
     max-width: 137px;
@@ -151,5 +172,21 @@
 
   .students-tabs__wrapper {
     display: none;
+  }
+
+  .students__images-title {
+    font-size: rem(12);
+  }
+}
+
+@include mq('sm') {
+  .students__view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .students__content-item {
+    font-size: rem(10);
   }
 }
