@@ -377,11 +377,24 @@
                 <div class="subject__left">
                   <div class="subject__subject-card subject-card subject-card--purple">
                     <div class="subject-card__left">
-                      <h2 class="subject-card__title">Алгебра <span class="title__span-blue">7A</span></h2>
-                      <p class="subject-card__description">
+                      <h2 class="subject-card__title subject__card__title-editing">
+                        Алгебра
+                       <button class="subject-card__title-btn">
+                        <svg class="subject-card__svg">
+                          <use xlink:href="/img/sprite.svg#pensil"></use>
+                        </svg>
+                       </button>
+                        <span class="title__span-blue">7A</span>
+                      </h2>
+                      <p class="subject-card__description subject__material-text">
                         Під час вивчення онлайн-курсу з алгебри для 8-го класу учні ознайомляться
                         з квадратними коренями та ірраціональними числами. Цей курс покаже приклади застосування
                         властивостей квадратних коренів при розв’язуванні різних типів задач.
+                       <button class="subject-card__description-btn">
+                        <svg class="subject-card__svg">
+                          <use xlink:href="/img/sprite.svg#pensil"></use>
+                        </svg>
+                       </button>
                       </p>
                       <div class="subject-card__info">
                         <div class="subject-card__info">
@@ -485,11 +498,18 @@
                           </li>
                         </ul>
                       </div>
-                      <button class="subject__content-btn">
+                      <!-- сценарий реагирования предмета -->
+                      <!-- <button class="subject__content-btn">
                         <svg class="subject__content__btn-svg">
                           <use xlink:href="/img/sprite.svg#pencil"></use>
                         </svg>
                         Редагувати предмет
+                      </button> -->
+                      <button class="subject__content-active btn btn--accent">
+                        <svg class="btn__icon">
+                          <use xlink:href="/img/sprite.svg#check"></use>
+                        </svg>
+                        відправити на модерацію
                       </button>
                     </div>
                     <div class="subject__wrapper">
@@ -500,8 +520,13 @@
                               <div class="plan__left">
                                 <span class="plan__number"></span>
                                 Повторення і систематизація навчального матеріалу з курсу 7 класу
+
                               </div>
+
                               <div class="plan__arrow">
+                                  <svg class="subject-card__svg">
+                                    <use xlink:href="/img/sprite.svg#pensil"></use>
+                                  </svg>
                                 <svg class="plan__arrow-svg">
                                   <use xlink:href="img/sprite.svg#arrow-down-mini"></use>
                                 </svg>
@@ -2883,7 +2908,6 @@
                                 <use xlink:href="img/sprite.svg#avatar-image"></use>
                               </svg>
                               <span class="document__title">Презентація уроку </span>
-
                             </div>
                           </li>
                           <li class="document-block__item document">
@@ -2897,7 +2921,6 @@
                                 <use xlink:href="img/sprite.svg#avatar-image"></use>
                               </svg>
                               <span class="document__title">Презентація уроку </span>
-
                             </div>
                           </li>
                           <li class="document-block__item document">
@@ -2911,7 +2934,6 @@
                                 <use xlink:href="img/sprite.svg#avatar-image"></use>
                               </svg>
                               <span class="document__title">Презентація уроку </span>
-
                             </div>
                           </li>
                           <li class="document-block__item document">
@@ -2925,7 +2947,6 @@
                                 <use xlink:href="img/sprite.svg#avatar-image"></use>
                               </svg>
                               <span class="document__title">Презентація уроку </span>
-
                             </div>
                           </li>
                         </ul>
@@ -3007,36 +3028,57 @@
                     <div class="subject__material-card material-card">
                       <h3 class="material-card__title">Матеріали:</h3>
                       <ul class="material-card__list">
-                        <li class="material-card__item">
+                        <li class="material-card__item subject__material__card-box">
                           <a href="#" class="material-card__link" download>
                             <svg class="material-card__link-svg">
                               <use xlink:href="img/sprite.svg#download-file"></use>
                             </svg>
                             <span>Алгебра (Мерзляк) 8 клас</span>
                           </a>
+                          <button class="subject__material-link-btn">
+                            <svg class="subject__material__link-svg">
+                              <use xlink:href="/img/sprite.svg#basket"></use>
+                            </svg>
+                          </button>
                         </li>
-                        <li class="material-card__item">
+                        <li class="material-card__item subject__material__card-box">
                           <a href="#" class="material-card__link" download>
                             <svg class="material-card__link-svg">
                               <use xlink:href="img/sprite.svg#download-file"></use>
                             </svg>
                             <span>Алгебра (Мерзляк) 8 клас з поглибленим вивченням математики</span>
                           </a>
+                          <button class="subject__material-link-btn">
+                            <svg class="subject__material__link-svg">
+                              <use xlink:href="/img/sprite.svg#basket"></use>
+                            </svg>
+                          </button>
                         </li>
-                        <li class="material-card__item">
+                        <li class="material-card__item subject__material__card-box">
                           <a href="#" class="material-card__link" download>
                             <svg class="material-card__link-svg material-card__link-svg--fill">
                               <use xlink:href="img/sprite.svg#link"></use>
                             </svg>
                             <span>Міністерство освіти України</span>
                           </a>
+                          <button class="subject__material-link-btn">
+                            <svg class="subject__material__link-svg">
+                              <use xlink:href="/img/sprite.svg#basket"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="material-card__item">
+                          <button class="subject-material__card-btn">+ додати матеріали</button>
                         </li>
                       </ul>
                     </div>
                   </div>
 
                   <!-- tab 3 -->
-                  <div class="subject__statistics-block statistics-block statistics-block--row" data-tab-content="Статистика">
+                  <!-- <div
+                    class="subject__statistics-block statistics-block statistics-block--row"
+                    data-tab-content="Статистика"
+                  >
                     <div class="statistics-block__top">
                       <h2 class="statistics-block__title">Статистика</h2>
                     </div>
@@ -3044,7 +3086,7 @@
                       <ul class="statistics-block__list">
                         <li class="statistics-block__item rating-block">
                           <div class="rating-block__top">
-                            <h3 class="rating-block__title">Відвідуваність на онлайн уроках</h3>
+                            <h3 class="rating-block__title">Відвідуваність на&nbsp;онлайн уроках</h3>
                             <svg class="rating-block__icon">
                               <use xlink:href="img/sprite.svg#webcam"></use>
                             </svg>
@@ -3078,7 +3120,7 @@
                         </li>
                         <li class="statistics-block__item rating-block">
                           <div class="rating-block__top">
-                            <h3 class="rating-block__title">Відвідуваність на онлайн уроках</h3>
+                            <h3 class="rating-block__title">Відвідуваність на&nbsp;онлайн уроках</h3>
                             <svg class="rating-block__icon">
                               <use xlink:href="img/sprite.svg#webcam"></use>
                             </svg>
@@ -3112,7 +3154,7 @@
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </section>

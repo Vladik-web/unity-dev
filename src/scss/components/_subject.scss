@@ -14,6 +14,12 @@
     min-width: 0;
   }
 
+  &__material-text {
+    display: flex;
+    align-items: baseline;
+    gap: rem(12);
+  }
+
   &__subject-card {
     margin-bottom: rem(40);
   }
@@ -135,6 +141,40 @@
 
   &__text {
     color: var(--grey-3);
+  }
+
+  &-card__svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #828282;
+  }
+
+  &__card__title-editing {
+    display: flex;
+    align-items: center;
+    gap: rem(12);
+  }
+
+  &-material__card-btn {
+    border: rem(1) solid  #ffa349;
+    border-radius: rem(5);
+    padding: rem(11) rem(16);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    color: #1c1c1c;
+  }
+
+  &__material__link-svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #828282;
+  }
+
+  &__material__card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

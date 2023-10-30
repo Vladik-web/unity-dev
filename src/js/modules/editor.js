@@ -1,7 +1,14 @@
 import Quill from 'quill'
+
+
+
 const toolbarOptions = [
-  ['bold', 'italic', 'underline', { color: [] }, { list: 'ordered' }, { list: 'bullet' },'', 'blockquote', 'header', 'video', 'image'] // toggled buttons
+  ['bold', 'italic', 'underline', { color: [] }, { list: 'ordered' }, { list: 'bullet' },'table', 'blockquote', 'header', 'video', 'image'] // toggled buttons
 ]
+
+
+
+
 const editor = () => {
   const createEditor = el => {
     const editorEl = document.querySelector(el)
@@ -20,4 +27,7 @@ const editor = () => {
 
   createEditor('.editor__block')
 }
+
+
+
 export default editor
