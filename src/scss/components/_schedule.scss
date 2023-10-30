@@ -325,6 +325,9 @@
       gap: rem(30) rem(15);
     }
   }
+  .schedule__block-text {
+    padding-bottom: rem(10);
+  }
 }
 
 @include mq('lg') {

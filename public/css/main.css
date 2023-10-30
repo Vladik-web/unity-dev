@@ -13037,6 +13037,10 @@ input[type=radio]:checked + label + .content {
     gap: 1.875rem 0.9375rem;
   }
 
+  .schedule__block-text {
+    padding-bottom: 0.625rem;
+  }
+
   .todo__block {
     padding: 0.9375rem 0 0.9375rem 0.9375rem;
   }
