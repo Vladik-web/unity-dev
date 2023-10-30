@@ -56,6 +56,8 @@
     }
   }
 
+
+
   &__lesson {
     transition: all 0.2s ease;
   }
@@ -175,7 +177,7 @@
 
     flex-shrink: 0;
     width: rem(40);
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-style: normal;
     line-height: 1;
@@ -188,8 +190,8 @@
     gap: rem(10);
 
     .schedule-table__grid {
-      padding-left: 0;
       margin-bottom: 76px;
+      padding-left: 0;
     }
   }
 
@@ -240,11 +242,12 @@
       }
     }
   }
+
   &--week {
   }
 }
 
-@include mq("lg") {
+@include mq('lg') {
   .schedule-table {
     &__block {
       @include hide-scroll;
@@ -298,7 +301,7 @@
   }
 }
 
-@include mq("lg") {
+@include mq('lg') {
   .schedule-table {
     &--week {
       .schedule-table {

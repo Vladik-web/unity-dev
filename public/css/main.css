@@ -8335,6 +8335,24 @@ input[type=radio]:checked + label + .content {
   display: none;
 }
 
+.schedule__block-subtitle {
+  margin: 0.625rem 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: #333;
+}
+
+.schedule__block-text {
+  max-width: 56.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: #333;
+}
+
 .schedule__block[data-tab-content=Курси] {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -11412,8 +11430,8 @@ input[type=radio]:checked + label + .content {
 }
 
 .schedule-table__main .schedule-table__grid {
-  padding-left: 0;
   margin-bottom: 76px;
+  padding-left: 0;
 }
 
 .schedule-table--month .schedule-table__item:last-child .lessons-schedule__modal {
@@ -12766,6 +12784,100 @@ input[type=radio]:checked + label + .content {
   width: 1.5rem;
   height: 1.5rem;
   fill: #bdbdbd;
+}
+
+.table {
+  border: 0.0625rem solid #e0e0e0;
+  border-collapse: collapse;
+  border-radius: 0.625rem;
+  width: 100%;
+}
+
+.table__block-info {
+  max-width: px;
+  border: 0.0625rem solid #e0e0e0;
+  border-radius: 0.625rem;
+  padding: 0.75rem 1rem;
+  background: #fff;
+}
+
+.table__block__info-img {
+  margin-bottom: 0.5rem;
+  max-width: 4.0625rem;
+}
+
+.table__block__info__box-name {
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.table__block__info__box-job {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 120%;
+  color: #828282;
+}
+
+.table__header-td {
+  border: none;
+  padding: 0.875rem 1.25rem;
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+
+.table__content--emptiness {
+  border: none !important;
+}
+
+.table__content--title {
+  background-color: #eef4ff;
+}
+
+.table__content--title td {
+  border: transparent;
+}
+
+.table__content-td {
+  border: 1px solid #c8d9fd;
+  padding: 1.375rem 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #4f4f4f;
+}
+
+.table__footer {
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #4f4f4f;
+  background-color: #ffefd4;
+  border: 0.0625rem solid #BDBDBD;
+}
+
+.table__footer-td {
+  padding: 1.125rem 1.875rem 1.1875rem 1.125rem;
+}
+
+.table__block--violation {
+  color: #eb5757;
+}
+
+.table__result--sum {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: #333;
 }
 
 .content {

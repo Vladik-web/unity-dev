@@ -39,6 +39,24 @@
     display: none;
   }
 
+  &__block-subtitle {
+    margin: rem(10) 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: 120%;
+    color: #333;
+  }
+
+  &__block-text {
+    max-width: rem(900);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: 120%;
+    color: #333;
+  }
+
   &__block {
     &[data-tab-content='\41A\443\440\441\438'] {
       grid-column: 1/2;
@@ -286,8 +304,6 @@
       }
     }
   }
-
-  
 }
 
 .header__children {
