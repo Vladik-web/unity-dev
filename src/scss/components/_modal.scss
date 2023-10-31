@@ -295,6 +295,61 @@
     gap: rem(20);
   }
 
+  &__wrapper-gears {
+    border: rem(1) solid  #bdbdbd;
+    border-radius: rem(10);
+    padding: rem(14) rem(20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(12);
+  }
+
+  &__wrapper-span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 120%;
+    text-align: center;
+    color: #1c1c1c;
+  }
+
+
+
+  &__label {
+    position: relative;
+    display: inline-block;
+    width: rem(37);
+    height: rem(19);
+  }
+
+  &__label-input {
+    appearance: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &__label-cheked {
+    position: absolute;
+    border-radius: rem(25);
+    width: rem(35);
+    height: rem(23);
+    background-color: #828282;
+    cursor: pointer;
+  }
+
+  &__label-cheked::before {
+    content: '';
+    position: absolute;
+    left: rem(3);
+    top: rem(3);
+    border-radius: rem(25);
+    width: rem(17);
+    height: rem(17);
+    background-color: #fff;
+  }
+
   &.change-photo {
     .modal__document {
       margin: 0 auto;
@@ -328,6 +383,16 @@
         max-width: rem(670);
       }
     }
+  }
+
+  &__label-input:checked + &__label-cheked::before {
+    left: rem(15);
+    transition: all 0.5s;
+  }
+
+  &__label-input:checked + &__label-cheked {
+    background-color: #fe7c11;
+    transition: all 0.5s;
   }
 }
 
@@ -575,5 +640,4 @@
 }
 
 .modal__span-input:checked + .modal__span-text::after {
-
 }

@@ -8271,6 +8271,67 @@ input[type=radio]:checked + label + .content {
   gap: 1.25rem;
 }
 
+.modal__wrapper-gears {
+  border: 0.0625rem solid #bdbdbd;
+  border-radius: 0.625rem;
+  padding: 0.875rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.modal__wrapper-span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 120%;
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.modal__label {
+  position: relative;
+  display: inline-block;
+  width: 2.3125rem;
+  height: 1.1875rem;
+}
+
+.modal__label-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.modal__label-cheked {
+  position: absolute;
+  border-radius: 1.5625rem;
+  width: 2.1875rem;
+  height: 1.4375rem;
+  background-color: #828282;
+  cursor: pointer;
+}
+
+.modal__label-cheked::before {
+  content: "";
+  position: absolute;
+  left: 0.1875rem;
+  top: 0.1875rem;
+  border-radius: 1.5625rem;
+  width: 1.0625rem;
+  height: 1.0625rem;
+  background-color: #fff;
+}
+
 .modal.change-photo .modal__document {
   margin: 0 auto;
   width: 100%;
@@ -8298,6 +8359,18 @@ input[type=radio]:checked + label + .content {
 
 .modal--big .modal__content {
   max-width: 41.875rem;
+}
+
+.modal__label-input:checked + .modal__label-cheked::before {
+  left: 0.9375rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.modal__label-input:checked + .modal__label-cheked {
+  background-color: #fe7c11;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .modal__button {
