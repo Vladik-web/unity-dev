@@ -112,13 +112,21 @@
     align-items: flex-start;
     gap: rem(10);
   }
-
+  &__info-block {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+  }
   &__idits-svg {
     display: flex;
     gap: rem(32);
   }
   &__item--close {
     display: none;
+  }
+
+  &__left-img {
+    max-width: rem(24);
   }
 
   &__item-btn {

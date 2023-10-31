@@ -190,6 +190,10 @@
       }
     }
 
+    &__content-active {
+      margin-top: rem(10);
+    }
+
     &__mobile-tabs {
       display: block;
       margin: 0 rem(-15) rem(30);

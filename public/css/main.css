@@ -5352,6 +5352,16 @@ body .simplebar-track {
   gap: 0.625rem;
 }
 
+.plan__info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
 .plan__idits-svg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5361,6 +5371,10 @@ body .simplebar-track {
 
 .plan__item--close {
   display: none;
+}
+
+.plan__left-img {
+  max-width: 1.5rem;
 }
 
 .plan__item-btn {
@@ -14858,6 +14872,10 @@ input[type=radio]:checked + label + .content {
 
   .subject__subject-card .subject-card__title {
     display: none;
+  }
+
+  .subject__content-active {
+    margin-top: 0.625rem;
   }
 
   .subject__mobile-tabs {
