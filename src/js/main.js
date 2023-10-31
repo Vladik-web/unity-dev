@@ -23,6 +23,7 @@ import registrationCalendarData from './modules/register-calendar-data'
 import registerAccordion from './modules/registration-accordion'
 import initializeTabs from './modules/lesson-teacher'
 import lessonTabs from './modules/lesson-table-teacher'
+import btnSubject from './modules/botton-subject'
 
 
 
@@ -57,5 +58,6 @@ window.addEventListener('DOMContentLoaded', () => {
   registerAccordion()
   initializeTabs()
   lessonTabs()
+  btnSubject()
 })
 
