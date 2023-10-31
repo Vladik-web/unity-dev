@@ -260,6 +260,19 @@
     gap: 20px;
   }
 
+  &__finish-btn {
+    border-radius: var(--5, 5px);
+    padding: rem(8) rem(16);
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ffa349;
+  }
+
   &--center {
     @include flex-all-center;
   }
@@ -652,5 +665,5 @@ input[type='radio']:checked + label + .content {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: #FFA349;
+  color: #ffa349;
 }

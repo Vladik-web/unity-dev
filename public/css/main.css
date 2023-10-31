@@ -7204,6 +7204,18 @@ body .simplebar-track {
   gap: 20px;
 }
 
+.auth-content__finish-btn {
+  border-radius: var(--5, 5px);
+  padding: 0.5rem 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #ffa349;
+}
+
 .auth-content--center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7536,7 +7548,7 @@ input[type=radio]:checked + label + .content {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: #FFA349;
+  color: #ffa349;
 }
 
 .aside {
