@@ -22,6 +22,32 @@
     }
   }
 
+  &__left-teacher {
+    display: flex;
+    align-items: center;
+    gap: rem(30);
+  }
+
+  &__title-btn {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    border-radius: rem(5);
+    padding: rem(8) rem(16);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ffa349;
+  }
+
+  &__title__btn-svg {
+    width: rem(16);
+    height: rem(16);
+    fill: #fff;
+  }
+
   &__manual {
     @include flex-all-center;
 
@@ -334,6 +360,12 @@
     fill: #828282;
   }
 
+  &__lesson-editing {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+  }
+
   &--lesson {
     .header {
       &__inner {
@@ -359,11 +391,6 @@
     &::after {
       content: ':';
     }
-  }
-  &__lesson-editing {
-    display: flex;
-    align-items: center;
-    gap: rem(8);
   }
 }
 

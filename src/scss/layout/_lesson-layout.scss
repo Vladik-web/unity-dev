@@ -18,11 +18,15 @@
       width: 100%;
       max-width: 90%;
     }
-
+    
     &--active {
       padding-left: rem(235);
     }
   }
+}
+
+.container-teacher {
+  max-width: 100%;
 }
 
 @include mq('xxl') {
