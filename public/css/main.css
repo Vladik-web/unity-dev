@@ -12179,6 +12179,11 @@ input[type=radio]:checked + label + .content {
   max-width: 26.875rem;
 }
 
+.personal-cabinet__classroom-units {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .personal-cabinet__avatar-text {
   max-width: 260px;
 }
@@ -13195,14 +13200,23 @@ input[type=radio]:checked + label + .content {
   margin-left: 1.25rem;
 }
 
-.teacher-card__right {
-  margin-right: 8.9375rem;
-}
-
 .teacher-card__sctatistic {
   border-radius: 0.625rem;
   padding: 1.25rem;
   background-color: #eef4ff;
+}
+
+.teacher-card__card-top {
+  position: relative;
+}
+
+.teacher-card__lesson__top-span {
+  position: absolute;
+  top: 0.0625rem;
+}
+
+.teacher-card__card__top-image {
+  max-width: 4.0625rem;
 }
 
 .teacher-card__title-block {
@@ -13292,6 +13306,16 @@ input[type=radio]:checked + label + .content {
   font-weight: 500;
   font-size: 2.5rem;
   color: #ffa349;
+}
+
+.teacher-card-classroom__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+  gap: 8.9375rem;
 }
 
 .content {

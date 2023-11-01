@@ -4,13 +4,26 @@
   }
 
   &__right {
-    margin-right: rem(143);
+    // margin-right: rem(143);
   }
 
   &__sctatistic {
     border-radius: rem(10);
     padding: rem(20);
     background-color: #eef4ff;
+  }
+
+  &__card-top {
+    position: relative;
+  }
+
+  &__lesson__top-span {
+    position: absolute;
+    top: rem(1);
+  }
+
+  &__card__top-image {
+    max-width: rem(65);
   }
 
   &__title-block {
@@ -87,4 +100,10 @@
     font-size: rem(40);
     color: #ffa349;
   }
+}
+
+.teacher-card-classroom__card {
+  display: flex;
+  align-items: unset;
+  gap: rem(143);
 }

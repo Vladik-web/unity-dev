@@ -167,6 +167,11 @@
       max-width: rem(430);
     }
   }
+
+  &__classroom-units {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .personal-cabinet__avatar-text {
