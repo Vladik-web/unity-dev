@@ -3,7 +3,11 @@
     display: flex;
     gap: rem(30);
   }
- 
+
+  &__mobile-tabs.content-tabs {
+    display: none;
+  }
+
   &--big {
     margin-bottom: rem(40);
 
@@ -18,11 +22,13 @@
       display: flex;
     }
   }
+
   &__curse {
     margin-bottom: 416px;
   }
+
   &__curse-title {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 120%;
@@ -55,6 +61,10 @@
       display: none;
     }
 
+    &__mobile-tabs.content-tabs {
+      display: block;
+    }
+
     &__inner {
       display: block;
     }
@@ -64,7 +74,7 @@
         flex-direction: column;
       }
     }
-    
+
   }
   .graph__bottom-adap {
     display: block;

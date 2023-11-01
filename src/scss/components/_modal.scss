@@ -237,6 +237,12 @@
       stroke-linejoin: round;
       stroke-width: rem(4);
     }
+
+    &.drag--active {
+      background-color: var(--blue-50);
+      border-style: solid;
+      border-color: var(--blue-200);
+    }
   }
 
   &__case {
@@ -251,7 +257,7 @@
     text-align: center;
     color: var(--grey-3);
 
-    label {
+    &--text {
       text-decoration: underline;
       color: var(--blue-500);
       cursor: pointer;

@@ -51,7 +51,6 @@
 @import 'components/ui/lessons-schedule';
 @import 'components/ui/lesson-modal';
 @import 'components/ui/occupation';
-@import '../../src/scss/components/personal-cabinet-child';
 
 // 6. All Components
 @import 'components/header';
@@ -82,14 +81,15 @@
 @import 'components/personal-cabinet';
 @import 'components/notifications';
 @import 'components/footer';
-@import '../scss/components/deposit';
-@import '../scss/components/teacher-class';
-@import '../scss/components/authorization';
-@import '../scss/components/teacher-assessments';
-@import '../scss/components/teacher-subject';
-@import '../scss/components/home-work-teacher';
-@import '../scss/components/table';
-@import '../scss/components/teacher-card';
+@import 'components/personal-cabinet-child';
+@import 'components/deposit';
+@import 'components/teacher-class';
+@import 'components/authorization';
+@import 'components/teacher-assessments';
+@import 'components/teacher-subject';
+@import 'components/home-work-teacher';
+@import 'components/table';
+@import 'components/teacher-card';
 .content {
   display: block;
 }

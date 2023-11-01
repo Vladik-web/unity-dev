@@ -26,6 +26,22 @@
 
   &__content-tabs {
     margin-bottom: rem(20);
+    display: flex;
+  }
+
+  &__edit-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--grey-3);
+    display: flex;
+    align-items: center;
+    gap: rem(5);
+
+    svg {
+      width: rem(12);
+      height: rem(12);
+      fill: var(--grey-3);
+    }
   }
 
   ol {
