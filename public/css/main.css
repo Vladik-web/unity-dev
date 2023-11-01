@@ -13318,10 +13318,6 @@ input[type=radio]:checked + label + .content {
   gap: 8.9375rem;
 }
 
-.content {
-  display: block;
-}
-
 @media only screen and (max-width: 87.4875em) {
   .lesson-layout .main .header,
   .lesson-layout .main .content {
