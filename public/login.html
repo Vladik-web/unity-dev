@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -13,15 +13,56 @@
 <script src="js/main.js" defer="defer"></script>
 <title>Вхід</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Document</title>
-</head>
-<body>
-  <section class="login">
-    <div class="container">
-      1
+    <meta property="og:title">
+    <meta property="og:url">
+    <meta property="og:image" content="img/favicon/favicon.svg">
+  </head>
+  <body>
+    <div class="empty-layout">
+      <section class="login">
+        <div class="login__container container">
+          <div class="login__inner">
+            <div class="login__content">
+              <form class="login__form">
+                <div class="login__content-women">
+                  <img class="login__container-img" src="../img/static/women.png" alt="">
+                 </div>
+                <svg class="login__form-svg">
+                  <use xlink:href="/img/sprite.svg#unity"></use>
+                </svg>
+                <h1 class="login__form-title">Вхід</h1>
+                <label class="login__form-lable">
+                  <span class="login__form-subtitle">Пошта</span>
+                  <input class="login__form-input" type="text">
+                  <span class="login__form-subtitle">Пароль</span>
+                  <input class="login__form-input" type="password">
+                </label>
+                <div class="login__form-box">
+                  <label class="login__form__box-lable">
+                    <input class="login__form__box-input" type="checkbox">
+                    <span class="login__form__box-span">Запам’ятати мене</span>
+                  </label>
+                  <a href="#" class="login__form__box-link">Забули пароль?</a>
+                </div>
+                <div class="login__form-button">
+                  <button class="login__form-btn">
+                    <svg class="login__form__btn-svg">
+                      <use xlink:href="/img/sprite.svg#entrance"></use>
+                    </svg>
+                    Увійти
+                  </button>
+                </div>
+                <div class="login__container-hat">
+                  <img class="login__container-img" src="../img/static/hat.png" alt="">
+                </div>
+                <div class="login__container-books">
+                  <img class="login__container-img" src="../img/static/books.png" alt="">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
-</body>
+  </body>
 </html>

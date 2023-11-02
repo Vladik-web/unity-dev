@@ -1,4 +1,134 @@
 .login {
-  // padding: rem(130) 0 rem(204);
+  padding: rem(130) 0 rem(204);
+  background-image: url('../../img/static/logo__bg.svg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #e0ebff;
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: rem(10);
+    padding: rem(50) rem(60);
+    width: rem(540);
+    box-shadow: rem(2) rem(2) rem(8) 0 rgba(0, 0, 0, 10%);
+    background: #fff;
+  }
+
+  &__content-women {
+    position: absolute;
+    left: rem(-152);
+    top: rem(169);
+  }
+
+  &__form-svg {
+    fill: #fe7c11;
+  }
+
+  &__form-title {
+    margin-bottom: rem(30);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: 120%;
+    text-align: center;
+    color: #1c1c1c;
+  }
+
+  &__form-lable {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-subtitle {
+    margin-bottom: rem(10);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 120%;
+    color: #828282;
+  }
+
+  &__form-input {
+    margin-bottom: rem(15);
+    border: none;
+    border-radius: rem(5);
+    padding: rem(11) rem(16);
+    background: #eef4ff;
+  }
+
+  &__form-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(31);
+  }
+
+  &__form__box-lable {
+    display: flex;
+    align-items: flex-start;
+    gap: rem(10);
+  }
+
+  &__form__box-span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 120%;
+    color: #828282;
+  }
+
+  &__form__box-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    text-transform: uppercase;
+    color: #bdbdbd;
+  }
+
+  &__form-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form-btn {
+    display: flex;
+    align-items: center;
+    border-radius: rem(5);
+    padding: rem(10) rem(87);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ffa349;
+    gap: rem(5);
+  }
+
+  &__form__btn-svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #fff;
+  }
+
+  &__container-hat {
+    content: '';
+    position: absolute;
+    right: rem(-63);
+    top: rem(-72);
+  }
+
+  &__container-books {
+    display: none;
+  }
 }
