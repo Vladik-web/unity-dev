@@ -399,13 +399,13 @@
                 </div>
                 <div class="personal-cabinet__docs">
                   <h2 class="personal-cabinet__title">Скани документів</h2>
-                  <ul class="personal-cabinet__classroom-units">
+                  <ul class="personal-cabinet__units">
                     <li class="personal-cabinet__unit document-block">
                       <div class="document-block__top">
-                        <h3 class="document-block__title">Паспорт (1 та 2 сторінки)</h3>
+                        <h3 class="document-block__title">Свідоцтво про народження</h3>
                       </div>
 
-                      <ul class="document-block__box">
+                      <ul class="document-block__list">
                         <li class="document-block__item document">
                           <div class="document__wrapper">
                             <button class="document__remove" type="button" aria-label="Видалити цей документ">
@@ -435,16 +435,21 @@
                             >
                             <small class="document__weight">12 mb</small>
                           </div>
-
+                          <div class="document__error">
+                            <svg class="document__error-icon">
+                              <use xlink:href="img/sprite.svg#warn"></use>
+                            </svg>
+                            Завантажте ще&nbsp;раз
+                          </div>
                         </li>
                       </ul>
                     </li>
                     <li class="personal-cabinet__unit document-block">
                       <div class="document-block__top">
-                        <h3 class="document-block__title">Ідентифікаційний код</h3>
+                        <h3 class="document-block__title">Медична карта</h3>
                       </div>
 
-                      <ul class="document-block__box">
+                      <ul class="document-block__list">
                         <li class="document-block__item document">
                           <div class="box">
                             <div class="document__wrapper">
@@ -462,36 +467,32 @@
                           </div>
                         </li>
                       </ul>
-                    <li class="personal-cabinet__unit document-block">
-                      <div class="document-block__top">
-                        <h3 class="document-block__title">Заява про зарахування до школи</h3>
-                      </div>
-
-                      <ul class="document-block__box">
+                      <ul class="document-block__list">
                         <li class="document-block__item document">
-                          <div class="document__wrapper">
-                            <button class="document__remove" type="button" aria-label="Видалити цей документ">
-                              <svg class="document__remove-svg">
-                                <use xlink:href="img/sprite.svg#remove"></use>
+                          <div class="box">
+                            <div class="document__wrapper">
+                              <button class="document__remove" type="button" aria-label="Видалити цей документ">
+                                <svg class="document__remove-svg">
+                                  <use xlink:href="img/sprite.svg#remove"></use>
+                                </svg>
+                              </button>
+                              <svg class="document__image">
+                                <use xlink:href="img/sprite.svg#avatar-image"></use>
                               </svg>
-                            </button>
-                            <svg class="document__image">
-                              <use xlink:href="img/sprite.svg#avatar-image"></use>
-                            </svg>
-                            <span class="document__title">Фото_27.04.2023</span>
-                            <small class="document__weight">12 mb</small>
+                              <span class="document__title">Фото_27.04.2023</span>
+                              <small class="document__weight">12 mb</small>
+                            </div>
                           </div>
                         </li>
-                        
                       </ul>
                     </li>
 
                     <li class="personal-cabinet__unit document-block">
                       <div class="document-block__top">
-                        <h3 class="document-block__title">Документ, що підтверджує спорідненість з дитиною</h3>
+                        <h3 class="document-block__title">Інші документи</h3>
                       </div>
 
-                      <ul class="document-block__box">
+                      <ul class="document-block__list">
                         <li class="document-block__item document">
                           <div class="document__wrapper">
                             <button class="document__remove" type="button" aria-label="Видалити цей документ">
@@ -506,30 +507,14 @@
                             <small class="document__weight">12 mb</small>
                           </div>
                         </li>
-                        
                       </ul>
                     </li>
-
                     <li class="personal-cabinet__unit document-block">
                       <div class="document-block__top">
-                        <h3 class="document-block__title">Інші документи </h3>
+                        <h3 class="document-block__title">
+                          Додаткова інформація про стан здоров'я дитини (за потреби)
+                        </h3>
                       </div>
-                      <ul class="document-block__box">
-                        <li class="document-block__item document">
-                          <div class="document__wrapper">
-                            <button class="document__remove" type="button" aria-label="Видалити цей документ">
-                              <svg class="document__remove-svg">
-                                <use xlink:href="img/sprite.svg#remove"></use>
-                              </svg>
-                            </button>
-                            <svg class="document__image">
-                              <use xlink:href="img/sprite.svg#avatar-image"></use>
-                            </svg>
-                            <span class="document__title">Фото_27.04.2023</span>
-                            <small class="document__weight">12 mb</small>
-                          </div>
-                        </li>
-                      </ul>
                     </li>
                   </ul>
                 </div>

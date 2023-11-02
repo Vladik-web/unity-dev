@@ -44,7 +44,7 @@
     gap: rem(10);
 
     span {
-      font-family: "Inter", sans-serif;
+      font-family: 'Inter', sans-serif;
       font-weight: 600;
       font-style: normal;
       font-size: rem(24);
@@ -149,7 +149,7 @@
   &__popup__form-title {
     margin-bottom: 30px;
     text-align: center;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 120%;
@@ -177,7 +177,7 @@
     align-items: center;
     border: none;
     background-color: #ffa349;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;

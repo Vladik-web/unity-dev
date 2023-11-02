@@ -210,26 +210,6 @@
                     </div>
                     <button class="load-avatar__add btn-9 btn-10 btn-11">Додати фото</button>
                   </div>
-                  <div class="personal__cabinet__avatar-warning personal__cabinet-heed">
-                    <h1 class="personal-cabinet__avatar-title">
-                      <svg class="document__error-icon">
-                        <use xlink:href="img/sprite.svg#warn"></use>
-                      </svg>
-                      Увага!
-                    </h1>
-                    <p class="personal-cabinet__avatar-text">Фото можна змінити тільки раз на рік</p>
-                  </div>
-                  <div class="personal__cabinet__avatar-warning personal__cabinet-heed">
-                    <h1 class="personal-cabinet__avatar-title">
-                      <svg class="document__error-icon">
-                        <use xlink:href="img/sprite.svg#warn"></use>
-                      </svg>
-                      Увага!
-                    </h1>
-                    <p class="personal-cabinet__avatar-text">
-                      Ви не можете змінити фото, тому що ви вже змінювали його цього року
-                    </p>
-                  </div>
                 </div>
                 <div class="personal-cabinet__block">
                   <ul class="personal-cabinet__list">
@@ -335,9 +315,9 @@
                 <div class="personal-cabinet__box">
                   <h2 class="personal-cabinet__title">Класний керівник</h2>
                   <div class="personal-cabinet__teacher-card">
-                    <div class="personal-cabinet__card-top teacher-card__card-top">
-                      <span class="teacher-card__lesson__top-span">
-                        <img src="../img/static/star.png" alt="">
+                    <div class="personal-cabinet__card-top">
+                      <span class="personal-cabinet__card-span">
+                        <img src="../img/static/star.png" alt="зірочка">
                       </span>
                       <img
                         class="personal-cabinet__card__top-image"
@@ -431,7 +411,7 @@
 
                     <li class="personal-cabinet__unit document-block">
                       <div class="document-block__top">
-                        <h3 class="document-block__title">Заява про зарахування до школи</h3>
+                        <h3 class="document-block__title">Інші документи</h3>
                       </div>
 
                       <ul class="document-block__list">
@@ -450,6 +430,17 @@
                           </div>
                         </li>
                       </ul>
+                    </li>
+                    <li class="personal-cabinet__unit document-block">
+                      <div class="document-block__top">
+                        <h3 class="document-block__title">
+                          Додаткова інформація про стан здоров'я дитини (за потреби)
+                        </h3>
+                      </div>
+                      <div class="document-block__text">
+                        <p>Софія проявляє інтерес до розвитку творчих навичок та участі в групових активностях.</p>
+                        <p>Немає жодних хронічних захворювань або травм.</p>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -524,7 +515,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="marks-table__table table" data-tab-table="І семестр">
+                    <div class="marks-table__table" data-tab-table="І семестр">
                       <div class="table__wrapper">
                         <div class="table__head">
                           <div class="table__row">
@@ -535,26 +526,18 @@
                         </div>
                         <div class="table__body">
                           <div class="table__row">
-                            <div class="table__subject">Алгебра <span class="table__text">СЕМЕСТР</span></div>
+                            <div class="table__subject">
+                              Зарубіжна література <span class="table__text">СЕМЕСТР</span>
+                            </div>
                             <ul class="table__marks">
                               <li class="table__mark">10</li>
                               <li class="table__mark table__mark--control-work">10</li>
                               <li class="table__mark table__mark--thematic">10</li>
                               <li class="table__mark">10</li>
-                              <li class="table__mark">10</li>
-                              <li class="table__mark">10</li>
-                              <li class="table__mark">10</li>
-                              <li class="table__mark">10</li>
-                              <li class="table__mark">10</li>
-                              <li class="table__mark">10</li>
-                              <li class="table__mark">10</li>
-                              <li class="table__mark">10</li>
                             </ul>
-                            <div class="table__total table__total--forecast" data-tippy-content="Прогнозована оцінка">
-                              11
-                            </div>
+                            <div class="table__total" data-tippy-content="Оцінка за семестр">11</div>
                           </div>
-                           <div class="table__row">
+                          <div class="table__row">
                             <div class="table__subject">Інформатика <span class="table__text">СЕМЕСТР</span></div>
                             <ul class="table__marks">
                               <li class="table__mark">10</li>
@@ -592,7 +575,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="marks-table__table table" data-tab-table="ІІ семестр">
+                    <div class="marks-table__table" data-tab-table="ІІ семестр">
                       <div class="table__wrapper">
                         <div class="table__head">
                           <div class="table__row">
@@ -602,35 +585,18 @@
                           </div>
                         </div>
                         <div class="table__body">
-                            <div class="table__subject">
-                              Українська література<span class="table__text">СЕМЕСТР</span>
-                            </div>
+                          <div class="table__row">
+                            <div class="table__subject">Алгебра <span class="table__text">СЕМЕСТР</span></div>
                             <ul class="table__marks">
                               <li class="table__mark">10</li>
                               <li class="table__mark table__mark--control-work">10</li>
                               <li class="table__mark table__mark--thematic">10</li>
-                              <li class="table__mark">10</li>
                             </ul>
-                            <div class="table__total">11</div>
+                            <div class="table__total table__total--forecast">11</div>
                           </div>
                           <div class="table__row">
-                            <div class="table__subject">
-                              Зарубіжна література<span class="table__text">СЕМЕСТР</span>
-                            </div>
+                            <div class="table__subject">Геометрія<span class="table__text">СЕМЕСТР</span></div>
                             <ul class="table__marks">
-                              <li class="table__mark">10</li>
-                              <li class="table__mark table__mark--control-work">10</li>
-                              <li class="table__mark table__mark--thematic">10</li>
-                              <li class="table__mark">10</li>
-                            </ul>
-                            <div class="table__total">11</div>
-                          </div>
-                          <div class="table__row">
-                            <div class="table__subject">Інформатика<span class="table__text">СЕМЕСТР</span></div>
-                            <ul class="table__marks">
-                              <li class="table__mark">10</li>
-                              <li class="table__mark table__mark--control-work">10</li>
-                              <li class="table__mark table__mark--thematic">10</li>
                               <li class="table__mark">10</li>
                             </ul>
                             <div class="table__total">11</div>
@@ -663,7 +629,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="marks-table__table table table--timesheet" data-tab-table="Табель">
+                    <div class="marks-table__table table--timesheet" data-tab-table="Табель">
                       <div class="table__wrapper">
                         <div class="table__head">
                           <div class="table__row">
@@ -677,7 +643,7 @@
                           </div>
                         </div>
                         <div class="table__body">
-                          <!-- <div class="table__row">
+                          <div class="table__row">
                             <div class="table__subject">Алгебра <span class="table__text">СЕМЕСТР</span></div>
                             <ul class="table__marks">
                               <li class="table__semester">
@@ -693,8 +659,8 @@
                               <span class="table__info">Річна</span>
                               <span class="table__num table__num--accent">10</span>
                             </div>
-                          </div> -->
-                          <!-- <div class="table__row">
+                          </div>
+                          <div class="table__row">
                             <div class="table__subject">Геометрія</div>
                             <ul class="table__marks">
                               <li class="table__semester">
@@ -710,228 +676,7 @@
                               <span class="table__info">Річна</span>
                               <span class="table__num table__num--accent">10</span>
                             </div>
-                          </div> -->
-                          <!-- <div class="table__row">
-                            <div class="table__subject">Біологія</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div> -->
-                          <!-- <div class="table__row">
-                            <div class="table__subject">Хімія</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div> -->
-                          <!-- <div class="table__row">
-                            <div class="table__subject">Англійська мова</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div> -->
-                          <div class="table__row">
-                            <div class="table__subject">Фізична культура</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
                           </div>
-                          <div class="table__row">
-                            <div class="table__subject">Мистецтво</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div>
-                          <!-- <div class="table__row">
-                            <div class="table__subject">Географія</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div> -->
-                          <!-- <div class="table__row">
-                            <div class="table__subject">Історія України</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div> -->
-                          <!-- <div class="table__row">
-                            <div class="table__subject">Всесвітня історія</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div> -->
-                          <!-- <div class="table__row">
-                            <div class="table__subject">Фізика</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div> -->
-                          <!-- <div class="table__row">
-                            <div class="table__subject">Українська мова</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div> -->
-                          <!-- <div class="table__row">
-                            <div class="table__subject">Українська література</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div> -->
-                           <!-- <div class="table__row">
-                            <div class="table__subject">Зарубіжна література</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div>  -->
-                          <!-- <div class="table__row">
-                            <div class="table__subject">Інформатика</div>
-                            <ul class="table__marks">
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                              <li class="table__semester">
-                                <span class="table__info">І семестр</span>
-                                <span class="table__num">10</span>
-                              </li>
-                            </ul>
-                            <div class="table__total">
-                              <span class="table__info">Річна</span>
-                              <span class="table__num table__num--accent">10</span>
-                            </div>
-                          </div> -->
                         </div>
                       </div>
                     </div>
@@ -939,37 +684,6 @@
                 </div>
               </div>
               <!--  -->
-              <!-- tab 2  data-tab-content="Прогнозована оцінка"-->
-              <!-- <div class="graph">
-                <div class="graph__inner">
-                  <div class="graph__top">
-                    <div class="graph__left">
-                      <h2 class="graph__title">Прогнозована оцінка по предметам</h2>
-                      <div class="graph__content-tabs content-tabs content-tabs--small">
-                        <div class="content-tabs__wrapper">
-                          <ul class="content-tabs__list">
-                            <li class="content-tabs__item">
-                              <button class="content-tabs__btn content-tabs__btn--active" data-tab="І семестр">
-                                І семестр
-                              </button>
-                            </li>
-                            <li class="content-tabs__item">
-                              <button class="content-tabs__btn" data-tab="ІІ семестр">ІІ семестр</button>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="graph__bottom">
-                    <canvas id="graph"></canvas>
-                  </div>
-                </div>
-                <div class="graph__box" id="numbers-container"></div>
-                <div class="graph__bottom-adap">
-                  <canvas id="graph-adap" style="height: 827px"></canvas>
-                </div>
-              </div> -->
               <!-- data-tab-content="Статистика" -->
               <div class="statistics statistics--big">
                 <div class="teacher-card__sctatistic">

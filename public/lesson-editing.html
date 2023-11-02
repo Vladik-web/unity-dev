@@ -19,7 +19,104 @@
   </head>
   <body class="body-mob-fixed">
     <div class="lesson-layout">
-      <aside class="aside aside--main aside--hide">
+      <div class="modal wants-to-finish">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__main">
+        <button class="modal__close">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <svg class="modal__logo">
+          <use xlink:href="img/sprite.svg#full-logo"></use>
+        </svg>
+        <h2 class="modal__title">Ви впевнені, що хочете закінчити?</h2>
+
+        <div class="modal__wrapper">
+          <p class="modal__wrapper__wants-text">
+            Ваші зміни врахуються тільки якщо вони пройдуть можерацію. Рішення про вистовок модерації ви отримаєте
+            сповіщенням в своєму кабінеті.
+          </p>
+          <p class="modal__wrapper__wants-text">
+            Якщо через 24 годин після відправлення змін ви не отримали сповіщення про рішення модерації, зверніться до
+            служби підтримки.
+          </p>
+        </div>
+        <div class="modal__wrapper__wants-button">
+          <button class="btn btn--accent">зберегти і відправити на модерацію</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- модальное окно на клик по кно"" -->
+      <div class="modal go-out">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__main">
+        <button class="modal__close">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <svg class="modal__logo">
+          <use xlink:href="img/sprite.svg#full-logo"></use>
+        </svg>
+        <h2 class="modal__title">Ви впевнені, що хочете вийти?</h2>
+
+        <div class="modal__wrapper">
+          <p class="modal__wrapper__wants-text">
+            Всі внесені зміни не будуть збережені
+          </p>
+        </div>
+        <div class="modal__wrapper__wants-button">
+          <button class="modal__wrapper__wants-btn btn btn--accent">ОК</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+       <!-- модальное окно на клик по кнопке  "додати посилання"-->
+      <div class="modal modal--big add-link">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__main">
+        <button class="modal__close">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <h2 class="modal__title">Додати посилання</h2>
+        <div class="modal__link-wrapper">
+          <form class="modal__link-form">
+            <label class="modal__link-label">
+              <span class="modal__link__lable-span"> Посилання </span>
+              <svg class="modal__link__lable-svg">
+                <use xlink:href="/img/sprite.svg#link"></use>
+              </svg>
+              <input class="modal__link__label-input" type="text" placeholder="Вставте посилання">
+            </label>
+            <label class="modal__link-label">
+              <span class="modal__link__lable-span"> Коментар до роботи </span>
+              <textarea class="modal__link-texttarea" placeholder="Мій коментар"></textarea>
+            </label>
+          </form>
+        </div>
+        <div class="modal__link-button">
+          <button class="modal__link-btn">Зберегти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+       <aside class="aside aside--main aside--hide">
   <div class="aside__wrapper">
     <button class="aside__btn" id="aside-btn">
       <svg class="aside__btn-svg">
@@ -587,6 +684,12 @@
 
                       <div class="lesson-section__section">
                         <h2 class="lesson-section__title">Матеріали уроку:</h2>
+                        <button class="lesson-section__next lesson-section__teacher-btn btn-14 btn btn--trans">
+                          <svg class="btn__icon">
+                            <use xlink:href="/img/sprite.svg#download"></use>
+                          </svg>
+                          Завантажити
+                        </button>
                         <div class="lesson-section__document-block document-block">
                           <ul class="document-block__list">
                             <li class="document-block__item document">
@@ -632,6 +735,16 @@
                               Множини чисел так вiдносяться одна до одної: множина натуральних чисел ℕ включена до
                               множини цiлих чисел ℤ.
                             </p>
+                            <button class="lesson-section__description-teacher">
+                              <svg class="header__title-svg">
+                                <use xlink:href="/img/sprite.svg#pensil"></use>
+                              </svg>
+                            </button>
+                            <button class="lesson-section__description-teacher">
+                              <svg class="header__title-svg">
+                                <use xlink:href="/img/sprite.svg#delete"></use>
+                              </svg>
+                            </button>
                           </li>
                           <li class="lesson-section__unit">
                             <a href="#" class="lesson-section__link">
@@ -643,6 +756,16 @@
                               множини цiлих чисел ℤ, яка, своєю чергою, включена до множини рацiональних чисел ℚ, а та,
                               нарештi, включена до множини дiйсних чисел ℝ.
                             </p>
+                            <button class="lesson-section__description-teacher">
+                              <svg class="header__title-svg">
+                                <use xlink:href="/img/sprite.svg#pensil"></use>
+                              </svg>
+                            </button>
+                            <button class="lesson-section__description-teacher">
+                              <svg class="header__title-svg">
+                                <use xlink:href="/img/sprite.svg#delete"></use>
+                              </svg>
+                            </button>
                           </li>
                         </ul>
                       </div>

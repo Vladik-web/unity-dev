@@ -38,7 +38,13 @@
     margin-bottom: rem(60);
   }
 
+  &__card-span {
+    position: absolute;
+    top: rem(2);
+  }
+
   &__card-top {
+    position: relative;
     display: flex;
     align-items: center;
     gap: rem(8);
@@ -125,6 +131,10 @@
     font-style: normal;
     font-size: rem(16);
     line-height: normal;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
   }
 
   &__edit {
@@ -172,6 +182,48 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  &__save {
+    @include flex-all-center;
+
+    width: rem(42);
+    height: rem(36);
+
+    background-color: var(--orange-400);
+    border-top-right-radius: rem(5);
+    border-bottom-right-radius: rem(5);
+
+    & svg {
+      width: rem(14);
+      height: rem(14);
+      fill: var(--white);
+    }
+  }
+
+  .auth-content__block {
+    margin-right: rem(60);
+  }
+}
+
+.personal-cabinet__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personal-cabinet__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-cabinet__input {
+  width: 100%;
+  padding: 8px 16px;
+
+  background-color: #eef4ff;
+  border-color: transparent;
+  border-top-left-radius: rem(5);
+  border-bottom-left-radius: rem(5);
 }
 
 .personal-cabinet__avatar-text {
@@ -192,7 +244,7 @@
   border-radius: 5px;
   padding: 8px 16px;
   max-width: 345px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
@@ -349,7 +401,7 @@
         margin-left: rem(-12);
         border-radius: rem(10);
         padding: 0 rem(12);
-        background-color: var(--blue-50);
+        // background-color: var(--blue-50);
         gap: rem(16);
 
         &::before {
@@ -377,13 +429,17 @@
     &__units {
       margin-right: 0;
     }
+
+    .auth-content__block {
+      margin-right: 0;
+    }
   }
 }
 
 .personal-cabinet__avatar-title {
   display: flex;
   margin-bottom: 4.5px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 120%;
@@ -392,7 +448,7 @@
 }
 
 .personal-cabinet__avatar-text {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
