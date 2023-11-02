@@ -12331,6 +12331,13 @@ input[type=radio]:checked + label + .content {
   max-width: 26.25rem;
 }
 
+.personal-cabinet__document-bock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8.3125rem;
+}
+
 .personal-cabinet__block {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12340,11 +12347,11 @@ input[type=radio]:checked + label + .content {
 }
 
 .personal-cabinet__teacher-card {
+  margin-bottom: 3.75rem;
   border: 0.0625rem solid #e0e0e0;
   border-radius: 0.625rem;
   padding: 0.75rem 1rem;
   max-width: 26.25rem;
-  margin-bottom: 3.75rem;
 }
 
 .personal-cabinet__card-span {
@@ -12360,8 +12367,8 @@ input[type=radio]:checked + label + .content {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 0.5rem;
   margin-bottom: 0.75rem;
+  gap: 0.5rem;
 }
 
 .personal-cabinet__card__top-image {
@@ -12376,6 +12383,10 @@ input[type=radio]:checked + label + .content {
   font-size: 0.875rem;
   line-height: 120%;
   color: #1c1c1c;
+}
+
+.personal-cabinet__document-item {
+  max-width: 12.8125rem;
 }
 
 .personal-cabinet__card__top__info-job {
@@ -12448,13 +12459,13 @@ input[type=radio]:checked + label + .content {
 }
 
 .personal-cabinet__value {
+  outline: none;
+  border: none;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
   line-height: normal;
-  border: none;
-  outline: none;
   background-color: transparent;
 }
 
@@ -12513,11 +12524,11 @@ input[type=radio]:checked + label + .content {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-top-right-radius: 0.3125rem;
+  border-bottom-right-radius: 0.3125rem;
   width: 2.625rem;
   height: 2.25rem;
   background-color: var(--orange-400);
-  border-top-right-radius: 0.3125rem;
-  border-bottom-right-radius: 0.3125rem;
 }
 
 .personal-cabinet__save svg {
@@ -12528,6 +12539,12 @@ input[type=radio]:checked + label + .content {
 
 .personal-cabinet .auth-content__block {
   margin-right: 3.75rem;
+}
+
+.personal-cabinet__block-utilits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem 0;
 }
 
 .personal-cabinet__info {
@@ -12553,12 +12570,12 @@ input[type=radio]:checked + label + .content {
 }
 
 .personal-cabinet__input {
-  width: 100%;
-  padding: 8px 16px;
-  background-color: #eef4ff;
   border-color: transparent;
   border-top-left-radius: 0.3125rem;
   border-bottom-left-radius: 0.3125rem;
+  padding: 8px 16px;
+  width: 100%;
+  background-color: #eef4ff;
 }
 
 .personal-cabinet__avatar-text {
@@ -13694,6 +13711,10 @@ input[type=radio]:checked + label + .content {
   display: -ms-flexbox;
   display: flex;
   gap: 8.9375rem;
+}
+
+.login {
+  background-color: #e0ebff;
 }
 
 @media screen and (min-width: 992px) {
