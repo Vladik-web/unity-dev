@@ -1,5 +1,8 @@
 .login {
-  padding: rem(130) 0 rem(204);
+  position: relative;
+  z-index: -1;
+  padding: rem(202) 0 rem(204);
+  height: 100%;
   background-image: url('../../img/static/logo__bg.svg');
   background-position: bottom;
   background-size: cover;
@@ -17,21 +20,29 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     border-radius: rem(10);
-    padding: rem(50) rem(60);
+    padding: rem(60) rem(50);
     width: rem(540);
     box-shadow: rem(2) rem(2) rem(8) 0 rgba(0, 0, 0, 10%);
-    background: #fff;
+    background-color: #fff;
   }
 
-  &__content-women {
+  &__form-women {
     position: absolute;
-    left: rem(-152);
-    top: rem(169);
+    left: rem(-155);
+    top: rem(192);
   }
 
-  &__form-svg {
-    fill: #fe7c11;
+  &__form-hat {
+    position: absolute;
+    right: rem(-61);
+    top: rem(-73);
+  }
+
+  &__form-img {
+    display: flex;
+    justify-content: center;
   }
 
   &__form-title {
@@ -44,42 +55,41 @@
     color: #1c1c1c;
   }
 
-  &__form-lable {
+  &__form-label {
     display: flex;
     flex-direction: column;
-  }
-
-  &__form-subtitle {
-    margin-bottom: rem(10);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: rem(16);
     line-height: 120%;
     color: #828282;
   }
 
-  &__form-input {
+  &__form__label-text {
+    margin-bottom: rem(10);
+  }
+
+  &__form__lable-input {
     margin-bottom: rem(15);
     border: none;
     border-radius: rem(5);
-    padding: rem(11) rem(16);
+    padding: rem(8) rem(16);
     background: #eef4ff;
   }
 
-  &__form-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: rem(31);
-  }
-
-  &__form__box-lable {
+  &__form__bottom-label {
     display: flex;
     align-items: flex-start;
     gap: rem(10);
   }
 
-  &__form__box-span {
+  &__form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__form__bottom-span {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: rem(14);
@@ -87,7 +97,7 @@
     color: #828282;
   }
 
-  &__form__box-link {
+  &__form__bottom-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: rem(14);
@@ -98,13 +108,14 @@
   &__form-button {
     display: flex;
     justify-content: center;
+    margin-top: rem(31);
   }
 
   &__form-btn {
     display: flex;
     align-items: center;
     border-radius: rem(5);
-    padding: rem(10) rem(87);
+    padding: rem(15) rem(87);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: rem(14);
@@ -115,20 +126,16 @@
     gap: rem(5);
   }
 
-  &__form__btn-svg {
+  &__form-svg {
     width: rem(20);
     height: rem(20);
     fill: #fff;
   }
 
-  &__container-hat {
-    content: '';
+  &__form-book {
     position: absolute;
-    right: rem(-63);
-    top: rem(-72);
-  }
-
-  &__container-books {
-    display: none;
+    right: -40%;
+    bottom: 5%;
+    z-index: -1;
   }
 }
