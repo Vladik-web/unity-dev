@@ -336,6 +336,7 @@
       gap: rem(30) rem(15);
     }
   }
+
   .schedule__block-text {
     padding-bottom: rem(10);
   }
@@ -379,4 +380,25 @@
       }
     }
   }
+}
+
+.lesson__right-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: rem(14);
+  line-height: 120%;
+  color: #828282;
+}
+
+.lesson__block {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: rem(12);
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  background-color: rgba(125, 152, 246, 0.10);
+  border-radius: rem(25);
+  padding: rem(4);
 }

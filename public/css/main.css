@@ -4264,7 +4264,7 @@ body .simplebar-track {
   align-items: center;
   grid-column: 2/4;
   grid-row: 1/2;
-  grid-template-columns: auto 0.25rem 1fr auto;
+  grid-template-columns: auto 1.5625rem 1fr auto;
   border-radius: 0.3125rem;
   padding: 0.5rem;
   background-color: var(--bg);
@@ -5088,33 +5088,73 @@ body .simplebar-track {
   gap: 2rem;
 }
 
-.ck.ck-toolbar {
-  border-color: var(--grey-5) !important;
-  border-top-left-radius: 5px !important;
-  border-top-right-radius: 5px !important;
+.editor {
+  width: 100%;
 }
 
-.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused),
-.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
-  border-color: var(--blue-50) !important;
-  border-top-color: var(--grey-5) !important;
-  border-bottom-left-radius: 5px !important;
-  border-bottom-right-radius: 5px !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  min-height: 140px !important;
-  background-color: var(--blue-50) !important;
+.editor__block {
+  border-bottom-right-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+  min-height: 10.625rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  background-color: var(--blue-50);
 }
 
-.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) p,
-.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) p {
-  font-size: 14px !important;
-  color: var(--black) !important;
+.editor__block .ql-editor.ql-blank::before {
+  font-style: normal;
 }
 
-.ck .ck-placeholder {
-  font-size: 14px !important;
-  color: var(--grey-3) !important;
+.editor__block.ql-container.ql-snow {
+  border: none;
+}
+
+.editor .ql-toolbar.ql-snow {
+  border-color: var(--grey-5);
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  padding: 0;
+}
+
+.editor .ql-snow.ql-toolbar button {
+  border-right: 0.0625rem solid var(--grey-5);
+  padding: 0.375rem 0.625rem;
+  width: 2.25rem;
+  height: 1.875rem;
+}
+
+.editor .ql-snow .ql-picker {
+  border-right: 0.0625rem solid var(--grey-5);
+  padding: 0.3125rem 0.4375rem;
+  width: 2.25rem;
+  height: 1.875rem;
+}
+
+.editor .ql-snow .ql-color-picker .ql-picker-label {
+  padding: 0;
+}
+
+.editor .ql-snow .ql-stroke {
+  stroke: var(--grey-4);
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
+}
+
+.editor .ql-snow .ql-fill {
+  fill: var(--grey-4);
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
+}
+
+.editor .ql-snow.ql-toolbar button:hover .ql-fill {
+  fill: var(--blue-400);
+}
+
+.editor .ql-snow.ql-toolbar button:hover .ql-stroke {
+  stroke: var(--blue-400);
 }
 
 .subject-card {
@@ -6476,6 +6516,75 @@ body .simplebar-track {
 .persoal__cabinet-heed {
   padding: 12px 12px;
   background-color: #fff8ed;
+}
+
+.editor-teacher {
+  width: 100%;
+}
+
+.editor-teacher__block {
+  border-bottom-right-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+  min-height: 10.625rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  background-color: var(--blue-50);
+}
+
+.editor-teacher__block .ql-editor.ql-blank::before {
+  font-style: normal;
+}
+
+.editor-teacher__block.ql-container.ql-snow {
+  border: none;
+}
+
+.editor-teacher .ql-toolbar.ql-snow {
+  border-color: var(--grey-5);
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  padding: 0;
+}
+
+.editor-teacher .ql-snow.ql-toolbar button {
+  border-right: 0.0625rem solid var(--grey-5);
+  padding: 0.375rem 0.625rem;
+  width: 2.25rem;
+  height: 1.875rem;
+}
+
+.editor-teacher .ql-snow .ql-picker {
+  border-right: 0.0625rem solid var(--grey-5);
+  padding: 0.3125rem 0.4375rem;
+  width: 2.25rem;
+  height: 1.875rem;
+}
+
+.editor-teacher .ql-snow .ql-color-picker .ql-picker-label {
+  padding: 0;
+}
+
+.editor-teacher .ql-snow .ql-stroke {
+  stroke: var(--grey-4);
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
+}
+
+.editor-teacher .ql-snow .ql-fill {
+  fill: var(--grey-4);
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
+}
+
+.editor-teacher .ql-snow.ql-toolbar button:hover .ql-fill {
+  fill: var(--blue-400);
+}
+
+.editor-teacher .ql-snow.ql-toolbar button:hover .ql-stroke {
+  stroke: var(--blue-400);
 }
 
 .header__left {
@@ -9039,6 +9148,27 @@ input[type=radio]:checked + label + .content {
 
 .main.main--active .schedule__inner {
   grid-template-columns: 1fr 20.125rem;
+}
+
+.lesson__right-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: #828282;
+}
+
+.lesson__block {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  background-color: rgba(125, 152, 246, 0.1);
+  border-radius: 1.5625rem;
+  padding: 0.25rem;
 }
 
 .tip {
