@@ -21,6 +21,10 @@
     }
   }
 
+  &__teacher-btn {
+    margin-bottom: rem(32);
+  }
+
   &__wrapper {
     min-height: 0;
   }
@@ -46,6 +50,17 @@
     text-transform: uppercase;
     color: #bdbdbd;
     gap: 8px;
+  }
+
+  &__nav-grade {
+    border: rem(1) solid #e0ebff;
+    border-radius: rem(5);
+    padding: rem(4) rem(8);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 120%;
+    color: #1c1c1c;
   }
 
   &__info {
@@ -290,9 +305,12 @@
   }
 
   &__content__nav-list-item {
-    display: grid;
-    align-items: center; /* Выравнивание элементов по вертикали */
-    grid-template-columns: 9fr 6fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: rem(1) solid #c8d9fd;
+    border-radius: rem(5);
+    padding: rem(16) rem(62) rem(16) rem(16);
   }
 
   &__class-room-svg {
@@ -301,6 +319,7 @@
     width: rem(19);
     height: rem(18);
     fill: #828282;
+    opacity: 0;
   }
 
   &__menu-big {
@@ -317,7 +336,7 @@
 
   &__content-nav {
     display: grid;
-    grid-template-columns: 9fr 6fr;
+    grid-template-columns: 14fr 4% 8%;
     margin-bottom: rem(16);
   }
 
@@ -331,8 +350,8 @@
   }
 
   &__info-top {
-    display: grid;
-    grid-template-columns: 14fr 3fr;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: rem(16);
   }
 
@@ -392,17 +411,30 @@
     border: rem(1) solid #e0ebff;
     border-radius: rem(5);
     width: rem(24);
-    height: rem(25);
+
+    // height: rem(25);
     text-align: center;
   }
 
   &__class-room-input {
+    position: relative;
     border: none;
     border-radius: rem(5);
     padding: rem(8) rem(16) rem(8) rem(56);
     width: rem(420);
     height: rem(40);
+    cursor: pointer;
+  }
+
+  &__class-room-input:hover {
+    background-color: #eef4ff;
+    transition: all 0.5s;
+  }
+
+  &__class-room-input:hover ~ svg {
     background: #eef4ff;
+    opacity: 1;
+    transition: all 0.5s;
   }
 
   &__class-room {
@@ -413,6 +445,7 @@
   &__class-link-svg {
     position: absolute;
     left: rem(16);
+    z-index: 1;
     width: rem(24);
     height: rem(24);
     fill: #bdbdbd;
@@ -464,11 +497,36 @@
     line-height: 120%;
     color: #828282;
   }
+
   &__btn-svg {
-    fill: #FFFFFF;
     width: rem(16);
     height: rem(16);
+    fill: #fff;
   }
+
+  &__test {
+    margin-top: 60px;
+  }
+
+  &__print {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(32);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--grey-4);
+    gap: rem(8);
+
+    &-svg {
+      width: rem(20);
+      height: rem(20);
+      fill: none;
+      stroke: var(--grey-4);
+      stroke-width: rem(1.25);
+    }
+  }
+
   &__text,
   &__work {
     color: var(--black);
@@ -615,29 +673,6 @@
       list-style: unset;
     }
   }
-
-  &__test {
-    margin-top: 60px;
-  }
-
-  &__print {
-    display: flex;
-    align-items: center;
-    gap: rem(8);
-    margin-bottom: rem(32);
-    text-transform: uppercase;
-    color: var(--grey-4);
-    font-size: 14px;
-    font-weight: 500;
-
-    &-svg {
-      width: rem(20);
-      height: rem(20);
-      fill: none;
-      stroke: var(--grey-4);
-      stroke-width: rem(1.25);
-    }
-  }
 }
 
 //стили сценария прохождения теста
@@ -646,6 +681,13 @@
   background: #bdbdbd;
 }
 
+@include mq('xxxl') {
+  .lesson-section__content-nav {
+    grid-template-columns: 15fr 4% 11%;
+  }
+
+ 
+}
 
 @include mq('xl') {
   .content-tabs__edit__btn {
@@ -1023,12 +1065,6 @@
   fill: #828282;
 }
 
-// .lesson-section__marks-svg {
-//   width: 16px;
-//   height: 16px;
-//   fill: #828282;
-// }
-
 //
 .content-tabs__edit__btn {
   display: flex;
@@ -1081,7 +1117,7 @@
 }
 
 .lesson__section__info-name {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
@@ -1096,24 +1132,410 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: rem(1) solid #ffa349;
-  border-radius: rem(5);
+  border: none;
+  border-radius: rem(6);
   padding: rem(8) rem(16);
-  width: 195px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: 120%;
+
+  // display: block;
+  text-align: left;
+  background-color: #eef4ff;
+  gap: 12px;
+}
+
+.dropdawn__list {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 1;
+  display: none;
+  overflow-y: auto;
+
+  // background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  padding: 12px 16px !important;
+  height: 280px;
+}
+
+.dropdawn__list::-webkit-scrollbar {
+  border: 10px;
+  width: 3px;
+  height: 83px;
+}
+
+.dropdawn__list::-webkit-scrollbar-thumb {
+  background-color: #a6c0fb;
+}
+
+.dropdawn__list-item {
+  margin-bottom: 8px;
+  border-radius: 3px;
+  padding: 8px;
+  width: 80px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  background-color: #eef4ff;
+  cursor: pointer;
+}
+
+.dropdawn__list-item:hover {
+  background-color: #c8d9fd;
+}
+
+.dropdawn__list--visible {
+  display: block;
+}
+
+.dropdown__ipnut-hidden {
+  display: none;
+}
+
+.lesson__section__info-title {
+  margin-bottom: rem(32);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.dropdown__nav {
+  display: flex;
+  align-items: stretch;
+}
+
+.dropdawn__button-svg {
+  width: rem(10);
+  height: rem(5);
+  fill: #828282;
+}
+
+.lesson__section__info-input {
+  border: rem(1) solid #c8d9fd;
+  border-radius: rem(5);
+  width: rem(24);
+  height: rem(24);
+}
+
+.dropdawn__button-check {
+  height: rem(41);
+}
+
+.lesson__section__info-grade {
+  display: flex;
+  align-items: center;
+  border: rem(1) solid #e0ebff;
+  border-radius: rem(5);
+  padding: rem(4) rem(8);
+  max-width: rem(60);
+  gap: rem(8);
+}
+
+.lesson__section__info-grade-svg {
+  border-radius: rem(50);
+  width: rem(11);
+  height: rem(11);
+  fill: #7d98f6;
+  background: #eef4ff;
+}
+
+.content-tabs__edit {
+  font-weight: 500;
+  font-size: rem(14);
+  text-transform: uppercase;
+  color: #828282;
+}
+
+.content-tabs__link {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: #1c1c1c;
-  gap: rem(8);
-  text-edge: cap;
+  color: #828282;
 }
 
-.lesson-section__marks-svg {
-  width: 16px;
-  height: 16px;
-  fill: #828282;
+// style home work
+.lesson-section__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.lesson-section__nav {
+  display: flex;
+  gap: rem(10);
+}
+
+.lesson__section__expectation-input {
+  border: rem(1) solid #c8d9fd;
+  border-radius: rem(5);
+  width: rem(24);
+  height: rem(25);
+  text-align: center;
+  background: #fff;
+}
+
+.lesson__section__nav-btn {
+  border: rem(1) solid #bdbdbd;
+  border-radius: rem(5);
+  padding: rem(7.5) rem(12);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+
+.lesson__section-options--tab01 {
+  display: grid;
+  grid-template-columns: 1fr 48%;
+  margin-bottom: rem(16);
+}
+
+.lesson__section-options {
+  display: grid;
+  grid-template-columns: 1fr 26% 1fr;
+  margin-bottom: rem(16);
+}
+
+.lesson__section__options-item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  color: #828282;
+}
+
+.lesson__section__expectation-list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12);
+}
+
+.lesson__section__expectation-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: rem(1) solid #c8d9fd;
+  border-radius: rem(5);
+  padding: rem(16);
+}
+
+.lesson__section-expectation {
+  display: none;
+}
+
+.lesson__section-expectation:target {
+  display: block;
+}
+
+.active {
+  border-color: #7d98f6;
+  color: #7d98f6;
+}
+
+.lesson__section--message {
+  border-radius: rem(5);
+  padding: rem(8) rem(16);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: rem(14);
+  text-transform: uppercase;
+  color: #bdbdbd;
+  background: #f2f2f2;
+}
+
+.lesson__section__expectation-profil {
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+
+  p {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #1c1c1c;
+  }
+}
+
+// style independent work
+
+.lesson-section .lesson-section__lable {
+  position: relative;
+
+  p {
+    margin-bottom: rem(8);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 120%;
+    color: #bdbdbd;
+  }
+}
+
+.lesson-section__class-room-btn {
+  border-radius: 0 rem(5) rem(5) 0;
+  padding: rem(16) rem(16);
+  background: #ffa349;
+}
+
+.lesson-section__class-check {
+  width: rem(16);
+  height: rem(16);
+  fill: #fff;
 }
 
 //
+.lesson-section__text__box-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: rem(34);
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #1c1c1c;
+  }
+}
+
+.tabs {
+  display: flex;
+}
+
+.lesson-section__text-tabs {
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+}
+
+.tab {
+  border: rem(1) solid #bdbdbd;
+  border-radius: rem(5);
+  padding: rem(4) rem(12);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: 120%;
+  color: #bdbdbd;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-color: #7d98f6;
+  color: #7d98f6;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.lesson__section__expectation-img {
+  max-width: rem(320);
+}
+
+.lesson-section__content-nav-item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: rem(13);
+  line-height: 120%;
+  color: #828282;
+}
+
+.lesson-section__content-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12);
+}
+
+.lesson__section-nav-content {
+  display: flex;
+  align-items: center;
+  gap: rem(60);
+}
+
+.lesson__section__nav-content-btn {
+  border: rem(1) solid #ffa349;
+  border-radius: rem(5);
+  padding: rem(8) rem(16);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: rem(14);
+  text-transform: uppercase;
+  color: #1c1c1c;
+}
+
+.lesson__section-nav-box {
+  display: flex;
+  border: 1px solid  #e0ebff;
+  border-radius: rem(5);
+  padding: rem(4) rem(8);
+  gap: rem(8);
+}
+
+.lesson__section__nav-box-svg {
+  width: rem(11);
+  height: rem(11);
+  fill: #7d98f6;
+}
+
+.class__room--active {
+  width: rem(492);
+}
+
+.lesson__section-nav-content {
+  display: flex;
+  align-items: center; /* Выравнивание элементов по вертикали */
+  justify-content: space-between; /* Распределение пространства между элементами */
+}
+
+.lesson__section__nav-content-btn {
+  margin-left: auto; /* Перемещение кнопки вправо (в самый конец) */
+}
+
+.lesson-section__case-btn {
+  opacity: 0.5;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content-item {
+  display: none;
+}
+
+.tab-content-item.active {
+  display: block;
+}
+
+.lesson__section__nav-link.active {
+  border-color: #7d98f6;
+  color: #7d98f6;
+  background-color: #fff;
+}
+
+.lesson__section__nav-link {
+  border: rem(1) solid  #bdbdbd;
+  border-radius: rem(5);
+  padding: rem(4) rem(12);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: 120%;
+  color: #bdbdbd;
+  background-color: #fff;
+}
