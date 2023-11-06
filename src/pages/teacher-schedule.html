@@ -1381,208 +1381,445 @@
                   </div>
                 </div>
                 <div class="schedule-table__block">
-                  <div class="schedule-table__top">
-                    <div class="schedule-table__grid">
-                      <div class="schedule-table__day schedule-table__day--current">
-                        Понеділок
-                        <span class="schedule-table__day-short">П</span>
+                  <div class="week__inner">
+                    <div class="week__schedule">
+                      <div class="week__top">
+                        <ul class="week__list">
+                          <li class="week__item">Понеділок</li>
+                          <li class="week__item">Вівторок</li>
+                          <li class="week__item">Середа</li>
+                          <li class="week__item">Четверг</li>
+                          <li class="week__item">П’ятниця</li>
+                          <li class="week__item">Субота</li>
+                          <li class="week__item">Неділя</li>
+                        </ul>
                       </div>
-                      <div class="schedule-table__day">Вівторок <span class="schedule-table__day-short">В</span></div>
-                      <div class="schedule-table__day">Середа <span class="schedule-table__day-short">С</span></div>
-                      <div class="schedule-table__day">Четверг <span class="schedule-table__day-short">Ч</span></div>
-                      <div class="schedule-table__day">П’ятниця <span class="schedule-table__day-short">П</span></div>
-                      <div class="schedule-table__day schedule-table__day--off">
-                        Субота <span class="schedule-table__day-short">С</span>
-                      </div>
-                      <div class="schedule-table__day schedule-table__day--off">
-                        Неділя <span class="schedule-table__day-short">Н</span>
-                      </div>
-                    </div>
-                  </div>
-                  <ul class="schedule-table__content">
-                    @@for (var i = 0; i < 5; i++) {
-                    <li class="schedule-table__item">
-                      <div class="schedule-table__head">
-                        <div class="schedule-table__line"></div>
-                      </div>
-
-                      <div class="schedule-table__main">
-                        <ul class="schedule-table__grid">
-                          @@for (var i = 0; i < 6; i++) {
-                          <li class="schedule-table__lessons-list lessons-schedule">
-                            <div class="lessons-schedule__wrapper">
-                              <span class="lessons-schedule__date">11</span>
-                              <ul class="lessons-schedule__list">
-                                <li class="lessons-schedule__label lesson-label lesson-label--purple">
-                                  <span>Укр.мов</span>
-                                  <time class="lesson-label__time">08:35</time>
+                      <div class="week__center">
+                        <ul class="week__list">
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">01</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
                                 </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--red">
-                                  <span>Математика</span>
-                                  <time class="lesson-label__time">09:35</time>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
                                 </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--orange">
-                                  <span>Фізкультура</span>
-                                  <time class="lesson-label__time">10:35</time>
-                                </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                  <span>Історія</span>
-                                  <time class="lesson-label__time">11:35</time>
-                                </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                  <span>Історія</span>
-                                  <time class="lesson-label__time">11:35</time>
-                                </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                  <span>Історія</span>
-                                  <time class="lesson-label__time">11:35</time>
-                                </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                  <span>Історія</span>
-                                  <time class="lesson-label__time">11:35</time>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
                                 </li>
                               </ul>
-                              <button class="lessons-schedule__more">+ ще 2 курса</button>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">02</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">03</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">04</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">05</span>
+                              <ul class="week__box-list week__box--green">
+                                <li class="week__box-item"><p class="week__block-text">Географія <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">06</span>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">07</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="week__list">
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">08</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">09</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul> 
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">10</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item week__box--white"><p class="week__block-text">Курс такой-то</p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul> 
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span week__box--day">11</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
 
-                              <div class="lessons-schedule__overlay" style="display: none">
-                                <div class="lessons-schedule__modal">
-                                  <time class="lessons-schedule__time">13.06.2023</time>
-                                  <div class="lessons-schedule__block">
-                                    <h2 class="lessons-schedule__title">Заняття</h2>
-                                    <ul class="lessons-schedule__list">
-                                      <li class="lessons-schedule__label lesson-label lesson-label--purple">
-                                        <span>Укр.мов</span>
-                                        <time class="lesson-label__time">08:35</time>
-                                      </li>
-                                      <li class="lessons-schedule__label lesson-label lesson-label--red">
-                                        <span>Математика</span>
-                                        <time class="lesson-label__time">09:35</time>
-                                      </li>
-                                      <li class="lessons-schedule__label lesson-label lesson-label--orange">
-                                        <span>Фізкультура</span>
-                                        <time class="lesson-label__time">10:35</time>
-                                      </li>
-                                      <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                        <span>Історія</span>
-                                        <time class="lesson-label__time">11:35</time>
-                                      </li>
-                                    </ul>
-                                    <ul class="lessons-schedule__sublist">
-                                      @@for (var i = 0; i <= 1; i++) {
-                                      <li class="lessons-schedule__subitem">
-                                        <a href="#" class="lessons-schedule__name">Всесвітня історія</a>
-                                        <time class="lessons-schedule__data">25 квітня, 9:00</time>
-                                        <a href="#" class="lessons-schedule__teacher teacher">
-                                          <div class="teacher__img">
-                                            <img src="https://picsum.photos/200/300" alt="" />
-                                          </div>
-                                          Бондар Олег Михайлович
-                                        </a>
-                                      </li>
-                                      <li class="lessons-schedule__subitem">
-                                        <a href="#" class="lessons-schedule__name">Всесвітня історія lkl; k;kq q; k</a>
-                                        <time class="lessons-schedule__data">25 квітня, 9:00</time>
-                                        <a href="#" class="lessons-schedule__teacher teacher">
-                                          <div class="teacher__img">
-                                            <img src="https://picsum.photos/200/300" alt="" />
-                                          </div>
-                                          Бондар Олег Михайлович
-                                        </a>
-                                      </li>
-                                      }
-                                    </ul>
-                                  </div>
-                                  <div class="lessons-schedule__block">
-                                    <h2 class="lessons-schedule__title">Курси</h2>
-                                    <ul class="lessons-schedule__list">
-                                      <li class="lessons-schedule__label lesson-label lesson-label--purple">
-                                        <span>Укр.мов</span>
-                                        <time class="lesson-label__time">08:35</time>
-                                      </li>
-                                      <li class="lessons-schedule__label lesson-label lesson-label--red">
-                                        <span>Математика</span>
-                                        <time class="lesson-label__time">09:35</time>
-                                      </li>
-                                      <li class="lessons-schedule__label lesson-label lesson-label--orange">
-                                        <span>Фізкультура</span>
-                                        <time class="lesson-label__time">10:35</time>
-                                      </li>
-                                      <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                        <span>Історія</span>
-                                        <time class="lesson-label__time">11:35</time>
-                                      </li>
-                                    </ul>
-                                    <ul class="lessons-schedule__sublist">
-                                      @@for (var i = 0; i < 1; i++) {
-                                      <li class="lessons-schedule__subitem">
-                                        <a href="#" class="lessons-schedule__name">Всесвітня історія</a>
-                                        <time class="lessons-schedule__data">25 квітня, 9:00</time>
-                                        <a href="#" class="lessons-schedule__teacher teacher">
-                                          <div class="teacher__img">
-                                            <img src="https://picsum.photos/200/300" alt="" />
-                                          </div>
-                                          Бондар Олег Михайлович
-                                        </a>
-                                      </li>
-                                      <li class="lessons-schedule__subitem">
-                                        <a href="#" class="lessons-schedule__name">Всесвітня історія lkl; k;kq q; k</a>
-                                        <time class="lessons-schedule__data">25 квітня, 9:00</time>
-                                        <a href="#" class="lessons-schedule__teacher teacher">
-                                          <div class="teacher__img">
-                                            <img src="https://picsum.photos/200/300" alt="" />
-                                          </div>
-                                          Бондар Олег Михайлович
-                                        </a>
-                                      </li>
-                                      }
-                                    </ul>
-                                  </div>
-                                </div>
+                              </ul> 
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">12</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul> 
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">13</span>
+                            </div>
+                          </li>
+                          <li class="week__item week__item--weekends">
+                            <div class="week__box">
+                              <span class="week__box-span">14</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="week__list">
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">15</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">16</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">17</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">18</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul> 
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">19</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item week__item--weekends">
+                            <div class="week__box">
+                              <span class="week__box-span">20</span>
+                            </div>
+                          </li>
+                          <li class="week__item week__item--weekends">
+                            <div class="week__box">
+                              <span class="week__box-span">21</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="week__list">
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">22</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">23</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item">
+                                  Математика <span class="week__box__item-span">08:35</span>
+                                </li>
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">24</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">25</span>
+                              <ul class="week__box-list">
+
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+ 
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">26</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item week__item--weekends">
+                            <div class="week__box">
+                              <span class="week__box-span">27</span>
+                            </div>
+                          </li>
+                          <li class="week__item week__item--weekends">
+                            <div class="week__box">
+                              <span class="week__box-span">28</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="week__list">
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">29</span>
+                              <ul class="week__box-list">
+                              
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">30</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">31</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">01</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-span">02</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                                <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
+                                  <p class="week__block-time">11:35</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item week__item--weekends">
+                            <div class="week__box week__box--content">
+                              <span class="week__box-span">03</span>
+                              <div class="week__block">
+                                <p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
+                                <p class="week__block-time">11:35</p>
                               </div>
                             </div>
                           </li>
-                          }
-
-                          <li class="schedule-table__card schedule-table__card--day-off" style="margin-top: 35px">
-                            <div class="shedule-table__weekends" style="padding: 8px">
-                              <ul class="lessons-schedule__list">
-                                <li class="lessons-schedule__label lesson-label lesson-label--purple">
-                                  <span>Укр.мов</span>
-                                  <time class="lesson-label__time">08:35</time>
-                                </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--red">
-                                  <span>Математика</span>
-                                  <time class="lesson-label__time">09:35</time>
-                                </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--orange">
-                                  <span>Фізкультура</span>
-                                  <time class="lesson-label__time">10:35</time>
-                                </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                  <span>Історія</span>
-                                  <time class="lesson-label__time">11:35</time>
-                                </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                  <span>Історія</span>
-                                  <time class="lesson-label__time">11:35</time>
-                                </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                  <span>Історія</span>
-                                  <time class="lesson-label__time">11:35</time>
-                                </li>
-                                <li class="lessons-schedule__label lesson-label lesson-label--green">
-                                  <span>Історія</span>
-                                  <time class="lesson-label__time">11:35</time>
-                                </li>
-                              </ul>
+                          <li class="week__item week__item--weekends">
+                            <div class="week__box">
+                              <span class="week__box-span">04</span>
                             </div>
                           </li>
-                          <li class="schedule-table__card schedule-table__card--day-off"></li>
                         </ul>
                       </div>
-                    </li>
-                    }
-                  </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
