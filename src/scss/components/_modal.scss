@@ -54,6 +54,15 @@
     }
   }
 
+  &__title-info {
+    margin-bottom: rem(33);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: 120%;
+    color: #1c1c1c;
+  }
+
   &__body {
     position: relative;
     z-index: 2;

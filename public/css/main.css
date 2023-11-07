@@ -6646,7 +6646,6 @@ body .simplebar-track {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 0.5rem;
   border-radius: 0.3125rem;
   padding: 0.5rem 1rem;
   font-family: "Roboto", sans-serif;
@@ -6655,6 +6654,7 @@ body .simplebar-track {
   text-transform: uppercase;
   color: #fff;
   background-color: #ffa349;
+  gap: 0.5rem;
 }
 
 .header__title__btn-svg {
@@ -7082,6 +7082,10 @@ body .simplebar-track {
   width: 22px;
   height: 22px;
   fill: #bdbdbd;
+}
+
+.hide {
+  display: none;
 }
 
 .auth-header {
@@ -8276,6 +8280,15 @@ input[type=radio]:checked + label + .content {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.modal__title-info {
+  margin-bottom: 2.0625rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 120%;
+  color: #1c1c1c;
 }
 
 .modal__body {
@@ -13865,6 +13878,10 @@ input[type=radio]:checked + label + .content {
   position: relative;
 }
 
+.teacher-card__name {
+  cursor: pointer;
+}
+
 .teacher-card__lesson__top-span {
   position: absolute;
   top: 0.0625rem;
@@ -15393,14 +15410,10 @@ input[type=radio]:checked + label + .content {
     flex-direction: column;
   }
 
-  .header__child:checked + .header__child-span {
-    color: #7d98f6;
-  }
-
   .header__children__list-img {
+    border-radius: 50%;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
   }
 
   .header__child {
@@ -15629,6 +15642,10 @@ input[type=radio]:checked + label + .content {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+  }
+
+  .header__child:checked + .header__child-span {
+    color: #7d98f6;
   }
 
   .header__child:checked + .header__child-span {

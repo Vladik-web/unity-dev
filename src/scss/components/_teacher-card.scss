@@ -17,6 +17,10 @@
     position: relative;
   }
 
+  &__name {
+    cursor: pointer;
+  }
+
   &__lesson__top-span {
     position: absolute;
     top: rem(1);
