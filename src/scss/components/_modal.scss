@@ -66,12 +66,42 @@
 
   &__link__lable-svg {
     position: absolute;
-    top: rem(30);
     left: rem(19);
+    top: rem(30);
     z-index: 1;
     width: rem(24);
     height: rem(24);
     fill: #bdbdbd;
+  }
+
+  &__card-image {
+    margin-bottom: rem(37);
+    text-align: center;
+  }
+
+  &__cabinet--list {
+    margin-bottom: rem(37);
+  }
+
+  &__card-img {
+    max-width: rem(129);
+  }
+
+  &__card-name {
+    margin-bottom: rem(8);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 120%;
+    color: #1c1c1c;
+  }
+
+  &__card-teacher {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: 120%;
+    color: var(--Gray-3, #828282);
   }
 
   &__warn {
@@ -170,6 +200,25 @@
     padding: rem(60) rem(50);
   }
 
+  &__info {
+    border: rem(1) solid #e0e0e0;
+    border-radius: rem(10);
+    padding: rem(16) rem(12);
+  }
+
+  &__info-svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #bdbdbd;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(12);
+    gap: rem(8);
+  }
+
   &__link-btn {
     border-radius: rem(5);
     padding: rem(8) rem(16);
@@ -188,8 +237,35 @@
     margin-top: rem(30);
   }
 
+  &__card-button {
+    margin: 0 auto;
+  }
+
+  &__card-svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #fff;
+  }
+
   &__wrapper__wants-btn {
     width: rem(250);
+  }
+
+  &__card-btn {
+    display: flex;
+    align-items: center;
+
+    /* Design/BTN */
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--Gray-4, #bdbdbd);
+    gap: rem(8);
+    leading-trim: both;
+    text-edge: cap;
   }
 
   &__wrapper__wants-text {

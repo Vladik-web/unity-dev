@@ -239,37 +239,7 @@
                   <button class="schedule-tabs__button schedule__btn-week" data-tab="Тиждень">Тиждень</button>
                   <button class="schedule-tabs__button schedule__btn-month" data-tab="Місяць">Місяць</button>
                 </div>
-                <div class="header__children select select--children">
-                  <div class="select__top">
-                    <img class="select__image" src="https://picsum.photos/200/300" alt="">
-                    <span class="select__value">Дмитро</span>
-                    <svg class="select__top-svg">
-                      <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
-                    </svg>
-                  </div>
-                  <div class="select__bottom">
-                    <div class="select__wrapper">
-                      <ul class="select__list">
-                        <li class="select__item">
-                          <img class="select__image" src="https://picsum.photos/200/300" alt="">
-                          <span class="select__value">Дмитро</span>
-                        </li>
-                        <li class="select__item">
-                          <img class="select__image" src="https://picsum.photos/200/300" alt="">
-                          <span class="select__value">Андрей</span>
-                        </li>
-                        <li class="select__item">
-                          <img class="select__image" src="https://picsum.photos/200/300" alt="">
-                          <span class="select__value">Антоний</span>
-                        </li>
-                        <li class="select__item">
-                          <img class="select__image" src="https://picsum.photos/200/300" alt="">
-                          <span class="select__value">Артём</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="header__select select select--border">
                   <div class="select__top">
                     <span class="select__value schedule__btn-day" data-tab="День">День</span>
@@ -1173,48 +1143,11 @@
                   <div class="lesson-modal__content">
                     <div class="lesson-modal__top">
                       <div class="lesson-modal__subject">
-                        <span class="lesson-modal__counter">1</span>
+                        <span class="lesson-modal__counter">5</span>
                         <a href="#" class="lesson-modal__name">Всесвітня історія</a>
                       </div>
-                      <div class="lesson-modal__right types">
-                        <ul class="types__list">
-                          <li class="types__unit">
-                            <div class="types__icon types__icon--active" data-tippy-content="Онлайн-урок">
-                              <svg class="types__icon-svg">
-                                <use xlink:href="img/sprite.svg#webcam"></use>
-                              </svg>
-                            </div>
-                          </li>
-                          <li class="types__unit">
-                            <div class="types__icon" data-tippy-content="Домашня робота">
-                              <svg class="types__icon-svg">
-                                <use xlink:href="img/sprite.svg#home"></use>
-                              </svg>
-                            </div>
-                          </li>
-                          <li class="types__unit">
-                            <div class="types__icon" data-tippy-content="Тест">
-                              <svg class="types__icon-svg">
-                                <use xlink:href="img/sprite.svg#test"></use>
-                              </svg>
-                            </div>
-                          </li>
-                          <li class="types__unit">
-                            <div class="types__icon" data-tippy-content="Контрольна робота">
-                              <svg class="types__icon-svg">
-                                <use xlink:href="img/sprite.svg#pen"></use>
-                              </svg>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
+
                       <time class="lesson-modal__time">25 квітня, 9:00</time>
-                      <a href="#" class="lesson-modal__teacher teacher">
-                        <div class="teacher__img">
-                          <img src="https://picsum.photos/200/300" alt="">
-                        </div>
-                        Бондар Олег Михайлович
-                      </a>
                     </div>
                     <div class="lesson-modal__bottom">
                       <div class="lesson-modal__image">
@@ -1232,35 +1165,45 @@
                       <div class="lesson-modal__times">
                         <time class="lesson-modal__time">9:00</time>-<time class="lesson-modal__time">9:45</time>
                       </div>
-                      <a href="#" class="lesson-modal__link btn btn--accent lesson__btn-mob">
-                        <svg class="btn__icon">
-                          <use xlink:href="img/sprite.svg#webcam"></use>
-                        </svg>
-                        Перейти
-                      </a>
                     </div>
                   </div>
                 </div>
                 <!-- here -->
+                <!-- неделя -->
                 <div class="schedule-table__block" data-simplebar>
                   <div class="week__inner">
                     <div class="week__schedule">
                       <div class="week__top">
                         <ul class="week__list">
-                          <li class="week__item">Понеділок</li>
-                          <li class="week__item">Вівторок</li>
-                          <li class="week__item">Середа</li>
-                          <li class="week__item">Четверг</li>
-                          <li class="week__item">П’ятниця</li>
-                          <li class="week__item">Субота</li>
-                          <li class="week__item">Неділя</li>
+                          <li class="week__item">Понеділок
+                            <span>01</span>
+                          </li>
+                          <li class="week__item">Вівторок
+                            <span>02</span>
+                          </li>
+                          <li class="week__item">Середа
+                            <span>03</span>
+                          </li>
+                          <li class="week__item">Четверг
+                            <span>04</span>
+                          </li>
+                          <li class="week__item">П’ятниця
+                            <span>05</span>
+                          </li>
+                          <li class="week__item">Субота
+                            <span>06</span>
+                          </li>
+                          <li class="week__item">Неділя
+                            <span>07</span>
+                          </li>
                         </ul>
                       </div>
                       <div class="week__center">
                         <ul class="week__list">
+
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">01</span>
+                              <span class="week__box-data">01</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1273,7 +1216,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">02</span>
+                              <span class="week__box-data">02</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1285,7 +1228,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">03</span>
+                              <span class="week__box-data">03</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1298,63 +1241,46 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">04</span>
+                              <span class="week__box-data">04</span>
                               <ul class="week__box-list">
-                                <!-- <li class="week__box-item">
-                                  Математика <span class="week__box__item-span">08:35</span>
-                                </li>
-                                <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">курс <span class="week__box__item-span">08:35</span></li> -->
                               </ul>
                             </div>
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">05</span>
+                              <span class="week__box-data">05</span>
                               <ul class="week__box-list">
-                                <!-- <li class="week__box-item">
-                                  Математика <span class="week__box__item-span">08:35</span>
-                                </li>
-                                <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">курс <span class="week__box__item-span">08:35</span></li> -->
+
                               </ul>
                             </div>
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">06</span>
+                              <span class="week__box-data">06</span>
                             </div>
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">07</span>
+                              <span class="week__box-data">07</span>
                             </div>
                           </li>
                         </ul>
                         <ul class="week__list">
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">08</span>
+                              <span class="week__box-data">08</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
                                 </li>
-                                <!-- <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">курс <span class="week__box__item-span">08:35</span></li> -->
+
                               </ul>
                             </div>
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">09</span>
+                              <span class="week__box-data">09</span>
                               <ul class="week__box-list">
-                                <!-- <li class="week__box-item">
-                                  Математика <span class="week__box__item-span">08:35</span>
-                                </li>
-                                <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li> -->
                                 <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
                                 <li class="week__box-item">курс <span class="week__box__item-span">08:35</span></li>
                               </ul>
@@ -1362,25 +1288,18 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">10</span>
+                              <span class="week__box-data">10</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
                                 </li>
-                                <!-- <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">курс <span class="week__box__item-span">08:35</span></li> -->
                               </ul>
                             </div>
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">11</span>
+                              <span class="week__box-data">11</span>
                               <ul class="week__box-list">
-                                <!-- <li class="week__box-item">
-                                  Математика <span class="week__box__item-span">08:35</span>
-                                </li>
-                                <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li> -->
                                 <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
                                 <li class="week__box-item">курс <span class="week__box__item-span">08:35</span></li>
                               </ul>
@@ -1388,7 +1307,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">12</span>
+                              <span class="week__box-data">12</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1401,19 +1320,19 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">13</span>
+                              <span class="week__box-data">13</span>
                             </div>
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">14</span>
+                              <span class="week__box-data">14</span>
                             </div>
                           </li>
                         </ul>
                         <ul class="week__list">
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">15</span>
+                              <span class="week__box-data">15</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1426,20 +1345,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">16</span>
-                              <ul class="week__box-list">
-                                <li class="week__box-item">
-                                  Математика <span class="week__box__item-span">08:35</span>
-                                </li>
-                                <!-- <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">курс <span class="week__box__item-span">08:35</span></li> -->
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="week__item">
-                            <div class="week__box">
-                              <span class="week__box-span">17</span>
+                              <span class="week__box-data">16</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1449,7 +1355,17 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">18</span>
+                              <span class="week__box-data">17</span>
+                              <ul class="week__box-list">
+                                <li class="week__box-item">
+                                  Математика <span class="week__box__item-span">08:35</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="week__item">
+                            <div class="week__box">
+                              <span class="week__box-data">18</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1462,7 +1378,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">19</span>
+                              <span class="week__box-data">19</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1474,32 +1390,31 @@
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">20</span>
+                              <span class="week__box-data">20</span>
                             </div>
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">21</span>
+                              <span class="week__box-data">21</span>
                             </div>
                           </li>
                         </ul>
                         <ul class="week__list">
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">22</span>
+                              <span class="week__box-data">22</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
                                 </li>
                                 <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li>
-                                <!-- <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">курс <span class="week__box__item-span">08:35</span></li> -->
+
                               </ul>
                             </div>
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">23</span>
+                              <span class="week__box-data">23</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1512,20 +1427,19 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">24</span>
+                              <span class="week__box-data">24</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
                                 </li>
                                 <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li>
-                                <!-- <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
-                                <li class="week__box-item">курс <span class="week__box__item-span">08:35</span></li> -->
+
                               </ul>
                             </div>
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">25</span>
+                              <span class="week__box-data">25</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1538,7 +1452,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">26</span>
+                              <span class="week__box-data">26</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
                                 <li class="week__box-item">курс <span class="week__box__item-span">08:35</span></li>
@@ -1547,19 +1461,19 @@
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">27</span>
+                              <span class="week__box-data">27</span>
                             </div>
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">28</span>
+                              <span class="week__box-data">28</span>
                             </div>
                           </li>
                         </ul>
                         <ul class="week__list">
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">29</span>
+                              <span class="week__box-data">29</span>
                               <ul class="week__box-list">
 
                                 <li class="week__box-item">Укр.Мова <span class="week__box__item-span">08:35</span></li>
@@ -1569,7 +1483,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">30</span>
+                              <span class="week__box-data">30</span>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -1582,7 +1496,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">31</span>
+                              <span class="week__box-data">31</span>
                               <ul class="week__box-list">
 
                                 <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li>
@@ -1593,7 +1507,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">01</span>
+                              <span class="week__box-data">01</span>
                               <ul class="week__box-list">
 
                                 <li class="week__box-item">Історія <span class="week__box__item-span"> 08:35</span></li>
@@ -1604,7 +1518,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">02</span>
+                              <span class="week__box-data">02</span>
                               <ul class="week__box-list">
 
                                 <li class="week__box-item">Історія <span class="week__box__item-span">08:35</span></li>
@@ -1615,13 +1529,13 @@
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box week__box--content">
-                              <span class="week__box-span">03</span>
+                              <span class="week__box-data">03</span>
                               <p class="week__box-text">Курс <span>11:35</span></p>
                             </div>
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">04</span>
+                              <span class="week__box-data">04</span>
                             </div>
                           </li>
                         </ul>
@@ -1631,6 +1545,7 @@
                 </div>
               </div>
             </section>
+            <!-- месяц -->
             <section class="schedule-table schedule-table--month" data-tab-schedule="Місяць" style="display: none">
               <div class="schedule-table__wrapper">
                 <div class="schedule-table__lesson lesson-modal lesson-modal--big">
@@ -1760,7 +1675,7 @@
                         <ul class="week__list">
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">01</span>
+                              <p class="week__box-data">01</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1776,7 +1691,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">02</span>
+                              <p class="week__box-data">02</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1785,7 +1700,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">03</span>
+                              <p class="week__box-data">03</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1801,7 +1716,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">04</span>
+                              <p class="week__box-data">04</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1817,7 +1732,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">05</span>
+                              <p class="week__box-data">05</p>
                               <ul class="week__box-list week__box--green">
                                 <li class="week__box-item"><p class="week__block-text">Географія <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1827,19 +1742,19 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">06</span>
+                              <p class="week__box-data">06</p>
                             </div>
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">07</span>
+                              <p class="week__box-data">07</p>
                             </div>
                           </li>
                         </ul>
                         <ul class="week__list">
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">08</span>
+                              <p class="week__box-data">08</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1849,7 +1764,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">09</span>
+                              <p class="week__box-data">09</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item week__box--green"><p class="week__block-text">Геометрія<span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1862,7 +1777,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">10</span>
+                              <p class="week__box-data">10</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item week__box--white"><p class="week__block-text">Курс такой-то</p>
                                   <p class="week__block-time">11:35</p>
@@ -1872,7 +1787,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span week__box--day">11</span>
+                              <p class="week__box-data week__box--day">11</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1889,7 +1804,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">12</span>
+                              <p class="week__box-data">12</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1908,19 +1823,19 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">13</span>
+                              <p class="week__box-data">13</p>
                             </div>
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">14</span>
+                              <p class="week__box-data">14</p>
                             </div>
                           </li>
                         </ul>
                         <ul class="week__list">
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">15</span>
+                              <p class="week__box-data">15</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1933,7 +1848,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">16</span>
+                              <p class="week__box-data">16</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1943,7 +1858,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">17</span>
+                              <p class="week__box-data">17</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1953,7 +1868,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">18</span>
+                              <p class="week__box-data">18</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1972,7 +1887,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">19</span>
+                              <p class="week__box-data">19</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"> <p class="week__block-text">Математика <span class="week__block-span">6Б</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -1985,19 +1900,19 @@
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">20</span>
+                              <p class="week__box-data">20</p>
                             </div>
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">21</span>
+                              <p class="week__box-data">21</p>
                             </div>
                           </li>
                         </ul>
                         <ul class="week__list">
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">22</span>
+                              <p class="week__box-data">22</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -2013,7 +1928,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">23</span>
+                              <p class="week__box-data">23</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item">
                                   Математика <span class="week__box__item-span">08:35</span>
@@ -2032,7 +1947,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">24</span>
+                              <p class="week__box-data">24</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -2048,7 +1963,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">25</span>
+                              <p class="week__box-data">25</p>
                               <ul class="week__box-list">
 
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
@@ -2066,7 +1981,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">26</span>
+                              <p class="week__box-data">26</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -2082,19 +1997,19 @@
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">27</span>
+                              <p class="week__box-data">27</p>
                             </div>
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">28</span>
+                              <p class="week__box-data">28</p>
                             </div>
                           </li>
                         </ul>
                         <ul class="week__list">
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">29</span>
+                              <p class="week__box-data">29</p>
                               <ul class="week__box-list">
 
                               </ul>
@@ -2102,7 +2017,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">30</span>
+                              <p class="week__box-data">30</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -2118,7 +2033,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">31</span>
+                              <p class="week__box-data">31</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -2134,7 +2049,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">01</span>
+                              <p class="week__box-data">01</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -2150,7 +2065,7 @@
                           </li>
                           <li class="week__item">
                             <div class="week__box">
-                              <span class="week__box-span">02</span>
+                              <p class="week__box-data">02</p>
                               <ul class="week__box-list">
                                 <li class="week__box-item"><p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                   <p class="week__block-time">11:35</p>
@@ -2166,7 +2081,7 @@
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box week__box--content">
-                              <span class="week__box-span">03</span>
+                              <p class="week__box-data">03</p>
                               <div class="week__block">
                                 <p class="week__block-text">Алгебра <span class="week__block-span">7A</span></p>
                                 <p class="week__block-time">11:35</p>
@@ -2175,7 +2090,7 @@
                           </li>
                           <li class="week__item week__item--weekends">
                             <div class="week__box">
-                              <span class="week__box-span">04</span>
+                              <p class="week__box-data">04</p>
                             </div>
                           </li>
                         </ul>

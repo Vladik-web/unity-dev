@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    @@include('../components/_head.html', {title: 'Кабінет батьків'})
+    @@include('../components/_head.html', {title: 'Головна учень'})
 
     <meta property="og:title" content="Title" />
     <meta property="og:url" content="url" />
@@ -11,6 +11,8 @@
   <body class="body-mob-fixed">
     <div class="base-layout">
       @@include("../components/modals/gears.html")
+      @@include("../components/modals/teacher-card-student.html")
+      @@include("../components/modals/profile-card.html")
       @@include("../components/_aside.html")
       <main class="main">
         <header class="header">
@@ -149,7 +151,7 @@
                         </div>
                         <ul class="header__list">
                           <li class="header__item">
-                            <a href="#" class="header__link">
+                            <a href="#" class="header__link btn-17">
                               <svg class="header__link-svg">
                                 <use xlink:href="img/sprite.svg#account"></use>
                               </svg>
@@ -244,7 +246,7 @@
                           <a href="#" class="lesson__name">Всесвітня історія</a>
                         </div>
                         <span class="lesson__point"></span>
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>
@@ -318,7 +320,7 @@
 
                         <span class="lesson__point"></span>
 
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>
@@ -391,7 +393,7 @@
                         </div>
                         <span class="lesson__point"></span>
 
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>
@@ -463,7 +465,7 @@
                           <a href="#" class="lesson__name">Історія України</a>
                         </div>
                         <span class="lesson__point"></span>
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>
@@ -538,7 +540,7 @@
                           <a href="#" class="lesson__name">Фізкультура</a>
                         </div>
                         <span class="lesson__point"></span>
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>
@@ -617,7 +619,7 @@
                       <div class="lesson__top">
                         <a href="#" class="lesson__name">Основи образотворчого мистецтва</a>
                         <span class="lesson__point"></span>
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>

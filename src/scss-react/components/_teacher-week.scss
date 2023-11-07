@@ -26,6 +26,12 @@
     color: #828282;
   }
 
+  &__box-data {
+    margin: 0 auto;
+    margin-bottom: rem(12);
+    max-width: rem(25);
+  }
+
   &__box {
     margin: 18px 5px 15px;
   }
@@ -43,25 +49,6 @@
     text-transform: uppercase;
     color: var(--Black, #1c1c1c);
     background-color: #e8e0ff;
-  }
-
-  &__item--weekends {
-    //    width: 176px;
-    //     height: 224px;
-  }
-
-  &__item {
-    padding-top: 5px;
-  }
-
-  &__box-span {
-    margin-bottom: 12px;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 120%;
-    text-align: center;
-    color: #1c1c1c;
   }
 
   &__box__item-span {
@@ -85,8 +72,9 @@
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 13px;
-    line-height: 120%; /* 15.6px */
+    line-height: 120%;
     text-transform: uppercase;
     color: var(--Black, #1c1c1c);
   }
 }
+
