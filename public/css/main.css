@@ -6672,6 +6672,25 @@ body .simplebar-track {
   gap: 1.875rem;
 }
 
+.header__notification {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: 0.0625rem solid #fe7c11;
+  border-radius: 0.625rem;
+  padding: 0.75rem 1.25rem;
+  -webkit-box-shadow: 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.13);
+  background: #fff;
+}
+
 .header__title-btn {
   display: -webkit-box;
   display: -ms-flexbox;
