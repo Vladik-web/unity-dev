@@ -675,10 +675,19 @@
       height: 30px;
     }
   }
+
+  .header__notification {
+    z-index: 2;
+    max-width: rem(475);
+  }
 }
 
-@include mq('md') {
 
+@include mq('md') {
+  .header__notification {
+    right: rem(2);
+    max-width: rem(400);
+  }
 }
 
 // style header student cabinet (notifications__top-svg)
