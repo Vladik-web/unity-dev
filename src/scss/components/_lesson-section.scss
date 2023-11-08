@@ -21,6 +21,94 @@
     }
   }
 
+  &__notification {
+    position: absolute;
+    right: rem(30);
+    top: rem(78);
+    z-index: 2;
+    border: rem(1) solid #f2994a;
+    border-radius: rem(10);
+    padding: rem(20);
+    width: rem(400);
+    box-shadow: 0 rem(8) rem(24) 0 rgba(0, 0, 0, 13%);
+    background-color: #fff;
+  }
+
+  &__notification-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(16);
+  }
+
+  &__notification-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(13);
+    line-height: 120%;
+    color: #828282;
+  }
+
+  &__notification-svg {
+    width: rem(24);
+    height: rem(24);
+    fill: #828282;
+  }
+
+  &__notification-center {
+    border-radius: rem(5);
+    padding: rem(8) rem(12);
+    background: #f4f4fd;
+  }
+
+  &__notification-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(14);
+  }
+
+  &__notification__center-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    text-transform: uppercase;
+    color: #1c1c1c;
+  }
+
+  &__notification__center-data {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(13);
+    line-height: 120%;
+    color: #828282;
+  }
+
+  &__notification-info {
+    display: flex;
+    align-items: center;
+    gap: rem(5);
+  }
+
+  &__notification-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: rem(12);
+    gap: rem(12);
+  }
+
+  &__notification__bottom-img {
+    max-width: rem(60);
+  }
+
+  &__notification__bottom-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 120%;
+    color: #828282;
+  }
+
   &__teacher-btn {
     margin-bottom: rem(32);
   }
@@ -464,7 +552,7 @@
   }
 
   &__card-card {
-    border: rem(1) solid  #ffdba8;
+    border: rem(1) solid #ffdba8;
     background: #fff8ed;
   }
 
@@ -685,8 +773,6 @@
   .lesson-section__content-nav {
     grid-template-columns: 15fr 4% 11%;
   }
-
- 
 }
 
 @include mq('xl') {
@@ -916,6 +1002,9 @@
 
   .lesson-test__adap {
     margin-bottom: 30px;
+  }
+  .lesson-section__notification {
+    max-width: rem(335);
   }
 }
 
@@ -1480,7 +1569,7 @@
 
 .lesson__section-nav-box {
   display: flex;
-  border: 1px solid  #e0ebff;
+  border: 1px solid #e0ebff;
   border-radius: rem(5);
   padding: rem(4) rem(8);
   gap: rem(8);
@@ -1529,7 +1618,7 @@
 }
 
 .lesson__section__nav-link {
-  border: rem(1) solid  #bdbdbd;
+  border: rem(1) solid #bdbdbd;
   border-radius: rem(5);
   padding: rem(4) rem(12);
   font-family: 'Roboto';

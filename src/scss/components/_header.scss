@@ -30,14 +30,30 @@
 
   &__notification {
     position: absolute;
+    right: rem(29);
+    top: rem(72);
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: rem(1) solid  #fe7c11;
     border-radius: rem(10);
     padding: rem(12) rem(20);
+    width: rem(633);
     box-shadow: 0 rem(8) rem(24) 0 rgba(0, 0, 0, 13%);
-    background:  #fff;
+    background: #fff;
+  }
+
+  &__notification-text {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+  }
+
+  &__notification-svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #828282;
   }
 
   &__title-btn {
