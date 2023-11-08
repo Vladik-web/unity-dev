@@ -16,16 +16,16 @@
     }
 
     &-number {
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       font-weight: 600;
-      font-style: normal;
-      font-size: 60px;
+      font-size: rem(60);
       line-height: 120%;
-      color: var(--blue-blue-bg, #f4f4fd);
+      color: #f4f4fd;
     }
   }
 
   &__item {
+    padding: rem(19) rem(19);
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -34,8 +34,6 @@
     color: #828282;
 
     &-element {
-      display: flex;
-      flex-direction: column;
       padding-top: rem(20);
       text-align: center;
     }
@@ -51,6 +49,10 @@
 
     &:nth-last-child(-n + 2) {
       background-color: #fff8ed;
+    }
+
+    &-text {
+      margin-bottom: rem(10);
     }
 
     &:nth-child(6) {
@@ -167,6 +169,10 @@
     gap: rem(10);
   }
 
+  &__box-list {
+    margin-top: rem(10);
+  }
+
   &__wekend-title {
     margin-bottom: rem(10);
     padding-bottom: rem(8);
@@ -259,5 +265,14 @@
     border-radius: rem(25);
     padding: rem(2);
     background: #7d98f61a;
+  }
+
+  &__box--day {
+    margin: 0 auto;
+    border-radius: rem(25);
+    padding: rem(5) rem(10);
+    width: rem(24);
+    color: #ffa349;
+    background-color: #fff8ed;
   }
 }

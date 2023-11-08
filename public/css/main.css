@@ -14373,15 +14373,15 @@ input[type=radio]:checked + label + .content {
 }
 
 .week__menu-number {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
-  font-style: normal;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 120%;
-  color: var(--blue-blue-bg, #f4f4fd);
+  color: #f4f4fd;
 }
 
 .week__item {
+  padding: 1.1875rem 1.1875rem;
   height: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -14391,13 +14391,6 @@ input[type=radio]:checked + label + .content {
 }
 
 .week__item-element {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   padding-top: 1.25rem;
   text-align: center;
 }
@@ -14413,6 +14406,10 @@ input[type=radio]:checked + label + .content {
 
 .week__item:nth-last-child(-n+2) {
   background-color: #fff8ed;
+}
+
+.week__item-text {
+  margin-bottom: 0.625rem;
 }
 
 .week__item:nth-child(6) {
@@ -14539,6 +14536,10 @@ input[type=radio]:checked + label + .content {
   gap: 0.625rem;
 }
 
+.week__box-list {
+  margin-top: 0.625rem;
+}
+
 .week__wekend-title {
   margin-bottom: 0.625rem;
   padding-bottom: 0.5rem;
@@ -14637,6 +14638,15 @@ input[type=radio]:checked + label + .content {
   border-radius: 1.5625rem;
   padding: 0.125rem;
   background: rgba(125, 152, 246, 0.1019607843);
+}
+
+.week__box--day {
+  margin: 0 auto;
+  border-radius: 1.5625rem;
+  padding: 0.3125rem 0.625rem;
+  width: 1.5rem;
+  color: #ffa349;
+  background-color: #fff8ed;
 }
 
 .box {
