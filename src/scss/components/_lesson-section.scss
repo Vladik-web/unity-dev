@@ -27,6 +27,53 @@
     top: rem(50);
   }
 
+  &__room {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: rem(10);
+    padding: rem(8) rem(15);
+    width: rem(492);
+    background-color: transparent;
+    cursor: pointer;
+    gap: rem(8);
+
+    svg {
+      width: rem(24);
+      height: rem(24);
+      fill: #bdbdbd;
+      cursor: pointer;
+    }
+
+    &-input {
+      all: initial;
+      border: none;
+      width: rem(476);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: rem(14);
+      line-height: 120%;
+      color: #1c1c1c;
+      cursor: pointer;
+    }
+
+    &-btn {
+      overflow: hidden;
+      opacity: 0;
+    }
+
+    &:hover {
+      background-color: #eef4ff;
+      transition: all 0.5s;
+
+      & .lesson-section__room-btn {
+        overflow: visible;
+        opacity: 1;
+        transition: all 0.5s;
+      }
+    }
+  }
+
   &__message {
     position: absolute;
     right: rem(12);
@@ -589,32 +636,6 @@
 
     // height: rem(25);
     text-align: center;
-  }
-
-  &__class-room-input {
-    position: relative;
-    border: none;
-    border-radius: rem(5);
-    padding: rem(8) rem(16) rem(8) rem(56);
-    width: rem(420);
-    height: rem(40);
-    cursor: pointer;
-  }
-
-  &__class-room-input:hover {
-    background-color: #eef4ff;
-    transition: all 0.5s;
-  }
-
-  &__class-room-input:hover ~ svg {
-    background: #eef4ff;
-    opacity: 1;
-    transition: all 0.5s;
-  }
-
-  &__class-room {
-    display: flex;
-    align-items: center;
   }
 
   &__class-link-svg {
