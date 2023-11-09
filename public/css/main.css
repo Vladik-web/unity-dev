@@ -10127,6 +10127,59 @@ input[type=radio]:checked + label + .content {
   top: 3.125rem;
 }
 
+.lesson-section__room {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.625rem;
+  padding: 0.5rem 0.9375rem;
+  width: 30.75rem;
+  background-color: transparent;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.lesson-section__room svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #bdbdbd;
+  cursor: pointer;
+}
+
+.lesson-section__room-input {
+  all: initial;
+  border: none;
+  width: 29.75rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+.lesson-section__room-btn {
+  overflow: hidden;
+  opacity: 0;
+}
+
+.lesson-section__room:hover {
+  background-color: #eef4ff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.lesson-section__room:hover .lesson-section__room-btn {
+  overflow: visible;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .lesson-section__message {
   position: absolute;
   right: 0.75rem;
@@ -10808,38 +10861,6 @@ input[type=radio]:checked + label + .content {
   border-radius: 0.3125rem;
   width: 1.5rem;
   text-align: center;
-}
-
-.lesson-section__class-room-input {
-  position: relative;
-  border: none;
-  border-radius: 0.3125rem;
-  padding: 0.5rem 1rem 0.5rem 3.5rem;
-  width: 26.25rem;
-  height: 2.5rem;
-  cursor: pointer;
-}
-
-.lesson-section__class-room-input:hover {
-  background-color: #eef4ff;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.lesson-section__class-room-input:hover ~ svg {
-  background: #eef4ff;
-  opacity: 1;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.lesson-section__class-room {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .lesson-section__class-link-svg {
@@ -14643,7 +14664,7 @@ input[type=radio]:checked + label + .content {
 
 .week__box--content {
   padding: 0 0.5rem;
-  height: 9.8125rem;
+  height: 95%;
   background-color: #fff;
 }
 
