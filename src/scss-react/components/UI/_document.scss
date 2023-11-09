@@ -33,11 +33,11 @@
 
   &__wrapper {
     @include flex-all-center;
-
+    gap: rem(4);
     flex-direction: column;
     border: rem(1) solid transparent;
     border-radius: rem(5);
-    padding: rem(30) 0;
+    padding: rem(16) rem(18);
     width: 100%;
     height: rem(146);
     background-color: var(--grey-6);
@@ -83,6 +83,22 @@
     }
   }
 
+  &__preview {
+    @include flex-all-center;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      object-fit: contain;
+    }
+  }
+
   &__image {
     flex-shrink: 0;
     margin-bottom: rem(10);
@@ -93,7 +109,7 @@
 
   &__title {
     @include truncate(70%);
-
+    flex-shrink: 0;
     margin-bottom: rem(2);
     font-weight: 500;
     text-align: center;

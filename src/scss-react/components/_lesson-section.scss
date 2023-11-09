@@ -408,12 +408,12 @@
   }
 
   &__item__person-inp {
+    @include flex-all-center;
+
     border: rem(1) solid #e0ebff;
     border-radius: rem(5);
     width: rem(24);
-
-    // height: rem(25);
-    text-align: center;
+    height: rem(25);
   }
 
   &__class-room-input {
@@ -464,7 +464,7 @@
   }
 
   &__card-card {
-    border: rem(1) solid  #ffdba8;
+    border: rem(1) solid #ffdba8;
     background: #fff8ed;
   }
 
@@ -685,8 +685,6 @@
   .lesson-section__content-nav {
     grid-template-columns: 15fr 4% 11%;
   }
-
- 
 }
 
 @include mq('xl') {
@@ -1099,7 +1097,7 @@
 .lesson__section__info-line {
   display: flex;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 120%;
@@ -1176,7 +1174,7 @@
   border-radius: 3px;
   padding: 8px;
   width: 80px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
@@ -1343,7 +1341,7 @@
 .lesson__section--message {
   border-radius: rem(5);
   padding: rem(8) rem(16);
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: rem(14);
   text-transform: uppercase;
@@ -1357,7 +1355,7 @@
   gap: rem(12);
 
   p {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 120%;
@@ -1480,7 +1478,7 @@
 
 .lesson__section-nav-box {
   display: flex;
-  border: 1px solid  #e0ebff;
+  border: 1px solid #e0ebff;
   border-radius: rem(5);
   padding: rem(4) rem(8);
   gap: rem(8);
@@ -1529,10 +1527,10 @@
 }
 
 .lesson__section__nav-link {
-  border: rem(1) solid  #bdbdbd;
+  border: rem(1) solid #bdbdbd;
   border-radius: rem(5);
   padding: rem(4) rem(12);
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: rem(16);
   line-height: 120%;

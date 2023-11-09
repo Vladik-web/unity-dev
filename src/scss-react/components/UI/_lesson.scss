@@ -61,6 +61,11 @@
     gap: rem(10);
   }
 
+  &__top.isTeacher {
+    grid-column: 2 span;
+    grid-template-columns: 1fr auto;
+  }
+
   &__counter {
     @include flex-all-center;
 

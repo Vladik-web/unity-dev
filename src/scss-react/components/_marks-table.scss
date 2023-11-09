@@ -1,5 +1,6 @@
 .marks-table {
-  &__inner {}
+  &__inner {
+  }
 
   &__top {
     margin-bottom: rem(30);
@@ -62,6 +63,14 @@
         visibility: visible;
         transform: translateY(0);
       }
+    }
+
+    &__bottom {
+      margin-bottom: rem(0);
+    }
+
+    &__title {
+      display: none;
     }
   }
 }

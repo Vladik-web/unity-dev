@@ -46,9 +46,11 @@
   &__box-input {
     border: 1px solid #e0ebff;
     border-radius: rem(5);
-
-    // padding: rem(4) rem(8);
-    width: rem(24);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(4) rem(8);
+    min-width: rem(24);
     height: rem(25);
     text-align: center;
   }
@@ -63,6 +65,10 @@
       font-size: 16px;
       line-height: 120%;
       color: #bdbdbd;
+
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
     }
   }
 
@@ -121,7 +127,7 @@
 
     h3 {
       margin-bottom: rem(20);
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: rem(16);
       line-height: 130%;
