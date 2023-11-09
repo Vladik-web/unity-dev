@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    @@include('../components/_head.html', {title: 'Реєстрація'})
+    @@include('../components/_head.html', {title: 'Вхід'})
 
-    <meta property="og:title" content="Title" />
-    <meta property="og:url" content="url" />
+    <meta property="og:title" />
+    <meta property="og:url" />
     <meta property="og:image" content="img/favicon/favicon.svg" />
   </head>
   <body>
-    <div class="auth-layout">
-      <main class="main">
-        <div class="auth-content auth-content--center">
-          <div class="auth-content__container auth-container">
-            <div class="auth-content__message">
-              <div class="auth-content__smile">
-                <img src="../img/static/logo.png" alt="логотип комп" />
-                <h1>Вхід</h1>
-                <form action="">
-                  <label for="">
-                    <span>Пошта</span>
-                    <input type="email" />
+    <div class="empty-layout">
+      <section class="login">
+        <div class="login__container container">
+          <div class="login__inner">
+            <form class="login__form">
+                <div class="login__form-women">
+                  <img src="../img/static/women.png" alt="">
+                </div>
+                <div class="login__form-hat">
+                  <img src="../img/static/hat.png" alt="">
+                </div>
+                <div class="login__form-img">
+                  <svg class="login__form-logo">
+                    <use xlink:href="/img/sprite.svg#login__logo"></use>
+                  </svg>
+                </div>
+                <h1 class="login__form-title">Вхід</h1>
+                <label class="login__form-label">
+                  <p class="login__form__label-text">Пошта</p>
+
+                  <input class="login__form__lable-input" type="text" />
+                </label>
+                <label class="login__form-label">
+                  <p class="login__form__label-text">Пароль</p>
+
+                  <input class="login__form__lable-input" type="password" />
+                </label>
+                <div class="login__form-bottom">
+                  <label class="login__form__bottom-label">
+                    <input class="login__form__bottom-input" type="checkbox" />
+                    <span class="login__form__bottom-span">Запам’ятати мене</span>
                   </label>
-                  <label for="">
-                    <span>Пароль</span>
-                    <input type="password" />
-                  </label>
-                  <div class="">
-                    <label for="">
-                      <input type="checkbox" />
-                      <span>Запам’ятати мене</span>
-                    </label>
-                    <a href="#">Забули пароль?</a>
-                  </div>
-                </form>
-                <button>Увійти</button>
-              </div>
-            </div>
+                  <a class="login__form__bottom-text">Забули пароль?</a>
+                </div>
+                <div class="login__form-button">
+                  <button class="login__form-btn">
+                    <svg class="login__form-svg">
+                      <use xlink:href="/img/sprite.svg#entrance"></use>
+                    </svg>
+                    Увійти
+                  </button>
+                </div>
+                <div class="login__form-book">
+                  <img src="../img/static/books.png" alt="">
+                </div>
+            </form>
           </div>
         </div>
-
-        @@include("../components/_footer.html")
-      </main>
+      </section>
     </div>
   </body>
 </html>

@@ -1,0 +1,166 @@
+.login {
+  position: relative;
+  z-index: -1;
+  padding: rem(202) 0 rem(204);
+  height: 100%;
+  background-image: url('../../img/static/logo__bg.svg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e0ebff;
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: rem(10);
+    padding: rem(60) rem(50);
+    width: rem(540);
+    box-shadow: rem(2) rem(2) rem(8) 0 rgba(0, 0, 0, 10%);
+    background-color: #fff;
+  }
+
+  &__form-women {
+    position: absolute;
+    left: rem(-155);
+    top: rem(192);
+  }
+
+  &__form-hat {
+    position: absolute;
+    right: rem(-61);
+    top: rem(-73);
+  }
+
+  &__form-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form-title {
+    margin-bottom: rem(30);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: 120%;
+    text-align: center;
+    color: #1c1c1c;
+  }
+
+  &__form-label {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 120%;
+    color: #828282;
+  }
+
+  &__form__label-text {
+    margin-bottom: rem(10);
+  }
+
+  &__form__lable-input {
+    margin-bottom: rem(15);
+    border: none;
+    border-radius: rem(5);
+    padding: rem(8) rem(16);
+    background: #eef4ff;
+  }
+
+  &__form__bottom-label {
+    display: flex;
+    align-items: flex-start;
+    gap: rem(10);
+  }
+
+  &__form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__form__bottom-span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 120%;
+    color: #828282;
+  }
+
+  &__form__bottom-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    text-transform: uppercase;
+    color: #bdbdbd;
+  }
+
+  &__form-button {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(31);
+  }
+
+  &__form-btn {
+    display: flex;
+    align-items: center;
+    border-radius: rem(5);
+    padding: rem(15) rem(87);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ffa349;
+    gap: rem(5);
+  }
+
+  &__form-svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #fff;
+  }
+
+  &__form-book {
+    position: absolute;
+    right: -40%;
+    bottom: 5%;
+    z-index: -1;
+  }
+}
+
+@include mq('lg') {
+  .login__form-book {
+    right: -20%;
+  }
+}
+
+@include mq('md') {
+  .login__form {
+    width: 100%;
+    height: 100%;
+  }
+
+  .login__form-book,
+  .login__form-women,
+  .login__form-hat {
+    display: none;
+  }
+}
+
+@include mq('sm') {
+  .login__form__bottom-label {
+    max-width: 139px;
+  }
+}

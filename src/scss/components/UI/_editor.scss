@@ -1,26 +1,66 @@
-.ck.ck-toolbar {
-  border-color: var(--grey-5) !important;
-  border-top-left-radius: 5px !important;
-  border-top-right-radius: 5px !important;
-}
+.editor {
+  width: 100%;
 
-.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused),
-.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
-  border-color: var(--blue-50) !important;
-  border-top-color: var(--grey-5) !important;
-  border-bottom-left-radius: 5px !important;
-  border-bottom-right-radius: 5px !important;
-  box-shadow: none !important;
-  min-height: 140px !important;
-  background-color: var(--blue-50) !important;
+  &__block {
+    border-bottom-right-radius: rem(10);
+    border-bottom-left-radius: rem(10);
+    min-height: rem(170);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: rem(14);
+    line-height: 1.2;
+    background-color: var(--blue-50);
 
-  p {
-    font-size: 14px !important;
-    color: var(--black) !important;
+    .ql-editor.ql-blank::before {
+      font-style: normal;
+    }
+
+    &.ql-container.ql-snow {
+      border: none;
+    }
   }
-}
 
-.ck .ck-placeholder {
-  font-size: 14px !important;
-  color: var(--grey-3) !important;
+  .ql-toolbar.ql-snow {
+    border-color: var(--grey-5);
+    border-top-left-radius: rem(10);
+    border-top-right-radius: rem(10);
+    padding: 0;
+  }
+
+  .ql-snow.ql-toolbar button {
+    border-right: rem(1) solid var(--grey-5);
+    padding: rem(6) rem(10);
+    width: rem(36);
+    height: rem(30);
+  }
+
+  .ql-snow .ql-picker {
+    border-right: rem(1) solid var(--grey-5);
+    padding: rem(5) rem(7);
+    width: rem(36);
+    height: rem(30);
+  }
+
+  .ql-snow .ql-color-picker .ql-picker-label {
+    padding: 0;
+  }
+
+  .ql-snow .ql-stroke {
+    stroke: var(--grey-4);
+    transition: 0.15s ease;
+  }
+
+  .ql-snow .ql-fill {
+    fill: var(--grey-4);
+    transition: 0.15s ease;
+  }
+
+  .ql-snow.ql-toolbar button:hover .ql-fill {
+    fill: var(--blue-400);
+  }
+
+  .ql-snow.ql-toolbar button:hover .ql-stroke {
+    stroke: var(--blue-400);
+  }
 }

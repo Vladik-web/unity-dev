@@ -1,13 +1,21 @@
 .lessons-schedule {
-  @include flex-v-center;
-
-  position: relative;
+  display: flex;
   flex-direction: column;
   padding: rem(8) rem(10);
-  height: rem(165);
+  width: 100%;
   min-width: 0;
-  cursor: pointer;
-  gap: rem(5);
+
+  &__wrapper {
+    @include flex-v-center;
+
+    position: relative;
+    flex-direction: column;
+    height: rem(165);
+    min-width: 0;
+    background-color: var(--white);
+    cursor: pointer;
+    gap: rem(5);
+  }
 
   &__date {
     @include flex-all-center;
@@ -169,7 +177,7 @@
       .lessons-schedule__list {
         display: none;
       }
-      
+
       &:not(:last-child) {
         margin-bottom: rem(20);
         border: none;
@@ -177,7 +185,6 @@
       }
     }
   }
-
 
   .schedule-table__item {
     &:not(:first-child) {

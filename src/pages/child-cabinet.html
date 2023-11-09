@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    @@include('../components/_head.html', {title: 'Кабінет батьків'})
+    @@include('../components/_head.html', {title: 'Головна учень'})
 
     <meta property="og:title" content="Title" />
     <meta property="og:url" content="url" />
@@ -10,19 +10,14 @@
 
   <body class="body-mob-fixed">
     <div class="base-layout">
-      @@include("../components/modals/gears.html")
-      @@include("../components/_aside.html")
+      @@include("../components/modals/gears.html") @@include("../components/modals/teacher-card-student.html")
+      @@include("../components/modals/profile-card.html") @@include("../components/_aside.html")
       <main class="main">
         <header class="header">
           <div class="header__container container">
             <div class="header__inner">
               <div class="header__left">
                 <h2 class="header__title">Головне</h2>
-
-                <!-- <div class="header__buttons">
-                  <button class="header__btn header__btn--active">на сьогодні</button>
-                  <button class="header__btn">на завтра</button>
-                </div> -->
                 <div class="header__content-tabs content-tabs content-tabs--small">
                   <div class="content-tabs__wrapper">
                     <ul class="content-tabs__list">
@@ -149,13 +144,69 @@
                         </div>
                         <ul class="header__list">
                           <li class="header__item">
-                            <a href="#" class="header__link">
+                            <a href="#" class="header__link header__element--btn btn-17">
                               <svg class="header__link-svg">
                                 <use xlink:href="img/sprite.svg#account"></use>
                               </svg>
                               Моя картка
                             </a>
                           </li>
+                          <div class="modal__wrapper hide">
+                            <div class="modal__card">
+                              <div class="modal__card-image">
+                                <img class="modal__card-img" src="../../img/static/avatar-cabinet.jpg" alt="" />
+                              </div>
+                              <ul class="personal-cabinet__list modal__cabinet--list">
+                                <li class="personal-cabinet__item">
+                                  <div class="personal-cabinet__wrapper">
+                                    <span class="personal-cabinet__label">Дата народження</span>
+                                    <div class="personal-cabinet__line"></div>
+                                    <time class="personal-cabinet__value">03.05.1990</time>
+                                  </div>
+                                </li>
+                                <li class="personal-cabinet__item">
+                                  <div class="personal-cabinet__wrapper">
+                                    <span class="personal-cabinet__label">Стать</span>
+                                    <div class="personal-cabinet__line"></div>
+                                    <span class="personal-cabinet__value">Чоловіча</span>
+                                  </div>
+                                </li>
+                                <li class="personal-cabinet__item">
+                                  <div class="personal-cabinet__wrapper">
+                                    <span class="personal-cabinet__label">Місто</span>
+                                    <div class="personal-cabinet__line"></div>
+                                    <span class="personal-cabinet__value">Київ</span>
+                                  </div>
+                                </li>
+                                <li class="personal-cabinet__item">
+                                  <div class="personal-cabinet__wrapper">
+                                    <span class="personal-cabinet__label">Клас</span>
+                                    <div class="personal-cabinet__line"></div>
+                                    <span class="personal-cabinet__value">8Б</span>
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="modal__info">
+                                <div class="modal__name">
+                                  <img
+                                    class="modal__card-img"
+                                    src="../../img/static/photo-teacher.png"
+                                    alt="фото профілю"
+                                  />
+                                  <div class="modal__card-block">
+                                    <p class="modal__card-name">Бойко Василь Петрович</p>
+                                    <p class="modal__card-teacher">Викладач біології і хімії</p>
+                                  </div>
+                                </div>
+                                <button class="modal__card-btn">
+                                  <svg class="modal__info-svg">
+                                    <use xlink:href="/img/sprite.svg#message"></use>
+                                  </svg>
+                                  Написати
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                           <li class="header__item">
                             <a href="#" class="header__link">
                               <svg class="header__link-svg">
@@ -201,6 +252,74 @@
             </div>
           </div>
         </header>
+        <!-- смс от учителя -->
+        <div class="lesson-section__message">
+          <div class="lesson-section__message-top">
+            <p class="lesson-section__message__top-text">Домашня робота</p>
+            <button class="lesson-section__message-btn">
+              <svg class="lesson-section__message__top-svg">
+                <use xlink:href="/img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="lesson-section__message__center">
+            <div class="lesson-section__message-lesson">
+              <p>Історія України</p>
+              <time>15.04.23 - 10:52</time>
+            </div>
+            <div class="lesson-section__message-person">
+              <img src="../img/static/photo-teacher-little.png" alt="фото профілю" />
+              <p>Бондар Олег Михайлович</p>
+            </div>
+          </div>
+          <div class="lesson-section__message-info">
+            <button class="lesson-section__message-btn">
+              <svg class="lesson-section__message__info-svg">
+                <use xlink:href="/img/sprite.svg#message"></use>
+              </svg>
+            </button>
+            <p>Вже краще, але треба ще попрацювати 1. +</p>
+          </div>
+        </div>
+        <!-- уведомление по статусу дз  -->
+        <div class="lesson-section__notice">
+          <div class="lesson-section__message-top">
+            <p class="lesson-section__message__top-text">Домашня робота</p>
+            <button class="lesson-section__message-btn">
+              <svg class="lesson-section__message__top-svg">
+                <use xlink:href="/img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="lesson-section__message__center">
+            <div class="lesson-section__message-lesson">
+              <p>Історія України</p>
+              <time>25 квітня, 9:00</time>
+            </div>
+            <div class="lesson-section__message-person">
+              <img src="../img/static/photo-teacher-little.png" alt="фото профілю" />
+              <p>Бондар Олег Михайлович</p>
+            </div>
+          </div>
+          <div class="lesson-section__notice-info">
+            <img src="../img/static/avatar__lesson.jpg" alt="" />
+            <p>Тема уроку: Числові множини. Взаємно однозначна відповідність між елементами множин.</p>
+          </div>
+        </div>
+        <!-- напоминание -->
+        <div class="lesson-section__reminder">
+          <div class="lesson-section__reminder-text">
+            <svg>
+              <use xlink:href="/img/sprite.svg#warning"></use>
+            </svg>
+            <p>Контрольна робота з Укр. мови
+            
+            </p>
+            <span>15.04.16:00</span>
+          </div>
+
+          <time> 15.04.23 - 10:52 </time>
+        </div>
         <div class="content-tabs" id="main-tab">
           <div class="content-tabs__wrapper">
             <ul class="content-tabs__list">
@@ -244,7 +363,7 @@
                           <a href="#" class="lesson__name">Всесвітня історія</a>
                         </div>
                         <span class="lesson__point"></span>
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>
@@ -318,7 +437,7 @@
 
                         <span class="lesson__point"></span>
 
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>
@@ -391,7 +510,7 @@
                         </div>
                         <span class="lesson__point"></span>
 
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>
@@ -463,7 +582,7 @@
                           <a href="#" class="lesson__name">Історія України</a>
                         </div>
                         <span class="lesson__point"></span>
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>
@@ -538,7 +657,7 @@
                           <a href="#" class="lesson__name">Фізкультура</a>
                         </div>
                         <span class="lesson__point"></span>
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>
@@ -617,7 +736,7 @@
                       <div class="lesson__top">
                         <a href="#" class="lesson__name">Основи образотворчого мистецтва</a>
                         <span class="lesson__point"></span>
-                        <a href="#" class="lesson__teacher teacher">
+                        <a href="#" class="lesson__teacher teacher btn-18">
                           <div class="teacher__img">
                             <img src="https://picsum.photos/200/300" alt="" />
                           </div>

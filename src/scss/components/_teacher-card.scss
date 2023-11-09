@@ -17,6 +17,10 @@
     position: relative;
   }
 
+  &__name {
+    cursor: pointer;
+  }
+
   &__lesson__top-span {
     position: absolute;
     top: rem(1);
@@ -28,13 +32,13 @@
 
   &__title-block {
     margin: rem(60) 0 rem(60);
+    border-bottom: rem(1) solid #e0e0e0;
     padding-bottom: rem(8);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: rem(20);
     line-height: 120%;
     color: #1c1c1c;
-    border-bottom: rem(1) solid #E0E0E0;
   }
 
   &__top-info {
@@ -100,10 +104,47 @@
     font-size: rem(40);
     color: #ffa349;
   }
+
+  &__document {
+    max-width: rem(205);
+  }
+
+  &-classroom__card {
+    display: flex;
+    gap: rem(143);
+  }
 }
 
-.teacher-card-classroom__card {
-  display: flex;
-  align-items: unset;
-  gap: rem(143);
+@include mq('xz') {
+  .teacher-card {
+    &__sctatistic-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: rem(20);
+    }
+
+    &__sctatistic__item-box {
+      justify-content: space-between;
+    }
+
+    &__sctatistic__item-title {
+      max-width: none;
+    }
+  }
+}
+
+@include mq('md') {
+  .teacher-card {
+    &__sctatistic-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@include mq('sm') {
+  .teacher-card {
+    &__sctatistic-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }

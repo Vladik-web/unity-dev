@@ -53,7 +53,11 @@ const modals = () => {
   bindModal('.btn-10', '.rotate')
   bindModal('.btn-11', '.change-photo-process')
   bindModal('.btn-13', '.gears')
-  
+  bindModal('.btn-14', '.add-link')
+  bindModal('.btn-15', '.wants-to-finish')
+  bindModal('.btn-16', '.go-out')
+  bindModal('.btn-17', '.profile-card')
+  bindModal('.btn-18', '.teacher-card-student')
   // main
   bindModal('#upload-homework', '.upload')
 }

@@ -10,6 +10,33 @@
     border-radius: rem(10);
   }
 
+  &__btn {
+    padding: rem(14) rem(16);
+
+    // width: 50%;
+    background-color: #ffa349;
+  }
+
+  &__total-create {
+    display: flex;
+    justify-content: space-between;
+    border: rem(1) solid #c8d9fd;
+    background-color: #eef4ff;
+  }
+
+  &__select {
+    display: flex;
+    align-items: center;
+    gap: rem(12);
+    padding-left: rem(16);
+  }
+
+  &__select-svg {
+    width: rem(24);
+    height: rem(24);
+    fill: #828282;
+  }
+
   &__item {
     @include flex-v-center;
 
@@ -199,11 +226,11 @@
     background-color: var(--bg);
 
     img {
-      width: rem(30);
-      height: rem(30);
-      border-radius: 50%;
       overflow: hidden;
       border: 1px solid var(--blue-200);
+      border-radius: 50%;
+      width: rem(30);
+      height: rem(30);
     }
   }
 

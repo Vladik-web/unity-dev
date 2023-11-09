@@ -5,8 +5,8 @@
   width: 100%;
 
   &__block-info {
-    max-width: px;
-    border: rem(1) solid  #e0e0e0;
+    //max-width: px;
+    border: rem(1) solid #e0e0e0;
     border-radius: rem(10);
     padding: rem(12) rem(16);
     background: #fff;
@@ -31,10 +31,8 @@
     font-weight: 400;
     font-size: rem(12);
     line-height: 120%;
-    color:  #828282;
+    color: #828282;
   }
-
-
 
   &__header-td {
     border: none;
@@ -44,9 +42,9 @@
     line-height: 120%;
     color: #bdbdbd;
   }
-// про избегание метода знаю ,но это исключение поскольку в других случаях не работает 
+  // про избегание метода знаю ,но это исключение поскольку в других случаях не работает
   &__content--emptiness {
-  border: none !important;
+    border: none !important;
   }
 
   &__content--title {
@@ -75,7 +73,7 @@
     font-size: rem(14);
     color: #4f4f4f;
     background-color: #ffefd4;
-    border: rem(1) solid #BDBDBD;
+    border: rem(1) solid #bdbdbd;
   }
 
   &__footer-td {

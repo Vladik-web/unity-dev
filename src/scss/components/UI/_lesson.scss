@@ -54,7 +54,7 @@
     align-items: center;
     grid-column: 2/4;
     grid-row: 1/2;
-    grid-template-columns: auto rem(4) 1fr auto;
+    grid-template-columns: auto rem(25) 1fr auto;
     border-radius: rem(5);
     padding: rem(8);
     background-color: var(--bg);

@@ -24,9 +24,8 @@ import registerAccordion from './modules/registration-accordion'
 import initializeTabs from './modules/lesson-teacher'
 import lessonTabs from './modules/lesson-table-teacher'
 import btnSubject from './modules/botton-subject'
-
-
-
+import editorTeacher from './modules/editor-teacher';
+import menuAdaptive from './modules/menu-adaptive';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -59,5 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initializeTabs()
   lessonTabs()
   btnSubject()
+  editorTeacher()
+  menuAdaptive()
 })
 

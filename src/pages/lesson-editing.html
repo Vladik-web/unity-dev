@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    @@include('../components/_head.html', {title: 'Урок з математики '})
+    @@include('../components/_head.html', {title: 'Редагування уроку'})
 
     <meta property="og:title" content="Title" />
     <meta property="og:url" content="url" />
@@ -9,7 +9,12 @@
   </head>
   <body class="body-mob-fixed">
     <div class="lesson-layout">
-      @@include("../components/_aside.html")
+      @@include('../components/modals/wants-to-finish.html')
+      <!-- модальное окно на клик по кно"" -->
+      @@include('../components/modals/go-out.html')
+       <!-- модальное окно на клик по кнопке  "додати посилання"-->
+      @@include("../components/modals/add-link.html") 
+       @@include("../components/_aside.html")
       <main class="main">
         <header class="header header--lesson">
           <div class="header__container container">
@@ -287,7 +292,12 @@
                             <div class="lesson-section__editor editor">
                               <div class="editor__block"></div>
                             </div>
-  
+
+                            <div class="lesson-section__editor ">
+                              <div class="editor__content"></div>
+                            </div>
+
+
                             <button class="lesson-section__btn btn btn--accent">
                               <svg class="btn__icon">
                                 <use xlink:href="img/sprite.svg#home"></use>
@@ -406,6 +416,12 @@
 
                       <div class="lesson-section__section">
                         <h2 class="lesson-section__title">Матеріали уроку:</h2>
+                        <button class="lesson-section__next lesson-section__teacher-btn btn-14 btn btn--trans">
+                          <svg class="btn__icon">
+                            <use xlink:href="/img/sprite.svg#download"></use>
+                          </svg>
+                          Завантажити
+                        </button>
                         <div class="lesson-section__document-block document-block">
                           <ul class="document-block__list">
                             <li class="document-block__item document">
@@ -463,6 +479,16 @@
                               Множини чисел так вiдносяться одна до одної: множина натуральних чисел ℕ включена до
                               множини цiлих чисел ℤ.
                             </p>
+                            <button class="lesson-section__description-teacher">
+                              <svg class="header__title-svg">
+                                <use xlink:href="/img/sprite.svg#pensil"></use>
+                              </svg>
+                            </button>
+                            <button class="lesson-section__description-teacher">
+                              <svg class="header__title-svg">
+                                <use xlink:href="/img/sprite.svg#delete"></use>
+                              </svg>
+                            </button>
                           </li>
                           <li class="lesson-section__unit">
                             <a href="#" class="lesson-section__link">
@@ -474,6 +500,16 @@
                               множини цiлих чисел ℤ, яка, своєю чергою, включена до множини рацiональних чисел ℚ, а та,
                               нарештi, включена до множини дiйсних чисел ℝ.
                             </p>
+                            <button class="lesson-section__description-teacher">
+                              <svg class="header__title-svg">
+                                <use xlink:href="/img/sprite.svg#pensil"></use>
+                              </svg>
+                            </button>
+                            <button class="lesson-section__description-teacher">
+                              <svg class="header__title-svg">
+                                <use xlink:href="/img/sprite.svg#delete"></use>
+                              </svg>
+                            </button>
                           </li>
                         </ul>
                       </div>
@@ -531,7 +567,6 @@
                           <div class="lesson-section__editor editor">
                             <div class="editor__block"></div>
                           </div>
-
                           <button class="lesson-section__btn btn btn--accent">
                             <svg class="btn__icon">
                               <use xlink:href="img/sprite.svg#home"></use>
