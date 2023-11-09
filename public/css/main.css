@@ -10180,6 +10180,47 @@ input[type=radio]:checked + label + .content {
   transition: all 0.5s;
 }
 
+.lesson-section__class--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.lesson-section__accept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.3125rem;
+  padding: 0.5rem 1rem;
+  width: 26.25rem;
+  background-color: #eef4ff;
+  gap: 1rem;
+}
+
+.lesson-section__accept svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #bdbdbd;
+}
+
+.lesson-section__accept-btn {
+  border-radius: 0 0.3125rem 0.3125rem 0;
+  padding: 0.75rem 1rem;
+  background-color: #ffa349;
+}
+
+.lesson-section__accept-btn svg {
+  width: 1rem;
+  height: 1rem;
+  fill: #fff;
+}
+
 .lesson-section__message {
   position: absolute;
   right: 0.75rem;
@@ -14821,6 +14862,14 @@ input[type=radio]:checked + label + .content {
 @media screen and (min-width: 992px) {
   .lesson-section__right {
     max-height: none !important;
+  }
+}
+
+@media (max-width: 1507px) {
+  .week__inner {
+    overflow: auto;
+    width: 90rem;
+    height: 62.5rem;
   }
 }
 

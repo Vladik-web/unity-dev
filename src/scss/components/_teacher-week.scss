@@ -276,3 +276,11 @@
     background-color: #fff8ed;
   }
 }
+
+@media (max-width: 1507px) {
+  .week__inner {
+    overflow: auto;
+    width: rem(1440);
+    height: rem(1000);
+  }
+}
