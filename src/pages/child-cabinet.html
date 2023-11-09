@@ -10,10 +10,8 @@
 
   <body class="body-mob-fixed">
     <div class="base-layout">
-      @@include("../components/modals/gears.html")
-      @@include("../components/modals/teacher-card-student.html")
-      @@include("../components/modals/profile-card.html")
-      @@include("../components/_aside.html")
+      @@include("../components/modals/gears.html") @@include("../components/modals/teacher-card-student.html")
+      @@include("../components/modals/profile-card.html") @@include("../components/_aside.html")
       <main class="main">
         <header class="header">
           <div class="header__container container">
@@ -156,7 +154,7 @@
                           <div class="modal__wrapper hide">
                             <div class="modal__card">
                               <div class="modal__card-image">
-                                <img class="modal__card-img" src="../../img/static/avatar-cabinet.jpg" alt="">
+                                <img class="modal__card-img" src="../../img/static/avatar-cabinet.jpg" alt="" />
                               </div>
                               <ul class="personal-cabinet__list modal__cabinet--list">
                                 <li class="personal-cabinet__item">
@@ -190,7 +188,11 @@
                               </ul>
                               <div class="modal__info">
                                 <div class="modal__name">
-                                  <img class="modal__card-img" src="../../img/static/photo-teacher.png" alt="фото профілю" />
+                                  <img
+                                    class="modal__card-img"
+                                    src="../../img/static/photo-teacher.png"
+                                    alt="фото профілю"
+                                  />
                                   <div class="modal__card-block">
                                     <p class="modal__card-name">Бойко Василь Петрович</p>
                                     <p class="modal__card-teacher">Викладач біології і хімії</p>
@@ -203,7 +205,6 @@
                                   Написати
                                 </button>
                               </div>
-                              
                             </div>
                           </div>
                           <li class="header__item">
@@ -251,30 +252,73 @@
             </div>
           </div>
         </header>
-        <div class="lesson-section__notification">
-          <div class="lesson-section__notification-top">
-            <p class="lesson-section__notification-title">Домашня робота - на перездачу
-            </p>
-            <button class="">
-              <svg class="lesson-section__notification-svg">
+        <!-- смс от учителя -->
+        <div class="lesson-section__message">
+          <div class="lesson-section__message-top">
+            <p class="lesson-section__message__top-text">Домашня робота</p>
+            <button class="lesson-section__message-btn">
+              <svg class="lesson-section__message__top-svg">
                 <use xlink:href="/img/sprite.svg#close"></use>
               </svg>
             </button>
           </div>
-          <div class="lesson-section__notification-center">
-            <div class="lesson-section__notification-block">
-              <h4 class="lesson-section__notification__center-title">Історія України</h4>
-              <p class="lesson-section__notification__center-data">25 квітня, 9:00</p>
+          <div class="lesson-section__message__center">
+            <div class="lesson-section__message-lesson">
+              <p>Історія України</p>
+              <time>15.04.23 - 10:52</time>
             </div>
-            <div class="lesson-section__notification-info">
-              <img src="../img/static/photo-teacher-little.png" alt="">
+            <div class="lesson-section__message-person">
+              <img src="../img/static/photo-teacher-little.png" alt="фото профілю" />
               <p>Бондар Олег Михайлович</p>
             </div>
           </div>
-          <div class="lesson-section__notification-bottom">
-            <img class="lesson-section__notification__bottom-img" src="../img/static/avatar__lesson.jpg" alt="фото урока">
-            <p class="lesson-section__notification__bottom-text">Тема уроку: Числові множини. Взаємно однозначна відповідність між елементами множин. </p>
+          <div class="lesson-section__message-info">
+            <button class="lesson-section__message-btn">
+              <svg class="lesson-section__message__info-svg">
+                <use xlink:href="/img/sprite.svg#message"></use>
+              </svg>
+            </button>
+            <p>Вже краще, але треба ще попрацювати 1. +</p>
           </div>
+        </div>
+        <!-- уведомление по статусу дз  -->
+        <div class="lesson-section__notice">
+          <div class="lesson-section__message-top">
+            <p class="lesson-section__message__top-text">Домашня робота</p>
+            <button class="lesson-section__message-btn">
+              <svg class="lesson-section__message__top-svg">
+                <use xlink:href="/img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="lesson-section__message__center">
+            <div class="lesson-section__message-lesson">
+              <p>Історія України</p>
+              <time>25 квітня, 9:00</time>
+            </div>
+            <div class="lesson-section__message-person">
+              <img src="../img/static/photo-teacher-little.png" alt="фото профілю" />
+              <p>Бондар Олег Михайлович</p>
+            </div>
+          </div>
+          <div class="lesson-section__notice-info">
+            <img src="../img/static/avatar__lesson.jpg" alt="" />
+            <p>Тема уроку: Числові множини. Взаємно однозначна відповідність між елементами множин.</p>
+          </div>
+        </div>
+        <!-- напоминание -->
+        <div class="lesson-section__reminder">
+          <div class="lesson-section__reminder-text">
+            <svg>
+              <use xlink:href="/img/sprite.svg#warning"></use>
+            </svg>
+            <p>Контрольна робота з Укр. мови
+            
+            </p>
+            <span>15.04.16:00</span>
+          </div>
+
+          <time> 15.04.23 - 10:52 </time>
         </div>
         <div class="content-tabs" id="main-tab">
           <div class="content-tabs__wrapper">
