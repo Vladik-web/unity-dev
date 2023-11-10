@@ -3454,6 +3454,7 @@ body .simplebar-track {
   border-radius: 0.3125rem;
   padding: 0.75rem 0;
   background-color: var(--white);
+  min-width: 10rem;
 }
 
 .select__list {
@@ -6362,6 +6363,22 @@ body .simplebar-track {
   color: var(--grey-3);
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
+}
+
+.lesson-modal__condition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lesson-modal__condition-svg {
+  width: 1rem;
+  height: 1rem;
+  fill: #828282;
 }
 
 .lesson-modal__head {
@@ -14774,6 +14791,10 @@ input[type=radio]:checked + label + .content {
   color: #1c1c1c;
 }
 
+.week__wekend-teacher {
+  cursor: pointer;
+}
+
 .week__wekend img {
   max-width: 1.25rem;
 }
@@ -15332,6 +15353,19 @@ input[type=radio]:checked + label + .content {
 
   .statistics-block__link {
     display: none;
+  }
+
+  .statistics-block__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
   }
 
   .statistics-block[data-tab-content="Прогрес курсів"] {

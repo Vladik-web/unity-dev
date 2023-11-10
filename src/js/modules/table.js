@@ -7,6 +7,7 @@ const table = () => {
   const modal = document.querySelector('.lesson-modal')
   const marks = document.querySelectorAll('.table__marks')
 
+
   if (!tableEl.length || !modal || !marks.length) return
 
   const init = () => {
@@ -73,7 +74,9 @@ const table = () => {
     }
   }
 
+
   init()
-  window.addEventListener('resize', debounce(init))
+  weekInit()
+  window.addEventListener('resize', debounce(init), debounce(weekInit))
 }
 export default table
