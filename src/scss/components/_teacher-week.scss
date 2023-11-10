@@ -24,6 +24,25 @@
     }
   }
 
+  &__wekend-teacher {
+    display: flex;
+    align-items: center;
+    margin: rem(8) 0 rem(8);
+    border-bottom: rem(1) solid #e0e0e0;
+    padding-bottom: rem(8);
+    gap: rem(5);
+
+    p {
+      overflow: hidden;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: rem(14);
+      line-height: 120%;
+      text-overflow: ellipsis;
+      color: #1c1c1c;
+    }
+  }
+
   &__item {
     padding: rem(19) rem(19);
     height: 100%;
@@ -157,39 +176,55 @@
     color: #1c1c1c;
   }
 
-  &__wekend-week {
-    padding: rem(16) rem(10);
-  }
+  &__wekend {
+    &-week {
+      padding: rem(16) rem(10);
+    }
 
-  &__wekend-block {
-    display: flex;
-    align-items: baseline;
-    margin-bottom: rem(10);
-    border-bottom: rem(1) solid #e0e0e0;
-    gap: rem(10);
+    &-block {
+      display: flex;
+      gap: rem(5);
+    }
+
+    &-span {
+      height: rem(24);
+    }
+
+    &-title {
+      margin-bottom: rem(10);
+      padding-bottom: rem(8);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: rem(14);
+      text-transform: uppercase;
+      color: #1c1c1c;
+    }
+
+    img {
+      max-width: rem(20);
+    }
+
+    &--violet {
+      border-radius: rem(2);
+      padding: rem(3) rem(5);
+      background-color: #e8e0ff;
+    }
+
+    &--green {
+      border-radius: rem(2);
+      padding: rem(3) rem(5);
+      background-color: #e0fff0;
+    }
+
+    &--beige {
+      border-radius: rem(2);
+      padding: rem(3) rem(5);
+      background: #ffe0e0;
+    }
   }
 
   &__box-list {
     margin-top: rem(10);
-  }
-
-  &__wekend-title {
-    margin-bottom: rem(10);
-    padding-bottom: rem(8);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: rem(14);
-    text-transform: uppercase;
-    color: #1c1c1c;
-  }
-
-  &__wekend-span {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: rem(12);
-    line-height: 130%;
-    text-transform: uppercase;
-    color: #1c1c1c;
   }
 
   &__wekend-text {
@@ -249,18 +284,6 @@
     background-color: #fff;
   }
 
-  &__wekend--violet {
-    border-radius: rem(2);
-    padding: rem(3) rem(5);
-    background-color: #e8e0ff;
-  }
-
-  &__wekend--green {
-    border-radius: rem(2);
-    padding: rem(3) rem(5);
-    background-color: #e0fff0;
-  }
-
   &__wekend__span--violet {
     border-radius: rem(25);
     padding: rem(2);
@@ -274,6 +297,23 @@
     width: rem(24);
     color: #ffa349;
     background-color: #fff8ed;
+  }
+
+  &__wekend &__wekend-span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: rem(12);
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #1c1c1c;
+  }
+
+  &__wekend &__wekend-block {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: rem(10);
+    border-bottom: rem(1) solid #e0e0e0;
+    gap: rem(10);
   }
 }
 
