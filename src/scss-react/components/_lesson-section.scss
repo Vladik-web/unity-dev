@@ -21,10 +21,27 @@
     }
   }
 
+  &__expectation {
+    &-img {
+      border: rem(1) solid #c8d9fd;
+      border-radius: 50%;
+      width: rem(50);
+      height: rem(50);
+      object-fit: cover;
+    }
+  }
+
   &__notification-list {
     position: absolute;
     right: 0;
     top: rem(50);
+  }
+
+  &__editor {
+    &-title {
+      padding: rem(20);
+      background-color: #ffdba8;
+    }
   }
 
   &__room {
@@ -437,7 +454,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: rem(20);
+
+    // gap: rem(20);
   }
 
   &__edit {
@@ -1235,6 +1253,7 @@
     display: flex;
     align-items: center;
     margin-bottom: rem(12);
+    color: #1c1c1c;
     gap: rem(24);
   }
 
@@ -1724,10 +1743,6 @@
   display: block;
 }
 
-.lesson__section__expectation-img {
-  max-width: rem(320);
-}
-
 .lesson-section__content-nav-item {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -1819,4 +1834,8 @@
   line-height: 120%;
   color: #bdbdbd;
   background-color: #fff;
+}
+
+.changes {
+  width: 100%;
 }

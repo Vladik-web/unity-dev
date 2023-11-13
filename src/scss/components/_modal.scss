@@ -93,7 +93,10 @@
   }
 
   &__card-img {
-    max-width: rem(129);
+    border-radius: 50%;
+    width: 168px;
+    height: 168px;
+    object-fit: cover;
   }
 
   &__card-name {

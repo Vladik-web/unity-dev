@@ -6637,7 +6637,9 @@ body .simplebar-track {
 
 .changes img {
   margin-bottom: 2rem;
-  max-width: 41.625rem;
+  width: 41.625rem;
+  border: 0.0625rem solid #E0E0E0;
+  border-radius: 0.625rem;
 }
 
 .changes p {
@@ -8526,7 +8528,11 @@ input[type=radio]:checked + label + .content {
 }
 
 .modal__card-img {
-  max-width: 8.0625rem;
+  border-radius: 50%;
+  width: 168px;
+  height: 168px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .modal__card-name {
@@ -10224,6 +10230,15 @@ input[type=radio]:checked + label + .content {
   gap: 3.125rem;
 }
 
+.lesson-section__expectation-img {
+  border: 0.0625rem solid #c8d9fd;
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .lesson-section__notification-list {
   position: absolute;
   right: 0;
@@ -11836,10 +11851,6 @@ input[type=radio]:checked + label + .content {
 
 .tab-content.active {
   display: block;
-}
-
-.lesson__section__expectation-img {
-  max-width: 20rem;
 }
 
 .lesson-section__content-nav-item {
@@ -17656,6 +17667,7 @@ input[type=radio]:checked + label + .content {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 0.75rem;
+    color: #1c1c1c;
     gap: 1.5rem;
   }
 
