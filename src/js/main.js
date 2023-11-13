@@ -28,6 +28,7 @@ import editorTeacher from './modules/editor-teacher';
 import menuAdaptive from './modules/menu-adaptive';
 
 
+
 window.addEventListener('DOMContentLoaded', () => {
   try {
     new SimpleBar(document.querySelector('[data-simplebar]'), { autoHide: false })
@@ -61,4 +62,6 @@ window.addEventListener('DOMContentLoaded', () => {
   editorTeacher()
   menuAdaptive()
 })
+
+
 

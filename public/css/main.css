@@ -6581,11 +6581,75 @@ body .simplebar-track {
   background-color: #fff8ed;
 }
 
-.editor-teacher {
+.changes {
   width: 100%;
 }
 
-.editor-teacher__block {
+.changes h2 {
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: #1c1c1c;
+}
+
+.changes h3,
+.changes h4 {
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 130%;
+  color: #1c1c1c;
+}
+
+.changes h5 {
+  margin: 1.25rem 0 1.25rem;
+  padding: 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #1c1c1c;
+  background-color: #ffdba8;
+}
+
+.changes s {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: var(--Black, #1c1c1c);
+}
+
+.changes strong {
+  padding-left: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1c1c1c;
+}
+
+.changes__title {
+  padding: 1.25rem;
+  background-color: #ffdba8;
+}
+
+.changes img {
+  margin-bottom: 2rem;
+  max-width: 41.625rem;
+}
+
+.changes p {
+  margin-bottom: 1.25rem;
+  max-width: 47rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
+  color: #1c1c1c;
+}
+
+.changes__block {
   border-bottom-right-radius: 0.625rem;
   border-bottom-left-radius: 0.625rem;
   min-height: 10.625rem;
@@ -6597,57 +6661,79 @@ body .simplebar-track {
   background-color: var(--blue-50);
 }
 
-.editor-teacher__block .ql-editor.ql-blank::before {
+.changes__block .ql-editor.ql-blank::before {
   font-style: normal;
 }
 
-.editor-teacher__block.ql-container.ql-snow {
+.changes__block.ql-container.ql-snow {
   border: none;
 }
 
-.editor-teacher .ql-toolbar.ql-snow {
+.changes .ql-editor {
+  background-color: #eef4ff;
+}
+
+.changes__title {
+  color: #1c1c1c;
+  background-color: red;
+}
+
+.changes .ql-toolbar.ql-snow {
   border-color: var(--grey-5);
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
   padding: 0;
+  width: 100%;
 }
 
-.editor-teacher .ql-snow.ql-toolbar button {
+.changes .ql-snow.ql-toolbar button {
   border-right: 0.0625rem solid var(--grey-5);
   padding: 0.375rem 0.625rem;
   width: 2.25rem;
   height: 1.875rem;
 }
 
-.editor-teacher .ql-snow .ql-picker {
+.changes .ql-snow .ql-picker {
   border-right: 0.0625rem solid var(--grey-5);
   padding: 0.3125rem 0.4375rem;
   width: 2.25rem;
   height: 1.875rem;
 }
 
-.editor-teacher .ql-snow .ql-color-picker .ql-picker-label {
+.changes .ql-snow .ql-color-picker .ql-picker-label {
   padding: 0;
 }
 
-.editor-teacher .ql-snow .ql-stroke {
+.changes .ql-snow .ql-stroke {
   stroke: var(--grey-4);
   -webkit-transition: 0.15s ease;
   transition: 0.15s ease;
 }
 
-.editor-teacher .ql-snow .ql-fill {
+.changes .ql-snow .ql-fill {
   fill: var(--grey-4);
   -webkit-transition: 0.15s ease;
   transition: 0.15s ease;
 }
 
-.editor-teacher .ql-snow.ql-toolbar button:hover .ql-fill {
+.changes .ql-snow.ql-toolbar button:hover .ql-fill {
   fill: var(--blue-400);
 }
 
-.editor-teacher .ql-snow.ql-toolbar button:hover .ql-stroke {
+.changes .ql-snow.ql-toolbar button:hover .ql-stroke {
   stroke: var(--blue-400);
+}
+
+.changes .ql-snow .ql-editor a {
+  display: grid;
+  margin: 1.25rem 0 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 120%;
+  text-decoration: none;
+  color: #7d98f6;
+  cursor: pointer;
 }
 
 .header__left {
@@ -10144,6 +10230,11 @@ input[type=radio]:checked + label + .content {
   top: 3.125rem;
 }
 
+.lesson-section__editor-title {
+  padding: 1.25rem;
+  background-color: #ffdba8;
+}
+
 .lesson-section__room {
   position: relative;
   display: -webkit-box;
@@ -10633,7 +10724,6 @@ input[type=radio]:checked + label + .content {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  gap: 1.25rem;
 }
 
 .lesson-section__case:not(:last-child) {
@@ -11863,6 +11953,10 @@ input[type=radio]:checked + label + .content {
   line-height: 120%;
   color: #bdbdbd;
   background-color: #fff;
+}
+
+.changes {
+  width: 100%;
 }
 
 .maintenance {
