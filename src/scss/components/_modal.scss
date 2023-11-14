@@ -92,7 +92,15 @@
     margin-bottom: rem(37);
   }
 
+  &__photo-teacher {
+    border: rem(1) solid #c8d9fd;
+    border-radius: 50%;
+    width: rem(65);
+    height: rem(65);
+  }
+
   &__card-img {
+    border: rem(1) solid #c8d9fd;
     border-radius: 50%;
     width: 168px;
     height: 168px;
@@ -759,6 +767,10 @@
     &__documents {
       grid-template-columns: 1fr 1fr;
     }
+    
+  }
+  .personal-cabinet__value {
+    text-align: end;
   }
 }
 

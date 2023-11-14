@@ -8527,7 +8527,15 @@ input[type=radio]:checked + label + .content {
   margin-bottom: 2.3125rem;
 }
 
+.modal__photo-teacher {
+  border: 0.0625rem solid #c8d9fd;
+  border-radius: 50%;
+  width: 4.0625rem;
+  height: 4.0625rem;
+}
+
 .modal__card-img {
+  border: 0.0625rem solid #c8d9fd;
   border-radius: 50%;
   width: 168px;
   height: 168px;
@@ -14731,6 +14739,15 @@ input[type=radio]:checked + label + .content {
   color: #1c1c1c;
 }
 
+.week__wekend-teacher img {
+  border: 0.0625rem solid #c8d9fd;
+  border-radius: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .week__item {
   padding: 1.1875rem 1.1875rem;
   height: 100%;
@@ -14809,6 +14826,18 @@ input[type=radio]:checked + label + .content {
   margin: 1.125rem 0.3125rem 0.9375rem;
 }
 
+.week__box-data {
+  color: #1c1c1c;
+}
+
+.week__box--pear {
+  background-color: #a9f4d8;
+}
+
+.week__box--purpur {
+  background-color: #d1c2fc;
+}
+
 .week__box-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14879,6 +14908,8 @@ input[type=radio]:checked + label + .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 0.5rem;
+  border-bottom: 0.0625rem solid #e0e0e0;
   gap: 0.3125rem;
 }
 
@@ -14896,12 +14927,26 @@ input[type=radio]:checked + label + .content {
   color: #1c1c1c;
 }
 
+.week__wekend-lesson {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .week__wekend-teacher {
   cursor: pointer;
 }
 
 .week__wekend img {
-  max-width: 1.25rem;
+  border: 0.0625rem solid #c8d9fd;
+  border-radius: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.week__wekend--weeks {
+  border: 0.0625rem solid #eef4ff;
+  border-radius: 0.3125rem;
 }
 
 .week__wekend--violet {
@@ -14965,7 +15010,6 @@ input[type=radio]:checked + label + .content {
   text-align: center;
   text-transform: uppercase;
   color: #1c1c1c;
-  background-color: #d1c2fc;
 }
 
 .week__block-time {
@@ -15035,7 +15079,7 @@ input[type=radio]:checked + label + .content {
   }
 }
 
-@media (max-width: 1507px) {
+@media (max-width: 1607px) {
   .week__inner {
     overflow: auto;
     width: 90rem;
@@ -17779,6 +17823,10 @@ input[type=radio]:checked + label + .content {
 
   .modal__documents {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .personal-cabinet__value {
+    text-align: end;
   }
 
   .lesson-section__text__box-tab {
