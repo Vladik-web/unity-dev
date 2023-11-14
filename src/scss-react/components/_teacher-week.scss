@@ -41,6 +41,14 @@
       text-overflow: ellipsis;
       color: #1c1c1c;
     }
+
+    img {
+      border: rem(1) solid #c8d9fd;
+      border-radius: 50%;
+      width: rem(20);
+      height: rem(20);
+      object-fit: cover;
+    }
   }
 
   &__item {
@@ -121,6 +129,19 @@
 
   &__box {
     margin: rem(18) rem(5) rem(15);
+
+    &-data {
+      padding-top: rem(13);
+      color: #1c1c1c;
+    }
+
+    &--pear {
+      background-color: #a9f4d8;
+    }
+
+    &--purpur {
+      background-color: #d1c2fc;
+    }
   }
 
   &__box-item {
@@ -183,6 +204,8 @@
 
     &-block {
       display: flex;
+      margin-bottom: rem(8);
+      border-bottom: rem(1) solid #e0e0e0;
       gap: rem(5);
     }
 
@@ -200,12 +223,24 @@
       color: #1c1c1c;
     }
 
+    &-lesson {
+      width: fit-content;
+    }
+
     &-teacher {
       cursor: pointer;
     }
 
     img {
-      max-width: rem(20);
+      border: rem(1) solid #c8d9fd;
+      border-radius: 50%;
+      width: rem(20);
+      height: rem(20);
+    }
+
+    &--weeks {
+      border: rem(1) solid #eef4ff;
+      border-radius: rem(5);
     }
 
     &--violet {
@@ -264,7 +299,8 @@
     text-align: center;
     text-transform: uppercase;
     color: #1c1c1c;
-    background-color: #d1c2fc;
+
+    // background-color: #d1c2fc;
   }
 
   &__block-time {
@@ -321,7 +357,7 @@
   }
 }
 
-@media (max-width: 1507px) {
+@media (max-width: 1607px) {
   .week__inner {
     overflow: auto;
     width: rem(1440);

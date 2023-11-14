@@ -14827,6 +14827,7 @@ input[type=radio]:checked + label + .content {
 }
 
 .week__box-data {
+  padding-top: 0.8125rem;
   color: #1c1c1c;
 }
 
