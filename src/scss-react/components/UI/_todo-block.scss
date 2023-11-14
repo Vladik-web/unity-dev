@@ -3,6 +3,10 @@
     border-radius: rem(10);
     padding: rem(16) rem(12);
     background-color: var(--bg);
+
+    &-orange {
+      margin: rem(20) 0 rem(20);
+    }
   }
 
   &__title {

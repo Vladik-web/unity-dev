@@ -4902,6 +4902,10 @@ body .simplebar-track {
   background-color: var(--bg);
 }
 
+.todo-block__inner-orange {
+  margin: 1.25rem 0 1.25rem;
+}
+
 .todo-block__title {
   margin-bottom: 1rem;
   font-weight: 500;
@@ -10627,6 +10631,7 @@ input[type=radio]:checked + label + .content {
 
 .lesson-section__btn {
   margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .lesson-section__section:not(:last-child) {
@@ -10760,6 +10765,7 @@ input[type=radio]:checked + label + .content {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: 1.25rem;
   font-weight: 400;
   font-style: normal;
   font-size: 0.875rem;
@@ -11130,6 +11136,10 @@ input[type=radio]:checked + label + .content {
   fill: none;
   stroke: var(--grey-4);
   stroke-width: 0.078125rem;
+}
+
+.lesson-section__work {
+  margin-bottom: 1.25rem;
 }
 
 .lesson-section__notification .lesson-section__teacher-btn {

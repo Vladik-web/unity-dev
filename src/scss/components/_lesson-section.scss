@@ -353,6 +353,7 @@
 
   &__btn {
     margin-top: rem(12);
+    margin-bottom: rem(12);
   }
 
   &__section {
@@ -461,6 +462,7 @@
   &__edit {
     @include flex-v-center;
 
+    margin-top: rem(20);
     font-weight: 400;
     font-style: normal;
     font-size: rem(14);
@@ -772,6 +774,10 @@
       stroke: var(--grey-4);
       stroke-width: rem(1.25);
     }
+  }
+
+  &__work {
+    margin-bottom: rem(20);
   }
 
   &__notification &__teacher-btn {
