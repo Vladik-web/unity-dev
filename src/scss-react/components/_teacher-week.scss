@@ -1,4 +1,6 @@
 .week {
+  overflow-x: hidden;
+
   &__list {
     display: grid;
     align-items: center;
@@ -52,7 +54,7 @@
   }
 
   &__item {
-    padding: rem(19) rem(19);
+    // padding: rem(19) rem(19);
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -85,6 +87,10 @@
     &:nth-child(6) {
       margin-right: rem(-20);
       padding-right: rem(20);
+    }
+
+    &--month {
+      padding: rem(18) 0 rem(18);
     }
   }
 
@@ -141,6 +147,17 @@
 
     &--purpur {
       background-color: #d1c2fc;
+    }
+
+    &--element {
+      padding: rem(2)  rem(5);
+      display: flex;
+      justify-content: center;
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: rem(13);
+      line-height: 120%;
+      color: #1c1c1c;
     }
   }
 
@@ -331,10 +348,8 @@
   }
 
   &__box--day {
-    margin: 0 auto;
     border-radius: rem(25);
-    padding: rem(5) rem(10);
-    width: rem(24);
+    padding: rem(5) rem(5);
     color: #ffa349;
     background-color: #fff8ed;
   }

@@ -6404,6 +6404,11 @@ body .simplebar-track {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 1.0625rem;
   font-weight: 500;
   font-style: normal;
   font-size: 0.8125rem;
@@ -6414,6 +6419,18 @@ body .simplebar-track {
 .lesson-modal__num span {
   font-size: 0.875rem;
   color: var(--orange-500);
+}
+
+.lesson-modal__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .lesson-modal__date {
@@ -14699,6 +14716,10 @@ input[type=radio]:checked + label + .content {
   z-index: -1;
 }
 
+.week {
+  overflow-x: hidden;
+}
+
 .week__list {
   display: grid;
   -webkit-box-align: center;
@@ -14759,7 +14780,6 @@ input[type=radio]:checked + label + .content {
 }
 
 .week__item {
-  padding: 1.1875rem 1.1875rem;
   height: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -14793,6 +14813,10 @@ input[type=radio]:checked + label + .content {
 .week__item:nth-child(6) {
   margin-right: -1.25rem;
   padding-right: 1.25rem;
+}
+
+.week__item--month {
+  padding: 1.125rem 0 1.125rem;
 }
 
 .week__center-time {
@@ -14847,6 +14871,21 @@ input[type=radio]:checked + label + .content {
 
 .week__box--purpur {
   background-color: #d1c2fc;
+}
+
+.week__box--element {
+  padding: 0.125rem 0.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 120%;
+  color: #1c1c1c;
 }
 
 .week__box-item {
@@ -15051,10 +15090,8 @@ input[type=radio]:checked + label + .content {
 }
 
 .week__box--day {
-  margin: 0 auto;
   border-radius: 1.5625rem;
-  padding: 0.3125rem 0.625rem;
-  width: 1.5rem;
+  padding: 0.3125rem 0.3125rem;
   color: #ffa349;
   background-color: #fff8ed;
 }

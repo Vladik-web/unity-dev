@@ -51,6 +51,9 @@
   &__num {
     @include flex-v-center;
 
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(17);
     font-weight: 500;
     font-style: normal;
     font-size: rem(13);
@@ -61,6 +64,12 @@
       font-size: rem(14);
       color: var(--orange-500);
     }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__date {
@@ -136,8 +145,6 @@
 
     gap: rem(10);
   }
-
-
 
   &__time {
     font-weight: 500;
