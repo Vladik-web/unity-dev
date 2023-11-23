@@ -53,6 +53,7 @@
 @import 'components/UI/occupation';
 @import 'components/UI/calendar';
 @import 'components/UI/loader';
+@import 'components/UI/editor-teacher';
 
 // 6. All Components
 @import 'components/header';
@@ -102,3 +103,16 @@
 @import 'components/login';
 @import 'commponets/teacher-shedule';
 @import 'commponets/teacher-week';
+
+// обновил, добавил 14.11.2023
+// teacher-week.scss
+// modal.scss
+// UI/editor-teacher.scss
+// lesson-section.scss
+
+
+
+// изменил 23.11.2023
+// header.scss
+// aside.scss
+// так же изменил вёрстку aside.html , aside-teacher.html 

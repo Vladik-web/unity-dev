@@ -1,4 +1,6 @@
 .week {
+  overflow-x: hidden;
+
   &__list {
     display: grid;
     align-items: center;
@@ -24,8 +26,35 @@
     }
   }
 
+  &__wekend-teacher {
+    display: flex;
+    align-items: center;
+    margin: rem(8) 0 rem(8);
+    border-bottom: rem(1) solid #e0e0e0;
+    padding-bottom: rem(8);
+    gap: rem(5);
+
+    p {
+      overflow: hidden;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: rem(14);
+      line-height: 120%;
+      text-overflow: ellipsis;
+      color: #1c1c1c;
+    }
+
+    img {
+      border: rem(1) solid #c8d9fd;
+      border-radius: 50%;
+      width: rem(20);
+      height: rem(20);
+      object-fit: cover;
+    }
+  }
+
   &__item {
-    padding: rem(19) rem(19);
+    // padding: rem(19) rem(19);
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -58,6 +87,10 @@
     &:nth-child(6) {
       margin-right: rem(-20);
       padding-right: rem(20);
+    }
+
+    &--month {
+      padding: rem(18) 0 rem(18);
     }
   }
 
@@ -102,6 +135,30 @@
 
   &__box {
     margin: rem(18) rem(5) rem(15);
+
+    &-data {
+      padding-top: rem(13);
+      color: #1c1c1c;
+    }
+
+    &--pear {
+      background-color: #a9f4d8;
+    }
+
+    &--purpur {
+      background-color: #d1c2fc;
+    }
+
+    &--element {
+      padding: rem(2)  rem(5);
+      display: flex;
+      justify-content: center;
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: rem(13);
+      line-height: 120%;
+      color: #1c1c1c;
+    }
   }
 
   &__box-item {
@@ -157,39 +214,73 @@
     color: #1c1c1c;
   }
 
-  &__wekend-week {
-    padding: rem(16) rem(10);
-  }
+  &__wekend {
+    &-week {
+      padding: rem(16) rem(10);
+    }
 
-  &__wekend-block {
-    display: flex;
-    align-items: baseline;
-    margin-bottom: rem(10);
-    border-bottom: rem(1) solid #e0e0e0;
-    gap: rem(10);
+    &-block {
+      display: flex;
+      margin-bottom: rem(8);
+      border-bottom: rem(1) solid #e0e0e0;
+      gap: rem(5);
+    }
+
+    &-span {
+      height: rem(24);
+    }
+
+    &-title {
+      margin-bottom: rem(10);
+      padding-bottom: rem(8);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: rem(14);
+      text-transform: uppercase;
+      color: #1c1c1c;
+    }
+
+    &-lesson {
+      width: fit-content;
+    }
+
+    &-teacher {
+      cursor: pointer;
+    }
+
+    img {
+      border: rem(1) solid #c8d9fd;
+      border-radius: 50%;
+      width: rem(20);
+      height: rem(20);
+    }
+
+    &--weeks {
+      border: rem(1) solid #eef4ff;
+      border-radius: rem(5);
+    }
+
+    &--violet {
+      border-radius: rem(2);
+      padding: rem(3) rem(5);
+      background-color: #e8e0ff;
+    }
+
+    &--green {
+      border-radius: rem(2);
+      padding: rem(3) rem(5);
+      background-color: #e0fff0;
+    }
+
+    &--beige {
+      border-radius: rem(2);
+      padding: rem(3) rem(5);
+      background: #ffe0e0;
+    }
   }
 
   &__box-list {
     margin-top: rem(10);
-  }
-
-  &__wekend-title {
-    margin-bottom: rem(10);
-    padding-bottom: rem(8);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: rem(14);
-    text-transform: uppercase;
-    color: #1c1c1c;
-  }
-
-  &__wekend-span {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: rem(12);
-    line-height: 130%;
-    text-transform: uppercase;
-    color: #1c1c1c;
   }
 
   &__wekend-text {
@@ -225,7 +316,8 @@
     text-align: center;
     text-transform: uppercase;
     color: #1c1c1c;
-    background-color: #d1c2fc;
+
+    // background-color: #d1c2fc;
   }
 
   &__block-time {
@@ -249,18 +341,6 @@
     background-color: #fff;
   }
 
-  &__wekend--violet {
-    border-radius: rem(2);
-    padding: rem(3) rem(5);
-    background-color: #e8e0ff;
-  }
-
-  &__wekend--green {
-    border-radius: rem(2);
-    padding: rem(3) rem(5);
-    background-color: #e0fff0;
-  }
-
   &__wekend__span--violet {
     border-radius: rem(25);
     padding: rem(2);
@@ -268,11 +348,34 @@
   }
 
   &__box--day {
-    margin: 0 auto;
     border-radius: rem(25);
-    padding: rem(5) rem(10);
-    width: rem(24);
+    padding: rem(5) rem(5);
     color: #ffa349;
     background-color: #fff8ed;
+  }
+
+  &__wekend &__wekend-span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: rem(12);
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #1c1c1c;
+  }
+
+  &__wekend &__wekend-block {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: rem(10);
+    border-bottom: rem(1) solid #e0e0e0;
+    gap: rem(10);
+  }
+}
+
+@media (max-width: 1607px) {
+  .week__inner {
+    overflow: auto;
+    width: rem(1440);
+    height: rem(1000);
   }
 }

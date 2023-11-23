@@ -21,10 +21,27 @@
     }
   }
 
+  &__expectation {
+    &-img {
+      border: rem(1) solid #c8d9fd;
+      border-radius: 50%;
+      width: rem(50);
+      height: rem(50);
+      object-fit: cover;
+    }
+  }
+
   &__notification-list {
     position: absolute;
     right: 0;
     top: rem(50);
+  }
+
+  &__editor {
+    &-title {
+      padding: rem(20);
+      background-color: #ffdba8;
+    }
   }
 
   &__room {
@@ -70,6 +87,39 @@
         overflow: visible;
         opacity: 1;
         transition: all 0.5s;
+      }
+    }
+  }
+
+  &__class--link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__accept {
+    display: flex;
+    align-items: center;
+    border-radius: rem(5);
+    padding: rem(8) rem(16);
+    width: rem(420);
+    background-color: #eef4ff;
+    gap: rem(16);
+
+    svg {
+      width: rem(24);
+      height: rem(24);
+      fill: #bdbdbd;
+    }
+
+    &-btn {
+      border-radius: 0 rem(5) rem(5) 0;
+      padding: rem(12) rem(16);
+      background-color: #ffa349;
+
+      svg {
+        width: rem(16);
+        height: rem(16);
+        fill: #fff;
       }
     }
   }
@@ -303,6 +353,7 @@
 
   &__btn {
     margin-top: rem(12);
+    margin-bottom: rem(12);
   }
 
   &__section {
@@ -404,12 +455,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: rem(20);
+
+    // gap: rem(20);
   }
 
   &__edit {
     @include flex-v-center;
 
+    margin-top: rem(20);
     font-weight: 400;
     font-style: normal;
     font-size: rem(14);
@@ -630,12 +683,12 @@
   }
 
   &__item__person-inp {
-    @include flex-all-center;
-
     border: rem(1) solid #e0ebff;
     border-radius: rem(5);
     width: rem(24);
-    height: rem(25);
+
+    // height: rem(25);
+    text-align: center;
   }
 
   &__class-link-svg {
@@ -721,6 +774,10 @@
       stroke: var(--grey-4);
       stroke-width: rem(1.25);
     }
+  }
+
+  &__work {
+    margin-bottom: rem(20);
   }
 
   &__notification &__teacher-btn {
@@ -1202,6 +1259,7 @@
     display: flex;
     align-items: center;
     margin-bottom: rem(12);
+    color: #1c1c1c;
     gap: rem(24);
   }
 
@@ -1347,7 +1405,7 @@
 .lesson__section__info-line {
   display: flex;
   align-items: center;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto';
   font-weight: 400;
   font-size: 13px;
   line-height: 120%;
@@ -1424,7 +1482,7 @@
   border-radius: 3px;
   padding: 8px;
   width: 80px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
@@ -1591,7 +1649,7 @@
 .lesson__section--message {
   border-radius: rem(5);
   padding: rem(8) rem(16);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: rem(14);
   text-transform: uppercase;
@@ -1605,7 +1663,7 @@
   gap: rem(12);
 
   p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 120%;
@@ -1689,10 +1747,6 @@
 
 .tab-content.active {
   display: block;
-}
-
-.lesson__section__expectation-img {
-  max-width: rem(320);
 }
 
 .lesson-section__content-nav-item {
@@ -1780,10 +1834,14 @@
   border: rem(1) solid #bdbdbd;
   border-radius: rem(5);
   padding: rem(4) rem(12);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: rem(16);
   line-height: 120%;
   color: #bdbdbd;
   background-color: #fff;
+}
+
+.changes {
+  width: 100%;
 }

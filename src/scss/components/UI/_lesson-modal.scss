@@ -32,6 +32,18 @@
     }
   }
 
+  &__condition {
+    display: flex;
+    align-items: center;
+    gap: rem(12);
+
+    &-svg {
+      width: rem(16);
+      height: rem(16);
+      fill: #828282;
+    }
+  }
+
   &__head {
     @include flex-all-sb;
   }
@@ -39,6 +51,9 @@
   &__num {
     @include flex-v-center;
 
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(17);
     font-weight: 500;
     font-style: normal;
     font-size: rem(13);
@@ -49,6 +64,12 @@
       font-size: rem(14);
       color: var(--orange-500);
     }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__date {
@@ -124,8 +145,6 @@
 
     gap: rem(10);
   }
-
- 
 
   &__time {
     font-weight: 500;

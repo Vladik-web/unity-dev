@@ -7,6 +7,14 @@
     gap: rem(32) rem(30);
   }
 
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    transition: grid-template-columns 0.2s ease;
+    gap: rem(32) rem(30);
+  }
+
   &__left {
     flex: 1 1 auto;
 
@@ -58,18 +66,18 @@
   }
 
   &__block {
-    &[data-tab-content='Курси'] {
+    &:nth-child(1) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    &:nth-child(2) {
       grid-column: 1/2;
       grid-row: 2/3;
     }
 
-    &[data-tab-content='Задачі'] {
+    &:nth-child(3) {
       grid-row: 1/3;
-    }
-
-    &[data-tab-content='Розклад уроків'] {
-      grid-column: 1/2;
-      grid-row: 1/2;
     }
   }
 

@@ -92,6 +92,14 @@
     left: 0;
     top: 0;
     bottom: 0;
+
+    .aside {
+      &__logo {
+        svg {
+          width: rem(92); //добавил
+        }
+      }
+    }
   }
 
   &--hide {
@@ -103,7 +111,7 @@
       }
 
       &__top {
-        border-bottom: rem(1) solid #e0e0e0;
+        // border-bottom: rem(1) solid #e0e0e0;
         padding-bottom: rem(20);
       }
 
@@ -111,6 +119,10 @@
         overflow: hidden;
         margin-left: rem(5);
         width: rem(18);
+
+        svg {
+          width: rem(38);
+        }
       }
 
       &__top-path--hide {

@@ -130,10 +130,17 @@
       &:nth-child(n + 3) {
         display: flex;
       }
+  
     }
 
     &__link {
       display: none;
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
     }
 
     &[data-tab-content='Прогрес курсів'] {
@@ -141,3 +148,4 @@
     }
   }
 }
+
