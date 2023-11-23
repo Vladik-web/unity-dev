@@ -8157,6 +8157,11 @@ input[type=radio]:checked + label + .content {
   bottom: 0;
 }
 
+.aside--main .aside__top {
+  border-bottom: 0.0625rem solid #e0e0e0;
+  padding-bottom: 1.25rem;
+}
+
 .aside--main .aside__logo svg {
   width: 5.75rem;
 }
@@ -8170,6 +8175,7 @@ input[type=radio]:checked + label + .content {
 }
 
 .aside--hide .aside__top {
+  border-bottom: 0.0625rem solid #e0e0e0;
   padding-bottom: 1.25rem;
 }
 

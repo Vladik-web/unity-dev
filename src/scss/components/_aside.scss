@@ -94,6 +94,11 @@
     bottom: 0;
 
     .aside {
+      &__top {
+        border-bottom: rem(1) solid #e0e0e0;
+        padding-bottom: rem(20);
+      }
+    
       &__logo {
         svg {
           width: rem(92); //добавил
@@ -111,7 +116,7 @@
       }
 
       &__top {
-        // border-bottom: rem(1) solid #e0e0e0;
+        border-bottom: rem(1) solid #e0e0e0;
         padding-bottom: rem(20);
       }
 
