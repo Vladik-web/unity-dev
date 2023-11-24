@@ -18,7 +18,7 @@
     <meta property="og:image" content="img/favicon/favicon.svg">
   </head>
   <body>
-    <div class="empty-layout">
+    <!-- <div class="empty-layout">
       <section class="login">
         <div class="login__container container">
           <div class="login__inner">
@@ -38,16 +38,16 @@
                 <label class="login__form-label">
                   <p class="login__form__label-text">Пошта</p>
 
-                  <input class="login__form__lable-input" type="text">
+                  <input class="field__input input" type="text" />
                 </label>
                 <label class="login__form-label">
                   <p class="login__form__label-text">Пароль</p>
 
-                  <input class="login__form__lable-input" type="password">
+                  <input class="field__input input" type="password" />
                 </label>
                 <div class="login__form-bottom">
                   <label class="login__form__bottom-label">
-                    <input class="login__form__bottom-input" type="checkbox">
+                    <input class="login__form__bottom-input" type="checkbox" />
                     <span class="login__form__bottom-span">Запам’ятати мене</span>
                   </label>
                   <a class="login__form__bottom-text">Забули пароль?</a>
@@ -63,6 +63,77 @@
                 <div class="login__form-book">
                   <img src="../img/static/books.png" alt="">
                 </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div> -->
+
+    <div class="empty-layout">
+      <section class="login">
+        <div class="login__container container">
+          <div class="login__inner">
+            <form class="modal__form login__form">
+              <div class="login__form-women">
+            <img src="../img/static/women.png" alt="">
+          </div>
+              <div class="login__form-hat">
+                <img src="../img/static/hat.png" alt="">
+              </div>
+              <div class="login__form-logo">
+                <img src="../img/static/logo.png" alt="логотип сайту">
+              </div>
+              <h1 class="login__form-title">Вхід</h1>
+              <div class="modal__field field">
+                <label class="field__label" for="text">Пошта</label>
+                <div class="field__wrapper">
+                  <input id="form[repeat-password]" class="field__input input" data-input required>
+                  <svg class="field__icon">
+                    <use xlink:href="img/sprite.svg#warn"></use>
+                  </svg>
+                </div>
+                <span class="field__tip">Була допущена помилка </span>
+              </div>
+              <div class="modal__field field">
+                <label class="field__label" for="form[password]">Пароль</label>
+                <div class="field__wrapper">
+                  <input type="password" id="form[email]" class="field__input input" inputmode="email" data-input="" required="">
+                  <svg class="field__icon">
+                    <use xlink:href="img/sprite.svg#warn"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="login__box">
+                <label class="field__checkbox checkbox">
+                  <input type="checkbox" value="" class="checkbox__input">
+                  <div class="checkbox__block">
+                    <span class="checkbox__checkmark checkbox__checkmark--default">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#checkbox-default"></use>
+                      </svg>
+                    </span>
+                    <span class="checkbox__checkmark checkbox__checkmark--active">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#checkbox-active"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="checkbox__value">Запам’ятати мене</span>
+                </label>
+
+                <a class="login__box-link" href="#">Забули пароль?</a>
+              </div>
+
+              <button class="modal__btn modal__btn--stroke btn btn--accent">
+                <svg class="btn__icon">
+                  <use xlink:href="img/sprite.svg#entrance"></use>
+                </svg>
+                Увійти
+              </button>
+              <div class="login__form-book">
+                <img src="../img/static/books.png" alt="">
+              </div>
             </form>
           </div>
         </div>
