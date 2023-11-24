@@ -475,6 +475,9 @@
       display: flex;
       flex-direction: column;
     }
+    &__child:checked + &__child-span {
+      color: #7d98f6;
+    }
 
     &__children__list-img {
       border-radius: 50%;

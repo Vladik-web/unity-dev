@@ -226,7 +226,7 @@
     right: rem(12);
     top: rem(250);
     z-index: 2;
-    border: rem(1) solid  #f2994a;
+    border: rem(1) solid #f2994a;
     border-radius: rem(10);
     padding: rem(20);
     width: rem(550);
@@ -256,7 +256,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: rem(1) solid  #fe7c11;
+    border: rem(1) solid #fe7c11;
     border-radius: rem(10);
     padding: rem(20);
     width: rem(550);
@@ -1405,7 +1405,7 @@
 .lesson__section__info-line {
   display: flex;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 120%;
@@ -1482,7 +1482,7 @@
   border-radius: 3px;
   padding: 8px;
   width: 80px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
@@ -1516,11 +1516,11 @@
   align-items: stretch;
 }
 
-.dropdawn__button-svg {
-  width: rem(10);
-  height: rem(5);
-  fill: #828282;
-}
+//.dropdawn__button-svg {
+//  width: rem(10);
+//  height: rem(5);
+//  fill: #828282;
+//}
 
 .lesson__section__info-input {
   border: rem(1) solid #c8d9fd;
@@ -1649,7 +1649,7 @@
 .lesson__section--message {
   border-radius: rem(5);
   padding: rem(8) rem(16);
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: rem(14);
   text-transform: uppercase;
@@ -1663,7 +1663,7 @@
   gap: rem(12);
 
   p {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 120%;
@@ -1834,7 +1834,7 @@
   border: rem(1) solid #bdbdbd;
   border-radius: rem(5);
   padding: rem(4) rem(12);
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: rem(16);
   line-height: 120%;

@@ -185,7 +185,7 @@
     margin-bottom: rem(20);
     border: none;
     border-radius: rem(5);
-    padding: rem(8)  rem(16) rem(8) rem(56);
+    padding: rem(8) rem(16) rem(8) rem(56);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: rem(14);
@@ -276,7 +276,7 @@
     align-items: center;
 
     /* Design/BTN */
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
@@ -489,7 +489,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: rem(12);
-    border: rem(1) solid  #bdbdbd;
+    border: rem(1) solid #bdbdbd;
     border-radius: rem(10);
     padding: rem(14) rem(20);
   }
@@ -767,7 +767,6 @@
     &__documents {
       grid-template-columns: 1fr 1fr;
     }
-    
   }
   .personal-cabinet__value {
     text-align: end;

@@ -1,4 +1,80 @@
 .lesson-section {
+  &__lable {
+    width: 100%;
+  }
+
+  &__extra-link {
+    &--wrapper {
+      display: flex;
+      align-items: center;
+
+      width: min(100%, 490px);
+
+      border-radius: rem(5);
+
+      overflow: hidden;
+
+      transition: 0.2s var(--ease-out);
+
+      @include hover() {
+        background-color: var(--blue-50);
+
+        .lesson-section__extra-link--edit {
+          opacity: 1;
+        }
+      }
+
+      svg {
+        width: rem(24);
+        height: rem(24);
+        fill: var(--grey-4);
+      }
+
+      &.--is-edit {
+        background-color: var(--blue-50);
+      }
+    }
+
+    &--label {
+      flex-grow: 1;
+
+      padding: rem(8) rem(16);
+
+      display: flex;
+      gap: rem(16);
+    }
+
+    &--input {
+      flex-grow: 1;
+
+      font-family: 'Roboto', sans-serif;
+      font-size: rem(14);
+      line-height: 120%;
+      color: var(--grey-3);
+
+      background-color: transparent;
+      border: none;
+      outline: none;
+      resize: none;
+    }
+
+    &--edit {
+      opacity: 0;
+
+      transition: 0.2s var(--ease-out);
+    }
+
+    &--save {
+      padding: rem(8) rem(16);
+
+      background-color: var(--orange-400);
+
+      & > svg {
+        fill: var(--white);
+      }
+    }
+  }
+
   &__box {
     display: flex;
     align-items: center;
