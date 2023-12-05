@@ -8543,6 +8543,10 @@ input[type=radio]:checked + label + .content {
   min-height: 100%;
 }
 
+.modal__wrapper-finish {
+  height: 2.8125rem;
+}
+
 .modal__link__lable-svg {
   position: absolute;
   left: 1.1875rem;
@@ -8824,6 +8828,38 @@ input[type=radio]:checked + label + .content {
 
 .modal__field .field__label {
   color: var(--grey-3);
+}
+
+.modal__field-link {
+  margin-bottom: 1.25rem;
+}
+
+.modal__field-text {
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+
+.modal__field-textrea {
+  margin-bottom: 1.875rem;
+  height: 6.25rem;
+}
+
+.modal__field-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.modal__field-btn {
+  width: 11.75rem;
+  height: 2.8125rem;
 }
 
 .modal__confirm {
