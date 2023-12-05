@@ -56,7 +56,7 @@
 
   &__title-info {
     margin-bottom: rem(33);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: rem(20);
     line-height: 120%;
@@ -71,6 +71,12 @@
     justify-content: center;
     padding: rem(30) rem(10);
     min-height: 100%;
+  }
+
+  &__wrapper {
+    &-finish {
+      height: rem(45);
+    }
   }
 
   &__link__lable-svg {
@@ -109,7 +115,7 @@
 
   &__card-name {
     margin-bottom: rem(8);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: rem(14);
     line-height: 120%;
@@ -117,7 +123,7 @@
   }
 
   &__card-teacher {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: rem(12);
     line-height: 120%;
@@ -185,8 +191,8 @@
     margin-bottom: rem(20);
     border: none;
     border-radius: rem(5);
-    padding: rem(8)  rem(16) rem(8) rem(56);
-    font-family: 'Roboto', sans-serif;
+    padding: rem(8) rem(16) rem(8) rem(56);
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: rem(14);
     line-height: 120%;
@@ -199,7 +205,7 @@
     border: none;
     border-radius: rem(5);
     padding: rem(15) 0 rem(68) rem(15);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: rem(14);
     line-height: 120%;
@@ -243,7 +249,7 @@
     border-radius: rem(5);
     padding: rem(8) rem(16);
     width: rem(188);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
@@ -276,7 +282,7 @@
     align-items: center;
 
     /* Design/BTN */
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
@@ -290,7 +296,7 @@
 
   &__wrapper__wants-text {
     margin-bottom: rem(15);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: rem(13);
     line-height: 120%;
@@ -300,7 +306,7 @@
 
   &__link-label {
     position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: rem(16);
     line-height: 120%;
@@ -340,6 +346,34 @@
 
     .field__label {
       color: var(--grey-3);
+    }
+
+    &-link {
+      margin-bottom: rem(20);
+    }
+
+    &-text {
+      margin-bottom: rem(8);
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: rem(16);
+      line-height: 120%;
+      color: #bdbdbd;
+    }
+
+    &-textrea {
+      margin-bottom: rem(30);
+      height: rem(100);
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-btn {
+      width: rem(188);
+      height: rem(45);
     }
   }
 
@@ -462,7 +496,7 @@
 
     margin: 0 auto;
     width: fit-content;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: rem(14);
@@ -489,13 +523,13 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: rem(12);
-    border: rem(1) solid  #bdbdbd;
+    border: rem(1) solid #bdbdbd;
     border-radius: rem(10);
     padding: rem(14) rem(20);
   }
 
   &__wrapper-span {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: rem(14);
     line-height: 120%;
@@ -527,7 +561,7 @@
   }
 
   &__label-cheked::before {
-    content: '';
+    content: "";
     position: absolute;
     left: rem(3);
     top: rem(3);
@@ -589,7 +623,7 @@
   }
 }
 
-@include mq('md') {
+@include mq("md") {
   .modal {
     height: var(--app-height);
 
@@ -762,13 +796,13 @@
   }
 }
 
-@include mq('sm') {
+@include mq("sm") {
   .modal {
     &__documents {
       grid-template-columns: 1fr 1fr;
     }
-    
   }
+
   .personal-cabinet__value {
     text-align: end;
   }
@@ -803,7 +837,7 @@
 
 .modal__span-text {
   display: inline-block;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
@@ -811,7 +845,7 @@
 }
 
 .modal__span-text::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
@@ -822,7 +856,7 @@
 }
 
 .modal__span-text::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 5px;
   top: 0;

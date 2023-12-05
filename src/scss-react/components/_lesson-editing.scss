@@ -1,0 +1,13 @@
+.lesson-editing {
+  &-btn {
+    margin-bottom: rem(32);
+  }
+
+  &__description {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
