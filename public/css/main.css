@@ -15090,6 +15090,18 @@ input[type=radio]:checked + label + .content {
   display: none;
 }
 
+.lesson-editing-btn {
+  margin-bottom: 2rem;
+}
+
+.lesson-editing__description {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 @media screen and (min-width: 992px) {
   .lesson-section__right {
     max-height: none !important;
