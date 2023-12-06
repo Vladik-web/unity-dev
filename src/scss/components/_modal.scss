@@ -350,6 +350,7 @@
 
     &-link {
       margin-bottom: rem(20);
+      padding: rem(8) rem(16) rem(8) rem(56);
     }
 
     &-text {
@@ -374,6 +375,12 @@
     &-btn {
       width: rem(188);
       height: rem(45);
+    }
+
+    &-svg {
+      position: absolute;
+      left: rem(16);
+      top: rem(35);
     }
   }
 

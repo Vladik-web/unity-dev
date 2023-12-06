@@ -8832,6 +8832,7 @@ input[type=radio]:checked + label + .content {
 
 .modal__field-link {
   margin-bottom: 1.25rem;
+  padding: 0.5rem 1rem 0.5rem 3.5rem;
 }
 
 .modal__field-text {
@@ -8860,6 +8861,12 @@ input[type=radio]:checked + label + .content {
 .modal__field-btn {
   width: 11.75rem;
   height: 2.8125rem;
+}
+
+.modal__field-svg {
+  position: absolute;
+  left: 1rem;
+  top: 2.1875rem;
 }
 
 .modal__confirm {
