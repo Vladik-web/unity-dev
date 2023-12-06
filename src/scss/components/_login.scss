@@ -1,99 +1,189 @@
 .login {
+  @include flex-all-center;
+
   position: relative;
   z-index: 2;
   padding: rem(202) 0 rem(204);
-  height: 100%;
-  background-image: url("../../img/static/logo__bg.svg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #e0ebff;
+  height: 100vh;
+  background: #e0ebff url("/assets/img/static/logo__bg.svg") no-repeat bottom / cover;
 
-  &__inner {
-    &-hat {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
+  &__content {
+    @include flex-all-center;
+
+    position: relative;
   }
 
   &__form {
+    @include flex;
+
     position: relative;
+    flex-direction: column;
     margin: 0 auto;
     border-radius: rem(10);
-    padding: 60px 50px;
-    max-width: rem(540);
+    padding: rem(60) rem(50);
+    width: rem(540);
+    box-shadow: rem(2) rem(2) rem(8) 0 rgba(0, 0, 0, 10%);
     background-color: #fff;
 
-    &-women {
+    &::before {
+      content: "";
       position: absolute;
-      right: 99%;
-      top: 27%;
+      left: rem(-155);
+      top: rem(-72);
+      width: rem(757);
+      height: rem(680);
+      background:
+        url("../img/static/women.png") no-repeat left bottom / rem(169.239) rem(415.252),
+        url("../img/static/hat.png") no-repeat right top / rem(194) rem(160.352);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: rem(-202.23);
+      bottom: rem(24.02);
+      z-index: -1;
+      width: rem(313.227);
+      height: rem(283.975);
+      background: url("../img/static/books.png") no-repeat left bottom / contain;
+    }
+
+    &-inner {
+      position: static;
       z-index: 1;
     }
 
-    &-hat {
-      position: absolute;
-      left: 76%;
-      bottom: 82%;
-    }
-
     &-logo {
-      margin-bottom: rem(30);
-      text-align: center;
-    }
-
-    &-title {
-      margin-bottom: rem(30);
-
-      /* Design/H1 */
-      font-family: "Roboto", sans-serif;
-      font-weight: 600;
-      font-size: rem(24);
-      line-height: 120%;
-      text-align: center;
-      color: var(--Black, #1c1c1c);
-    }
-
-    &-book {
-      position: absolute;
-      left: 77%;
-      top: 42%;
-      z-index: -1;
+      width: rem(300);
+      height: rem(150);
+      object-fit: cover;
     }
   }
 
-  &__box {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
+  &__form-img {
+    @include flex-h-center;
+  }
 
+  &__form-label {
+    @include flex;
+
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 120%;
+    color: #828282;
+  }
+
+  &__form__label-text {
+    margin-bottom: rem(10);
+  }
+
+  &__form__lable-input {
+    margin-bottom: rem(15);
+    border: none;
+    border-radius: rem(5);
+    padding: rem(8) rem(16);
+    background: #eef4ff;
+  }
+
+  &__form__bottom-label {
+    @include flex;
+
+    align-items: flex-start;
+    gap: rem(10);
+  }
+
+  &__form-bottom {
+    @include flex-all-sb;
+  }
+
+  &__form__bottom-span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 120%;
+    color: #828282;
+  }
+
+  &__form__bottom-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    text-transform: uppercase;
+    color: #bdbdbd;
+  }
+
+  &__form-button {
+    @include flex-h-center;
+
+    margin-top: rem(31);
+  }
+
+  &__form-btn {
+    @include flex-v-center;
+
+    border-radius: rem(5);
+    padding: rem(15) rem(87);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: rem(14);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ffa349;
+    gap: rem(5);
+  }
+
+  &__form-svg {
+    width: rem(20);
+    height: rem(20);
+    fill: #fff;
+  }
+
+  &__box {
     &-link {
       font-family: "Roboto", sans-serif;
       font-weight: 500;
-      font-size: rem(14);
+      font-size: 14px;
       text-transform: uppercase;
       color: #bdbdbd;
     }
   }
-}
 
-@include mq("lg") {
-  .login__form-book {
-    display: none;
+  &__form &__form-title {
+    margin-bottom: rem(30);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: 120%;
+    text-align: center;
+    color: #1c1c1c;
   }
 }
 
 @include mq("md") {
-  .login__form-women {
-    display: none;
-  }
+  .login {
+    &__form {
+      padding: rem(30) rem(20);
+      width: 100%;
+      height: 100%;
 
-  .login__form-hat {
-    display: none;
-  }  
+      &::before,
+      &::after {
+        content: none;
+      }
+    }
+
+    &__form-logo {
+      width: rem(250);
+      height: rem(100);
+    }
+  }
 }
 
 @include mq("sm") {
- 
+  .login__form__bottom-label {
+    max-width: 139px;
+  }
 }
