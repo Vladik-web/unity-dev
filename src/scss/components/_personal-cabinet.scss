@@ -41,7 +41,7 @@
       gap: rem(20);
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: rem(-16);
         right: rem(-16);
@@ -67,7 +67,7 @@
   }
 
   &__label {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: rem(16);
@@ -75,7 +75,7 @@
     color: var(--grey-4);
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       flex: 1 1 auto;
       height: rem(1);
@@ -83,7 +83,7 @@
   }
 
   &__value {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: rem(16);
@@ -103,6 +103,7 @@
   }
 
   &__title {
+    // display: none;
     margin-bottom: rem(24);
     border-bottom: rem(1) solid var(--grey-5);
     padding-bottom: rem(8);
@@ -130,8 +131,35 @@
     }
   }
 }
+.personal-cabinet__avatar-text {
+  max-width: 260px;
+}
+.load-avater__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.document__btn {
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  max-width: 345px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid #fe7c11;
+  border-radius: 5px;
+  color: #1c1c1c;
+}
+.document__remove {
+  z-index: 2;
+}
 
-@include mq('lg') {
+@include mq("lg") {
   .personal-cabinet {
     &__block {
       display: block;
@@ -174,8 +202,24 @@
     }
   }
 }
-
-@include mq('md') {
+.personal-cabinet__avatar-title {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 4.5px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--Black, #1c1c1c);
+}
+.personal-cabinet__avatar-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--Gray-3, #828282);
+}
+@include mq("md") {
   .personal-cabinet {
     &__units {
       grid-template-columns: 1fr;
@@ -187,5 +231,17 @@
         max-width: unset;
       }
     }
+  }
+  .personal-cabinet__unit {
+    display: flex;
+    flex-direction: column;
+  }
+  .document__btn {
+    display: flex;
+    align-items: center;
+    width: 365px;
+  }
+  .document-block__item {
+    width: 163px;
   }
 }

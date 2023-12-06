@@ -17,7 +17,7 @@ const data = {
     'ІстУкр',
     'ВсеІст',
     'Фізика',
-    'УкМ',
+    'УкМова',
     'УкрЛіт',
     'ЗарЛіт',
     'Інформ'
@@ -39,7 +39,7 @@ const innerBarText = {
     data.labels.forEach((item, index) => {
       ctx.font = 'Roboto 16px sans-serif'
       ctx.fillStyle = '#4F4F4F'
-      ctx.fillText(data.labels[index], x.getPixelForValue(index) - 20, bottom - 20)
+      ctx.fillText(data.labels[index], x.getPixelForValue(index) - 25, bottom - 0)
     })
   }
 }
@@ -57,9 +57,9 @@ const graph = () => {
 
       datasets: [
         {
-          data: [9, 10, 9, 11, 11, 2, 11, 8, 6, 10, 9, 9, 11, 9, 9],
+          data: [9, 10, 8, 11, 11, 5, 11, 8, 6, 2, 9, 9, 11, 9, 9],
           backgroundColor: data.colors,
-          borderSkipped: false,
+          borderSkipped: true,
           barPercentage: 1,
           categoryPercentage: 0.88
         }
@@ -67,24 +67,24 @@ const graph = () => {
     },
     options: {
       maintainAspectRatio: false,
-      animation: false,
+      animation: true,
       plugins: {
-        tooltip: false,
+        tooltip: true,
         legend: false,
-        datalabels: { anchor: 'end', align: 'bottom', offset: 10, color: '#1C1C1C' }
+        datalabels: { anchor: 'end', align: 'bottom', offset: 0, color: '#1C1C1C' }
       },
       elements: {
         bar: {
-          borderRadius: 5
+          borderRadius: 20
         }
       },
       scales: {
         y: {
           max: 12,
           min: 1,
-          grid: { color: '#C8D9FD', drawBorder: false },
+          grid: { color: '#C8D9FD', drawBorder: true},
           beginAtZero: true,
-          ticks: { stepSize: 1, font: { size: 14, weight: 400 } }
+          ticks: { stepSize: 1, font: { size: 16, weight: 400 } }
         },
         x: {
           grid: { tickColor: false, drawOnChartArea: false, drawBorder: false },
@@ -94,4 +94,5 @@ const graph = () => {
     }
   })
 }
+
 export default graph

@@ -24,6 +24,9 @@ const tabs = () => {
     const setActiveTab = tab => {
       tabsElements.forEach(item => item.classList.remove(activeClass))
 
+      console.log("tab:", tab);
+      console.log("tabsElements:", tabsElements);
+
       tab.classList.add(activeClass)
     }
 
@@ -83,6 +86,24 @@ const tabs = () => {
     'content-tabs__btn--active',
     'data-tab-table'
   )
+ 
+  bindTabs(
+    '.schedule-tabs .schedule-tabs__button', 
+    '.schedule-table',
+    'schedule-tabs__button--active', 
+    'data-tab-schedule'
+  )
+
+  bindTabs(
+    '.select__list .select__item', // класс для всех кнопок
+    '.schedule-table', // класс для контента
+    'schedule-tabs__button--active',  // класс для активной табы
+    'data-tab-schedule' // атрибут у кнопки и контента
+  )
+  bindTabs(
+    '.schedule__btn-day'
+  )
 }
+
 
 export default tabs

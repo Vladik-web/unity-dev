@@ -16,6 +16,8 @@ import maintenance from './modules/maintenance'
 import graph from './modules/graph'
 import table from './modules/table'
 import calendar from './modules/calendar'
+import adaptChartToScreenSize from './modules/table-adaptation'
+import './modules/registration-accordion';
 
 window.addEventListener('DOMContentLoaded', () => {
   try {
@@ -40,4 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
   graph()
   table()
   calendar()
+  adaptChartToScreenSize()
 })
+
+
